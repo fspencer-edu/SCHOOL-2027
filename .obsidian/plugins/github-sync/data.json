@@ -1,0 +1,9 @@
+{
+  "remoteURL": "git@github.com:fspencer-edu/SCHOOL-2027.git",
+  "gitLocation": "",
+  "syncinterval": 30,
+  "isSyncOnLoad": true,
+  "checkStatusOnLoad": true,
+  "noticeLevel": "ALL",
+  "showSyncSuccessNotice": true
+}
