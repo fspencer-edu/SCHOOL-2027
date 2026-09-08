@@ -166,6 +166,18 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "325a0b9f436616eb",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "README.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
           }
         ]
       }
