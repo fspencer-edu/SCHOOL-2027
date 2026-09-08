@@ -1,0 +1,80 @@
+# Private files
+private/
+.private/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node / JavaScript
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Secrets / keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# Databases / local data
+*.sqlite
+*.sqlite3
+*.db
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Obsidian workspace-specific files
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Git backup / merge files
+*.orig
+*.rej
