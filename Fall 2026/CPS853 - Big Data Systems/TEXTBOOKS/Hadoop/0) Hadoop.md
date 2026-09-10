@@ -6,7 +6,7 @@ https://learning.oreilly.com/library/view/hadoop-the-definitive/9781491901687/
 [[2) MapReduce]]
 [[3) The Hadoop Distributed Filesystem]]
 [[4) YARN]]
-[[5) Hadoop I/O]]
+[[5) Hadoop - IO]]
 [[6) Developing a MapReduce Application]]
 [[7) How MapReduce Works]]
 [[8) MapReduce Types and Formats]]
