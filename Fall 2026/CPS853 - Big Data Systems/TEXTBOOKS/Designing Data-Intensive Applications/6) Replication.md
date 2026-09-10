@@ -1,7 +1,7 @@
 # Single-Leader Replication
 
 ## Synchronous vs. Asynchronous Replication
-## Setting 
+## Setting Up New Followers
 ## 
 ## 
 ## 
