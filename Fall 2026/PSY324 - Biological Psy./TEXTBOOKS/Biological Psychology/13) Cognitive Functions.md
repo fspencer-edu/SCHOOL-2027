@@ -13,13 +13,10 @@
 
 ## The Mind-Brain Relationship
 ## Consciousness of a Stimulus
-## Inferring
-## 
-## 
+## Inferring Overall Consciousness of Unconsciousness
+## Attention
 # Making Decisions and social Neuroscience
 
-## 
-## 
-## 
-## 
-## 
+## Decisions
+## The Biology of Love
+## Social Interactions
