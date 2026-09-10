@@ -1,0 +1,28 @@
+![](https://learning.oreilly.com/covers/urn:orm:book:9781491901687/296w/?format=webp)
+
+https://learning.oreilly.com/library/view/hadoop-the-definitive/9781491901687/
+
+[[1) Meet Hadoop]]
+[[2) MapReduce]]
+[[3) The Hadoop Distributed Filesystem]]
+[[4) YARN]]
+[[5) Hadoop I/O]]
+[[6) Developing a MapReduce Application]]
+[[7) How MapReduce Works]]
+[[8) MapReduce Types and Formats]]
+[[9) MapReduce Features]]
+[[10) Setting Up a Hadoop Cluster]]
+[[11) Administering Hadoop]]
+[[12) Avro]]
+[[13) Parquet]]
+[[14) Flume]]
+[[15) Sqoop]]
+[[16) Pig]]
+[[17) Hive]]
+[[18) Crunch]]
+[[19) Spark]]
+[[20) HBase]]
+[[21) ZooKeeper]]
+[[22) Composable Data at Cerner]]
+[[23) Biological Data Science]]
+[[24) Cascading]]
