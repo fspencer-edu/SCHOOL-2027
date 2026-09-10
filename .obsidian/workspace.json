@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a017b04699dca62c",
+        "id": "0000b53a38be002c",
         "type": "tabs",
         "children": [
           {
-            "id": "648ba806c981189e",
+            "id": "74da2510d13cb7d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/23) Biological Data Science.md",
+                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/8) Joins.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "23) Biological Data Science"
+              "title": "8) Joins"
             }
           }
         ]
@@ -198,35 +198,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "648ba806c981189e",
+  "active": "74da2510d13cb7d6",
   "lastOpenFiles": [
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/22) Composable Data at Cerner.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/21) ZooKeeper.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/20) HBase.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/19) Spark.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/18) Crunch.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/17) Hive.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/16) Pig.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/15) Sqoop.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/14) Flume.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/13) Parquet.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/12) Avro.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/11) Administering Hadoop.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/10) Setting Up a Hadoop Cluster.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/9) MapReduce Features.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/8) MapReduce Types and Formats.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/7) How MapReduce Works.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/6) Developing a MapReduce Application.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/5) Hadoop - IO.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/0) Hadoop.md",
-    "5) Hadoop (I/O).md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/7) Aggregations.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/6) Working with Different Types of Data.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/5) Basic Structured Operations.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/4) Structured API Overview.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/3) A Tour of Spark's Toolset.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/2) A Gentle Introduction to Spark.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/1) What is Apache Spark?.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/33) Ecosystem and Community.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/32) Language Specifics.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/31) Deep Learning.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/30) Graph Analytics.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/29) Unsupervised Learning.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/28) Recommendation.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/27) Regression.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/26) Classification.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/25) Preprocessing and Feature Engineering.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/24) Advanced Analytics and ML Overview.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/23) Structured Streaming in Production.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/22) Event-Time and Stateful Processing.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/21) Structured Streaming Basics.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/20) Stream Processing Fundamentals.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/19) Performance Tuning.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/18) Monitoring and Debugging.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/17) Deploying Spark.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/16) Developing Spark Applications.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/15) How Spark Runs on a Cluster.md",
     "5) Hadoop (I",
-    "5) Hadoop I/O.md",
-    "Private/Private Test.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/4) YARN.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/3) The Hadoop Distributed Filesystem.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/2) MapReduce.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/1) Meet Hadoop.md",
     "5) Hadoop I",
     "images/Screenshot 2026-09-06 at 6.31.29 AM.png",
     "images/Screenshot 2026-09-08 at 12.02.52 PM.png",
