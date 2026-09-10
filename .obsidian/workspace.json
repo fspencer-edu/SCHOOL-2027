@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/1) Meet Hadoop.md",
+                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/6) Replication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1) Meet Hadoop"
+              "title": "6) Replication"
             }
           },
           {
@@ -212,10 +212,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "ebf7035dc389d5f5",
+  "active": "c2e793b998307d8e",
   "lastOpenFiles": [
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/0) Hadoop.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/5) Encoding and Evolution.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/4) Storage and Retrieval.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/3) Data Models and Query Languages.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/2) Defining Nonfunctional Requirements.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/1) Trade-Offs In Data Systems Architecture.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/1) Meet Hadoop.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/0) Hadoop.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/2) MapReduce.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/3) The Hadoop Distributed Filesystem.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/4) YARN.md",
@@ -236,11 +241,6 @@
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/18) Crunch.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/19) Spark.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/20) HBase.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/21) ZooKeeper.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/22) Composable Data at Cerner.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/23) Biological Data Science.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/24) Cascading.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/1) Meet Kafka.md",
     "images/Screenshot 2026-09-06 at 6.31.29 AM.png",
     "images/Screenshot 2026-09-08 at 12.02.52 PM.png",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka",
