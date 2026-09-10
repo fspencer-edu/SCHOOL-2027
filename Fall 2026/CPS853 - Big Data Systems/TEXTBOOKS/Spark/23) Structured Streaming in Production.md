@@ -1,7 +1,5 @@
-# 
-# 
-# 
-# 
-# 
-# 
-# 
+# Fault Tolerance and Checkpointing
+# Updating Your Application
+# Metrics and Monitoring
+# Alerting
+# Advanced Monitoring with the Streaming Listener

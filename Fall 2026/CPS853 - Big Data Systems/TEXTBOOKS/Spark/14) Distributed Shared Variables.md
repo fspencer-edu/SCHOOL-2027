@@ -1,7 +1,2 @@
-# 
-# 
-# 
-# 
-# 
-# 
-# 
+# Broadcast Variables
+# Accumulators
