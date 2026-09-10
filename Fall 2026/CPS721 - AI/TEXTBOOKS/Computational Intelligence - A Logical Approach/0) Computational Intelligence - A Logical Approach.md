@@ -1,1 +1,1 @@
-![[Screenshot 2026-09-10 at 4.13.40 PM.png]]
+<img src="/images/Screenshot 2026-09-10 at 4.13.40 PM.png" alt="image" width="500">

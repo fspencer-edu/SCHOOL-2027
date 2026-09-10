@@ -1,4 +1,4 @@
-![[Screenshot 2026-09-10 at 3.54.52 PM.png]]
+<img src="/images/Screenshot 2026-09-10 at 3.54.52 PM.png" alt="image" width="500">
 
 1) Thinking and Computation
 2) A Procedural for Thinking

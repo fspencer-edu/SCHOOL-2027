@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/0) Grokking Artificial Intelligence Algorithms.md",
+                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/0) Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0) Grokking Artificial Intelligence Algorithms"
+              "title": "0) Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow"
             }
           }
         ]
@@ -200,8 +200,13 @@
   },
   "active": "74da2510d13cb7d6",
   "lastOpenFiles": [
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/0) Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.md",
+    "images/Screenshot 2026-09-10 at 4.13.40 PM.png",
+    "images/Screenshot 2026-09-10 at 4.12.17 PM.png",
+    "images/Screenshot 2026-09-10 at 3.17.10 PM.png",
+    "images/Screenshot 2026-09-10 at 3.54.52 PM.png",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/0) Grokking Artificial Intelligence Algorithms.md",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/0) Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.md",
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/Computational Intelligence - A Logical Approach/0) Computational Intelligence - A Logical Approach.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/0) Biological Psychology.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms",
@@ -211,7 +216,6 @@
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/0) Artificial Intelligence - A Modern Approach.md",
     "Screenshot 2026-09-10 at 4.12.17 PM.png",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/0) Thinking as Computation.md",
-    "Fall 2026/CPS721 - AI/TEXTBOOKS/Computational Intelligence - A Logical Approach/0) Computational Intelligence - A Logical Approach.md",
     "Screenshot 2026-09-10 at 4.13.40 PM.png",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Computational Intelligence - A Logical Approach",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach",
@@ -239,11 +243,9 @@
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/31) Deep Learning.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/30) Graph Analytics.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/29) Unsupervised Learning.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/28) Recommendation.md",
     "images/Screenshot 2026-09-06 at 6.31.29 AM.png",
     "images/Screenshot 2026-09-08 at 12.02.52 PM.png",
     "Screenshot 2026-09-06 at 6.31.29 AM.png",
-    "Screenshot 2026-09-08 at 12.02.52 PM.png",
     "Untitled.canvas"
   ]
 }

@@ -1,4 +1,4 @@
-![[Screenshot 2026-09-10 at 3.17.10 PM.png]]
+<img src="/images/Screenshot 2026-09-10 at 3.17.10 PM.png" alt="image" width="500">
 
 https://ebooks.cengage.com/reader/5ad9542e-f5f6-45a5-8adb-9e3b2389c84c/content-cover?code=IiFXVdOiYbqLh-bV-K6dcDeLENCGOE0UL7j0TY8SYtU&state=043ea70b-603f-4232-9e0b-1aab9af69a5c
 
