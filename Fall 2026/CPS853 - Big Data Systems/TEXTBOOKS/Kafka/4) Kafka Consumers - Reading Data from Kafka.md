@@ -11,10 +11,6 @@
 
 # Configuring Consumers
 
-## 
-## 
-## 
-## 
 # Commits and Offsets
 
 ## Automatic Commit
