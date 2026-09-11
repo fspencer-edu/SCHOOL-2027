@@ -65,7 +65,7 @@ Backend engineeers
 	- Transformed into analysis friendly schema, cleaned
 	- Extract-transform-load (ETL)
 
-![[Pasted image 20260911132529.png]]
+<img src="/images/Pasted image 20260911132529.png" alt="image" width="500">
 
 - ETL for SaaS APIs is implemented by data connector services
 	- Fivetran

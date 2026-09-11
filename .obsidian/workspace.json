@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -215,6 +216,9 @@
   },
   "active": "277f3f8adb839961",
   "lastOpenFiles": [
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/0) Artificial Intelligence - A Modern Approach.md.tmp",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/7) Reliable Data Delivery.md.tmp",
+    "images/Pasted image 20260911132529.png",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/6) Kafka Internals.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/5) Managing Apache Kafka Programmatically.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/4) Kafka Consumers - Reading Data from Kafka.md",
@@ -256,11 +260,8 @@
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/7) Movement.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/6) Hearing, the Mechanical Senses, and the Chemical Senses.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/4) Genetics, Development, and Plasticity.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/3) Anatomy and Research Methods.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology",
     "Screenshot 2026-09-10 at 4.12.17 PM.png",
     "Screenshot 2026-09-10 at 4.13.40 PM.png",
-    "Screenshot 2026-09-10 at 3.54.52 PM.png",
     "Untitled.canvas"
   ]
 }
