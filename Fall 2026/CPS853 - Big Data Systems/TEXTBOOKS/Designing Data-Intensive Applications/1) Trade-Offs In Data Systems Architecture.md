@@ -220,7 +220,53 @@ Backend engineeers
 	- Sustainability
 
 ## Problems with Distributed Systems
+
+- Every request and API call travels through the network and must deal with possible failure
+- Faster to bring the computation to the machine that already has the data
+- Troubleshooting a distributed system is more difficult
+- Tracing tools
+	- OpenTelemetry
+	- Zipkin
+	- Jaeger
+- Maintaining consistency of data across services
+	- Distributed transactions
+		- Run counter to the goal of making services independent
+
 ## Microservices and Serverless
+
+- Clients make requests to the servers
+- Service-oriented architecture (SOA)
+- Microservices architecture
+	- A service has a one well-defined purpose
+	- Each service exposes an API that can be called by clients via the network
+	- Each service has one team that is responsible for its maintenance
+	- Decomposed into multiple interacting services
+- Each service can be updated independently
+- Assigned specific hardware resources
+- Each service has its own databases and do not share between services
+
+- Serverless, of function as a service (FaaS)
+	- Deploying services, in which the management of the infrastructure is outsources to a cloud vendor
+	- Automatically allocates and frees hardware resources as needed
+
 ## Cloud Computing vs. Supercomputing
 
+- High performance computing (HPC), also known as supercomputing
+	- Computationally intensive scientific computing tasks
+	- Runs large batch jobs
+	- Communicate through shared memory and RDMA
+		- High bandwidth and low latency
+		- Specialized topologies
+		- Nodes are close together
+	- Cloud datacenter networks are often based on IP and Ethernet
+		- Clos topologies to provide high bisection bandwidth
+		- Multiple geographic regions
+
 # Data Systems, Law, and Society
+
+- Data minimization
+	- Personal data may be collected only for a specified, explicit purpose
+	- Cannot later be used for any other purpose
+	- Must not be kept for longer than necessary
+- Payment Card Industry (PCI)
+- Service Organization Control (SOC)
