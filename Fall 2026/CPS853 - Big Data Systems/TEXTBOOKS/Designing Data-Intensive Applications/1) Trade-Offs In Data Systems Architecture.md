@@ -59,16 +59,165 @@ Backend engineeers
 	- Data of interest is spread across multiple operational systems
 	- Difficult to combine datasets in a single query
 - Data warehouse
-	- 
+	- A separate database that analysts can query without affecting OLTP
+	- Contain read only copy of data
+	- Periodic data dump or continuous stream of updates
+	- Transformed into analysis friendly schema, cleaned
+	- Extract-transform-load (ETL)
+
+![[Pasted image 20260911132529.png]]
+
+- ETL for SaaS APIs is implemented by data connector services
+	- Fivetran
+	- Singer
+	- Air-byte
+- Hybrid transactional/analytical processing (HTAP)
+	- Enable OLTP and analytics in a single system without ETL
+
+### From data warehouse to data lake
+
+- Data warehouse
+	- Relational data
+- Transforming data that is used to train ML models
+	- Vector or matrix values called features
+		- Feature engineering
+	- Custom code that can not be expressed using SQL
+- Natural language processing (NLP) techniques on textual data
+
+- Data lake
+	- A centralized data repository that hold a copy of any data that might be useful for analysis
+	- Obtained from operational systems via ETL processes
+	- Contains files, with no specific file format, data model, or schema
+	- Encoded
+		- Avro
+		- Parquet
+	- Cheaper than relational data storage
+	- Commoditized file storage such as object stores
+	- Contains raw data
+
+- ETL have been generalized to data pipelines
+
+### Beyond the data lake
+
+- DataOps
+	- Management of operations of analytical systems and data pipelines
+	- Governance, privacy, and regulations with General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA)
+- Stream processing allows analytical systems to respond faster than traditional analytical processing
+- Reverse ETL
+	- Analytical systems available to operational systems
+	- ML models deployed to operational systems
+		- TFX
+		- Kubeflow
+		- MLflow
+
 ## Systems of Record and Derived Data
+
+- System of record
+	- Source of truth
+	- Hold the authoritative or canonical version of data
+	- Normalized
+- Derived data systems
+	- Result of taking existing data form another system and transforming it
+	- Re created from original source
+	- Cache
+		- Data can be served from the cache if present, but if not falls back to underlying database
+	- Denormalized values, indexes, materialized views
+	- Transform data representations
+	- Trains models
+	- Redundant
+
+- Analytical systems are usually derived data systems
+- Operational services can contain a mixture of systems or records and derived data systems
+- Data integration
+	- Compose multiple data systems to achieve more than one system
 
 # Cloud vs. Self-Hosting
 
+- Core competency or a competitive advantage should be done in house
+- Non-core, routing or commonplace should be left to a vendor
+- On the shelf software (open source or commercial) that you self-hold, or deploy
+
 ## Pros and Cons of Cloud Services
+
+- Cloud providers
+	- Save time and money
+	- Allow you to move faster compared to personal infrastructure
+	- Valuable if load on system varies over time
+
 ## Cloud Native System Architecture
+
+- Cloud native
+	- An architecture that is designed to take advantage of cloud services
+
+### Layering of cloud services
+
+| Category             | Self-hosted systems            | Cloud native systems                                         |
+| :------------------- | :----------------------------- | :----------------------------------------------------------- |
+| **Operational/OLTP** | MySQL, PostgreSQL,<br>MongoDB  | AWS Aurora, Azure SQL DB<br>Hyperscale, Google Cloud Spanner |
+| **Analytical/OLAP**  | Teradata,<br>ClickHouse, Spark | Snowflake, Google BigQuery, Azure<br>Synapse Analytics       |
+|                      |                                |                                                              |
+
+- Self-hosted data systems
+	- Run on OS
+	- Store data as files
+	- Communicate via network protocols (TCP/IP)
+	- Use generic computing resources
+
+- Cloud
+	- IaaS environment
+	- One or more VM (instances)
+	- Provisioned faster with a greater varies of machine sizes
+
+- Object storage services
+	- Amazon S3, Azure Blob Storage, Cloudflare R2
+	- Distributes the data across many machines
+
+### Separation of storage and compute
+
+- RAID is used to maintain copies of the data on several disks attached to the same machine
+- Compute instances may also have local disks attached
+	- Ephemeral cache
+	- Virtual disk storage
+		- Amazon EBS, Azure managed disks, Google Cloud
+	- Block device
+		- Where each block is typically 4 KiB
+		- Run traditional disk-based software in the cloud
+		- Emulation introduces overheads that can be avoided
+		- Sensitive to network glitches
+
+- In cloud native systems, storage and computation are disaggregated
+- Transfer data over network
+- Multitenant
+	- Data and computation from multiple customers are handled on the same shared hardware by the same service
+	- Better hardware utilization
+	- Easier scalability
+	- Easier management
+
 ## Operations in the Cloud Era
 
+- Database administrators (DBAs) or systems administrators (sysadmins)
+- DevOps
+	- Backend services and data infrastructure
+		- Setting up automation
+		- Using ephemeral VMs rather than long running servers
+		- Enabling frequent application updates
+		- Learning from incidents
+		- Preserving the organization's knowledge about the system
 # Distributed vs. Single-Node Systems
+
+- Distributed system
+	- A system that involved several machines communicating via a network
+	- Each process participates as a node
+- Use case
+	- Inherent distribution
+	- Requests between cloud services
+	- Fault tolerance/high availability
+	- Scalability
+	- Latency
+	- Elasticity
+	- Specialized hardware
+	- Legal compliance
+	- Sustainability
 
 ## Problems with Distributed Systems
 ## Microservices and Serverless

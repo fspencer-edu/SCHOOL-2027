@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -200,6 +201,7 @@
   },
   "active": "74da2510d13cb7d6",
   "lastOpenFiles": [
+    "Pasted image 20260911132529.png",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/0) Designing Data-Intensive Applications, 2nd Edition.md",
     "TODO.md",
     "README.md",
@@ -241,7 +243,6 @@
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/8) Joins.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/7) Aggregations.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/6) Working with Different Types of Data.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/5) Basic Structured Operations.md",
     "Screenshot 2026-09-10 at 4.12.17 PM.png",
     "Screenshot 2026-09-10 at 4.13.40 PM.png",
     "Screenshot 2026-09-10 at 3.54.52 PM.png",
