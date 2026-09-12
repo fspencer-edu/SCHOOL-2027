@@ -99,10 +99,45 @@
 	- DDSketch
 # Reliability and Fault Tolerance
 
-- 
+- Fault
+	- Occurs when a particular part of a system stops working correctly
+- Failure
+	- Occurs when the system as a whole stops providing the required service to the user
 
 ## Fault Tolerance
+
+- If the system continues providing the required service to users in spite of certain faults occurring
+- Single point of failure (SPOF)
+	- A fault escalates to cause a system failure
+- Exactly once semantics
+	- A guarantee that an operation or message has its effect applied once and only once, even if retires, duplicates, or failures occur
+- Fault injection
+	- Ensures fault tolerance machinery is continually exercised and tested
+- Chaos engineering
+	- Aims to improve confidence in fault-tolerance mechanisms through experiments
 ## Hardware and Software Faults
+
+Failure Rate
+- 2-5%, Magnetic hard drives
+- 0.5-1%, SSD
+- Data RAM
+
+### Tolerating hardware faults through redundancy
+
+- Add redundancy to the individual hardware components to reduce failure rate of the system
+- RAID
+- Dual power supplies
+- Hot swappable CPUs
+- Batteries and diesel generators for backup power
+- Availability zones
+	- Identify which resources are physically co-located
+	- Resources in the same place are more likely to fail at the same time than geographically separated resources
+- Rolling upgrade
+	- Multi node fault-tolerant systems can be patched by restarting one node at a time, without affect the service for users
+
+### Software faults
+
+- 
 ## Humans and Reliability
 # Scalability
 
