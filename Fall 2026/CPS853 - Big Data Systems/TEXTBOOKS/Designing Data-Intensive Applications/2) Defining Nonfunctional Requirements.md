@@ -19,7 +19,7 @@
 - Fan-out
 	- One initial request results in several downstream requests
 
-![[Pasted image 20260912133235.png]]
+<img src="/images/Pasted image 20260912133235.png" alt="image" width="500">
 
 - Materialization
 	- Precomputing and updating the results
@@ -33,7 +33,7 @@
 - Queuing
 	- A request arrives on a highly loaded system
 
-![[Pasted image 20260912133838.png]]
+<img src="/images/Pasted image 20260912133838.png" alt="image" width="500">
 
 - Retry storm
 	- When many failed requests are repeatedly retried at one, creating more load
@@ -69,24 +69,37 @@
 - Latency
 	- A request is not being actively processed
 
-![[Pasted image 20260912135040.png]]
+<img src="/images/Pasted image 20260912135040.png" alt="image" width="500">
 
 - Head of line blocking
 	- Slow requests hold up the processing of subsequent requests
 
 ## Average, Median, and Percentiles
 
-![[Pasted image 20260912135156.png]]
+<img src="/images/Pasted image 20260912135156.png" alt="image" width="500">
 
 - Average response time
 	- Arithmetic mean
 - Percentiles
 - Tail latencies (high response time percentiles)
 	- Directly affect users's experience
-	- 
 
 ## Use of Response Time Metrics
+
+- Tail latency amplification
+	- Small numbers of slow requests disproportionately increase the latency of an entire distributed operations
+	- Specifically on parallel services
+- Service level objectives (SLOs)
+- Service level agreements (SLAs)
+
+- Open source percentile estimation libraries
+	- HdrHistogram
+	- t-digest
+	- OpenHistogram
+	- DDSketch
 # Reliability and Fault Tolerance
+
+- 
 
 ## Fault Tolerance
 ## Hardware and Software Faults
