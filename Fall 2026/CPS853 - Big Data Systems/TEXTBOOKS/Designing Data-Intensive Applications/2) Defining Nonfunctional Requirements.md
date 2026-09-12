@@ -137,15 +137,78 @@ Failure Rate
 
 ### Software faults
 
-- 
+- Software faults are often very highly correctly
+- Software bug
+- A runaway process
+- A service that the system depends on slows
+- An interaction between different systems
+- Cascading failures
+
 ## Humans and Reliability
+
+- Technical measures to minimize human mistakes
+	- Property testing
+	- Rollback mechanisms
+	- Gradual rollout
+	- Detailed and clear monitoring
+	- Observability
+- Blameless postmortems
+	- Shared full details about how an error occurred
 # Scalability
 
+- A system's ability to cope with increased load
 ## Understanding Load
+
+- Measure of throughput
+	- Requests per second
+	- Number of GB of new data per day
+	- Number of checkout per hour
+- Ratio of reads to writes
+- Hit rate on a cache
+- Number of data items per user
+
+- Determine the affect on system resources
+- Keep the performance of the system within the requirements of the SLA while also minimizing the cost of running the system
+- Linear scalability
+	- Doubling the resources will enable to handle double the load
+	- Performance the same
+
 ## Shared-Memory, Shared-Disk, and Shared-Nothing Architectures
+
+- Vertical scaling/scaling up
+	- Increasing the resources of a single machine
+		- CPU, RAM, storage
+- Horizontal scaling/scaling out
+	- Adding more machines/instances to distribute the workload
+- Share memory architecture
+	- Processes belong to the same machine
+- Shared disk architecture
+	- Several machines with independent CPUs and RAM
+	- Store data on an array of disks that are shared among machines
+- Network attached storage (NAS)
+- Storage area network (SAN)
+	- On premises data warehousing workloads
+- Shared nothing architecture/horizontal scaling
+	- Distributed system with multiple nodes
+		- Own CPUs, RAM, and disks
+		- Scales linearly
+		- Best price/performance ratio
 ## Principles for Scalability
+
+- Autoscaling systems
+	- Automatically adds or removes resources in response to demand
 # Maintainability
 
+- Operability
+	- Organization can run the system smoothly
+- Simplicity
+	- New engineers and understand the system
+	- Well understood, consistent patterns and structures
+- Evolvability
+	- Engineers can make changes to the system in the future
+
 ## Operability: Making Life Easy for Operations
+
+- 
 ## Simplicity: Managing Complexity
 ## Evolvability: Making Change Easy
