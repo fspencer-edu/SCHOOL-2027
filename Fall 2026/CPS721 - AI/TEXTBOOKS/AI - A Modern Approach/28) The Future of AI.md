@@ -1,6 +1,2 @@
-# 
-# 
-# 
-# 
-# 
-# 
+# AI Components
+# AI Architecture
