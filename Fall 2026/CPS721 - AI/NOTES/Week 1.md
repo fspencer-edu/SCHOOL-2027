@@ -78,8 +78,9 @@
 		- Establish each of $P_i$ (call back chaining with $P_i$ as query)
 	- If sentence has variables, replace with atoms
 
-![[Pasted image 20260914123002.png]]
+<img src="/images/Pasted image 20260914123002.png" alt="image" width="500">
 
+<img src="/images/Pasted image 20260914132054.png" alt="image" width="500">
 ### Trace Examples
 
 $Q =$ ioniq123 is a sedan
@@ -133,8 +134,30 @@ $Q =$ "$z$ is an ev"
 			- a) fail
 			- b) fail, cannot find suv that is electric
 		- b) match on (5) with $X=Z$
-			- Establish "$Z$ is an suv"
+		- Establish "$Z$ is an sedam"
+			- c) match on (1) with "$Z =$ ioniq123", "ioniq123 is electric"
+				- a) Match on (3), success with "$Z =$ ioniq123
 
 
 - Variables collision
 	- Variables add an additional complication
+
+
+
+
+- Properties of back chaining
+	- Back chaining is sound
+		- Anything it establishes is actually entailed by the KB
+	- Back chaining is complete
+		- Eventually entail establish any possible atomic entailments
+		- Avoid cyclic rules
+			- "If X is a car, then X is a car"
+	- Back chaining is goal directed
+		- Start with what you want, not just what you known (forward chaining)
+
+- Back chaining as a computation process
+	- PROLOG (Programming in Logic)
+		- Declarative language
+		- Define a knowlege base (program)
+		- Make queries
+		- Program execution is back-chaining with back tracking
