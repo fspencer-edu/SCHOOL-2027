@@ -1,15 +1,30 @@
 <img src="/images/Screenshot 2026-09-10 at 4.12.17 PM.png" alt="image" width="500">
 
-1) Introduction
-2) Intelligent Agents
-3) Solving Problems by Searching
-4) Search in Complex Environments
-5) Adversarial Search and Games
-6) Constraint Satisfaction Problems
-7) Logical Agents
-8) First-Order Logic
-9) Inference in First-Order Logic
-10) Knowledge Representation
-11) Automated Planning
-12) Quantifying Uncertainty
-13) 
+[[1) Introduction]]
+[[2) Intelligent Agents]]
+[[3) Solving Problems by Searching]]
+[[4) Search in Complex Environments]]
+[[5) Adversarial Search and Games]]
+[[6) Constraint Satisfaction Problems]]
+[[7) Logical Agents]]
+[[8) First-Order Logic]]
+[[9) Inference in First-Order Logic]]
+[[10) Knowledge Representation]]
+[[11) Automated Planning]]
+[[12) Quantifying Uncertainty]]
+[[13) Probabilistic Reasoning]]
+[[14) Probabilistic Reasoning over Time]]
+[[15) Probabilistic Programming]]
+[[16) Making Simple Decisions]]
+[[17) Making Complex Decisions]]
+[[18) Multiagent Decision Making]]
+[[19) Learning from Examples]]
+[[20) Learning Probabilistic Models]]
+[[21) Reinforcement Learning]]
+[[22) Deep Learning]]
+[[23) Natural Language Processing]]
+[[24) Deep Learning for Natural Language Processing]]
+[[25) Computer Vision]]
+[[26) Robotics]]
+[[27) Philosophy, Ethics, and Safety of AI ]]
+[[28) The Future of AI]]
