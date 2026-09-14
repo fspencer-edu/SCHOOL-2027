@@ -80,6 +80,8 @@
 
 ![[Pasted image 20260914123002.png]]
 
+### Trace Examples
+
 $Q =$ ioniq123 is a sedan
 - Match (1) on $Q$
 
@@ -99,11 +101,40 @@ $Q =$ ioniq123 is ev
 		- X $\neq$ car
 	- Match on (5) with $X =$ ioniq123
 		- X $=$ suv, then X $=$ car
-- 
-
+- Match on (6) with X $=$ car amd X $=$ electric, therefore $X = ev$
 
 - Retrieval
 	- Use back-chaining to find individuals for a given property
 	- Establish "ioniq123 is a car" $\rightarrow$  confirm that ioniq123 is a car
 	- Establish "$Z$ is a car" $\rightarrow$  locate an individual $Z$ is a car
 
+### Retrieval Examples
+
+$Q =$ "$z$ is a car"
+- Fail on (1-3)
+- Match on (4) with $X=Z$
+	- Establish "$Z$ is an suv"
+	- Match on (2) with $Z =$ rav456
+	- Fail on more suv
+- Match on (5) with $X=Z$
+	- Establish "$Z$ is an sedan"
+	- Match on (1) with $Z =$ sedan
+
+$Q =$ "$z$ is an ev"
+- a) fail
+- b) Match on (6) with $X=z$
+	- Establish $Z$ is an car" and "$Z$ is an electric"
+		- a) fail
+		- b) match on (4) with $X=Z$
+		- Establish "$Z$ is an suv"
+			- c) match on (2) with "$Z =$ rav456", "rav456 is electric"
+				- a) fail
+				- b) fail
+			- a) fail
+			- b) fail, cannot find suv that is electric
+		- b) match on (5) with $X=Z$
+			- Establish "$Z$ is an suv"
+
+
+- Variables collision
+	- Variables add an additional complication
