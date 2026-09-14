@@ -1,0 +1,21 @@
+- Goal of AI
+	- Develop artifacts that can show behaviour, that is considered to humans as intelligence
+	- Software based artifacts are called agents
+	- Systems that think rationally
+- "Thinking as Computation" textbook
+	- Reasoning approaches based on viewing thinking as computation
+	- Manipulate ideas procedurally
+	- Logical inference
+	- PROLOG
+- Learning objectives
+	- Formulate and trace queries in PROLOG
+	- Compare PROLOG lists and write recursive programs
+	- Solve constraint satisfaction problems
+	- Analyze a given context-free grammar
+	- Parse natural language phrases and identify sources of ambiguity
+	- Solve planing problems using an iterative depth-first planner
+	- Bayesian network for diagnosis and prediction
+- Course material
+	- Machine learning
+	- Computer vision
+	- Generative AI

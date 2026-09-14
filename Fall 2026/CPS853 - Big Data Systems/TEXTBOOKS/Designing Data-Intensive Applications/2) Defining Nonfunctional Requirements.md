@@ -209,6 +209,27 @@ Failure Rate
 
 ## Operability: Making Life Easy for Operations
 
-- 
+- Monitoring tools
+- Avoiding dependency on individual machines
+- Good documentation
+- Self-healing
+- Predictable behaviour
 ## Simplicity: Managing Complexity
+
+- Essential complexity
+	- Inherent in the problem domain
+- Accidental complexity
+	- Arises only because of limitation of tooling
+
+- Abstraction
+	- Hides implementation detail
+- Design patterns
+- Domain driven design (DDD)
+
 ## Evolvability: Making Change Easy
+
+- Agile
+	- Framework for adapting to change
+	- Test driven development (TDD)
+	- Refactoring
+	- Evolvability
