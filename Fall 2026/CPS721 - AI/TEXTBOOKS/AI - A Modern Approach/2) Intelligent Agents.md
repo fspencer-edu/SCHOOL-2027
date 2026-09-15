@@ -38,15 +38,24 @@
 - Omniscience
 	- Knows the actual outcome of its action and can act accordingly
 	- Impossible in reality
-	- Rationality maximizes expected performance, while perfection maximizes actual performace
-	- 
+	- Rationality maximizes expected performance, while perfection maximizes actual performance
 - Information gathering
+	- To maximize the expected performance
+	- Modifies future percepts
 - Exploration
+	- Information gathering in an initially unknown environment
 - Learn
+	- Initial configuration reflects prior knowledge, but is modified and augmented with new information
 - Autonomy
+	- Learn what it can to compensate for partial or incorrect prior knowledge
+	- Behaviour of a rational agent should become effectively independent of its prior knowledge
+	- 
 # The Nature of Environments
 
 - Tasks environments
+
+page 55
+
 
 ## Specifying the task environment
 

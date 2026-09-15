@@ -9,3 +9,6 @@
 - Finish mx calc
 - Look at prism economics digital
 	- Internal/External documentation
+
+
+- Finish AI chapter 15
