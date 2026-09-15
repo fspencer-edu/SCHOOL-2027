@@ -69,9 +69,83 @@ Layers of An Application
 	- Ease of updating
 	- Localization support
 	- Better search functionality
+- Normalized = Use ID
+- Denormalized = translate to human readable format
+
+### Trade offs of normalization
+
+- Denormalization
+	- Self contained
+	- Faster to read
+	- More expensive to write
+	- Analytical systems
+- Normalized
+	- Needs a references
+	- Faster to write
+	- Slower to query
+	- Better for OLTP
+
+### Denormalization in the social networking case study
+
+- Hydrading
+	- Looking up the human readable information by ID
+- Denormalizing this information into the materialized timeline is too slow
+- Storage cost increases by denormalization
+
 ## Many-to-One and Many-to-Many Relationships
+
+- Associative table/join table
+- Better represented in a normalized format
+- Many-to-many relationships often need to be queries in both directions
+	- Store ID references on both sides (denormalized)
+	- Stores ID in only one place and relies on secondary indexes (normalized)
 ## Stars and Snowflakes: Schemas for Analytics
+
+- Data warehouses are usually relational
+- Optimized for business analysts
+	- Star schema
+		- Fact table
+			- Can include metadata
+		- Other columns in the fact table are foreign key references (dimension tables)
+		- Consist of mostly many-to-one relationships
+	- Snowflake schema
+		- Dimensions are further broken into sub-dimensions
+		- More normalized than star schemas
+	- Dimensional modeling
+	- One big table (OBT)
+- ETL processes translate data from operational systems into the selected schema
+
 ## When to Use Which Model
+
+- Document data model
+	- Shredding
+		- Splitting a document like structure into multiple tables leads to complicated application code
+
+### Schema flexibility in the document model
+
+- Document databases are schemaless (implicit)
+	- JSON
+	- XML
+- Schema on read (interpreted when read)
+	- Dynamic runtime
+	- Advantageous if items are heterogeneous
+- Schema on write (relational databases)
+	- Compile time type checking
+
+### Data locality for reads and writes
+
+- Document storage as a single continuous string, or binary (BSON) has faster locality
+- If split, multiple index lookups are required for retrieval
+- Updates to a document, need the entire document to be rewritten
+	- Multi table index cluster tables
+	- Wide column data
+	- Column families
+
+
+### Query languages for documents
+
+- 
+
 # Graph-Like Data Models
 
 ## Property Graphs
