@@ -1,8 +1,23 @@
 # The Curse of Dimensionality
 # Main Approaches for Dimensionality Reduction
+
+## Projection
+## Manifold Learning
 # PCA
+
+## Preserving the Variance
+## Principal Components
+## Projecting Down to d Dimensions
+
+## Using Scikit-Learn
+## Explained Variance Ratio
+## Choosing the Right Number of Dimensions
+## PCA for Compression
+## Randomized PCA
+
+## Incremental PCA
 # Kernel PCA
+## Selecting a Kernel and Tuning Hyperparameters
+
 # LLE
 # Other Dimensionality Reduction Techniques
-# 
-# 
