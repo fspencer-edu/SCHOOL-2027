@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -200,6 +201,8 @@
   },
   "active": "f972c9b2075516ba",
   "lastOpenFiles": [
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/2) Intelligent Agents.md",
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/1) Introduction.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/13) Probabilistic Reasoning.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/8) Wakefulness and Sleep.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/13) Advanced RDDs.md.tmp",
@@ -228,7 +231,6 @@
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/8) First-Order Logic.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/7) Logical Agents.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/6) Constraint Satisfaction Problems.md",
-    "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/5) Adversarial Search and Games.md",
     "Fall 2026/BLG655 - Viruses",
     "images/Pasted image 20260914123002.png",
     "images/Pasted image 20260914132054.png",
@@ -239,7 +241,6 @@
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/0) Artificial Intelligence - A Modern Approach.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/22) Event-Time and Stateful Processing.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/6) Working with Different Types of Data.md.tmp",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/33) Ecosystem and Community.md.tmp",
     "images/Pasted image 20260912135156.png",
     "images/Pasted image 20260912133235.png",
     "images/Pasted image 20260912135040.png",
