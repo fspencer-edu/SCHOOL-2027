@@ -4,5 +4,7 @@
 # The CART Training Algorithm
 # Computational Complexity
 # Gini Impurity or Entropy?
-# 
-# 
+# Regularization Hyperparameters
+# Regression
+
+# Instability
