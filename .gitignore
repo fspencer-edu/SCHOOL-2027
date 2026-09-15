@@ -78,3 +78,7 @@ secrets.json
 # Git backup / merge files
 *.orig
 *.rej
+
+auto_git_push.log
+launchd_git.log
+launchd_git_error.log
