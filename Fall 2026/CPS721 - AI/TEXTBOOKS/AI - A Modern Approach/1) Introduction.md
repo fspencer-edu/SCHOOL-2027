@@ -153,32 +153,46 @@
 	- Reinforcement learning
 - Satisficing
 	- Choosing a solution that is good enough to meet a required threshold, rather than searching for the absolute optimal solution
-
 ## Neuroscience
 
 - Neuroscience
 	- Study of the nervous system, and brain
-	- 
-- Neurons
 - Optogenetics
+	- Single cell electrical recording of neuron activity
+	- Measurement and control of individual neurons modified to be light sensitive
 - Brain–machine interfaces
-
+- Singularity
+	- A hypothetical point where AI surpasses human intelligence and begins improving itself rapidly, potentially causing technological change that becomes difficult to predict or control
 # The Foundations of AI
 
 ## Psychology
 
-- Singularity
 - Behaviorism
+	- Rejected any theory involving mental processes on the grounds that introspection could provide reliable evidence
 - Cognitive psychology
+	- Views the brain as an information processing device
+	- Stimulus must be translated into an internal representation
+	- The representation is manipulated by cognitive processes to device new internal representations
+	- Retranslated back into action
 - Cognitive science
-- Human computer interaction
-- Intelligence augmentation
-
+	- Describes the operation of a cognitive function in terms of the processing of information
+- Human computer interaction (HCI)
+	- Intelligence augmentation
+	- Computers should augment human abilities rather than automate away human tasks
 
 ## Computer Engineering
 
 - Moore's law
+	- Performance doubled every 18 months until around 2005
+	- Power dissipation problems in CPU manufacturing
+	- Increases in functionality will come from massive parallelism
+- Processing units
+	- GPU
+	- TPU
+	- WSE (Wafer scale engine)
 - Quantum computing
+	- A type of computing that uses quantum bits (qubits) and quantum effects such as superposition and entanglement to solve some problems differently—and potentially much faster, than classical computers
+- 
 
 ## Control theory and cybernetics
 
