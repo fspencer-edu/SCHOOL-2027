@@ -10,5 +10,6 @@
 - Look at prism economics digital
 	- Internal/External documentation
 
-
+- Setup rdp on linux
+- Install eclipse
 - Finish AI chapter 15

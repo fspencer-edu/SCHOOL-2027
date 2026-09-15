@@ -1,8 +1,2 @@
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
+# Clustering
+# Gaussian Mixtures
