@@ -399,5 +399,5 @@
 	- Locate nearest vector, then moves to the same node in the layer below
 	- Approximate
 
-![[Pasted image 20260916173020.png]]
+<img src="/images/Pasted image 20260916173020.png" alt="image" width="500">
 

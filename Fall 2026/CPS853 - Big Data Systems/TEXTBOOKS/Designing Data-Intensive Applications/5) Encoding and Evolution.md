@@ -123,20 +123,31 @@
 }
 ```
 
-![[Pasted image 20260916175450.png]]
+<img src="/images/Pasted image 20260916175450.png" alt="image" width="500">
 
 - 
 
 
-
-### 
-### 
+ 
 ## Protocol Buffers
 
 - Protocol buffers (protobuf)
 	- Binary encoding library developer at Google
 	- Similar to Apache Thrift
-	- Require a schema for an
+	- Require a schema for any data that is encoded
+	- Describe the schema in the Protocol Buffers interface definition language (IDL)
+
+```
+syntax = "proto3";
+
+message Person {
+    string user_name = 1;
+    int64 favorite_number = 2;
+    repeated string interests = 3;
+}
+```
+
+- Code generation tools
 
 ## Avro
 
@@ -148,6 +159,10 @@
 ### 
 
 # Modes of Dataflow
+
+
+### 
+###
 
 ## Dataflow Through Databases
 ## Dataflow Through Services: REST and RPC
