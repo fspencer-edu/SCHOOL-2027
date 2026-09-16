@@ -52,7 +52,7 @@
 			- Look at older segments
 	- Run a merging and compaction process in the background to combine segment files and discard overwritten or deleted valeyes
 
-- 
+- Merging segments work similar
 
 
 ## B-Trees
