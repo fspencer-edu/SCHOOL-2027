@@ -370,7 +370,34 @@
 - Semantic search
 	- retrieval augmented generation (RAG)
 	- Use embedding models to translate a text document into a vector of floating point values (vector embeddings)
+	- Use distance functions to measure the distance between vectors
+		- Cosine similarity
+			- Angle of two vectors
+		- Euclidean distance
+			- Straight line distance
+- Embedding models
+	- Word2Vec
+	- BERT
+	- GPT
+- Multimodal model
+- To query the index, pass in the vector embedding of the query, and index returns the document
 
-### 
-### 
-### 
+- Flat indexes
+	- Vectors are stored in the index as they are
+	- Query reads every vector and measure its distance to the query
+	- Accurate
+	- Measuring distance between query and vector is slow
+- Inverted file (IVF) indexes
+	- Vector space is clustered into partitions (centroids)
+	- IVF indexes are faster than flat
+	- Approximate results
+		- Query and document may fall into different partitions
+	- Query first defines probes, which are simply the number of partitions to check
+- Hierarchical Navigable Small World (hNSW) indexes
+	- Multiple layers of the vector space
+	- Nodes in each layer represent vectors and edges represent proximity to nearby vectors
+	- Locate nearest vector, then moves to the same node in the layer below
+	- Approximate
+
+![[Pasted image 20260916173020.png]]
+
