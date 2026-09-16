@@ -287,15 +287,90 @@
 
 ### Sort order in column storage
 
-- 
-### 
-### 
-### 
+- Sort the columns for the most efficient queries
+- Second column is sorted that have the same value in the first column
+- Columns further down the sorting priority appear in random order
+### Writing to column oriented storage
 
+- Write in a data warehouse tend to be bulk imports of data
+- Writing an individual row in the middle of a sorted table is inefficient
+- Bulk write of many rows at once amortizes the cost
+- All write first go to a row-oriented, sorted, in-memory store
+- After enough accumulated writes, they merge with the column-encoded files
+- Queries need to examine both the column data on disk and recent writes in memory
 ## Query Execution: Complication and Vectorization
+
+- Query plan
+	- Complex SQL query
+	- Broken into operators on parallel execution
+- Query complication
+	- Query engine compiles the generated code to machine code and runs on column encoded data
+	- Just in time (JIT) in JVM
+- Vectorized processing
+	- Query is interpreted from a column in a batch
+	- Uses bitwise and bitmaps
+
+- Performance advantages
+	- Sequential memory access over random access
+	- Tight inner loops
+	- Parallelsim
+	- Operating on compressed data without decoding
+
 ## Materialization Views and Data Cubes
+
+- Materialized views
+	- Copy of the query results, on disk
+- Virtual view
+	- Shortcut for writing queries
+	- SQL engine expands it into the view's underlying query, and processes the query
+- Materialized aggregates
+	- `COUNT, SUM, AVG, MIN, MAX`
+- Data cube (OLAP cube)
+	- Creating a grid of aggregated grouped by different dimensions
+	- Facts often have more than 2 dim
+	- Each cell contains the sale for a particular (data, product, store, promotion, custom)
+	- Values are repeatedly summarized along each dimension
+	- Certain queries because fast, since they have been precomputed
+	- Do not have the same flexibility as querying the raw data
+
+
 # Multidimensional and Full-Text Indexes
 
+- Concatenated index
+	- Combines several fields into one key by appending one column to another
+	- Relies on index order
+	- (lastname, firstname)
+- Multi-dimensional indexes
+	- Query several columns at once
+	- Geospatial data
+- R-trees or Bkd-trees
+	- divide up space so that nearby data points tend to be grouped in the same subtree
 ## Full-Text Search
+
+- Full text search
+	- Search a collection of text documents by keywords that might appear anywhere in the text
+	- Information retrieval
+	- Matching words that are similar, but not identical
+- Inverted index
+	- Key-value structure
+	- Key is a term and the value is the list of ID that contain the term
+	- Represented as a spare bitmap
+- Search
+	- Bitwise AND for two terms
+- Elasticsearch
+- Solr
+- Stores mapping from term to postings list in SSTable-like sorted files
+
+- Find all substrings of length n (n-grams)
+	- Build an inverted index, and search documents for arbitrary substrings
+	- Search text for words within a certain edit distance
+	-  Levenshtein automaton
 ## Vector Embeddings
 
+- Semantic search
+	- retrieval augmented generation (RAG)
+	- Use embedding models to translate a text document into a vector of floating point values (vector embeddings)
+
+### 
+### 
+### 
