@@ -359,8 +359,63 @@ born_in(100, 3). /* Lucy was born in Idaho */
 - Change queries in client code without changing server side APIs
 - Need tooling to convert the queries into requests to internal services (REST or GPRC)
 - Challenging for authorization, rate limiting, and performance
+- Does not allowed recursive queries
+- Does not allow arbitrary search conditions
 
-- 
+```graphql
+query ChatApp {
+  channels {
+    name
+    recentMessages(latest: 50) {
+      timestamp
+      content
+      sender {
+        fullName
+        imageUrl
+      }
+      replyTo {
+        content
+        sender {
+          fullName
+        }
+      }
+    }
+  }
+}
+```
 
 # Event Sourcing and CQRS
+
+- Write data in one form and then derive from it representations that are optimized for different types of reads
+	- Event log
+	- Materialized views/projections/read models
+	- Event sourcing
+		- Using source of truth and expressing every state change
+		- Command query responsibility segregation (CQRS)
+- Better communicate the intent of an event
+- Materialized views are derived from the event log in a reproducible way
+- Multiple materialized views that are optimized
+- Build new materialized easily
+- rRite a subsequent deletion event to reverse an error event
+- Audit logs
+- Handle higher write throughput than databases from sequential access
+- Events are immutable
+	- Crypto shredding
+- Reprocessing events requires more work if there are visible side effects
+
+- Message brokers
+	- Store event log
+- Stream processors
+	- Keep materialized views up to date
 # DataFrames, Matrices, and Arrays
+
+- DataFrame
+	- Similar to a table in a relational database
+	- Relational like operators
+	- Manipulated through commands that modify its structure and content
+	- Transform data from a relational-like representation into a matrix or multi-dimensional array
+- One hot encoding
+	- Create a column for each possible categorical value
+- TileDB
+	- Specialize in storing large multi-dimensional arrays of numbers (array databases)
+- Time series data

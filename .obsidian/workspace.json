@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/3) Data Models and Query Languages.md",
+                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/4) Storage and Retrieval.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3) Data Models and Query Languages"
+              "title": "4) Storage and Retrieval"
             }
           }
         ],
@@ -244,6 +244,11 @@
   },
   "active": "b481094d12f8d7f4",
   "lastOpenFiles": [
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/8) Dimensionality Reduction.md.tmp",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/28) Recommendation.md.tmp",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/24) Advanced Analytics and ML Overview.md.tmp",
+    "TODO.md.tmp",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/3) Data Models and Query Languages.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/2) Defining Nonfunctional Requirements.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/1) Intuition of AI.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/3) Intelligent Search.md",
@@ -273,13 +278,8 @@
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/6) Swarm Intelligence - Ants.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/32) Language Specifics.md.tmp",
     "auto_git_push.sh",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/0) Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/2) Search Fundamentals.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/13) Probabilistic Reasoning.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/8) Wakefulness and Sleep.md.tmp",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/13) Advanced RDDs.md.tmp",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/6) Replication.md.tmp",
-    "Fall 2026/BLG655 - Viruses",
     "images/Pasted image 20260914123002.png",
     "images/Pasted image 20260914132054.png",
     "Pasted image 20260914132054.png",
