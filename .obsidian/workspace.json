@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/13) Loading and Preprocessing Data with TensorFlow.md",
+                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/16) Natural Language Processing with RNNs and Attention.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "13) Loading and Preprocessing Data with TensorFlow"
+              "title": "16) Natural Language Processing with RNNs and Attention"
             }
           }
         ],
@@ -243,8 +243,11 @@
   },
   "active": "b481094d12f8d7f4",
   "lastOpenFiles": [
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/12) Custom Models and Training with TensorFlow.md",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/15) Processing Sequences Using RNNs and CNNs.md",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/16) Natural Language Processing with RNNs and Attention.md",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/14) Deep Computer Visual Using Convolutional Neural Networks.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/13) Loading and Preprocessing Data with TensorFlow.md",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/12) Custom Models and Training with TensorFlow.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/11) Training Deep Neural Networks.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/10) Introduction to Artificial Neural Networks with Keras.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 2.md",
@@ -262,9 +265,6 @@
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/19) Training and Deployment TensorFlow Models at Scale.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/18) Reinforcement Learning.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/17) Representation Learning and generative Learning Using Autoencoders and GANs.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/16) Natural Language Processing with RNNs and Attention.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/15) Processing Sequences Using RNNs and CNNs.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/14) Deep Computer Visual Using Convolutional Neural Networks.md",
     "TODO.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/6) Swarm Intelligence - Ants.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/32) Language Specifics.md.tmp",
