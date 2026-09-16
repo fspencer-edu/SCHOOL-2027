@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/17) Representation Learning and generative Learning Using Autoencoders and GANs.md",
+                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/19) Training and Deployment TensorFlow Models at Scale.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "17) Representation Learning and generative Learning Using Autoencoders and GANs"
+              "title": "19) Training and Deployment TensorFlow Models at Scale"
             }
           }
         ],
@@ -243,6 +243,8 @@
   },
   "active": "b481094d12f8d7f4",
   "lastOpenFiles": [
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/18) Reinforcement Learning.md",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/17) Representation Learning and generative Learning Using Autoencoders and GANs.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/16) Natural Language Processing with RNNs and Attention.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/15) Processing Sequences Using RNNs and CNNs.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/14) Deep Computer Visual Using Convolutional Neural Networks.md",
@@ -263,8 +265,6 @@
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/2) End-To-End machine Learning.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/1) The Machine Learning Landscape.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/19) Training and Deployment TensorFlow Models at Scale.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/18) Reinforcement Learning.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/17) Representation Learning and generative Learning Using Autoencoders and GANs.md",
     "TODO.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/6) Swarm Intelligence - Ants.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/32) Language Specifics.md.tmp",
