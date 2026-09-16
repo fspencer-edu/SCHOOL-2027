@@ -276,13 +276,18 @@
 
 - Bitmap encoding
 - Run-length encoded
-	- Involved counting consecutive )s or 1s and storing the counds
+	- Involved counting consecutive 0s or 1s and storing the counts
 - Roaring bitmap
-	- Switch between the two bitmap respresentations
-- Used for queries that are commonin a data warehouse
+	- Switch between the two bitmap representations
+- Used for queries that are common in a data warehouse
 - Used in graph queries
 
-### 
+- Wide column (column family)
+	- A row can have thousand of columns
+
+### Sort order in column storage
+
+- 
 ### 
 ### 
 ### 
