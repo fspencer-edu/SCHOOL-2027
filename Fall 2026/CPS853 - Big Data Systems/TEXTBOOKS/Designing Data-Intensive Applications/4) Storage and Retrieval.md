@@ -73,14 +73,81 @@
 - LSM storage still is slow to read a key that was last updated or DNE
 - Bloom filter
 	- Provides a fast but approximate way of checking whether a particular key appears in a SSTable
-	- Probabilistic check on whether a key exists (hashing, bitmap)
+	- Probabilistic check on whether a key exists (hashing, bitmap, bitwise operation)
 
+### Compaction Strategies
 
+- Size-tiered compaction
+	- Newer and smaller SSTables are successively merged into older and large tables
+	- Performs better on mostly writes and few reads
+- Leveled compaction
+	- Keeps SSTable sizes fixed and groups them into increasing levels
+	- When levels exceed a max size limit, one or more tables are merged
+	- Performs better if workload is mostly reads
+
+- Embedded databases
+	- Do not expose a network API
+	- Mobile apps
+	- Per tenant
 ## B-Trees
 
+- Keep key-value pairs sorted by key
+- Indexes break the database into fixed size blocks or pages and can overwrite a page in place
+- Pages use a page number, like a pointers
+- Leaf pages contain individual pages
+- References to child pages in one page is called the branching factor
+	- Depends on space and range boundaries
+- Tree remains balanced
+	- A B-tree with n keys always has a depth of $O(logn)$
+
+### Making B-trees reliable
+
+- Overwrite does not change the location of the page
+- Overwriting several pages at one, can result in errors
+	- Orphan page
+	- Torn page
+- Write-ahead log (WAL)
+	- Append only file of every B-tree modification before page application
+- Buffer B-tree pages in memory first
+### Using B-tree variants
+
+- LMDB
+	- Copy-on-write schema
+	- Modified page is written to a different location
+	- Pointers are redirected to new parent pages
+	- Concurrency control
+- Save pages by abbreviating the key
+- Lay out leaf pages in sequential order on disk
+- Additional pointers
+	- Sibling pages
 ## Comparing B-Trees and LSM-Trees
+
+- LSM
+	- Better for write-heavy applications
+- B-trees
+	- Faster for reads
+### Read Performance
+
+- LSM
+	- Reads check several SSTables
+	- Bloom filter helps reduce disk operations
+	- Range queries need to scan all segments
+	- High write throughput can cause latency
+	- Backpressure
+		- Suspend all reads and write until memtable has been written to disk
+- B-tree
+	- Lookup involves reading one page at each level
+	- Range queries are fast
+
+### Sequential vs. Random write
+
+- LSM
+	- 
+- B-tree
+### 
+
 ## Multicolumn and Secondary Indexes
-## Storing Values Within INdex
+## Storing Values Within Index
 ## Keeping Everything in Memory
 
 # Data Storage for Analytics
