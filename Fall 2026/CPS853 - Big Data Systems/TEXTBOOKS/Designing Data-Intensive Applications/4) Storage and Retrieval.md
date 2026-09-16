@@ -50,9 +50,30 @@
 		- To read value
 			- Find key in memtable, or most recent on-disk segment
 			- Look at older segments
-	- Run a merging and compaction process in the background to combine segment files and discard overwritten or deleted valeyes
+	- Run a merging and compaction process in the background to combine segment files and discard overwritten or deleted values
 
-- Merging segments work similar
+- Merging segments work similar to mergesort algorithms
+	- Copy the lowest key to the output file from left to right
+	- Keep only the most recent key value
+- Storage engine keeps a separate log on disk to which every write is appended
+	- LSM storage engines
+- Append a tombstone to a data file to delete a record
+
+- Log-Structured Mergetree (LSM-tree)
+	- Google's Bigtable paper
+	- RocksDB
+	- Cassandra
+- Object storage with LSM
+	- SlateDB
+	- Delta Lake
+- Database can delete the unfinished SSTable if crash
+
+### Bloom Filters
+
+- LSM storage still is slow to read a key that was last updated or DNE
+- Bloom filter
+	- Provides a fast but approximate way of checking whether a particular key appears in a SSTable
+	- Probabilistic check on whether a key exists (hashing, bitmap)
 
 
 ## B-Trees
