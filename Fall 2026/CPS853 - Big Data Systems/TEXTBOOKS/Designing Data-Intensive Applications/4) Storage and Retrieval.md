@@ -142,18 +142,151 @@
 ### Sequential vs. Random write
 
 - LSM
-	- 
+	- Sequential writes
+		- Fewer larger writes
 - B-tree
-### 
+	- Random writes
+		- Small, scattered write
 
+- Disks have higher sequential write throughput than random
+- Garbage collection (GC)
+	- Controller must move pages containing valid data into other blocks
+	- Removes the data that is no longer needed
+- Sequential write workloads write larger chucks, and can remove whole blocks without GC
+
+### Write amplification
+
+- LSM
+	- A value is written to the log
+	- Memtable is written to disk
+	- Repeated during compaction
+- B-tree
+	- Write every piece of data at least twice
+		- Write-ahead log
+		- Tree page
+
+- Write amplification
+	- Bytes written to disk in workload divided by number of bytes written by append-only log with no index
+	- Issues in both LSM-trees and B-trees
+	- LSM trees tend to have lower write amp. since they do not have to write entire pages, and can compress chunks of the SSTable
+	- Wear on SSD
+### Disk space usage
+
+- LSM
+	- Blocks of key-value pairs can be better compressed
+	- A deleted record may still exist in the higher levels until the tombstone representing the deletion has been propagated through
+	- Useful for snapshots
+- B-tree
+	- Becomes fragmented over time
+	- Vacuum process to re locate pages
 ## Multicolumn and Secondary Indexes
+
+- Secondary index
+	- Indexed values are not necessarily unique
+	- Make each value in the index a list of matching row identifiers
+	- Make each entry unique by appending a row identifier to it
 ## Storing Values Within Index
+
+- Clustered index
+	- Data stored directly within the index structure
+- Heap file
+	- Stores unordered data by append-only
+- Covering index or index with included columns
+
 ## Keeping Everything in Memory
 
+- Advantages of disks
+	- Durable
+	- Lower cost per GB than RAM
+
+- In-memory databases
+	- Memcached
+	- Writing periodic snapshots to disk or replicating the in memory state to other machines
+	- Faster because they avoid the overheads of encoding in-memory data structures in a form that can be written to disk
+	- Offers difficult data structures
+		- Priority queues and sets
+
+- Advantages of writing to disk
+	- Easily backed up, inspected, and analyzed by external utilities
 # Data Storage for Analytics
 
+- Drill-down, slicing and dicing
+	- Graphical data analysis tools that generate SQL queries, visualize the results
+- Microsoft SQL Server
+	- Support for transaction processing
+- Hybrid transactional and analytical processing (HTAP) are becoming two separate storage and query engines
+
 ## Cloud Data Warehouses
+
+- Data warehouse vendors
+	- Teradata
+	- Vertica
+	- SAP HANA
+- Cloud vendors
+	- Google Could's BigQuery
+	- Amazon Redshift
+	- Snowflake
+		- Scalable cloud infrastructure
+		- More elastic because they decouple query computation from the storage layer
+		- Data is persisted in object storage rather than on local disk
+- Open source data warehouses
+	- Apache Hive
+	- Trino
+	- Apache Spark
+
+- Query engine
+	- Parse SQL queries, optimize them into execution plans, and execute them again the data
+	- Requires parallel, distributed data processing tasks
+- Storage format
+	- Determines how the rows of a table are encoded
+		- Parquet
+		- ORC
+		- Lance
+		- Nimble
+	- Accessed by query engine, or other applications using the data lake
+- Table format
+	- Files written in a format are immutable once written
+	- Define which files make up the table
+	- Table formats are used to support row inserts and deletions
+		- Apache Iceberg
+		- Databricks's Delta
+	- Advanced features
+		- Time travel
+		- GC
+		- Transactions
+- Data catalog
+	- Defines which tables are contains in a database
+	- Create, rename, and drop tables
+	- Run as a standalone service that can be queries using a REST interface
+	- Use when reading and writing tables
+
 ## Column-Oriented Storage
+
+- Dimension tables are usually smaller and more manageable
+- A typical data warehouse query accesses only 4 or 5 fact tables at one time
+- In OLTP databases are stored in row-oriented fashion
+	- Values from one row of a table are stored next to another
+- Column-oriented (columnar) storage
+	- Stores all the values from each column together
+	- Query reads and parses only columns needed
+	- Relies on each column storing the rows in the same order
+	- Break table into blocks
+
+### Column compression
+
+- Bitmap encoding
+- Run-length encoded
+	- Involved counting consecutive )s or 1s and storing the counds
+- Roaring bitmap
+	- Switch between the two bitmap respresentations
+- Used for queries that are commonin a data warehouse
+- Used in graph queries
+
+### 
+### 
+### 
+### 
+
 ## Query Execution: Complication and Vectorization
 ## Materialization Views and Data Cubes
 # Multidimensional and Full-Text Indexes
