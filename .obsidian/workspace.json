@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/1) Intuition of AI.md",
+                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/3) Data Models and Query Languages.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1) Intuition of AI"
+              "title": "3) Data Models and Query Languages"
             }
           }
         ],
@@ -126,7 +126,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -243,8 +244,9 @@
   },
   "active": "b481094d12f8d7f4",
   "lastOpenFiles": [
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/3) Intelligent Search.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/2) Defining Nonfunctional Requirements.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/1) Intuition of AI.md",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/3) Intelligent Search.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/19) Training and Deployment TensorFlow Models at Scale.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/18) Reinforcement Learning.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/17) Representation Learning and generative Learning Using Autoencoders and GANs.md",
@@ -273,7 +275,6 @@
     "auto_git_push.sh",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/0) Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/2) Search Fundamentals.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/0) Grokking Artificial Intelligence Algorithms.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/13) Probabilistic Reasoning.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/8) Wakefulness and Sleep.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/13) Advanced RDDs.md.tmp",
