@@ -18,6 +18,5 @@
 ## Data Parallelism
 ## Training at Scale Using the Distribution Strategies API
 ## Training a model on a TensorFlow Cluster
-## Running Large Training Jobs on Google Cloud 
-## 
-## 
+## Running Large Training Jobs on Google Cloud AI Platform
+## Black Box Hyperparameter Tuning on AI Platform
