@@ -1,8 +1,25 @@
 # From Biological to Artificial Neurons
 
-## 
+## Biological Neurons
+
+## Logical Computations with Neurons
+## The Perceptron
+## The Multilayer Perceptron and Backpropagation
+## Regression MLPs
+## Classification MLPs
 
 # Implementing MLPs with keras
+
+## Installing TensorFlow 2
+## Building an Image Classifier Using the Sequential API
+## Building a Regression MLP Using the Sequential API
+## Building Complex Models Using the Functional API
+## Using the Subclassing API to Build Dynamic Models
+## Saving and Restoring a Model
+## Using Callbacks
+## Using TensorBoard for Visualization
 # Fine Tuning Neural Network Hyperparameters
 
-##
+## Number of Hidden Layers
+## Number of Neurons per Hidden Layer
+## Learning Rate, Batch Size, and Other Hyperparameters
