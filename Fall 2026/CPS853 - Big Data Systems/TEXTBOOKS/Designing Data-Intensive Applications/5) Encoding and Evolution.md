@@ -125,10 +125,6 @@
 
 <img src="/images/Pasted image 20260916175450.png" alt="image" width="500">
 
-- 
-
-
- 
 ## Protocol Buffers
 
 - Protocol buffers (protobuf)
@@ -147,12 +143,28 @@ message Person {
 }
 ```
 
-- Code generation tools
+- Takes a schema definition and produces classes that implement the schema in various programming languages
+- Call generated code to encode or decode records that conform to the schema
+
+![[Pasted image 20260916190148.png]]
+
+- Encoded data contains field tags
+- Fields tags are like aliases for fields
+- Saves more space by packing the field type and tag number into a single byte
+
+### Field tags and schema evolution
+
+- Add new fields to the schema, if you give each field a new tag
+- datatype annotation allows the parser to determine how many bytes it needs to skip while preserving the unknown fields
+
 
 ## Avro
 
-### 
-### 
+### The writer's schema and the reader's schema
+### Schema evolution rules
+### but what is the writer's schema?
+### Dynamically generated schemas
+
 ## The Merits of Schemas
 
 ### 
@@ -165,6 +177,17 @@ message Person {
 ###
 
 ## Dataflow Through Databases
+
+### Different values written ad different times
+### 
 ## Dataflow Through Services: REST and RPC
+
+### 
+### 
 ## Durable Execution and Workflows
+### 
+### 
 ## Event-Driven Architectures
+
+### 
+### 
