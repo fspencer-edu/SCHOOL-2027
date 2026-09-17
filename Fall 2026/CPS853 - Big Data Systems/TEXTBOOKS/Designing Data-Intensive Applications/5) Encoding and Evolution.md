@@ -440,7 +440,57 @@ class PaymentWorkflow:
 
 ## Event-Driven Architectures
 
+- Another way data can flow from one process to another
+- Request is called an event or message
+- Sender does not wait to for recipient to process the event
+- Events are not send via direct network connection, but through an intermediary called a message broker
+- Buffer if the recipient is unavailable or overloaded
+	- Reliability
+- Automatically redeliver messages to a process that has crashed
+- Avoids the needs for service discovery
+- Allows the same message to be sent to several recipients
+- Logically decouples the sender from the recipient
+- Communication is asynchronous
+
 ### Message brokers
+
+- Commercial enterprise software
+	- TIBCO
+	- IBM WebSphere
+	- webMethods
+- Open source implementations
+	- RabbitMQ
+	- ActiveMQ
+	- HornetQ
+	- NATS
+	- Redpanda
+	- Apache Kafka
+- Cloud services
+	- Amazon Kinesis
+	- Azure Service Bus
+	- Google Cloud Pub/Sub
+
+- One process adds a message to a named queue, and a consumer of the queue then receives the message
+- One process publishes a messaged to a named topic, and the broker delivers that message to all subscribers of that topic
+
+- A message broker does not enforce a data model
+- Use Protocol Buffers, Avro, or JSON, and deploy a schema registry alongside the message broker to store and validate schema versions and compatibility
+- AsyncAPI
+	- A messaging based equivalent of OpenAPI
+- Write messages to disk
+- Automatically delete messages after consumed
 ### Distributed actor frameworks
 
+- Actor model
+	- Programming model for concurrency in a single process
+	- Logic is encapsulated in actors
+- Each actor typically represents one client or entity
+- Does not use threads, and acts independently
 
+- Distributed actor frameworks
+	- Akka
+	- Orleans
+	- Erlang/OTP
+	- Used to scale an application across multiple nodes
+	- Better location transparency
+		- Actor model already assumes that messages may be lost
