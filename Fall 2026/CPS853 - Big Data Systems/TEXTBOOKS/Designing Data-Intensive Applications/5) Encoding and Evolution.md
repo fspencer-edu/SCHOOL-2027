@@ -494,3 +494,4 @@ class PaymentWorkflow:
 	- Used to scale an application across multiple nodes
 	- Better location transparency
 		- Actor model already assumes that messages may be lost
+	- Integrates a message broker and the actor programming model into one
