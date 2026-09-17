@@ -35,7 +35,7 @@
 3. A client reads from the database from either the leader or any followers
 	1. Write are accepted only by leader
 
-![[Pasted image 20260917143950.png]]
+<img src="/images/Pasted image 20260917143950.png" alt="image" width="500">
 
 - If the database is sharded, each shard has one leader
 - Built-in feature of may relational databases
@@ -49,7 +49,7 @@
 
 ## Synchronous vs. Asynchronous Replication
 
-![[Screenshot 2026-09-17 at 2.41.18 PM.png]]
+<img src="/images/Screenshot 2026-09-17 at 2.41.18 PM.png" alt="image" width="500">
 
 - Synchronous
 	- Leader waits until follower 1 has confirmed, before reporting success to the user

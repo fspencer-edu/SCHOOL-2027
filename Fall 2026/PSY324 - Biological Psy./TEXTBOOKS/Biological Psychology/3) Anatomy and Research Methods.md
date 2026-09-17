@@ -45,11 +45,15 @@
 - Nucleus basalis
 	- A forebrain structure that lies on the ventral surface; receives input from the hypothalamus and basal ganglia; sends axons to areas in the cerebral cortex
 - Parasympathetic nervous system
-	- 
+	- System of nerves that facilitate vegetative, nonemergency responses by the body's organ
 - Peripheral nervous system (PNS)
+	- Nerves outside the brain and spinal cord
 - Pons
+	- Hindbrain structure that lies anterior and ventral to the medulla
 - Somatic nervous system
+	- Part of the PNS that consists of the axons conveying messages form the sense organs to the CNS and from the CNS to the muscles
 - Spinal cord
+	- Part of the CNS; it communicates with all the sense organs and muscles except those of the head
 - Substantia nigra
 - Superior colliculus
 - Sympathetic nervous system
