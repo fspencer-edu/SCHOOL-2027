@@ -1,5 +1,8 @@
 # Single-Leader Replication
 
+### 
+### 
+
 ## Synchronous vs. Asynchronous Replication
 ## Setting Up New Followers
 ## Handling Node Outages

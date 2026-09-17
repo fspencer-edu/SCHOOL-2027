@@ -156,27 +156,102 @@ message Person {
 
 - Add new fields to the schema, if you give each field a new tag
 - datatype annotation allows the parser to determine how many bytes it needs to skip while preserving the unknown fields
-
+- Changing the datatype of a field is possible by risks truncated values
 
 ## Avro
 
+- Apache Avro
+	- Binary encoding format
+	- Two schema language
+		- Avro IDL
+			- Human editing
+		- Based on JSON
+			- Machine readable
+
+```avro
+record Person {
+    string               userName;
+    union { null, long } favoriteNumber = null;
+    array<string>        interests;
+}
+```
+
+```json
+{
+    "type": "record",
+    "name": "Person",
+    "fields": [
+        {"name": "userName",       "type": "string"},
+        {"name": "favoriteNumber", "type": ["null", "long"], "default": null},
+        {"name": "interests",      "type": {"type": "array", "items": "string"}}
+    ]
+}
+```
+
+- Use schema to determine the datatype of each field
+- Binary data can be decoded only with the exact same schema
+
+![[Pasted image 20260917120827.png]]
+
 ### The writer's schema and the reader's schema
+
+- Writer's schema
+	- Schema that is compiled into the application
+- Two schemas
+	- Writer's schema
+	- Reader's schema
+- Resolves the differences by comparing the two and translating the data from writer's to reader's schema
+
+![[Pasted image 20260917121027.png]]
+
+- Ignores fields that appear in the writer's schema but not reader's schema
+- If a writer's schema is missing, it is fields in the a default value
+
+![[Pasted image 20260917121141.png]]
 ### Schema evolution rules
-### but what is the writer's schema?
+
+- Writer can use older and newer version
+- Change the datatype of the field
+- Change the name of the field through aliases
+### But what is the writer's schema?
+
+- Large files with lots of records
+	- Store files encoded with the same schema
+	- Includes just one schema at the beginning of the file
+- Database with individually written records
+	- Include a version number at the beginning of every encoded record
+- Sending records over a network connection
+	- RPC protocol
+	- Negotiate the schema version on connection setup
 ### Dynamically generated schemas
 
+- Schema does not contain tag numbers
+- Dynamically generated schemas
+	- Generate record schema for each database table, and each column becomes a field in that record
+	- Generate a new Avro schema from the updated database schema and export data int he new schema
 ## The Merits of Schemas
 
-### 
-### 
+- Protocol Buffers and Avro are based on ANS.1
+	- Define network protocols, and its binary encodings (DER)
+	- SSL certificates (X.509)
+	- Evolution of tag numbers
+- Data systems implement proprietary binary encodings for their data
+	- ODBC
+	- JCBD
+- Binary formats
+	- More compact
+	- Schema is a valuable form of documentation
+	- Check forward and backward compatibility
+	- Able to generate code from schema
+	- Type checking at compile time
 
 # Modes of Dataflow
 
+## Dataflow Through Databases
 
+- 
 ### 
 ###
-
-## Dataflow Through Databases
 
 ### Different values written ad different times
 ### 
