@@ -1,9 +1,5 @@
-# What is AI?
-# A brief history of AI
-# Problem types and problem-solving paradigms
-# Intuition of AI concepts
-# Users for AI algorithms
-# Summary of Intuition of AI intelligence
-# 
-# 
-# 
+# What is reinforcement learning?
+# Problems applicable to reinforcement learning
+# The life cycle of reinforcement learning
+# Deep learning approaches to reinforcement learning
+# Use cases for reinforcement learning

@@ -191,7 +191,7 @@ record Person {
 - Use schema to determine the datatype of each field
 - Binary data can be decoded only with the exact same schema
 
-![[Pasted image 20260917120827.png]]
+<img src="/images/Pasted image 20260917120827.png" alt="image" width="500">
 
 ### The writer's schema and the reader's schema
 
@@ -202,12 +202,12 @@ record Person {
 	- Reader's schema
 - Resolves the differences by comparing the two and translating the data from writer's to reader's schema
 
-![[Pasted image 20260917121027.png]]
+<img src="/images/Pasted image 20260917121027.png" alt="image" width="500">
 
 - Ignores fields that appear in the writer's schema but not reader's schema
 - If a writer's schema is missing, it is fields in the a default value
 
-![[Pasted image 20260917121141.png]]
+<img src="/images/Pasted image 20260917121141.png" alt="image" width="500">
 ### Schema evolution rules
 
 - Writer can use older and newer version
