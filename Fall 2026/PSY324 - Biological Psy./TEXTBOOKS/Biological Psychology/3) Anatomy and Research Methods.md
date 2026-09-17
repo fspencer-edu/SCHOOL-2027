@@ -55,14 +55,23 @@
 - Spinal cord
 	- Part of the CNS; it communicates with all the sense organs and muscles except those of the head
 - Substantia nigra
+	- A midbrain structure that gives rise to a pathway releasing dopamine
 - Superior colliculus
+	- Swelling on either side of the tectum; important to visual processing
 - Sympathetic nervous system
+	- A network of nerves that prepare the organs for vigorous activity
 - Tectum
+	- Roof of the midbrain
 - Tegmentum
+	- Intermediate level of the midbrain
 - Thalamus
+	- A pair of structures in the center of the forebrain
 - Ventral
+	- Toward the stomach
 - Ventricles
+	- Four fluid-filled cavities within the brain
 - White matter
+	- Area of the nervous system consisting of myelinated axons
 
 ## Terminology to Describe the Nervous System
 ## The Spinal Cord
@@ -73,6 +82,39 @@
 ## The Ventricles
 # The Cerebral Cortex
 
+- Anterior commissure
+	- Bundle of axons that connects the two hemispheres of the cerebral cortex
+- Binding problem
+	- Questions of how various brain areas produces a perception of a single object
+- Central sulcus
+	- One of the deepest grooves in the surface of the cerebral cortex
+- Cerebral cortex
+	- Layers of cells on the outer surface of the cerebral hemisphere of the forebrain
+- Columns
+	- Collection of cells perpendicular to the surface of the cortex and to its laminae
+- Corpus callosum
+	- Bundle of axons that connects the two hemispheres of the cerebral cortex
+- Frontal lobe
+	- Section of cerebral cortex that extends from the central sulcus to the anterior limit of the brain
+- Laminae
+	- Layers of cell bodies that are parallel to the surface of the cerebral cortex and separated from each other by layers of fibers
+- Occipital lobe
+	- Posterior section of the cerebral cortex
+- Parietal lobe
+	- Section of the cerebral cortex between the occipital lobe and the central sulcus
+- Postcentral gyrus
+	- Area just posterior to the central gyrus; primary receptor site for touch and other body sensations
+- Precentral gyrus
+	- The posterior portion of the frontal lobe of the cortex; specialized for control of movement
+- Prefrontal cortex
+	- Anterior portion of the frontal lobe, which responds mostly to the sensory stimuli that signal the need for a movement
+- Prefrontal lobotomy
+	- Surgical disconnection of the prefrontal cortex from the rest of the brain
+- Primates
+	- Order of mammals that includes monkeys, apes, and humans
+- Temporal lobe
+	- The lateral portion of each hemisphere, near the temples
+
 ## Organization of the Cerebral Cortex
 ## The Occipital Lobe
 ## The Parietal Lobe
@@ -80,6 +122,23 @@
 ## The Frontal Lobe
 ## How Do the Parts Work Together?
 # Research Methods
+
+- Ablation
+	- Removal of a brain area, generally with a surgical knife
+- Electroencephalograph (EEG)
+	- A device that records electrical activity of the brain through electrodes attached to the scalp
+- Functional magnetic resonance imaging (fMRI)
+	- A modified version of MRI that measures energies based on hemoglobin instead of water; determines the brain areas receiving the greatest supply of blood and using the most oxygen
+- Lesion
+	- Damage to a structure
+- Magnetic resonance imaging (MRI)
+	- Methods of imaging of livig 
+- Magnetoencephalograh (MEC)
+- Optogenetics
+- Phrenology
+- Positron-emission tomography (PET)
+- Stereotaxis instrument
+- Transcranial magnetic stimulation (TMS)
 
 ## Effects of Brain Damage
 ## Effects of Brain Stimulation
