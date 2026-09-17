@@ -146,7 +146,7 @@ message Person {
 - Takes a schema definition and produces classes that implement the schema in various programming languages
 - Call generated code to encode or decode records that conform to the schema
 
-![[Pasted image 20260916190148.png]]
+<img src="/images/Pasted image 20260916190148.png" alt="image" width="500">
 
 - Encoded data contains field tags
 - Fields tags are like aliases for fields
