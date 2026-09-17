@@ -119,11 +119,23 @@
 	- Appointed by previously established controller node
 - Reconfiguring the system to use the new leader
 
-- 
+- Asynchronous
+	- New leader may not have all writes before fail
+- Discarding writs is dangerous if other storage systems outside of the database need to be coordinated with the database contents
+	- GitHub
+	- Auto-incrementing counter
+- Split brain
+	- Two nodes believe that they are the leader
+	- No process for resolving conflicts, and data can be lost or corrupted
+	- Fencing
+		- Limiting or shutting down old leaders
+	- Timeout
 
 ## Implementation of Replication Logs
 
 ### Statement based replication
+
+- 
 ### Write-ahead log shipping
 ### Logical (row-based) log replication
 
