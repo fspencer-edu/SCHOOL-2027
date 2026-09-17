@@ -249,20 +249,121 @@ record Person {
 
 ## Dataflow Through Databases
 
-- 
-### 
-###
-
 ### Different values written ad different times
-### 
+
+- Data outlives code
+	- Old data will remain on systems with new version
+- Migrating data to new schema
+- Perform migration asynchronously  and on a best-effort basis
+### Archival storage
+
+- Data dump will be encoded with the latest schema
 ## Dataflow Through Services: REST and RPC
 
-### 
-### 
+- Communicate over a network
+	- Clients
+	- Servers
+- The servers expose an API and the clients can connect to the server to make requests to that API
+- API exposed by server is called a service
+- API consists of a standardized set of protocols
+	- HTTP
+	- URL
+	- SSL/TLS
+	- HTML
+- Services expose an application-specific API
+- Restriction provides a degrees of encapsulation
+- Service-oriented/microservices
+	- Make and maintain services independently deployable and evolvable
+
+### Web services
+
+- A web service is a server that uses HTTP
+- REST
+	- Emphasizes simple data formats
+	- URL for identifying resources for cache control, authentication, and content type negotiation
+- OpenAPI service definitions are written in JSON or YAML
+
+```yaml
+openapi: 3.0.0
+info:
+  title: Ping, Pong
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+paths:
+  /ping:
+    get:
+      summary: Given a ping, returns a pong message
+      responses:
+        '200':
+          description: A pong
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Pong!
+```
+
+- Service framework
+	- Spint Boot
+	- FastAPI
+	- gRPB
+- Code that implements their services
+	- Routing
+	- Metrics
+	- Caching
+	- Authentication
+
+```python
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI(title="Ping, Pong", version="1.0.0")
+
+class PongResponse(BaseModel):
+    message: str = "Pong!"
+
+@app.get("/ping", response_model=PongResponse,
+         summary="Given a ping, returns a pong message")
+async def ping():
+    return PongResponse()
+```
+
+- Frameworks couple service definitions and server code
+	- FastAPI
+		- Servers are written in code
+	- gRPC
+		- Service definition written and server code scaffolding is generated
+
+### The problem with remote procedure call
+
+- Enterprise JaveBeans (EJB)
+- Java's Remote Method Invocation (RMI)
+- Distributed Component Object Model (DCOM)
+	- Limited to Microsoft platforms
+- Common Object Request Broker Architecture (CORBA)
+- SOAP
+- Remote procedure calls (RPC)
+	- Make a request to a remote network service that is calling a function or method
+	- Location transparency
+- Local function call is predictable
+- Network request is unpredictable
+- Local function can either return a result, throw an exception, never return, or timeout
+- Idempotency
+- Network requests are slowed than a function call
+- All references in local function need to be encoded
+- RPC framework may need to be translated from programming languages from client to server use
+
+### Load balancers, service discovery, and service meshes
+### Data encoding and evolution for RPC
 ## Durable Execution and Workflows
-### 
-### 
+
 ## Event-Driven Architectures
 
-### 
-### 
+### Message brokers
+### Distributed actor frameworks
+
+
