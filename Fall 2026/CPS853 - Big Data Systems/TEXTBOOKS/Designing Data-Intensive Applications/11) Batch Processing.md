@@ -1,6 +1,8 @@
 # Batch Processing with Unix Tools
 
 ## Simple Log Analysis
+
+
 ## Chain of Commands vs. Custom Program
 ## Sorting vs. In-Memory Aggregation
 
@@ -8,7 +10,12 @@
 
 ## Distributed Filesystems
 ## Object Stores
-## Distributed JobOrchestration
+## Distributed Job Orchestration
+
+### Resource allocation
+### Scheduling workflows
+### Handling faults
+
 # Batch Processing Models
 
 ## MapReduce

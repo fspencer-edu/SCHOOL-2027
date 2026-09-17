@@ -60,13 +60,28 @@
 ## Serializable Snapshot Isolation
 
 ### Pessimistic vs. optimistic concurrency control
-### 
-### 
-### 
+### Decisions based on an outdated premise
+### Detection of stale MVCC reads
+### Detection of writes that affect prior reads
+### Performance of serializable snapshot isolation
+
 # Distributed Transactions
 
 ## Two-Phase Commit
+
+### A system of promises
+### Coordinator failure
+### Three-phase commit
 ## Distributed Transactions Across Different Systems
 
+### Exactly-once message processing
+### XA transactions
+### Holding locks while in doubt
+
+### Recovering from coordinator failure
+### Problems with XA transactions
+
 ## Database-Internal Distributed Transactions
+
+
 ## Exactly-Once Message Processing Revisited

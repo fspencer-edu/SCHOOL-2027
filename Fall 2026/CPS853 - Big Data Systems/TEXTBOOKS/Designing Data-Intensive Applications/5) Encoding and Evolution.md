@@ -358,8 +358,85 @@ async def ping():
 - RPC framework may need to be translated from programming languages from client to server use
 
 ### Load balancers, service discovery, and service meshes
+
+- Client must know the address of the service it's connecting to
+	- Service discovery
+	- Connect to the IP address and port
+- Multiple instances of a service can be running on numerous machines
+	- Load balancing
+
+- Hardware load balancers
+	- Allow clients to connect to a single host and port which are rerouted to one of the servers running the service
+	- Detect network failures and shift traffic
+- Software load balancers
+	- NGINX
+	- HAProxy
+	- Applications that can be installed on a standard machine
+- The Domain Name Service (DNS)
+	- How domain names are resolved on the internet
+	- Allows multiple IP addresses to be associated with a single domain name
+- Service discovery systems
+	- Apache ZooKeeper
+	- Uses a centralized registry instead of a DNS
+	- Registers itself with the service discovery system with relevant metadata, and datacenter location
+- Service meshes
+	- Deploys as an in-process client library or sidecar on both client and server
+
+- Kubernetes
+	- Dynamic service environment orchestrator
+
 ### Data encoding and evolution for RPC
+
+- All servers will be updated first and then clients
+- Backward compatibility only on requests, and forward compatibility on responses
+- RPC
+	- Used for communication across organizational boundaries
+	- No control over client versions
+- RESTful APIs versioning
+	- Use version number in the URL or HTTP header
 ## Durable Execution and Workflows
+
+- A sequence of tasks is a workflow
+	- Written in a general purpose programming language (DSL) or markup language as Business Process Execution Language (BPEL)
+- Workflows are executed by a workflow engine
+	- Determine when and which machine is running a task
+	- Composed of orchestrator and an executor
+		- Orchestrator
+			- Scheduling tasks
+		- Executor
+			- Executing tasks
+
+- Workflow engines that can integrate with data systems and ETL tasks
+	- Airflow
+	- Dagster
+	- Prefect
+- Graphical notation for workflows
+	- Camunda
+	- Orks
+- Durable execution
+	- Temporal
+	- Provide exactly once semantics
+	- Framework will re-execute the task, but skip RPC calls or state changes that the task made successfully before failing
+
+```temporal
+@workflow.defn
+class PaymentWorkflow:
+    @workflow.run
+    async def run(self, payment: PaymentRequest) -> PaymentResult:
+        is_fraud = await workflow.execute_activity(
+            check_fraud,
+            payment,
+            start_to_close_timeout=timedelta(seconds=15),
+        )
+        if is_fraud:
+            return PaymentResultFraudulent
+        credit_card_response = await workflow.execute_activity(
+            debit_credit_card,
+            payment,
+            start_to_close_timeout=timedelta(seconds=15),
+        )
+        # ...
+```
 
 ## Event-Driven Architectures
 
