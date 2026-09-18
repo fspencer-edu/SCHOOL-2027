@@ -204,18 +204,71 @@
 - Logical timestamp or system clock
 	- Use time to track most recent writes
 - Distributed replicas must be routed to the region that contains the leader
-
+- Cross device read-after-write consistency
+	- Centralized metadata
+	- Route requests from all of a user's devices to the same region
+- Availability zone
+	- Cloud is made up of multiple zones
+- Zones
+	- Separate datacenter located in separate physical facility with its own power and cooling
+	- Connection by high speed network connection
+	- Survive zonal outages
 
 ### Monotonic reads
+
+- Moving backward in time
+- Monotonic reads
+	- Provides a guarantee that old state is not written
+	- Only one user makes several reads in sequence, not go backward
+- Each user always makes their reads from the same replica
+
+![[Screenshot 2026-09-18 at 11.28.04 AM.png]]
+
 ### Consistent prefix reads
+
+- Violation of causality
+- Consistent prefix reads
+	- If a sequence of write happened in a certain order, readers will see them in the same order
+	- Issues in sharded databases
+		- Different shards operate independently, no global ordering of writes
+		- Writes that are causally related are written in the same shard
 
 ## Solution for Replication Lag
 
-
+- Programming model
+	- Linearizability
+	- ACID transaction
+	- Fault tolerance
+	- High availability
+	- Scalability
 
 # Multi-Leader Replication
 
+- Single leader replication
+	- All write go through one leader
+- Multi-leader (active/active or bidirectional)
+	- Each node that processes a write must forward that data change to all other nodes
+	- Asynchronous
+	- Multi-region
 ## Geographically Distributed Operation
+
+- Geographically distributed, geo distributed, geo replicated
+![[Screenshot 2026-09-18 at 11.34.04 AM.png]]
+
+- Leader in each region
+	- Regular leader-follower replication is used
+	- Each region's leader replicates its change to the leaders in other regions
+- Performance
+	- Single leader
+		- Every write goes over the internet
+	- Multi leader
+		- Write can be processed in the local region, and asynchronously replicated to the other regions
+- Tolerance of regional outages
+	- Each region can continue operation independently of the others
+- Tolerance of network problems
+	- Traffic between regions can be less reliable than traffic between zones in the same region
+	- Can tolerate network problems
+- Consistency
 
 ### Multi-leader replication topologies
 ### Problems with different topologies
