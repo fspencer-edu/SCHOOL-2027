@@ -196,7 +196,7 @@
 - View is read from a follower
 - If user views the data shortly after making a write, the data may not have reached the replica
 
-![[Pasted image 20260918095428.png]]
+<img src="/images/Pasted image 20260918095428.png" alt="image" width="500">
 
 - Read-after write consistency (read-you writes consistency)
 - Read the user's own info from the leader, and other users' from a follower
@@ -222,7 +222,7 @@
 	- Only one user makes several reads in sequence, not go backward
 - Each user always makes their reads from the same replica
 
-![[Screenshot 2026-09-18 at 11.28.04 AM.png]]
+<img src="/images/Screenshot 2026-09-18 at 11.28.04 AM.png" alt="image" width="500">
 
 ### Consistent prefix reads
 
@@ -253,7 +253,7 @@
 ## Geographically Distributed Operation
 
 - Geographically distributed, geo distributed, geo replicated
-![[Screenshot 2026-09-18 at 11.34.04 AM.png]]
+<img src="/images/Screenshot 2026-09-18 at 11.34.04 AM.png" alt="image" width="500">
 
 - Leader in each region
 	- Regular leader-follower replication is used
@@ -269,8 +269,20 @@
 	- Traffic between regions can be less reliable than traffic between zones in the same region
 	- Can tolerate network problems
 - Consistency
+	- Single leader
+		- Strong consistency
+		- Serializable transactions
+	- Multi-leader
+		- Weaker consistency
+
+- Challenges with multi-leader replications
+	- Auto-incrementing keys
+	- Triggers
+	- Integrity constraints
 
 ### Multi-leader replication topologies
+
+- Replica
 ### Problems with different topologies
 ## Sync Engines and Local-First Software
 ### Real-time collaboration, offline-first, and local-first apps
