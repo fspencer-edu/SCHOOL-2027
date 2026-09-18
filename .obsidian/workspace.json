@@ -133,8 +133,7 @@
               "title": "Biological Psychology - Course Outline"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,7 +195,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -311,11 +311,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "eae7a8ee4b24c4fe",
+  "active": "faa8af27e37d2082",
   "lastOpenFiles": [
+    "Fall 2026/PSY324 - Biological Psy./Biological Psychology - Course Outline.md",
     "Screenshot 2026-09-18 at 7.18.41 AM.png",
     "Fall 2026/BLG655 - Viruses/Viruses - Course Outline.md",
-    "Fall 2026/PSY324 - Biological Psy./Biological Psychology - Course Outline.md",
     "Screenshot 2026-09-18 at 7.21.09 AM.png",
     "Fall 2026/CPS721 - AI/AI - Course Outline.md",
     "Screenshot 2026-09-18 at 7.15.57 AM.png",
@@ -358,7 +358,6 @@
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/8) ML.md",
     "images/Pasted image 20260917121027.png",
     "images/Pasted image 20260917121141.png",
-    "images/Pasted image 20260917120827.png",
     "Untitled.canvas"
   ]
 }
