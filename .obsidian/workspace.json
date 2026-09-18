@@ -139,7 +139,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI - quiz 1.md",
+                "file": "Fall 2026/CPS721 - AI/Quizes/AI - quiz 1.md",
                 "mode": "source",
                 "source": false
               },
@@ -328,7 +328,8 @@
   },
   "active": "48e25b43bf02d93b",
   "lastOpenFiles": [
-    "AI - quiz 1.md",
+    "Fall 2026/CPS721 - AI/Quizes",
+    "Fall 2026/CPS721 - AI/Quizes/AI - quiz 1.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/6) Replication.md",
     "Screenshot 2026-09-18 at 11.39.12 AM.png",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Computational Intelligence - A Logical Approach/0) Computational Intelligence - A Logical Approach.md.tmp",
@@ -373,7 +374,6 @@
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/PyTorch Docs",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/10) Reinforcement Learning with Q-Learning.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/9) Artificial Neural Netorks.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/8) ML.md",
     "Untitled.canvas"
   ]
 }

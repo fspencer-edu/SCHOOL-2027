@@ -1,3 +1,6 @@
+Atoms = uppercase
+Variables = uppercase
+
 1) Peter is a child of fred
 2) Peter is a child of ann
 3) Susan is a child of ann
@@ -53,7 +56,34 @@ a) fail
 b) fail
 fail
 
+**Q4 - "P is a mother of peter"**
+a) fail
+b) match on 13 with Y = P, and X = peter
+c) establish "peter is a child of P" and "P is female"
+	"peter is a child of P"
+	a) success on 1 with P = fred
+	"fred is female"
+	a) fail
+	b) fail
+	"peter is a child of P"
+	a) success on 2 with P = ann
+	"ann is female"
+	a) success on 10
+succeeds on P = ann
 
+**Q5 - "G is grandmother of peter"**
+a) fail
+b) match on 14 with X = G and Z = peter
+c) establish G is a mother of Y and Y is a parent of peter
+	"G is a mother of Y"
+	a) fail
+	b) match on 13 with Y = G and X = Y
+	c) establish Y is a child of G and G is female
+		"Y is a child of G"
+
+
+Q6 - ""
+Q7 - ""
 
 
 
