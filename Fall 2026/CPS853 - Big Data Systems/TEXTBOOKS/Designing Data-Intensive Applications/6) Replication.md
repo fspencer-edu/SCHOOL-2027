@@ -282,7 +282,18 @@
 
 ### Multi-leader replication topologies
 
-- Replica
+- Replication topology
+	- Describes the communication paths along which writes are propagated from one node to another
+
+![[Screenshot 2026-09-18 at 11.39.12 AM.png]]
+
+
+- Circular
+- Star
+- All-to-all
+	- Every leader sends its write to every other leader
+- 
+
 ### Problems with different topologies
 ## Sync Engines and Local-First Software
 ### Real-time collaboration, offline-first, and local-first apps
