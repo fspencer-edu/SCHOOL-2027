@@ -135,13 +135,77 @@
 
 ### Statement based replication
 
-- 
-### Write-ahead log shipping
+- Leader logs every write request (statement)
+- Any statement that calls a non deterministic function generates a different value on each replica
+- Auto-incrementing columns must be executed in the same order
+- Statements that have side effects
+	- Triggers
+	- Stored procedures
+	- User-defined functions
+
+- State machine replication
+	- Replace non deterministic functions with a fixed return value
+- MySQL uses row based replication for non determinism in a statement
+
+### Write-ahead log (WAL) shipping
+
+- Used in B-tree storage engines
+- Used to restore indexes and heap to a consistent state on fail
+- Used to build a replica on another node
+- Sends log to the followers
+	- PostgreSQL
+	- Oracle
+- Log describes the data at a low level
+	- Changed bytes in the disk blocks
+- Replication is tightly coupled to the storage engine
 ### Logical (row-based) log replication
+
+- Replication log decoupled from the storage engine internals
+- Logical log
+	- A sequence of records describing writes to database tables at the granularity of a row
+- Insert row
+	- Log contains new values
+- Deleted row
+	- Log contains information to identify the row was deleted
+	- Primary key, or old values
+- Updated row
+	- Log contains info to identify the updated row, and new values
+- MySQL (binlog)
+	- Separate logical replication log
+- Easily kept backward compatible
+- Change data capture
+	- Send the contents of a database to an external system
+		- Data warehouse
+		- Specialized systems
 
 ## Problem with Replication Lag
 
+- Online services
+	- Mostly reads, with a small percentage of writes
+- Create many followers, and distribute the read requests across those followers
+- Removes load from the leader
+- Read scaling architecture
+	- Increase capacity for serving read-only requests by adding more followers
+	- Asynchronous replication
+		- May see outdated information
+	- Eventual consistency
+
 ### Reading your own writes
+
+- Submit data, then view the data
+- View is read from a follower
+- If user views the data shortly after making a write, the data may not have reached the replica
+
+![[Pasted image 20260918095428.png]]
+
+- Read-after write consistency (read-you writes consistency)
+- Read the user's own info from the leader, and other users' from a follower
+- Monitor the replication lag on followers and prevent queries on any follower that is more than one minute
+- Logical timestamp or system clock
+	- Use time to track most recent writes
+- Distributed replicas must be routed to the region that contains the leader
+
+
 ### Monotonic reads
 ### Consistent prefix reads
 
