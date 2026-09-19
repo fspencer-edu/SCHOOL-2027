@@ -285,7 +285,7 @@
 - Replication topology
 	- Describes the communication paths along which writes are propagated from one node to another
 
-![[Screenshot 2026-09-18 at 11.39.12 AM.png]]
+<img src="/images/Screenshot 2026-09-18 at 11.39.12 AM.png" alt="image" width="500">
 
 
 - Circular
