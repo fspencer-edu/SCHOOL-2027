@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS721 - AI/Quizes/AI - quiz 1.md",
+                "file": "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 1 - Finding Virus Outbreak.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI - quiz 1"
+              "title": "Participation Activity 1 - Finding Virus Outbreak"
             }
           }
         ],
@@ -328,12 +328,14 @@
   },
   "active": "48e25b43bf02d93b",
   "lastOpenFiles": [
+    "Fall 2026/CPS721 - AI/Quizes/AI - quiz 1.md",
+    "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 1 - Finding Virus Outbreak.md",
+    "Fall 2026/BLG655 - Viruses/Activity",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/0) Biological Psychology.md.tmp",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/22) Reinforcement Learning.md.tmp",
     "images/Screenshot 2026-09-18 at 11.39.12 AM.png",
     "Fall 2026/CPS721 - AI/Quizes",
-    "Fall 2026/CPS721 - AI/Quizes/AI - quiz 1.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/6) Replication.md",
     "Screenshot 2026-09-18 at 11.39.12 AM.png",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Computational Intelligence - A Logical Approach/0) Computational Intelligence - A Logical Approach.md.tmp",
@@ -366,9 +368,7 @@
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka Docs/0) Kafka Docs.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kubernetes Docs",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark Docs/0) Spark Docs.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka Docs",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop Docs/0) Hadoop Docs.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark Docs",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/TensorFlow Docs/0) TensorFlow Docs.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/PyTorch Docs/0) PyTorch Docs.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Scikit-Learn Docs/0).md",
