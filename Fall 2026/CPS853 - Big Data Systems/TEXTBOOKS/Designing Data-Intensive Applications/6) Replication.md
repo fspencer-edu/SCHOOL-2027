@@ -397,18 +397,106 @@
 
 ![[Pasted image 20260919141020.png]]
 
-- When a client 
-
+- Read requests are sent to several nodes in parallel
+	- Mitigates state data
+	- Every value that is written needs to be tagged with a version number of timestamp
 ### Catching up on missed writes
+
+- Read repair
+	- Detects stale responses from nodes in parallel
+- Hinted handoff
+	- Another replicate may store writes on a unavailable nodes behalf in the form of hints
+	- Replica sends hints to the recovering replica
+	- Handoff process
+- Anti entropy
+	- Background process periodically looks for differences in the data
+	- Does not copy writes in order
 ### Using quorums for reading and writing
+
+- If there are n replicas, every write must be confirmed by w nodes to be considered successful, and must query at least r nodes for each read
+$w =$ confirmed nodes (write)
+$r =$ queried nodes for read
+$n =$ replicas
+- $w + r > n$
+- Reads and writes that obey these r and w values are called quorum reads and writes
+- Minimum number of votes required for read and writes to be valid
+- Allows the system to tolerate unavailable nodes
+	- $w < n$
+		- Still process writes if a node is unavailable
+	- $r < n$
+		- Still process reads if a node is unavailable
+	- $n = 3, r = 2$
+		- tolerate one unavailable node
+	- $n = 5,w = 3, r = 3$
+		- Tolerate two unavailable nodes
+
+![[Pasted image 20260919142054.png]]
+
+- Normally, reads and writes are always sent to all n replicas in parallel
+- If fewer than the required w or r nodes are available, writes or reads return an error
+
 ### Understanding and limitations of quorum consistency
+
+- Every read returns the most recent value written for a key
+- Set of nodes that are read and written from overlap
+- $w + r \leq n$
+	- Reads and writes will still be sent to n nodes, but a smaller number of successful responses is required for the operations to succeed
+- Smaller w and r
+	- More likely to read stale values
+	- Read will not include the node with the latest value
+	- Lower latency
+	- Synchronous (blocking) replication
 ### Monitoring staleness
 
-
+- Leader-based replication
+	- Exposes metrics for replication log
+	- Each node has a position in the replication log
+	- Subtracting follower's current position from the leader's current position
+- Leaderless replication
+	- Number of hints that a replica stores for handoff
 ## Single-Leader vs. Leaderless Replication Performance
+
+- Leader-based replicated systems
+	- Read throughput is limited by the leader's capacity to handle requests
+	- Wait for a failed leader
+	- Sensitive to performance problems on the leader
+- Leaderless architecture
+	- Request hedging
+		- Client uses the fastest responses
+	- Gray failures
+		- Node is not down, but is running in a degraded state that is slow to handle requests
+		- Node is overloaded
+	- Replicas need to detect when other nodes are unavailable
+	- Larger size of quorum and more responses to wait with more replicas
+	- Network interruption can make it impossible to form a quorum
+	- Sloppy quorom
+		- Any reachable replica can accept writes
 ## Multi-Region Operation
+
+- Coordinator node
+	- Client sends write to the node in its region
+	- Forwards the write to all replicas in its own region and to one replica in every other region
+	- Avoids cross-region request multiple times
+	- Choose consistency levels
 ## Detecting Concurrent Writes
 
+- Leaderless databases allow concurrent write to the same key, resulting in conflict
+	- Detecting during
+		- Read repair
+		- Hinted handoff
+		- Anti-entropy
+- Replicas should converge toward the same value
+- LWW
+	- Each write is tagged with a timestamp
+
 ### The happens-before relation and concurrency
+
+- Non concurrent nodes
+	- B is causally dependent on A
+- Concurrent nodes
+	- Each client starts the operation
+	- No causal dependency between the operations
+	- Neither operation happens before the other
+
 ### Capturing the happens-before relationship
 
