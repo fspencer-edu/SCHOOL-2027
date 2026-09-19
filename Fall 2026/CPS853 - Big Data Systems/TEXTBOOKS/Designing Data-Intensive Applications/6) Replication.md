@@ -395,7 +395,9 @@
 
 ## Writing to the Database When a Node Is Down
 
-- 
+![[Pasted image 20260919141020.png]]
+
+- When a client 
 
 ### Catching up on missed writes
 ### Using quorums for reading and writing
