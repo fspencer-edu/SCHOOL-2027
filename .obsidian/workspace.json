@@ -132,23 +132,8 @@
               "icon": "lucide-file",
               "title": "Biological Psychology - Course Outline"
             }
-          },
-          {
-            "id": "48e25b43bf02d93b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 1 - Finding Virus Outbreak.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Participation Activity 1 - Finding Virus Outbreak"
-            }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -326,13 +311,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "48e25b43bf02d93b",
+  "active": "faa8af27e37d2082",
   "lastOpenFiles": [
+    "Fall 2026/PSY324 - Biological Psy./Biological Psychology - Course Outline.md",
+    "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 1 - Finding Virus Outbreak.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/TensorFlow Docs/0) TensorFlow Docs.md.tmp",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/6) Decision Trees.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/27) Regression.md.tmp",
     "Fall 2026/CPS721 - AI/Quizes/AI - quiz 1.md",
-    "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 1 - Finding Virus Outbreak.md",
     "Fall 2026/BLG655 - Viruses/Activity",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/0) Biological Psychology.md.tmp",
@@ -350,14 +336,12 @@
     "images/Screenshot 2026-09-18 at 11.28.04 AM.png",
     "images/Screenshot 2026-09-18 at 7.21.09 AM.png",
     "Screenshot 2026-09-18 at 11.34.04 AM.png",
-    "Fall 2026/PSY324 - Biological Psy./Biological Psychology - Course Outline.md",
     "Fall 2026/BLG655 - Viruses/Viruses - Course Outline.md",
     "Fall 2026/CPS721 - AI/AI - Course Outline.md",
     "Fall 2026/CPS803 - Machine Learning/Machine Learning - Course Outline.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/14) Doing the Right Thing.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/4) Genetics, Development, and Plasticity.md",
     "Private/Organizational Certificates.md.tmp",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka Docs/0) Kafka Docs.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/3) Anatomy and Research Methods.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/2) Synapses.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/1) The Cellular Foundations of Behaviour.md",

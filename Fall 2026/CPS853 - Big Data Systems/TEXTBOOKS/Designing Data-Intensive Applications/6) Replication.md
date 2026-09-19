@@ -289,22 +289,92 @@
 
 
 - Circular
+	- Each node receives writes from one node and forwards those writes to one other node
+	- Each node has a unique identifier, to prevent infinite replication loops
 - Star
+	- One root node forwards writes to all the other nodes
 - All-to-all
 	- Every leader sends its write to every other leader
-- 
-
+	- Some links may be faster than others, and overtake other messages
 ### Problems with different topologies
+
+- Version vectors
+	- Order events correctly
 ## Sync Engines and Local-First Software
+
+- Multi leader replication is used when an application needs to be disconnected from the internet
+- Every device has a local database replica that acts as a leader
+- Asynchronous multi leader replication when connected back (sync)
 ### Real-time collaboration, offline-first, and local-first apps
+
+- Real time collaboration
+	- Application receives change from collaborators, and merges then into the user's local copy of the file
+	- Conflict resolution logic
+	- Sync engine
+- Offline first
+	- Users can continue editing a file while offline
+- Local first software
+	- Collaborative apps that are not only offline-first, but are also designed to continue if software shuts down online services
+	- Sync engine with an open standard sync protocol
+	- Git
 ### Pros and cons of sync engines
 
+- Building web apps
+	- Keep little persistent state on the client
+- Sync engine
+	- Persistent state stays on the client, and communication with server is moved into a background process
+	- UI can respond faster
+	- Simplifies the programming model for frontend apps
+	- Reactive programming model
+		- Display edits from other users in real time
+- Also called netcode in game development
+
 ## Dealing with Conflicting Writes
+
+- Concurrent writes on different leaders can cause conflicts that need to be resolved
 ### Conflict avoidance
+
+- Geo-replicated server systems
+	- Requests from a particular user are always routed to the same region and use the leader in that region
+- Auto incrementing counter
+	- Leaders generate odd and event numbers
 ### Last write wins (discarding concurrent writes)
+
+- Attach a timestamp to each write
+- Last write wins (LWW)
+	- When the same record is concurrently written on different leaders, one of those writes is randomly chosen to be the winner and the other writes are silently discarded
+- Real time clock (Unix timestamp)
+	- Used for writes for clock synchronization
 ### Manual conflict resolution
+
+- Siblings
+	- Databases store all the concurrently written values for a given record
+	- Database returns all those values rather than the latest one
+	- Resolve, automatically in application code
+- API changes are difficult to read
+- Verifying merges is a lot of work
+- Merging sibling can lead to unwanted results
+- If multiple nodes observe the conflict and concurrently resolve it, it can lead to a new conflict
+
 ### Automatic conflict resolution
+
+- Use an algorithm that automatically merges concurrent writes into a consistent state
+- Strong eventual consistency
+- Text
+	- Detect characters that have been inserted or deleted
+	- Merges results preserve all the insertions and deletions from siblings
+- Collection of items
+	- Tracks items that were deleted
+- Integer
+	- Detect increments and decrements that happened on each sibling and add together
+- Key value mapping
+	- Merge updates to the same key by applying one of the conflict resolution algorithms to the value under that key
+
 ### Conflict-free replicated datatype and operational transformation
+
+- Conflict free replicated datatypes (CRDTs)
+- Operational transformation (OT)
+
 ### Types of conflict
 
 
