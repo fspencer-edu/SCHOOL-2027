@@ -372,15 +372,30 @@
 
 ### Conflict-free replicated datatype and operational transformation
 
+![[Pasted image 20260919131118.png]]
+
 - Conflict free replicated datatypes (CRDTs)
+	- Give each character a unique, immutable ID and determine the position of insertion/deletions, instead of indexes
 - Operational transformation (OT)
-
+	- Record index at which characters are inserted or deleted
+	- Exchange their operations
+	- Transform index of each operation to account for concurrent operations
 ### Types of conflict
-
 
 # Leaderless Replication
 
+- Also known as Dynamo-style
+- Used by
+	- Amazon's Dynamo
+	- Riak
+	- Cassandra
+	- ScalaDB
+- Clients directly sends its writes to several replicas
+- A coordinator node does this on behalf of the client
+
 ## Writing to the Database When a Node Is Down
+
+- 
 
 ### Catching up on missed writes
 ### Using quorums for reading and writing
