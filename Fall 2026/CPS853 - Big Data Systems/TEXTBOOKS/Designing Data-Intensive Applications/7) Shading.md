@@ -2,7 +2,7 @@
 	- Stores a copy of the same data on multiple nodes
 	- Splits data into smaller shards or partitions
 
-![[Screenshot 2026-09-19 at 10.19.57 PM.png]]
+<img src="/images/Screenshot 2026-09-19 at 10.19.57 PM.png" alt="image" width="500">
 
 - Each shard's leader is assigned to one node, and its followers are assigned to other nodes
 - Shard, partition, range, region, vBucket, vnode, token-range, tablet

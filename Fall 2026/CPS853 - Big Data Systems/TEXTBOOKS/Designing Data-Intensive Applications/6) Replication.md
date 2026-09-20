@@ -372,7 +372,7 @@
 
 ### Conflict-free replicated datatype and operational transformation
 
-![[Pasted image 20260919131118.png]]
+<img src="/images/Pasted image 20260919131118.png" alt="image" width="500">
 
 - Conflict free replicated datatypes (CRDTs)
 	- Give each character a unique, immutable ID and determine the position of insertion/deletions, instead of indexes
@@ -395,7 +395,7 @@
 
 ## Writing to the Database When a Node Is Down
 
-![[Pasted image 20260919141020.png]]
+<img src="/images/Pasted image 20260919141020.png" alt="image" width="500">
 
 - Read requests are sent to several nodes in parallel
 	- Mitigates state data
@@ -430,7 +430,7 @@ $n =$ replicas
 	- $n = 5,w = 3, r = 3$
 		- Tolerate two unavailable nodes
 
-![[Pasted image 20260919142054.png]]
+<img src="/images/Pasted image 20260919142054.png" alt="image" width="500">
 
 - Normally, reads and writes are always sent to all n replicas in parallel
 - If fewer than the required w or r nodes are available, writes or reads return an error
@@ -505,7 +505,7 @@ $n =$ replicas
 - When a client writes a key, includes a version number from the prior read
 - When the server receives a write with a particular version number, it can overwrite all values with that version number of below
 
-![[Pasted image 20260919150719.png]]
+<img src="/images/Pasted image 20260919150719.png" alt="image" width="500">
 
 - Arrows indicate which operation happen before which other operation
 
