@@ -500,3 +500,22 @@ $n =$ replicas
 
 ### Capturing the happens-before relationship
 
+- Server maintains a version number for very key, increments the version number very time that key is written, and stores the new version number along with the value written
+- When a client reads a key, the server returns all siblings
+- When a client writes a key, includes a version number from the prior read
+- When the server receives a write with a particular version number, it can overwrite all values with that version number of below
+
+![[Pasted image 20260919150719.png]]
+
+- Arrows indicate which operation happen before which other operation
+
+### Version vector
+
+- Multiple replicas
+- Use a version number per replica as well as per key
+- Each replica increments its own version number when processing a write, and keeps trakc of the version number from each of the other replicas
+- Dotted version vector
+	- Rias 2.0
+- Sent from the database replicas to clients when values arw read
+- Sent back to the database when value is written
+- Also called a vector clock
