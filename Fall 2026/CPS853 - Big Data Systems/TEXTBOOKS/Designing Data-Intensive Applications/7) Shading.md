@@ -195,5 +195,22 @@
 - Don't map neatly to shards
 ## Local Secondary Indexes
 
-- Each shard independency maintains its own secondary indexes, cover
+- Each shard independency maintains its own secondary indexes, covering only the records in that shard
+- Deal with only the shards containing the record that you are writing
+- Document partition index
+- Race conditions and intermittent write failures can cause out of sync data
+- Tail latency amplification if the partition key is not known and all shards are needed
 ## Global Secondary Indexes
+
+- Converts data in all shards
+- Global indexes is sharded differently from the primary-key index
+- Term partitioned
+	- Terms is a keyword in a text you can search for
+	- Search for secondary index
+- Global index uses the term as the partition key
+- Shard can contain a contiguous range of terms
+- A query with a single condition needs to read from only a single shard to fetch
+- All shards if finding records, and not just IDs
+- Writes are more complicated than local indexes
+	- Writing a single record might affect multiple shards of the index
+- Use a distributed transaction to atomically update the shards storing the primary records and its secondary indexes

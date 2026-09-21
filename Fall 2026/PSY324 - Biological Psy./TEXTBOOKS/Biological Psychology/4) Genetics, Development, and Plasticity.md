@@ -49,10 +49,15 @@
 # Development of the Brain
 
 - Apoptosis
+	- A programmed mechanism of cell death
 - Far transfer
+	- Improvement of a skill due to practice as a dissimilar skill
 - Fetal alcohol syndrome
-- Focal hand dystonia
+	- A condition resulting from prenatal exposure to alcohol and marked by hyperactivity, impulsiveness, decreased alertness, varying degrees of cognitive impairment, motor problems, heart defects, and facial abnormalities
+- Focal hand dystonia (musician''s cramp)
+	- A disorder where one or more fingers is in constant contraction or where moving one finger independently of others is difficult
 - Migrate
+	- Movement of brain neurons of gila
 - Myelination
 - Nerve growth factor (NGF)
 - Neural darwinism
