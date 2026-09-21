@@ -186,15 +186,61 @@
 		- Backups and analytics transactions
 ### Multi-version concurrency control
 
-- 
+- readers never block writers, and writers never block readers
+- Database must keep several committed version of a row
+	- Various in-progress transactions may meed to see the state of the database at different points in the time
+	- Multi-version concurrency control (MVCC)
+	- Transaction is given a unique, always increasing transaction ID (`txid`)
+	- Data it writes is tagged with the transaction ID of the writer
+- Deleted rows are tagged with a `deleted_by` field
+- A garbage collection (GC) process removes rows marked for deletion and frees their space
+- An update is translated into a delete and an insert
 ### Visibility rules for observing a consistent snapshot
+
+- A row is visible if both of the following are true
+	- At the time of reader's transaction, the transaction that inserted the row had already committed
+	- The row is not marked for deletion, or if it is the transaction that requested deletion had not yet committed at the time of reader's transaction
 ### Indexes and snapshot isolation
+
+- Each index entry points at one of the versions of a row that matches the entry
+- Each row version may contain a reference to the next-oldest or next-newest version
+- Optimizations
+	- Avoid index updates if different version of the same row can fit on the same page
+	- Avoid full copies, and only differences between versions
+	- PostgreSQL
+- Immutable variant that does not overwrite pages of the tree when they are updated but instead creates a new copy of each modified page
+- Parent pages are copied and updated to point o the new version of their child pages
+- Every write transaction creates a new B-tree root
+
 ### Snapshot isolation, repeatable read, and naming confusion
+
+- MVCC
+	- Repeatable read
+	- Serializable
 ## Preventing Lost Updates
 
+- Lost update
+	- Two concurrent counter increments
+	- An application reads a value from the database, modifies it, and write back the modified value
+	- If two transaction are concurrent, one modification can be lost
+	- Later write clobbers the earlier write
+- Scenarios
+	- Incrementing a counter
+	- Calculating a new value
+	- Local change to a complex value
+	- Two users editing a page at the same time
 ### Atomic write operations
+
+- Atomic operations are implemented by locking the object on the object when it is read
+- ORM frameworks can accidentally write code that performs unsafe read-modify-write cycles
 ### Explicit locking
+
+- Add lock conditions in the application
+- Locking multiple objects can cause deadlock
+	- Two transactions are waiting for each other to release their locks
 ### Automatically detecting lost updates
+
+- Allow parallel execution
 ### Conditional writes (compare-and-set)
 
 ### Conflict resolution and replication
