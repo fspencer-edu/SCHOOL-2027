@@ -5,7 +5,7 @@
 - [ ] Bioethics
 
 
-- Finish big data sys
+- Finish big data system assignment 2
 
 - Move Naics to server
 - Finish mx calc
