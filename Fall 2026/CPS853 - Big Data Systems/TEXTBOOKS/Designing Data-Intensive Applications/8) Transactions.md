@@ -130,9 +130,22 @@
 	- Django
 
 - Error handling
-	- If a transactions succeeds, but there is a network interuption during commit, retry the transaction causes it to be performanc
+	- If a transactions succeeds, but there is a network interruption during commit, retry the transaction causes it to be performance
+	- Limit number of retries, use exponential backoff, and handle overload-related errors
+	- Retry after transient errors
+		- Deadlock
+		- Isolation violation
+		- Temporary network interruptions
+		- Failover
+	- Permanent errors
+		- Constraint violations
+	- Side effects may occur when transaction is aborted
 
 # Weak Isolation Levels
+
+- Transaction isolation
+- Serializable isolation
+	- Database guara
 
 ## Read Committed
 ### No dirty reads
