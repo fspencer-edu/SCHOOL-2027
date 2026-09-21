@@ -63,11 +63,15 @@
 - Nerve growth factor (NGF)
 	- A protein that promotes the survival and growth of axons in the sympathetic nervous system and certain axons in the brain
 - Neural darwinism
-	- 
+	- Principle of competition among axons
 - Neurotrophin
+	- Chemical that promotes the survival and activity of neurons
 - Proliferation
+	- Production of new cells
 - Stem cells
+	- Undifferentiated cells that divide and produce daughter cells that developer more specialized properties
 - Synaptogenesis
+	- Formation of synapses
 
 ## Maturation of the Vertebrate Brain
 ## Pathfinding by Axons
@@ -77,5 +81,28 @@
 ## Fine-Tuning by Experience
 ## Brain Development and Behavioural Development
 # Plasticity after Brain Damage
+
+- Cerebrovascular accident
+	- result of interrupted blood flow to the brain resulting from either a blood clot or a ruptured artery
+- Closed head injury
+	- A result of a sharp blow to the head that does not puncture the brain
+- Collateral sprouts
+	- Newly formed branches of an axon
+- Denervation supersensitivity (receptor supersensitivity)
+	- Increased sensitivity to neurotransmitters by a postsynaptic neuron after loss of input
+- Diaschisis
+	- Decreased activity of surviving brain neurons after damage to other neurons
+- Edema
+	- Accumulation of fluid
+- Hemorrhage
+	- Type of stroke resulting from a ruptured artery
+- Ischemia
+	- Type of stroke resulting form a blood clot or other obstruction in an artery
+- Phantom limb
+	- A continuing sensation of an amputated body part
+- Stroke
+	- A temporary loss of normal blood flow to a brain area
+- Tissue plasminogen activator (tPA)
+	- Drug that breaks up blood clots
 ## Brain Damage and Immediate Treatments
 ## Later Mechanisms of Recovery

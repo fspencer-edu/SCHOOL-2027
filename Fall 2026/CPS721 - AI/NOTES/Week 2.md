@@ -96,8 +96,81 @@ connected(tony, X), connected(tony, Y), not X = Y
 - Negation over multiple statements
 
 `hasAccount(X), not (connected(tony, X), student(X))`
+
+- X = jennifer
+
+not (connected(tony, jennifer), student(jennifer))
+connected(tony, jennifer)
 not (A and B) $\equiv$ not A or not B
+
+- Jennifer is not connected to tony, and is not a student
+not (connected(tony, X), student(X))
+not (connected(tony, jennifer), student(jennifer))
+- not(success) = fail
+(connected(tony, jennifer), student(jennifer))
+- success, success
+- 
 # Part 2 - Rules and Deductive Databases
+
+- Conditional sentences
+
+`If (X is a car) and (X is electric) then (X is an ev)`
+
+- Use general rules or clauses
+
+`ev(x) := car(X), electric (X)`
+
+- Clauses
+	- `a := b1, ..., bn`
+	- Head must be an atom (cannot use not)
+	- Each $b_i$ in the body is an atom or negation of an atom
+	- Read as
+		- $a$ if $b_1$ and ... and $b_n$
+
+`:-` means if
+`,` means if and
+
+- Unit clases
+	- Also call atoms like `car(tesla123` as a unit clauses
+		- A unit clauses has its head and an empty body
+		- `a.`
+	- Prolog programs are just sequences of clauses
+
+```prolog
+hasAccount(jennifer).
+hasAccount(tony).
+hasAccount(tim).
+hasAccount(michelle).
+hasAccount(sam).
+
+connected(jennifer, tony).
+connected(tony, jennifer).
+connected(tony, tim).
+connected(tim, tony).
+
+student(jennifer).
+student(sam).
+student(michelle).
+
+worksAt(jennifer, google, 2020).
+worksAt(tony, bell, 2015).
+worksAt(tim, apple, 2022).
+
+degree2Connection(X, Y) :- connected(X, Z), connected(Z, Y), not X = Y.
+connectionAtCompany(P1, P2, C) :- connected(P1, P2), worksAt(P2, C, Y).
+connectionAtCompany(P1, P2, C) :- degree2Connection(P1, P2), worksAt(P2, C, Y).
+```
+
+- Two statements is an OR
+
+ - Querying a general program
+	 - Full back chaining
+
+Q1 - **connectionAtCompany(jennifer, P2, bell)**
+
+- Match on (17) with connectionAtCompany(P1, P2, C) :- connected(P1, P2), worksAt(P2, C, Y) with P1 = jennifer, P2 = P2, C = bell
+	"connected(jennifer, P2)"
+
 # Part 3 - Recursion in Prolog
 
 
