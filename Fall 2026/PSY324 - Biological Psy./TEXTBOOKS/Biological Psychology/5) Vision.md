@@ -29,9 +29,13 @@
 - Pupil
 	- An opening in the center of the iris where light enters
 - Retina
+	- The rear surface of the eye, which is lined with visual receptors
 - Retinex theory
+	- Concept that the cortex compares information from various parts of the retina to determine the brightness and colour of each area
 - Rods
+	- Type of retinal receptors that detects brightness of light
 - Visual field
+	- Area of the world that an individual can see at any time
 
 ## Principles of Vision
 ## The Eye and Its Connections to the Brain
@@ -39,12 +43,42 @@
 ## Color Vision
 # Visual Processing in the Brain
 
+- Astigmatism
+	- A decreased responsiveness to one kind of line or another, caused by an asymmetric curvature of the eyes
+- Blindsight
+	- The ability to respond in limited ways to visual information without perceiving it consciously
+- Feature detectors
+	- Neurons whose responses indicate the presence of a particular feature
+- Horizontal cells
+	- Type of cell that receive input from receptors and delivers inhibitory input to bipolar cells
+- Koniocellular neurons
+	- Small ganglion cells that occur throughout the retina
+- Lateral geniculate nucleus
+	- Thalamic nucleus that receives incoming visual 
+- Lateral inhibition
+	- The reduction of activity in one neurons by activity in neighbouring neurons
+- Magnocellular neurons
+	- Large cells bodies with large receptive fields that are distributed evenly throughout the retina
+- Parvocellular neurons
+	- Small cel bodies with small receptive fields in or near the fovea
+- Retinal disparity
+	- The discrepancy between what the left and right eye see
+- Sensitive period
+	- Time early in development when experiences have a particularly strong and enduring influence
+- Simple cell
+	- Type of visual cortex cell that has a receptive field with fixed excitatory and inhibitory zones
+- Strabismus (strabismic amblyopia, or lazy eye)
+	- A condition in which the eyes do not point in the same direction
+
 ## An Overview of the Mammalian Visual System
 ## Processing in the Retina
 ## Further Processing
 ## The Primary Visual Cortex
 ## Development of the Visual Cortex
 # Specialized Visual Processes
+
+- Dorsal streams
+- Fusiform gryus
 
 ## The Ventral and Dorsal Streams
 ## Shape Perception

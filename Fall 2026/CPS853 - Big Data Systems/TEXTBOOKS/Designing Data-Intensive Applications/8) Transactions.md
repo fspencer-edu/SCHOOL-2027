@@ -1,9 +1,50 @@
+- Transactions are a mechanism of choice for simplifying issues
+- A transaction is a way for an application to group several reads and writes together into a logical unit
+	- Executed as one operation
+	- Results in a commit
+	- If fails, results in an abort or rollback
+- Error handling become more simple
+- Simplify the programming model for applications accessing a database
+- Safety guarantees
+- Concurrency control is relevant for both single node and distributed databases
+- Race conditions
+	- Read-committed
+	- Snapshot isolation
+	- Serializability
+- Two-phase commit protocol
+
 # What Exactly Is a Transaction?
 
-
+- Large scale NewSQL
+	- Combine sharding with consensus protocols
 ## The Meaning of ACID
+
+- ACID
+	- Atomicity
+	- Consistency
+	- Isolation
+	- Durability
+- Systems that do not been the ACID criteria are sometimes called BASE
+	- Basically available, soft state, and eventual consistency
 ### Atomicity
+
+- Atomic
+	- Something that cannot be broken into smaller parts
+- Multi-threading programming
+	- No way another thread could see the half-finished result of the operation
+- In ACID atomicity is not about concurrency
+	- Describes what happens if a client wants to make several writes, but a fault occurs after some of the write
+	- Integrity constraint is violated
+	- If an error occurs partway through changes, it is difficult to identify what has been processed
 ### Consistency
+
+- Other uses of consistency
+	- Replica consistency
+	- Eventual consistency
+	- Consistent snapshot
+	- Consistent hashing
+	- Linearizability
+- Cons
 ### Isolation
 ### Durability
 

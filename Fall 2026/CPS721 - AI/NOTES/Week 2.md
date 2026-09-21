@@ -255,17 +255,32 @@ above(X, Y) :- on(X, Y), above(Z, Y).
 - Match on (4) with X = b3, Y = b6
 	"on(b3, b6)"
 	- Fail
-- Match on (5)
-
+- Match on (5) with X = b3, Y = b6
+	"on(b3, Z)" and "above(Z, Y)"
+	"on(b3, Z)"
+	- Match on (1) with Z = b4
+	"above(b4, Y)"
+	- Match on (4) with X = b4, Y = b6
+		- Fails
+	- Match on (5) with X = b4, Y = b6
+		"on(b4, Z)"
+		- Match on (2) with Z = b5
+		"above(b5, b6)"
+		- Success on (3)
 
 - Left in the blocks world
 	- `onTable(X)` is not enough to know relative position of towers
-	- `justLeft(X, Y`
+	- `justLeft(X, Y)`
 		- X and Y are on the table and X is immediately left of Y
 
 ```prolog
 justLeft(b2, b6).
 justLeft(b6, b7).
+
+left(X, Y) :- justLeft(X, Y). % base case (beside)
+left(X, Y) :- justLeft(X, Z), left(Z, Y) (bottom row)
+left(X, Y) :- above(X, Z), left(Z, Y)
+left(X, Y) :- above(Y, Z), left(X, Z)
 ```
 
 
