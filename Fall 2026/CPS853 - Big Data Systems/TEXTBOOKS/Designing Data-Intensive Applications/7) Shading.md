@@ -85,12 +85,56 @@
 - Hashes are evenly distributed across that range of numbers
 ### Hash modulo number of nodes
 
-- mod N approach
+- mod N approach (modulo)
 	- If node N change, most of the keys have to be moved
+
+![[Pasted image 20260921111910.png]]
+
+- Leads to inefficient rebalancing from unnecessary movements or recrods from one more to another
+
 ### Fixed number of shards
+
+- Create more shards than there are nodes and assign several shards to each node
+	- hash(key) % 1000
+- Only entire shards are moved between nodes
+- Number of shads does not change, instead the assignment of shards to node changes
+- Reassignment is not immediate
+	- Old assignment of shards is used for reads and writes during transfer
+
+![[Pasted image 20260921112141.png]]
+
+- Add or remove nodes easily
+- If capacity is reached, then an expensive resharding operation is required
 ### Sharding by hash range
+
+- Key-range sharding scheme
+- Risk of hot spots when there are a lot of writes to nearby keys
+- Combine key-range sharding with a hash function so that each shard contains a range of hash values rather than a range of keys
+- Range queries over the partition key are not efficient
+	- Cluster columns
+	- Micro-partitions
+
+![[Screenshot 2026-09-21 at 11.26.08 AM.png]]
+
+![[Pasted image 20260921112748.png]]
+
+- When nodes are added or removed, range boundaries are adjusted and shards are split or merged
+
 ### Consistent hashing
+
+- A hash function that maps keys to a specified number of shards in a way that satisfies two properties
+	- Number of keys mapped to each shard is roughly equal
+	- Number of shards changes, as few keys as possible are moved from one shard to another
+- Other consistent hashing algorithms
+	- Highest random weight (rendezvous hashing)
+	- Jump consistent hashing
 ## Skewed Workloads and Relieving Host Tops
+
+- Consistent hashing ensures that keys are uniforming distributed, but not the actual load
+- Define shards based on ranges of key can put an individual hot key in a shard by itself
+- Add a random number to the beginning or end of the key
+	- Splits the writes to the key across 100 keys
+- 
 ## Operations: Automatic vs. Manual Rebalancing
 # Request Routing
 
