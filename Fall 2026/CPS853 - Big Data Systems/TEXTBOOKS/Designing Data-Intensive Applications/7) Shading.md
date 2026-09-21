@@ -88,7 +88,7 @@
 - mod N approach (modulo)
 	- If node N change, most of the keys have to be moved
 
-![[Pasted image 20260921111910.png]]
+<img src="/images/Pasted image 20260921111910.png" alt="image" width="500">
 
 - Leads to inefficient rebalancing from unnecessary movements or recrods from one more to another
 
@@ -101,7 +101,7 @@
 - Reassignment is not immediate
 	- Old assignment of shards is used for reads and writes during transfer
 
-![[Pasted image 20260921112141.png]]
+<img src="/images/Pasted image 20260921112141.png" alt="image" width="500">
 
 - Add or remove nodes easily
 - If capacity is reached, then an expensive resharding operation is required
@@ -114,9 +114,9 @@
 	- Cluster columns
 	- Micro-partitions
 
-![[Screenshot 2026-09-21 at 11.26.08 AM.png]]
+<img src="/images/Screenshot 2026-09-21 at 11.26.08 AM.png" alt="image" width="500">
 
-![[Pasted image 20260921112748.png]]
+<img src="/images/Pasted image 20260921112748.png" alt="image" width="500">
 
 - When nodes are added or removed, range boundaries are adjusted and shards are split or merged
 
@@ -134,10 +134,66 @@
 - Define shards based on ranges of key can put an individual hot key in a shard by itself
 - Add a random number to the beginning or end of the key
 	- Splits the writes to the key across 100 keys
-- 
+	- Requires bookkeeping
+- Heat managed or adaptive capacity
 ## Operations: Automatic vs. Manual Rebalancing
+
+- Automatic
+	- Autoscale to adapt to workload
+	- Unpredictable
+	- Rebalancing is expensive operation
+- Manual
+- Generate a suggested shard assignment automatically
 # Request Routing
 
-## Local Secondary Indexes
-## Global Secondary Indexes
+- Request routing, similar to service discovery
+- Services running application code
+	- Instances that are stateless, and a load balancer can send a request to any of the instances
+- Sharded databases
+	- A request for a key can be handled only by a node that is a replica for the shard containing that key
+	- Aware of the assignment from keys to shards and shards to nodes
+- Allow clients to contact any node (round-robin load balancer)
+- Send all requestts from clients to a routing tier, and determine the node to forward to
+- Require that clients be away of the sharding and the assignment of shards to nodes
+
+<img src="/images/Pasted image 20260921113554.png" alt="image" width="500">
+
+- Split brain situations
+- Routing tier must be updated on changes in the assignment
+- Cutover period
+	- New node has taken over, but requests to the old node are still router
+- Consensus algorithms
+	- Provide fault tolerance and protection against split brain
+	- Each nodes registers itself, and maintains the authoritative mapping of shards to nodes
+	- Routing tier or sharding-aware client, can subscribe to this information
+	- ZooKeeper
+		- HBase
+		- SolrCloud
+	- etcd
+		- Kubernetes
+
+<img src="/images/Pasted image 20260921113857.png" alt="image" width="500">
+
+- MongoDB relies on its own config server implementation and mongos daemons as the routing tier
+- Kafka, YugabyteDB, TiDB, and ScyllaDB
+	- Use build-in implementations of the Raft consensus protocol
+- Riak uses a gossip protocol to disseminate any changes in cluster state
+- Clients find the IP addresses and can use DNS
+- Sharded OLTP databases
+- Analytical databases use sharding, but rather than executing in a single shard, query on many shards in parallel
+
 # Sharding and Secondary Indexes
+
+- Key-value data model
+	- The partition key is the first part of the primary key
+	- Use the partition key to determine the shard and and route reads and writes to the node that is responsible for that key
+
+- A secondary index does not identify a record directly
+- Searches for occurrences of a particular value
+- Key-value stores do not have secondary indexes, but are a standard feature of relational databases and document databases
+	- Raison d'etre of full text search engines
+- Don't map neatly to shards
+## Local Secondary Indexes
+
+- Each shard independency maintains its own secondary indexes, cover
+## Global Secondary Indexes
