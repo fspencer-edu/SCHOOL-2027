@@ -145,16 +145,48 @@
 
 - Transaction isolation
 - Serializable isolation
-	- Database guara
+	- Database guarantees that transactions have the same effect as if they ran serially
+	- Performance cost
+	- Many banking system rely on text files that are exchanged via secure FTP
 
 ## Read Committed
+
+- When reading from a database, you will only see data that has been committed
+	- No dirty reads
+- When writing, you will overwrite only data that has been committed
+	- No dirty writes
 ### No dirty reads
+
+- Cascading aborts
+	- Transactions that read uncommitted data causes need to abort
 ### No dirty writes
+
+- Read committed isolation does not prevent the race condition between two counter increments
+- Second writes happens after the first transaction has committed
 ### Implementing read-committed
 
+- Database prevents dirty writes by using row level locks
+- To change a row, it must acquire a lock on that row
+- Hold lock until transaction is committed or aborted
+- Only one transaction an hold the lock for any given row
+- Read locks does not work
+	- Long running write transaction can force other to wait
+- For every row that is written, the database remembers both the old committed value and the new value set by the transaction that currently holds the write lock
+- Any reads are given the old value
+- Read uncommitted
+	- Prevents dirty write, but not dirty reads
+	- Returns latest written value
 ## Snapshot Isolation and Repeatable Read
 
+- Read skew/non-repeatable read
+	- Database concurrency anomalies where a transaction views inconsistent data because another transaction modifies and commits changes at the same time
+- Snapshot isolation
+	- Each transaction reads from a consistent snapshot of the database
+	- Used for long-running, read only queries
+		- Backups and analytics transactions
 ### Multi-version concurrency control
+
+- 
 ### Visibility rules for observing a consistent snapshot
 ### Indexes and snapshot isolation
 ### Snapshot isolation, repeatable read, and naming confusion
