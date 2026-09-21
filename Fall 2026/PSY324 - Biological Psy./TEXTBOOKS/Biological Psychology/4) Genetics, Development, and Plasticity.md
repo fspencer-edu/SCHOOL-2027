@@ -59,8 +59,11 @@
 - Migrate
 	- Movement of brain neurons of gila
 - Myelination
+	- Process by which gila produce the insulating fatty sheaths that accelerate transmission in many vertebrate axons
 - Nerve growth factor (NGF)
+	- A protein that promotes the survival and growth of axons in the sympathetic nervous system and certain axons in the brain
 - Neural darwinism
+	- 
 - Neurotrophin
 - Proliferation
 - Stem cells

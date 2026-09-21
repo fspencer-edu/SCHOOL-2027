@@ -142,9 +142,6 @@ $Q =$ "$z$ is an ev"
 - Variables collision
 	- Variables add an additional complication
 
-
-
-
 - Properties of back chaining
 	- Back chaining is sound
 		- Anything it establishes is actually entailed by the KB
