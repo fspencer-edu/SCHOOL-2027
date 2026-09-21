@@ -5,6 +5,8 @@
 - [ ] Bioethics
 
 
+- Finish big data sys
+
 - Move Naics to server
 - Finish mx calc
 - Look at prism economics digital
