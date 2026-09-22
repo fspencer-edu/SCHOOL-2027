@@ -346,10 +346,14 @@
 
 - Common system models
 	- Crash stop faults
-		- 
+		- Nodes can only fail in one way
 	- Crash recovery faults
+		- Assume that nodes may crash at any moment
+		- Nodes have stable storage, but in memory state is lost
 	- Degraded performance and partial functionality
+		- Nodes may slow down
 	- Byzantine (arbitrary) faults
+		- Nodes my trick and deceive other nodes
 
 ### Defining the correctness of an algorithm
 ### Distinguishing between safety and liveness
