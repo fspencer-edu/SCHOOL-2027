@@ -455,19 +455,84 @@
 
 - If coordinator fails before sending the prepare requests, a participant can safely abort the transaction
 - In doubt or uncertain
-	- Partipants return request, but coordinator crash
-- 
+	- Coordinator crashes after participant return request
+- Coordinator must write the transaction decision to log before sending commit or abort requests to participant
 ### Three-phase commit
+
+- 2PC is called a blocking atomic commit protocol
+- Can become stuck waiting for coordinator to recover
+- 3PC (three-phase commit)
+	- Non blocking
+	- Assumes a network with bounded delay and nodes with bounded response times
+- A better solution is to replace the single node coordinator with a fault-tolerant consensus protocol
 ## Distributed Transactions Across Different Systems
 
+- Database internal distributed transactions
+	- Nodes participating in the transaction are running the same database software
+- Heterogeneous distributed transactions
+	- Participants are two or more technologies
+	- Diverse systems to be integrated
+
 ### Exactly-once message processing
+
+- Exactly-once semantics (EOS)
+	- Guarantees that each message is produces, processed, and written to a destination stream one time
 ### XA transactions
+
+- X/Open XA (eXtended Architecture)
+	- Standard for implementing 2PC across heterogeneous technologies
+	- C API for interfacing with a transaction coordinator
+		- Jave Transaction API (JTA)
+- Assumes that application uses a network driver or client library to communicate with the participant databases or messaging services
+- Database server cannot contact the coordinator directly, since all communication must go via its client library
 ### Holding locks while in doubt
 
+- Locking
+	- Database cannot release locks until the transaction commits or aborts
+- In 2PC, a transaction must hold onto the licks throughout the time it is doubt
+
 ### Recovering from coordinator failure
+
+- Orphaned in doubt transactions occur
+	- Transactions for which the coordinator cannot decide the outcome
+	- Cannot be resolved automatically
+- Admin must commit or roll back transactions
+- Heuristic decisions (XA implementations)
+	- A participant to unilaterally decide to abort or commit an in-doubt transaction without a definitive decision
+	- Breaks atomicity
 ### Problems with XA transactions
 
+- A single node coordinator is a single point of failure
+- Coordinator of an XA transaction could be highly available and replicated
+- Cannot detect deadlocks across different systems
+	- Needs a standardized protocol
+- Does not work with SSI (serializable snapshot isolation)
 ## Database-Internal Distributed Transactions
 
+- Use 2PC to ensure atomicity of transactions that write into multiple shards
+- Distributed transactions do not interface with any other technologies
 
+- Issues with XA
+	- Replicating coordinators
+	- Allow the coordinator and data shards to communicate without intermediary application code
+	- Replicating the participating shards
+	- Coupling the atomic commitment protocol
+
+- Consensus algorithms are commonly used to replicate the coordinator and the database shards
+- Algorithms tolerate faults by automatically failing over form one node to another without human intervention
 ## Exactly-Once Message Processing Revisited
+
+- Assume every message has a unique ID
+- If the message ID is not already in the database, add to table
+	- Process the message, and commit
+- Once successfully committed, acknowledge the message to the broker
+- Once broker received acknowledgement,, delete the message ID from the database
+
+- Idempotent
+	- Gives the exact same system state after one request or multiple identical requests
+	- Does not duplicate message ID and side effects
+- Internal distributed transaction are still used for scalability of patterns
+	- Message IDs stored on one shard and the main data updated by message processed to be stored on other shard
+	- Ensure atomicity of transaction commit across those shards
+
+![[Pasted image 20260921223421.png]]
