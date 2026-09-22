@@ -326,13 +326,39 @@
 - More performance-sensitive than an application server
 - Multi-tenant system can cause security risk with untrusted code
 - State machine replication
-	- 
+	- Transaction uses the current data and time and uses a special deterministic API
 ### Sharding
+
+- Cross shard transactions have additional coordination overhead
+- Slower then single-shard transactions
 ### Summary of serial execution
+
+- Every transactions must be small and fast
+- Most appropriate when the active dataset can fit in memory
+- Write throughput must be low enough to be handled on a single CPU core
+- Cross-shard transactions are possible, but hard to scale
 ## Two-Phase Locking
 
+- Two-phase locking (2PL) also called strong strict two-phase locking (SS2PL)
+- Stronger lock requirements
+- Write must waits for reads
+- Reads must wait for writes
+- Protects against lost updates and write skew
+
 ### Implementation of 2PL
+
+- A lock on each object in the database
+- Shared mode or in exclusive mode (multi-reader single writing lock)
+- First phase (growing)
+	- The locks are acquires while the transaction is executing
+- Second phase (shrinking)
+	- Lock is released at the end of the transaction
+- Deadlock
+	- Both transactions are waiting for the other
 ### Performance of 2PL
+
+- Transaction throughput and response times are worse
+- 
 ### Predicate locks
 ### Index-range locks
 
