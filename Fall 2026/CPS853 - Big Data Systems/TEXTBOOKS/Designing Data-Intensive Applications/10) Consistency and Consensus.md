@@ -164,26 +164,145 @@
 
 ### Lamport/hybrid logical clocks vs. vector clocks
 
-- When multiple timestamps are generated concurrently, t
+- When multiple timestamps are generated concurrently, they are not in order
+- Vector clock
+	- Keeps a counter for each mode and stores all the counter values with each write
 ## Linearizable ID Generators
 
 ### Implementing a linearizable ID generator
+
+- Single node for ID assignment that is linearizable
+	- Atomically increment a counter and return its value
+	- Persist the counter value
+	- Replicate for fault tolerance
+- Avoid performing a disk write and replication on every single request
+- ID generator can write a record describing a batch of IDs
+	- Node can then hand out Ids to clients in sequence
+- Google's Spanner
+	- Synchronized clocks for global snapshots
+	- Relies on a physical clock that returns a range of timestamps
+
 ### Enforcing constraints using logical clocks
 
 # Consensus
 
+- The standard formulation of consensus involves getting multiple nodes to agree on a single value
+- Consensus algorithms
+	- Viewstamped Replication
+	- Paxos
+	- Raft
+	- Zab
+- Non-Byzantine system model
+	- Network communication may be arbitrary delayed or dropped, but assume correct behaviour
+- Byzantine tolerant nodes
+	- Used in blockchains
+- FLP result
+	- Proves no algorithm is always able to reach consensus if there is a risk that a node may crash
+	- Assumes a deterministic algorithm
+	- Cannot use clocks or timeouts
+
 ## The Many Faces of Consensus
 
+Consensus can be expressed as:
+
+- Single value consensus
+	- Locks, leases, and uniqueness constraints
+- Append only log
+	- Formalized as total order broadcast
+	- State machine replication, leader-based replication, event sourcing
+- Fetch and add (atomic increment)
+- Atomic commitment
+	- Requires all participant agree on whether to commit or abort the transaction
+
+- All are equivalent
+- Convert an algorithm into a solution for any of the others
 ### Single-value consensus
-### Compare and set as consensus
+
+- One or mode nodes may propose values
+- Consensus algorithm decides on one of those value
+
+- A consensus algorithm must satisfy
+	- Uniform agreement
+		- No two nodes decide differently
+	- Integrity
+		- Cannot change the value after decision has been made
+	- Validity
+		- If a node decides value v, then v was proposed by a node
+	- Termination
+		- Every node that does not crash eventually decides a value
+
+- Termination property assumes that fewer than half of the nodes are unreachable
+
+### Compare and set (CAS) as consensus
+
+- Set all object to a null value
+- Any CAS invocations whose proposed value was not decided returns an error, and submits again
 
 ### Shared logs as consensus
+
+- Log entries
+- Shared log
+	- Multiple nodes can request that entries be appended
+	- Can request that a value be added to the log
+	- Can read the entries in the log
+		- Eventual append
+		- Reliable delivery
+		- Append only
+		- Agreement
+		- Validity
+
+- Implemented using a total order broadcast protocol (atomic broadcast or total multicast protocol)
+- Every nodes want to propose a value requests that it be added to the log
+- The value that is read back is the decided one
+- CAS and shared logs solve consensus for any number of nodes ($∞$)
+
 ### Fetch and add on consensus
+
+- Fetch and add operation
+	- Atomically increments a counter and returns the old counter value
+	- Read the counter value, perform CAS, and the new value is that value + 1
+	- Less efficient than native fetch and add operation with contention
+- Consensus problem for two nodes
+
 ### Atomic commitment as consensus
+
+- Atomic commitment problem
+	- Ensure that the databases or shards involved in a distributed transaction all either commit or abort a transaction
+- Atomic commitment requires the following
+	- Uniform agreement
+	- Integrity
+	- Validity
+	- Non-triviality
+		- If all nodes vote to commit, and no communication timeouts occur, then all nodes must commit
+	- Termination
+
 ## Consensus in Practice
+
+- Single-value consensus, CAS, shared logs, and atomic commitment are all equivalent
 ### Using shared logs
+
+- A shared log is used for databased replication
+- Every log entry represents a write to the database
+- Every replica processes the same write in the same order by deterministic logic
+- All replicas have consistent data
+- State machine replication
+- Transactions are serializable
+
 ### From single-leader replication to consensus
+
+- Epoch number
+	- Also called ballot number, view number, and term number
+	- Guarantee that within each epoch, the leader is unique
+- Leader with the highest epoch number wins
+- 2 rounds of voting
+	- Choosing a leader
+	- Vote on a leader's proposal for the next entry to append to the log (quorum)
+
 ### Subtleties of consensus
+
+- A vote by a quorum of nodes elects a leader, and then another quorum vote is requires for every entry that the leader wants to make
+- Ensures that the new leader honours any log entries already appended by the older leader before fail
+	- New leader is up to date with any confirmed log entries
 ### Pros and cons of consensus
 
 ## Coordination Services
