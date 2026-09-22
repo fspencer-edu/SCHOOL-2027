@@ -62,19 +62,89 @@
 	- Queued in incoming data
 - Queued in OS
 - Queued in buffered VM monitor
-- Queued at the sender from TCP limi
+- Queued at the sender from TCP limits
+
+- TCP detects and automatically retransmits a lost packet
+- Video chat and Voice over IP (VoIP) use UDP
+	- Does not perform flow control and retransmit lost packets
+	- Delayed data
+	- More reliable
+
 ### Variability of network delays
+
+- Choose timeouts experimentally
+	- Measure the distribution of network round-trip times over an extended period, and over machines
+	- Determine trade off between failure detection delay and risk or premature timeouts
+- Systems can measure response times and their variability (jitter) and adjust timeouts according to the observed response time distribution
+	- Phi Accrual failure detector
 
 ## Synchronous vs. Asynchronous Networks
 
+- Telephone networks establish a circuit
+	- A fixed, guaranteed amount of bandwidth along the entire route of two users
+	- Synchronous
+	- Data passes through routers, and does not suffer from queueing
+	- Bounded delay
+
 ### Can we not simply make network delays predictable?
+
+- Packets of a TCP connection opportunistically use available network bandwidth
+- Ethernet and IP are. packet switched protocols
+	- Unbounded delays
+	- Optimized for bursty traffic
+		- Adapts the rate of data transfer to the available network capacity
+		- Consequence of dynamic resource partitioning
+		- Maximizes utilization of the write
+- If resources are statically partitioned there can be latency guarantees
+	- Reduced utilization
 ### Combining circuit switching and packet switching
+
+- Asynchronous Transfer Mode (ATM)
+	- Support both circuit and packet switching
+- Quality of service (QoS)
+	- Prioritization
+	- Scheduling of packets
+	- Admission control
+- New network algorithms
+	- Low Latency
+	- Low loss
+	- Scalable Throughput (L4S)
+	- TC (Linux's traffic controller)
+
 # Unreliable Clocks
+
+- Timeouts
+- Queries per second
+- Time user spent on site
+- Published
+- Data and time to send
+- Expire of cache entry
+- Timestamp on error message
+
+- Durations
+- Points in time
+
+- Each machine on the network has its own clock
+	- Quartz crystal oscillator (not accurate)
+- Network Time protocol (NTP)
+	- Computer clocks adjust according to the time reported by a group of servers
+	- Server gets time from GPS received
 
 ## Monotonic vs. Time-of-Day Clocks
 
+- Time of day clock
+- Monotonic clock
+
 ### Time-of-day clocks
+
+- Returns current data and time
+- Synchronized with NTP
 ### Monotonic clocks
+
+- Suitable for measuring duration (time intervals)
+	- Timeout
+	- Service response times
+- 
 
 ## Clock Synchronization and Accuracy
 
