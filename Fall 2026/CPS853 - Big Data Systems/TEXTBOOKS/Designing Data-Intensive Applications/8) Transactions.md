@@ -319,7 +319,7 @@
 - Stored procedure
 	- Submit the entire transaction code to the database ahead of time
 
-![[Pasted image 20260921201018.png]]
+<img src="/images/Pasted image 20260921201018.png" alt="image" width="500">
 ### Pros and cons of stored procedures
 
 - Code running in a database is difficult to manage
