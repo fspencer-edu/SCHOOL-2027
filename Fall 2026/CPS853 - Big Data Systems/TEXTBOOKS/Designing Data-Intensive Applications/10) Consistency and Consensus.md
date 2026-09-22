@@ -103,16 +103,68 @@
 	- Either consistent of available when partitioned
 ### Linearizability and network delays
 
-- 
-
+- RAM on a modern multi-core CPU is not linearizable
+	- Every CPU core has its own memory cache and store buffer
 # ID Generators and Logical Clocks
+
+- In single node databases it is common to use an auto-incrementing integer
+- Fetch and add operation
+- Use atomic increment instruction on CPI
+- Not fault-tolerant
+- Slow for a record in another region
+- Single node could become a bottleneck
+
+- Alternative options for ID generators
+	- Sharded ID assignment
+		- Only even or odd numbers
+	- Preallocated blocks of IDs
+		- Each node can independently hand out IDs from its block
+		- Does not ensure correct ordering
+	- Random UUIDs
+		- Universally unique identifiers (UUIDs)
+		- Also known as globally unique identifiers (GUIDs)
+		- Generated locally without communication
+		- Requires more space (128 but)
+	- Wall clock timestamp made unique
+		- Correct NTP
+- Reduce ordering inconsistencies by relying on high precision clock synchronization
 
 ## Logical Clocks
 
+- Logical clock
+	- An algorithm that counts the events that have occurred
+	- Compares two timestamps from a logical clock
+	- Timestamps are compact and unique
+	- Order is consistent with causality
+		- Yes for single node ID generators
+		- Not for distributed ID generators
+
 ### Lamport timestamps
 
+- Lamport clock
+	- A simple method for generating logical timestamps is consistent with causality
+	- Do not provide linearizability
+	- Assign IDs to events and determines their order
+	- A pair of (counter, node ID)
+
+![[Pasted image 20260922151354.png]]
+
+- Timestamp order
+	- (1, “Aaliyah”) < (1, “Caleb”) < (2, “Bryce”)
+
 ### Hybrid logical clocks
+
+- Limitations of Lamport timestamps
+	- No direct relation to physical time
+	- If two nodes never communicate, one node's counter increments will never be reflected in the other
+- Hybrid logical clock
+	- Counts seconds or ms
+	- When one node sees a timestamp from another that is greater, it moves it own logical value forward to match their timestamp
+	- Timestamp from a time-of-day clock with a ordering property
+
 ### Lamport/hybrid logical clocks vs. vector clocks
+
+- When multiple timestamps are generated concurrently, t
 ## Linearizable ID Generators
 
 ### Implementing a linearizable ID generator
