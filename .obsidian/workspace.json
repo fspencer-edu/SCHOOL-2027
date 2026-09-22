@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2b7fb96a2b8583d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/9) The Trouble with Distributed Systems.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "9) The Trouble with Distributed Systems"
-            }
-          },
-          {
             "id": "58f5716b51c21d4c",
             "type": "leaf",
             "state": {
@@ -78,20 +64,6 @@
             }
           },
           {
-            "id": "eae7a8ee4b24c4fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS721 - AI/NOTES/Week 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Week 2"
-            }
-          },
-          {
             "id": "1d04b4143063873b",
             "type": "leaf",
             "state": {
@@ -103,6 +75,20 @@
               },
               "icon": "lucide-file",
               "title": "5) Vision"
+            }
+          },
+          {
+            "id": "b2ca13db781e592f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TODO.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TODO"
             }
           }
         ]
@@ -283,8 +269,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "2b7fb96a2b8583d4",
+  "active": "58f5716b51c21d4c",
   "lastOpenFiles": [
+    "Pasted image 20260922141634.png",
+    "TODO.md",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/5) Vision.md",
+    "Fall 2026/CPS721 - AI/NOTES/Week 2.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/10) Consistency and Consensus.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/9) The Trouble with Distributed Systems.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/5) Encoding and Evolution.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Docker Docs/0) Docker Docs.md.tmp",
     "images/Pasted image 20260921223421.png",
@@ -292,8 +284,6 @@
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/13) A Philosophy of Streaming Systems.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/12) Stream Processing.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/11) Batch Processing.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/10) Consistency and Consensus.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/9) The Trouble with Distributed Systems.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/8) Transactions.md",
     "Pasted image 20260921223421.png",
     "Pasted image 20260921220745.png",
@@ -301,11 +291,8 @@
     "images/Pasted image 20260921201018.png",
     "Pasted image 20260921201018.png",
     "TODO.md.tmp",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/5) Vision.md",
-    "Fall 2026/CPS721 - AI/NOTES/Week 2.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/4) Genetics, Development, and Plasticity.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 1.md",
-    "TODO.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/6) Hearing, the Mechanical Senses, and the Chemical Senses.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/3) Anatomy and Research Methods.md",
     "Fall 2026/PSY324 - Biological Psy./Biological Psychology - Course Outline.md",
@@ -322,7 +309,6 @@
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/14) Doing the Right Thing.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/6) Replication.md",
     "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 1 - Finding Virus Outbreak.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/TensorFlow Docs/0) TensorFlow Docs.md.tmp",
     "Fall 2026/CPS721 - AI/Quizes/AI - quiz 1.md",
     "Fall 2026/BLG655 - Viruses/Viruses - Course Outline.md",
     "Fall 2026/CPS721 - AI/AI - Course Outline.md",

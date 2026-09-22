@@ -1,6 +1,26 @@
+
+- Eventual consistency
+	- Used with multi=leader and leaderless replication
+- Strong consistency
+	- Application should not worry about internal detail of replication
+	- Act as a single node
+	- Performance cost
 # Linearizability
 
+- Linearizability (atomic consistency, strong consistency, immediate consistency, external consistency)
+	- Make a system appear as if there is only one copy of the data, and all operations are atomic
+	- All clients reading from the database must be able to see the value just written
+	- Guarantee that the value read is the most recent
+		- Recency guarantee
+
 ## What Makes a System Linearizable?
+
+- After any one read has returned the new value, all following reads must also return the new value
+- CAS (Compare and set) operation
+
+![[Pasted image 20260922141634.png]]
+
+- Test systems
 ## Relying on Linearizability
 
 ### Locking and leader election

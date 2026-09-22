@@ -356,12 +356,70 @@
 		- Nodes my trick and deceive other nodes
 
 ### Defining the correctness of an algorithm
+
+- Fencing algorithm
+	- Uniqueness
+	- Monotonic sequence
+	- Availability
 ### Distinguishing between safety and liveness
+
+- Safety
+	- If a safety property is violated, we can point to a point in time that it was broken
+- Liveness
+	- May not hold at a certain point in time, but there is hope it may be satisfied in the future
+	- Availability
+	- Eventual consistency
 ### Mapping system models to the real world
+
+- Algorithms in the crash recovery model assume that data in stable storage survives crashes
 ## Formal Methods and Randomized Testing
 
+- Proving an algorithm correct does not mean its implementation on a real system will behave correctly
+- Combine theoretical analysis with empirical testing to verify implementations behave
+	- Property based testing
+	- Fuzzing
+	- Deterministic simulation testing
 ### Model checking and specification languages
+
+- Model checkers are tools that help verify that an algorithm or system behaves as expected
+- Purpose build language
+	- TLA+
+	- Gallina
+	- FizzBee
 ### Fault injection
+
+- Fault ingection
+	- Effective technique that verifies whether a system's implementation works
+	- Network failures
+	- Machine crashes
+	- Disk corruption
+	- Paused processes
+- Run in an environment close to the production environment
+	- Chaos Monkey tool (chaos engineering)
+	- Jepsen
 
 ### Deterministic simulation testing
 
+- Deterministic simulation testing (DST)
+	- Test code, not a model
+	- Run through a large number of randomized executions of the system
+		- Network communication
+		- IO
+		- Clock timing
+	- Requires simulator to be able to control all sources of non-determinism
+- Application level
+	- Flow
+		- Flow provides a point for developers to inject a deterministic network simulation into the system
+- Runtime level
+	- Asynchronous libraries
+	- Single threaded runtime
+- Machine level
+	- An entire machine can be made deterministic
+	- Anti-thesis
+		- Explores paths in application code by branching a test execution into multiple sub executions when it discovers less common behaviour
+- Deterministically replay a log of events to reconstruct derived materialized views
+- Workflow engines rely on workflow definitions being deterministic to provide durable execution semantics
+- State machine replication
+	- replicates data by independently executing the same sequence of deterministic transactions on each replica
+		- Statement-based replication
+		- Serial transaction execution in stored procedures
