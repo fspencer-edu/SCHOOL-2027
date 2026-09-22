@@ -241,24 +241,92 @@
 ### Automatically detecting lost updates
 
 - Allow parallel execution
+- Abort transaction is there is a lost update detected
+- Databases can perform this check efficiently with snapshot isolation
+- Does not require application code changes
 ### Conditional writes (compare-and-set)
 
+- Conditional write
+	- Prevent lost updates by allowing an update to happen only if the value has not changed since last read
+	- Database equivalent of the atomic CAS instructions in CPUs
+- Use version number column and increment on every update and apply updates only if the current version has not changed
+	- Optimistic locking
 ### Conflict resolution and replication
+
+- Locks and conditional write operations assume that there is a single up-to-date copy of the data
+- Databases with multi-leader or leaderless replication usually allow several writes to happen concurrently and replicate them asynchronously, so they cannot guarantee a single up-to-date copy
+	- Allow concurrent writes to create several conflicting version of a value (siblings) and use application code or special data structures to resolve and merge versions after
+- Merging conflicting values can prevent lost updates if the updates are commutative
+	- Conflict-free replicated datatypes and operational transformation (CRDTs)
+- LWW
+	- Prone to lost updates
 
 ## Write Skew and Phantoms
 
 ### Characterizing write skew
+
+- Write skew
+	- Neither a dirty write or a lost update
+	- Two transactions are updating two objects
+	- Generalization of the lost-update problem
+- Atomic single-object operations do not help, as multiple objects are involved
+- Automatic detection of lost updates do not help
+- Explicitly lock the rows that the transaction depends on
 ### More examples of write skew
+
+- Meeting room booking system
+- Multiplayer game
+- Claiming a username
+- Preventing a double-spending
 ### Phantoms causing write skew
+
+1) `SELECT` query checks a requirement is satisfied by searching for rows that match a search condition
+2) Application code decides how to continue
+3) If application goes ahead, makes a write to the database and commits the transactions
+
+- Lock the rows in step 1, to make transaction safe and avoid write skew
+- Other examples check for the absence of rows matching, and write adds a row
+- Phantom
+	- Write in one transaction changes the result of a search query in another transaction
 
 ### Materializing conflicts
 
+- Materializing conflicts
+	- takes a phantom and turns it into a lock conflict on a concrete set of rows that exist in the database
+	- Considered last resort if no alternative
+	- Serializable isolation level is preferable
 # Serializability
 
+- Serializable isolation
+	- Strongest isolation level
+	- Prevents all possible race conditions
+- Serial order
+- Two-phase locking
+- Optimistic concurrency control
 ## Actual Serial Execution
 
+- RAM
+	- Feasible to keep active dataset in memory
+	- Faster execution
+- OLTP transaction are short and make only a small number of reads and writes
+- Long running analytical queries are typically read-only can use a consistent snapshot
+
 ### Encapsulating transactions in stored procedures
+
+- OLTP applications keep transactions short by avoiding interactively waiting for user input
+- Transactions are committed within the same HTTP request
+- Process multiple transaction concurrently in to increase performance
+- Stored procedure
+	- Submit the entire transaction code to the database ahead of time
+
+![[Pasted image 20260921201018.png]]
 ### Pros and cons of stored procedures
+
+- Code running in a database is difficult to manage
+- More performance-sensitive than an application server
+- Multi-tenant system can cause security risk with untrusted code
+- State machine replication
+	- 
 ### Sharding
 ### Summary of serial execution
 ## Two-Phase Locking
