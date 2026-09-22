@@ -18,20 +18,73 @@
 - After any one read has returned the new value, all following reads must also return the new value
 - CAS (Compare and set) operation
 
-![[Pasted image 20260922141634.png]]
+<img src="/images/Pasted image 20260922141634.png" alt="image" width="500">
 
-- Test systems
+- Test systems linearizability
+	- Record the timings of all requests and responses and check if they can be arranged into a valid sequential order
+
+- Serializability
+	- Isolation level of transactions
+	- Every transaction may read and write multiple objects
+- Linearizability
+	- Guarantee on reads and writes of a register (individual object)
+	- Does not group operations together into transaction
+	- Recency guarantee
+
+- Strict serializability or strong one-copy serializability (strong-1-SR)
+	- Database provides both serializability and linearizability
+- Single nodes are linearizable
+- Distributed database use optimistic methods like SSI (serializable snapshot isolation)
+
 ## Relying on Linearizability
 
 ### Locking and leader election
+
+- Single leader replication needs to ensure that there is indeed only one leader, not several (split brain)
+- Use a lease to elect a leader
+	- The node that successfully acquires a lease wins
+- Oracle Real Application Clusters (RAC)
+	- Use a lock per disk page
+	- Multiple nodes sharing access to the same disk storage system
 ### Constraints and uniqueness guarantees
+
+- Loose constraints
+- Hard uniqueness constraint
+	- Relational databases
+	- Requires linearizability
 ### Cross-channel timing dependencies
 
+<img src="/images/Pasted image 20260922142657.png" alt="image" width="500">
+
+- Two communication channels between the web server and the transcoder
+	- File storage
+	- Message queue
 ## Implementing Linearizable Systems
+
+- Single leader replication (potentially linearizable)
+	- Assumes the leader is known
+- Consensus algorithm (likely linearizable)
+	- Single leader replication with automatic leader election and failover
+	- Allows reads on a node without checking that it is still the leader
+- Multi-leader replication (not linearizable)
+	- Concurrently process writes on multiple nodes
+	- Asynchronously replicate to other nodes
+- Leaderless replication (probably not linearizable)
+	- LWW are non-linearizable because clock timestamps cannot be guaranteed to be consistent with actual event ordering because of clock skew
+	- Dynamo-style quorums for linearizable, but reduced performance
 
 ## The Cost of Linearizability
 
+- Network partition on multi-leader database
+	- Each region can continue operating normally
+	- Writes are queued up and exchanges with network is restored
+- On single leader
+	- Clients connected to follower region cannot contact the leader (unavailable)
+	- Make stale reads
+
 ### The CAP theorem
+
+- 
 ### Linearizability and network delays
 
 # ID Generators and Logical Clocks
