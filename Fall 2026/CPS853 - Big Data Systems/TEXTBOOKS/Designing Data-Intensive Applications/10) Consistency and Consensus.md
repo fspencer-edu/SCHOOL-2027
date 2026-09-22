@@ -84,8 +84,26 @@
 
 ### The CAP theorem
 
-- 
+- Requires linearizability
+	- Some replicas are disconnected from the other replicas because of the network problem
+	- Consistent under network partitions (CP)
+- Does not require linearizability
+	- Each replica can process requests independently, even if disconnected
+	- Remain available
+	- Available under network partitions (AP)
+
+- PACELC principle
+	- System designed might choose to weaken consistency when network is up to reduce latency
+	- During partition (P) choose between availability (A) and consistency (C)
+	- Else (E), where there is no partition, choose between latency (L) and consistency (C)
+
+- CAP
+	- Consistency, availability, partition tolerance
+	- Pick two out of three
+	- Either consistent of available when partitioned
 ### Linearizability and network delays
+
+- 
 
 # ID Generators and Logical Clocks
 
