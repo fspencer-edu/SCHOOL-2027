@@ -439,7 +439,7 @@
 - Commit/abort process in 2PC is split into two phases
 - Nodes are called participants in the transaction
 
-![[Pasted image 20260921220745.png]]
+<img src="/images/Pasted image 20260921220745.png" alt="image" width="500">
 
 - Use a coordinator/transaction manager
 - Coordinator beings phase 1 by sending a prepare request to each of the nodes
@@ -535,4 +535,4 @@
 	- Message IDs stored on one shard and the main data updated by message processed to be stored on other shard
 	- Ensure atomicity of transaction commit across those shards
 
-![[Pasted image 20260921223421.png]]
+<img src="/images/Pasted image 20260921223421.png" alt="image" width="500">
