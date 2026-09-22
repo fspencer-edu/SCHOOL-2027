@@ -1,4 +1,6 @@
 # Faults and Partial Failures
+
+- Hardware that is working
 # Unreliable Networks
 
 ## The Limitations of TCP
