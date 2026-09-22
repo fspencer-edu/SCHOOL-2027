@@ -307,10 +307,49 @@
 
 - Byzantine fault tolerant
 	- Continues to operate correctly if some nodes are malfunctioning and not obeying the protocol
-	- Attackers interferring with protocol
+	- Attackers interfering with the network
+- CPU register corrupted by radiation
+- A system with multiple participating parties
+- Multitenant systems have mutally untrusting tenants
+	- Isolated from one another via firewalls, virtualizations, and access control polices
+- Web applications
+	- Input validation
+	- Sanitization
+	- Output escaping
+	- Preventing SQL injection
+	- Cross site scripting
+- Byzantine fault tolerant algorithms require a supermajority of more than two-thrids of the nodes
 ### Weak forms of lying
 
+- Invalid messages dur to hardware issues
+- Software bugs
+- Misconfiguration
+
+- Corrupt network packets
+	- Checksums in application level protocol
+- Sanitize user input
+	- SQL injection attacks
+	- Denial of service through large memory allocation
+
 ## System Model and Reality
+
+- Algorithms must be written in a way that does not depend too heavily on the details of the hardware and software configuration
+- System model
+	- Abstraction that describes an algorithm's assumptions
+- Synchronous model
+	- Assumes bounded network delay
+	- Clock drift, pauses, and delay will never exceed a fixed upper bound
+- Partially synchronous model
+	- Sometimes exceeds the bounds for network delay
+- Asynchronous model
+	- Not allowed to make any timing assumptions
+
+- Common system models
+	- Crash stop faults
+		- 
+	- Crash recovery faults
+	- Degraded performance and partial functionality
+	- Byzantine (arbitrary) faults
 
 ### Defining the correctness of an algorithm
 ### Distinguishing between safety and liveness
