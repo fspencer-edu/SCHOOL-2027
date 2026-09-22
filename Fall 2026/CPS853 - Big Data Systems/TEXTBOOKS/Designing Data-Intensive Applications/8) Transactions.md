@@ -358,24 +358,105 @@
 ### Performance of 2PL
 
 - Transaction throughput and response times are worse
-- 
+- Overhead of acquiring and releasing locks, and reduced concurrency
 ### Predicate locks
+
+- Phantoms
+	- One transaction changing the results of another transaction's search query
+- Predicate lock
+	- Similar to shared/exclusive lock
+	- Belongs to all objects that match a search condition
+	- Applies to objects that do not exist/future objects in the database
 ### Index-range locks
+
+- Index range locking/next-key locking
+	- Approximation of predicate locking
+	- Makes a match to a greater set of objects
+	- Attach a shard lock to the index entry
+- Time-based index
+	- Attach a shared lock to a range of values in that index, indicating that a transaction has search for bookings that overlap
+- Protection against phantoms and write skews
+- Not as precise as predicate locks
+- Lower overhead
 
 ## Serializable Snapshot Isolation
 
+- Serializable snapshot isolation (SSI)
+	- Provides full serializability with small performance penalty
+	- Used in single-node databases, distributed databases, and embedded storage engines
 ### Pessimistic vs. optimistic concurrency control
+
+- 2PL is a pessimistic concurrency control mechanism
+- Serial execution is pessimistic to the extreme
+- Serializable snapshot isolation is an optimistic concurrent control
+	- Transactions continue instead of blocking
+	- Performs worse if high contention
+	- Contention can be reduced with commutative atomic operations
 ### Decisions based on an outdated premise
+
+- A transaction reads data form the database, examines the results of the query, and decides to take an action
+- The results under snapshot isolation can be from a out of date data
+- Transaction is taking an action based on a premise
 ### Detection of stale MVCC reads
+
+- Reading from a consistent snapshot in a MVCC can ignore writes that were made by any other transactions that hadn't committed
+- Database tracks when a transaction ignores another transaction's writes because of MVCC visibility rules
+- SSI preserves snapshot isolation's support for long-running reds from a consistent snapshot
 ### Detection of writes that affect prior reads
+
+- Another transaction modifying data after it has been read
+- Look in the indexes for any other transactions that have recently read the affected data
 ### Performance of serializable snapshot isolation
+
+- Transaction granularity affects overhead and performance
+- 2PL
+- Serializable snapshot isolation
+- Serial execution
+- Non-serializable snapshot isolation
+- SSI
 
 # Distributed Transactions
 
+- Distributed transactions
+	- Multiple nodes involved in a transactions
+	- Used of multiple shards or global secondary index
+- Single node transactions
+	- Atomicity is implemented by the storage engine
+	- Commitment depends on order of written data
+- Distributed transactions
+	- Some nodes detect a constraint violation or conflict
+	- Aborting with a timeout from network error
+	- Nodes crash, and rollback, while other commit
+- Atomic commitment problem
+	- Ensure that nodes in a transaction either all commit or all abort
+	- Prevent mixture
+
 ## Two-Phase Commit
 
+- Algorithm for achieving atomic transaction commit across multiple nodes
+- XA transactions (Java)
+- WS-AtomicTransaction (SOAP)
+- Commit/abort process in 2PC is split into two phases
+- Nodes are called participants in the transaction
+
+![[Pasted image 20260921220745.png]]
+
+- Use a coordinator/transaction manager
+- Coordinator beings phase 1 by sending a prepare request to each of the nodes
+	- Tracks responses from participants
 ### A system of promises
+
+- Requests a transaction ID from the coordinator (globally unique)
+- Application begins a single-node transaction on each of the participants and attaches a the global ID
+- Coordinator sends a prepare request to all participants
+	- Participants check constraint violation and send back a confirmation of commit or abort
+- Coordinator makes and writes the decision to its transaction logs (commit point)
 ### Coordinator failure
+
+- If coordinator fails before sending the prepare requests, a participant can safely abort the transaction
+- In doubt or uncertain
+	- Partipants return request, but coordinator crash
+- 
 ### Three-phase commit
 ## Distributed Transactions Across Different Systems
 
