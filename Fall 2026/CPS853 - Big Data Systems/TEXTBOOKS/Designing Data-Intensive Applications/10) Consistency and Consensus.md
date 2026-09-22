@@ -303,9 +303,49 @@ Consensus can be expressed as:
 - A vote by a quorum of nodes elects a leader, and then another quorum vote is requires for every entry that the leader wants to make
 - Ensures that the new leader honours any log entries already appended by the older leader before fail
 	- New leader is up to date with any confirmed log entries
+- Weaken the consensus properties to recover from a leader failure more quickly
+	- Unclean leader election (Kafka)
+		- Allows any replica to become leader
+- Assume a fixed set of nodes
+- Reconfiguration features
+	- More or less nodes during system migration
 ### Pros and cons of consensus
+
+- Consensus algorithms always require a strict majority to operate
+- Every operation requires a quorum
+- If there is a network partition, only the alive nodes are available to vote
+- Rely on timeouts to detect failed nodes
+- Sensitive to network problems
 
 ## Coordination Services
 
+- Coordination services
+	- ZooKeeper
+	- etcd
+	- Consul
+- Not designed for high write volumes or general purpose data storage
+- Designed to coordinate among nodes of another distributed system
+	- Kubernetes uses etcd
+	- Spark and Flink use ZooKeeper
+- Modeled after Google's Chubby lock service
+	- A consensus algorithm with several other fatures
+		- Locks and leases
+		- Support for fencing
+		- Failure detection
+		- Change notification
+- Configuration parameters
+	- Timeouts
+	- Thread pool sizes
 ### Allocating work to nodes
+
+- A coordination service is useful for single-leader databases and job schedular of other stateful systems
+- Sharded resource and data assignment
+- Use of atomic operations, ephemeral nodes, and notifications in the coordination service
+	- Apache Curator
+- Not intended to store data that may change thousands of times per second
+- Better to use a conventional database a replicate the fast changing internal state
 ### Service discovery
+
+- Service discovery
+	- Find IP address to connect to
+- Caches may also be refreshed periodically using time-to-live (TTL) confuration

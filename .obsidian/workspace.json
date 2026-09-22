@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "58f5716b51c21d4c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/10) Consistency and Consensus.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "10) Consistency and Consensus"
-            }
-          },
-          {
             "id": "ba5cc179459aa352",
             "type": "leaf",
             "state": {
@@ -269,8 +255,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "58f5716b51c21d4c",
+  "active": "ba5cc179459aa352",
   "lastOpenFiles": [
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/10) Consistency and Consensus.md",
     "Pasted image 20260922151354.png",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Computational Intelligence - A Logical Approach/9) Assumption-Based Reasoning.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/10) Setting Up a Hadoop Cluster.md.tmp",
@@ -283,7 +270,6 @@
     "TODO.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/5) Vision.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 2.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/10) Consistency and Consensus.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/9) The Trouble with Distributed Systems.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/5) Encoding and Evolution.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Docker Docs/0) Docker Docs.md.tmp",
@@ -297,7 +283,6 @@
     "Pasted image 20260921220745.png",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/11) Emotional Behaviours.md.tmp",
     "images/Pasted image 20260921201018.png",
-    "Pasted image 20260921201018.png",
     "TODO.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/4) Genetics, Development, and Plasticity.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 1.md",
