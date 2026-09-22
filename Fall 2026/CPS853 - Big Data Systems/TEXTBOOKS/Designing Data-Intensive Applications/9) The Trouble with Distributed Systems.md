@@ -269,12 +269,45 @@
 
 - Locks and leases in distributed applications are prone to misuse
 - Client 1 believes that it still has a valid lease, even though it has expired, and results in a corrupt file
-- 
+- A message from a former leaseholder might be delayed for a long time and arrive after another node has taken over the lease
 ### Fencing with multiple replicas
+
+- Zombie
+	- A former leaseholder that has not found out that it lost the least
+	- Ensure they cannot do damage with split brain
+	- Fencing off the zombie
+- Shoot the other node in the head (STONITH)
+	- Does not protect against the large network delays
+- Making access to storage safe by allowing writes only in the order of increasing fencing tokens
+	- Sequencers
+	- Epoch numbers
+- Consensus algorithms
+	- Ballot number
+	- Term number
+- Conditional writes (Amazon S3)
+- Conditional headers (Azure Blob Storage)
+- Request preconditions (Cloud Storage)
+
+### Fencing with multiple replicas
+
+- Do not need lock service if clients write to only one storage service that supports conditional writes
+- Put the writer's fencing token in the most significant bits or digits of the timestamp
+	- Used to protect writes to a leaderless replicated database
 
 ## Byzantine Faults
 
+- Fencing tokens can detect and block a node that is inadvertently acting in error
+- A node that casts multiple contradictory votes int he same election
+- Problem of reaching consensus in an untrusting environment is a Byzantine Generals Problem
+	- Generalization of the two generals problem
+	- n generals need to agree
+	- Traitors confuse the other by sending fake or untrue messages
+
 ### Uses of Byzantine fault tolerance
+
+- Byzantine fault tolerant
+	- Continues to operate correctly if some nodes are malfunctioning and not obeying the protocol
+	- Attackers interferring with protocol
 ### Weak forms of lying
 
 ## System Model and Reality
