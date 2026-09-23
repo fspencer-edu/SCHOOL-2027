@@ -182,12 +182,39 @@ for count, url in top5:
 ### Handling faults
 
 - Spot instances (Amazon EC2)
-- Spot virtual machines 
+- Spot virtual machines (Azure)
 - Preemptible instances (Google Cloud)
+
+- Preemption during on task priority levels
+- MapReduce
+	- Execution of parallel tasks are independent
+	- Writes intermediate data back to the DFS and waits before the next task is able to read it
 
 # Batch Processing Models
 
+- MapReduce and dataflow engines have evolved into
+	- Low-level programmatic APIs
+	- relational query languages
+	- DataFrame APIs
+
 ## MapReduce
+
+- Read a set of input fields and break it into records
+	- Saved in Parquet or Avro
+- Call the mapper function to extract a key and value from each input
+- Sort all the key-value pairs
+- Call the reducer to iterate over
+	- Combine overlapping keys
+- Mapper
+	- Called once for every input record
+	- Extract the key and value from the record
+	- Run in parallel on different parts of input
+- Reducer
+	- Takes the key-value pairs by mappers, collects all values belonging to the same key
+	- Produces output records
+
+- 
+
 ## Dataflow Engines
 ## Shuffling Data
 
