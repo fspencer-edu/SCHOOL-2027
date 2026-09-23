@@ -209,22 +209,129 @@ for count, url in top5:
 	- Called once for every input record
 	- Extract the key and value from the record
 	- Run in parallel on different parts of input
+	- Prepare the data by putting it into a form that is suitable for sorting
 - Reducer
 	- Takes the key-value pairs by mappers, collects all values belonging to the same key
 	- Produces output records
+	- Process the data that has been sorted
 
-- Prepare the data by putting it into a form that is suitable for sortin, and 
+- File based IO prevents job pipelining
 
 ## Dataflow Engines
+
+- Spark and Flink
+	- Handle an entire workflow as one job
+	- Support low level API that repeatedly calls a user-defined function to process on record at a time
+	- Higher level operators
+		- Join
+		- Group by
+	- Use relational style building blocks to express a computation
+		- Joining
+		- Grouping
+		- Filtering
+		- Aggregating
+		- Summing
+- Operations are implemented using the shuffle algorithms
+	- Expensive work is performed only in places where it is required
+	- Several operators that do not change the sharding of the dataset can be combined
+	- Optimize from explicitly declared data dependencies in a workflow
+	- Intermediate states can be kept in memory or written to local disk
+	- Operators can start executing when input is ready
+	- Existing processes can be reused to run new operators, reducing startup overheads compared to MapReduce
 ## Shuffling Data
 
+- Shuffle
+	- Produces a sorted order, with no randomness
+	- Used in batch processors
+		- Joins and aggregations
+
+![[Pasted image 20260923183104.png]]
+
+- Two mappers output with the same key are processed by the same reducer task
+- Each mapper creates a separate output file on its local disk for every reducer
+- Log structured storage
+	- Batches of key-value pairs are first collected in a sorted data structure in memory, then written out as sorted segment files, and smaller segments files are progressively merged into larger ones
+
 ## Join and Grouping
+
+- Shuffle brings together all the key-value pairs with the same key to the same reducer
+- Secondary sort
+	- Sort data by a primary key and then a secondary key
+	- Optimize data grouping and reduce memory overhead
+	- Sorted by mapper, and in reducer
+- Sort merge join
+	- An algorithm that first sorts two large datasets by a shared join key and then merges them by scanning both sorted streams simultaneously
+
+![[Pasted image 20260923183718.png]]
 ## Querying Languages
+
+- BigQuery
+	- DataFrame library
+- Snowflake
+	- Snowpark library
 ## DataFrames
+
+- A DataFrame is similar to a table in a relational database
+	- Collection of rows
+	- Values in the same column have the same type
+	- Users call functions corresponding to relational operators to perform operations
+- Local DF are usually indexed and ordered
+- Distributed DF are not
 
 # Batch Use Cases
 
-## Extract-Transform-Load
+## Extract-Transform-Load (ETL)
+
+- A data processing pipeline extracts data from a production database, transforms it, and loads the results into a downstream system
+- Workflow schedulers, orchestrators, and debug ETL data pipeline jobs
+- Data mesh, data contract, and datafabric
+	- Practices provide standards and tools to help teams safely publish data for consumption
 ## Analytics
+
+- Data lakehouse
+	- Architecture that combines the flexible, low cost storage of a data lake with the reliability, governance and query performance of a data warehouse
+- Pre aggregation queries
+	- Data is rolled up into OLAP cubes or data marts to speed up queries
+	- Queried in the warehouse or pushed to a purpose build real time OLAP system
+		- Druid
+		- Pinot
+	- take place at a scheduled interval
+- Ad hoc queries
+	- Queries that answer specific business, operational, and user behaviour
 ## Machine Learning
+
+- Feature engineering
+	- Raw data is filtered and transformed into data that models can be trained on
+- Model training
+	- The training data is the input to the batch process
+	- Weights of the trained model are the output
+- Batch interference
+	- Make predication in bulk if datasets are large and real time results are not required
+
+- Apache Spark's MLlib
+- Apache Flink's FlinkML
+- ML applications such as recommendation engines and ranking systems also use graph processing
+- Bulk synchronous parallel (BSP)
+	- Batch processing graph
+	- Apache Giraph
+	- Spark's GraphX API
+	- Flink's Gelly API
+	- Pregel model
+- Batch processing frameworks
+	- Kubeflow
+	- Flyte
+	- Ray
+- Libraries
+	- PyTorch
+	- TensorFlow
+	- XGBoost
+
 ## Serving Derived Data
+
+- Batch jobs push precomputed datasets to streams
+- Streaming systems are optimized for sequential writes
+- Streaming systems can act as a buffer between the batch job and the production databases
+- The output of a single batch job can be consumed by multiple downstream systems
+- Demilitarized zone (DMZ)
+	- Between batch processing and production network
+- 
