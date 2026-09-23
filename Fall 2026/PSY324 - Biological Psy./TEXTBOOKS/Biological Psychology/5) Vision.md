@@ -82,14 +82,21 @@
 - Fusiform gyrus
 	- Brain area of the inferior temporal cortex that recognizes faces
 - Inferior temporal cortex
-	- Portion fo th
+	- Portion of the cortex where neurons are highly sensitive to complex aspects of the shape of visual stimuli within very large receptive fields
 - Motion blindness
-- MST
-- MT
+	- An impaired ability to perceive movement
+- MST (medial superior temporal cortex)
+	- Temporal cortex area that responds best to the expansion, contraction, or rotation of a visual display
+- MT (V5)
+	- Area of the middle temporal lobe that is important for perception of visual motion
 - Prosopagnosia
+	- The inability to recognize faces due to damage of several brain areas
 - Saccades
+	- Voluntary eye movements
 - Ventral stream
+	- Visual paths in the temporal cortex that are specialized for identifying and recognizing objects
 - Visual agnosia
+	- An inability to recognize objects despite otherwise satisfactory vision
 
 ## The Ventral and Dorsal Streams
 ## Shape Perception
