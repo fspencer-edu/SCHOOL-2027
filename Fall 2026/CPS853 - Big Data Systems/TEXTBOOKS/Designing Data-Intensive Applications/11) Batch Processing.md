@@ -213,7 +213,7 @@ for count, url in top5:
 	- Takes the key-value pairs by mappers, collects all values belonging to the same key
 	- Produces output records
 
-- 
+- Prepare the data by putting it into a form that is suitable for sortin, and 
 
 ## Dataflow Engines
 ## Shuffling Data
