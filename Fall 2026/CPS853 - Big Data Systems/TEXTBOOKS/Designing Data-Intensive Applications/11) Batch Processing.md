@@ -334,4 +334,9 @@ for count, url in top5:
 - The output of a single batch job can be consumed by multiple downstream systems
 - Demilitarized zone (DMZ)
 	- Between batch processing and production network
+- Batch jobs must send notifications to downstream systems that the job is finished and can be served
+- Bulk import tools
+	- TiDB's Lightning
+	- Apache Pinot's Hadoop import jobs
+	- Build a brand-new database inside the batch job and bulk load files directly into the database from a DFS
 - 

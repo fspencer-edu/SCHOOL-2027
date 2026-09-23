@@ -1,6 +1,30 @@
+- Batch processors must artificially divide the data into chunks of fixed duration
+- Stream processing
+	- Data that is incrementally made available over time
+- Event streams
+	- Unbounded, incrementally processed counterpart to batch data
+
 # Transmitting Event Streams
 
+- In a stream processing context, a record is known as an event
+	- Small self contained, immutable object containing the details of something that happened at a point in time
+	- Event may be encoded as text string, JSON, or binary form
+	- Append to file, insert to relational table, or write to a document database
+- Event is generated once by a producer (published/sender) and processed by multiple consumers (subscribers/recipients)
+- Related events are group together in a topic of stream
+- Relational databases use triggers
+	- React to change
+
 ## Messaging Systems
+
+- Messaging system
+	- A producers sends a message containing the event and is pushed to consumers
+- Flow control
+	- Blocks the producer from sending more messages to the subscriber
+		- Backpressure
+	- Queued
+- Offline nodes
+- 
 
 ### Direct messaging from producers to consumers
 ### Message brokers
