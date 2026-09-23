@@ -147,7 +147,7 @@
 	- Assign IDs to events and determines their order
 	- A pair of (counter, node ID)
 
-![[Pasted image 20260922151354.png]]
+<img src="/images/Pasted image 20260922151354.png" alt="image" width="500">
 
 - Timestamp order
 	- (1, “Aaliyah”) < (1, “Caleb”) < (2, “Bryce”)
