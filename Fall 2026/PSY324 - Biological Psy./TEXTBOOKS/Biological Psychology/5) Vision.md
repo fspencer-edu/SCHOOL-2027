@@ -78,7 +78,18 @@
 # Specialized Visual Processes
 
 - Dorsal streams
-- Fusiform gryus
+	- Visual path in the parietal cortex that helps the motor system locate objects
+- Fusiform gyrus
+	- Brain area of the inferior temporal cortex that recognizes faces
+- Inferior temporal cortex
+	- Portion fo th
+- Motion blindness
+- MST
+- MT
+- Prosopagnosia
+- Saccades
+- Ventral stream
+- Visual agnosia
 
 ## The Ventral and Dorsal Streams
 ## Shape Perception

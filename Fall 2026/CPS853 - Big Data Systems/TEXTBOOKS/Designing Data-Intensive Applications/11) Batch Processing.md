@@ -97,9 +97,11 @@ for count, url in top5:
 		- File block locations
 		- Directory structures
 		- Permission settings
-- DFSs must expose a protocol or interface so that batch processing can read and write file
+- DFS must expose a protocol or interface so that batch processing can read and write file
 - POSIX-compliant filesystems
-	- 
+- Filesystem in Userspace (FUST) or the Network File System (NFS) protocol are used to integrate into VFS
+- Amazon Elastic File System (EFS) and Archil
+	- Provide NFS compatible distributes filesystem implementations
 
 ## Object Stores
 ## Distributed Job Orchestration
