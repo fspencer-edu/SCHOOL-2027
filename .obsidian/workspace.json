@@ -77,8 +77,7 @@
               "title": "TODO"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -256,8 +255,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "1d04b4143063873b",
+  "active": "ba5cc179459aa352",
   "lastOpenFiles": [
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/3) A Tour of Spark's Toolset.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/13) Cognitive Functions.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
@@ -280,7 +280,6 @@
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/0) Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.md.tmp",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/6) Decision Trees.md.tmp",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/17) Representation Learning and generative Learning Using Autoencoders and GANs.md.tmp",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/10) Introduction to Artificial Neural Networks with Keras.md.tmp",
     "images/Pasted image 20260922151354.png",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/10) Consistency and Consensus.md",
     "Pasted image 20260922151354.png",

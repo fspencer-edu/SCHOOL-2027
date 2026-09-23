@@ -99,16 +99,91 @@ for count, url in top5:
 		- Permission settings
 - DFS must expose a protocol or interface so that batch processing can read and write file
 - POSIX-compliant filesystems
-- Filesystem in Userspace (FUST) or the Network File System (NFS) protocol are used to integrate into VFS
+- Filesystem in Userspace (FUSE) or the Network File System (NFS) protocol are used to integrate into VFS
 - Amazon Elastic File System (EFS) and Archil
 	- Provide NFS compatible distributes filesystem implementations
+- Erasure coding
+	- Allows lost data to be recovered with lower storage overhead than full replication
+	- Reed-Solomon
 
 ## Object Stores
+
+- Amazon S3
+- Google Cloud Storage
+- Azure Blob Storage
+- OpenStack Swift
+
+- FUSE drivers allow users to treat object stores such as S3 as a filesystem
+
+- Each object in an object store has a URL
+	- Bucket
+	- Object key
+- Objects are read using a `get` call and written using a `put`
+- Objects are immutable once written
+
+- DFS
+	- Hard links
+	- Symbolic links
+	- File locking
+	- Atomic renames
+- HDFS
+	- Allow computing tasks to run on the machine that stores a copy of the file
+
 ## Distributed Job Orchestration
 
+- Batch processing frameworks send a request to an orchestrator's schedular to run a job
+	- Number of tasks to execute
+	- Amount of memory, CPU, and disk needed for each task
+	- A job identifier
+	- Access creditials
+	- Job parameters
+		- Input and output data
+	- Required hardware details
+	- Location of job's executable code
+- Task executors
+	- NodeManager (YARN)
+	- Kubelet (Kubernetes)
+	- Running a job tasks, sending heartbeat to signal their liveness, and tracking task status and resource allocation on the node
+	- Monitors the process
+	- Work with OS to provide security and performance isolation
+		- cgroup
+- Resource manager
+	- Stores metadata about each node
+		- Hardware availability
+		- Task statuses
+		- Network location
+		- Node status
+- Scheduler
+	- Centralized subsystem which receives requests to start, stop, or check on the status of a job
+
 ### Resource allocation
+
+- Gang scheduling
+	- Run all of one job's task, then the second
+- Starvation
+	- Cluster does not have resources for a long time
+- Preempt
+	- Kill some of the first's job tasks for the second job
+- NP-hard
+	- Slow to calculate an optimal solution for all but the smallest examples
+- Schedulers use heuristics to make non-optimal, but reasonable decisions
+	- FIFO
+	- Dominant resource fairness (DRF)
+	- Priority queues
+	- Capacity or quota-based
+	- Bin-packing
+
 ### Scheduling workflows
+
+- Output from one job needs to become the input to one or more other jobs
+- Workflow or directed acyclic graph (DAG)
+- Workflow schedulers have management features that are useful when maintaining a large collection of batch jobs
+- Handles dependencies between job executions
 ### Handling faults
+
+- Spot instances (Amazon EC2)
+- Spot virtual machines 
+- Preemptible instances (Google Cloud)
 
 # Batch Processing Models
 
