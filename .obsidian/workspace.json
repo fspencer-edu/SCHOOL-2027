@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/13) Cognitive Functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "12) Learning, Memory, and Intelligence"
+              "title": "13) Cognitive Functions"
             }
           },
           {
@@ -258,6 +258,7 @@
   },
   "active": "1d04b4143063873b",
   "lastOpenFiles": [
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/11) Emotional Behaviours.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/10) Reproductive Behaviours.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/9) Internal Regulation.md",
@@ -303,7 +304,6 @@
     "Fall 2026/CPS721 - AI/Quizes/AI - quiz 1.md",
     "Fall 2026/BLG655 - Viruses/Viruses - Course Outline.md",
     "Fall 2026/CPS721 - AI/AI - Course Outline.md",
-    "Fall 2026/CPS803 - Machine Learning/Machine Learning - Course Outline.md",
     "Untitled.canvas"
   ]
 }
