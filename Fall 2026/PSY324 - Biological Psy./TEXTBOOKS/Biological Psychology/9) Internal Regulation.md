@@ -41,13 +41,47 @@
 - Subfornical organ (SFO)
 	- Brain structure adjoining the third ventricle of the brain, where its cells monitor osmotic pressure and sodium concentration
 - Supraoptic nucleus
-	- Part of the hypothalam
+	- Part of the hypothalamus that controls the release rate of vasopressin
 - Vasopressin
 
 ## Strategies of Water Regulation
 ## Osmotic Thirst
 ## Hypovolemic Thirst and Sodium-Specific Hunger
 # Hunger
+
+- Anorexia nervosa
+	- Disorder characterized by refusal to each enough to remain healthy
+- Arcuate nucleus
+	- Hypothalamic area with sets of neurons for hunger and satiety
+- Bulimia nervosa
+	- A condition in which people alternate between binges of overeating and periods of strict dieting
+- Cholecystokinin (CCK)
+- Duodenum
+	- Part of the small intestine adjoining the stomach; first digestive site that absorbs nutrients
+- Ghrelin
+	- Chemical released by the stomach during a period of food deprivation; also released as a neurotransmitter in the brain, where it stimulates eating
+- Glucagon
+	- Pancreatic hormone that simulates the liver to convert stored glycogen to glucose
+- Insulin
+	- Pancreatic hormone that enables glucose to enter the cell
+- Lactase
+	- Intestinal enzyme that metabolizes lactose
+- Lactose
+	- Sugar in milk
+- Lateral hypothalamus
+	- Area of the hypothalamus that controls insulin secretion, alters taste responsiveness, and facilitates feeding in other ways
+- Leptin
+	- Hormone released by fat cells in proportion to their volume
+- Melanocortins
+- Sham-feeding
+	- Procedure in which everything that an animal swallows leaks out a tube connected to the esophagus or stomach
+- Type 1 diabetes
+	- Impaired glucose absorption caused by low levels of insulin secretion
+- Type 2 diabetes
+- Vagus nerve
+	- Tenth cranial nerve, which has branches to and from stomach and several other organs
+- Ventromedial hypothalamus (VMH)
+	- Region of the hypothalamus in which damage leads to faster stomach emptying and increase secretion of insulin
 ## Digestion and Food Selection
 ## Short- and Long-Term Regulation of Feeding
 ## Brain Mechanisms
