@@ -43,22 +43,36 @@
 # Brain Mechanisms of Movement
 
 - Anti-saccade task
+	- A voluntary eye movement away from the normal direction
 - Basal ganglia
 - Cerebellar nuclei
 - Corticospinal tracts
+	- Paths from the cerebral cortex to the spinal cord
 - Lateral corticospinal tract
+	- A set of axons from the primary motor cortex, surrounding areas, and midbrain area that is primarily responsible for controlling the peripheral muscles
 - Medial corticospinal tract
+	- Set of axons from many parts the cerebral cortex, midbrain, and medulla; responsible for control of bilateral muscles of the next, shoulders, and trunk
 - Mirror neurons
+	- Cells that are active during a movement and while watching someone else perform the same movement
 - Parallel fibers
+	- Axons in the cerebellum, parallel to one another and perpendicular to the planes of Purkinje cells
 - Posterior parietal cortex
+	- Area with a mixture of visual, somatosensory, and movement functions, particular in monitoring the position of the body relative to objects in the world
 - Prefrontal cortex
 - Premotor cortex
+	- Area of the frontal cortex, active during the planning of a movement
 - Primary motor cortex
+	- Area of the prefrontal cortex just anterior to the central sulcus;
+	- a primary point of origin for axons conveying messages to the spinal cord
 - Purkinje cells
 - readiness potential
+	- Recordable activity in the motor cortex prior the voluntary movement
 - Red nucleus
+	- A midbrain area that controls certain aspects of movement
 - Striatum or dorsal striatum
+	- Forebrain structure composed of the caudate nucleus and putamen, which are important for certain aspects of movement and learning
 - Supplementary motor cortex
+	- Area of the frontal cortex; active during preparation of a rapid sequence of movements
 
 ## The Cerebral Cortex
 ## The Cerebellum
@@ -67,11 +81,16 @@
 # Movement Disorders
 
 - Huntingtin
+	- Protein produces by the gene whose mutation leads to Huntington's disease
 - Huntington's disease
+	- Neurological disorder characterized by jerky arm movements and facial twitches and later by tremors, writhing movements, and psychological symptoms
 - L-dopa
+	- chemical precursor to dopamine
 - MPP+
 - MPTP
+	- A chemical that the body converts to MPP+
 - Parkinson's disease
+	- Malady caused by damage to a dopamine pathway, resulting in slow movements, difficulty initiating movements, rigidity of the muscles, and tremors
 - Stem cells
 
 ## Parkinson's Disease
