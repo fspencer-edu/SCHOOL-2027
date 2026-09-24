@@ -110,8 +110,22 @@
 - Stop at a defined fitness
 - Stagnation
 	- Population yields solution of similar strength for several generations
-	- 
-## 
 # Configuring the parameters of a generic algorithm
+
+- Encoding
+- Population size
+- Population initialization
+- Number of offspring
+- Parent selection method
+- Crossover method
+- Mutation rate
+- Mutation method
+- Generation selection methods
+- Stopping conditions
 # Use cases for evolutionary algorithms
+
+- Predicting investor behaviour
+- Feature selection in machine learning
+- Code breaking and ciphers
 # Summary of evolutionary algorithms
+

@@ -22,48 +22,6 @@
             }
           },
           {
-            "id": "e8bce2d096e04ded",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/4) Evolutionary Algorithms.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4) Evolutionary Algorithms"
-            }
-          },
-          {
-            "id": "8b9666c4972700fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/5) Advanced Evolutionary Approaches.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5) Advanced Evolutionary Approaches"
-            }
-          },
-          {
-            "id": "08917898260f4de4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/6) Swarm Intelligence - Ants.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6) Swarm Intelligence - Ants"
-            }
-          },
-          {
             "id": "8c3adf010de36437",
             "type": "leaf",
             "state": {
@@ -298,8 +256,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "e8bce2d096e04ded",
+  "active": "8c3adf010de36437",
   "lastOpenFiles": [
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/6) Swarm Intelligence - Ants.md",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/5) Advanced Evolutionary Approaches.md",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/4) Evolutionary Algorithms.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/3) Intelligent Search.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/2) Search Fundamentals.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/1) Intuition of AI.md",
@@ -309,9 +270,6 @@
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/9) Artificial Neural Netorks.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/8) ML.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/7) Swarm Intelligence - Particles.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/6) Swarm Intelligence - Ants.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/5) Advanced Evolutionary Approaches.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/4) Evolutionary Algorithms.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/0) Grokking Artificial Intelligence Algorithms.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/13) A Philosophy of Streaming Systems.md",
     "Pasted image 20260924122443.png",
