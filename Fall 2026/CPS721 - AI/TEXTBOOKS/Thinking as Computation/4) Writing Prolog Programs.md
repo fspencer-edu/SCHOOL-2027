@@ -4,7 +4,7 @@
 ## The whole truth
 # A blocks world
 # Recursion in Prolog
-# Mathematical inducation
+# Mathematical induction
 # Nonterminating programs
 # A more complex predicate
 

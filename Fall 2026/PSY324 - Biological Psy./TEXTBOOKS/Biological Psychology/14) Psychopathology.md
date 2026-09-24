@@ -85,13 +85,18 @@
 - Neurodevelopmental hypothesis
 	- Proposal that schizophrenia begins with abnormalities in the prenatal or neonatal development of the nervous system, based on either genetics or other influences
 - Phenothiazines
-	- A chemical family that includes antipsychotic drugs (chlorpromazine) that relieve the positive symptoms of schi
+	- A chemical family that includes antipsychotic drugs (chlorpromazine) that relieve the positive symptoms of schizophrenia
 - Positive symptoms
+	- Presence of behaviours not seen in normal people
 - Schizophrenia
 - Season-of-birth effect
+	- Tendency for people born in winter to have a slightly greater probability of developing schizophrenia than people born at other times of the year
 - Second-generation antipsychotics
+	- Drugs that alleviate schizophrenia with less likelihood of movement problems
 - Substance-induced psychotic disorder
+	- Condition similar to schizophrenia, provoked by large, repeated doses of a drug
 - Tardive dyskinesia
+	- A movement disorder characterized by tremors and other involuntary movements
 - Two-hit hypothesis
 
 ## Diagnosis
@@ -101,6 +106,9 @@
 
 ## Treatments
 # Autism Spectrum Disorder
+
+- Autism spectrum disorder
+- Folic acid
 
 ## Symptoms and Characteristics
 ## Generics and Other Causes
