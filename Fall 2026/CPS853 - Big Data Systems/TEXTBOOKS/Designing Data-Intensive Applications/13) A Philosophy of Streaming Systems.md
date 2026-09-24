@@ -231,15 +231,42 @@
 	- End user to database
 ### Applying end-to-end thinking in data
 
-- 
-
 ## Enforcing Constraints
+
 ### Uniqueness constraints require consensus
+
+- Uniqueness checking can be scaled out by sharding based on the value that needs to be unique
 ### Uniqueness in log-based messaging
+
+- A stream processor consumes all the messages in a log shard sequentially on a single thread
 ### Multi-shard request processing
+
+- 3 shards
+	- One containing the request ID
+	- One containing the payee account
+	- One containing the payer account
+
+![[Pasted image 20260924122443.png]]
+
+
+- Events for a given account are processed strictly in log order with at-least-once semantics
+- Stream processors are deterministic
 ## Timeliness and Integrity
 
+- Strict serializability
+- Timeliness
+	- Ensuring that users observe the system in an up to date state
+- Integrity
+	- Absence of corruption
+- Violations of timeliness are allowed under eventual consistency
+- Violations of integrity result in perpetual inconsistency
+
 ### Correctness of dataflow systems
+
+- integrity
+	- Reprsenting the content of the write operation as a single message
+	- Deriving all other state updates from that single message via deterministic derivation function
+	- Passing a client gener
 ### Loosely interpreted constraints
 ### Coordination-avoiding data systems
 

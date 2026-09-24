@@ -26,6 +26,11 @@
 
 
 
+## Assignments
+- [ ] AI assignment 1
+- [ ] Virus video
+- [ ] Viruses post
+
 
 
 - Move Naics to server
