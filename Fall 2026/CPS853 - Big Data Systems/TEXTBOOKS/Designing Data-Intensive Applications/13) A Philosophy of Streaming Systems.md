@@ -178,25 +178,60 @@
 ![[Pasted image 20260924102944.png]]
 
 - Read path
-	- Read from the derived data
+	- Read from the derived dataset
 
 ### Materialized views and caching
+
+- Precompute the search results for only a fixed set of most common queries
+	- Serve quickly without having to go to the index
+- Caches, indexes, and materialized views shift the boundary between the read path and the write path
 ### Stateful, offline, capable clients
+
+- Cache of state on the server
+- Pixels on the screen are a materialized view of the model objects in the client app
+- Model objects are the local replica of state in a remote datacenter
+
 ### Pushing state changes to clients
+
+- Communication channels by which a web browser can keep an open TCP connection to a server
+	- Server-sent events
+	- WebSockets
+- Consumer offsets help during offline changes
+	- Log based message broker can reconnect and update changes
 ### End-to-end event streams
+
 ### Reads are events too
+
+- Possible to represent read requests as streams of events and send both the read events and the write events through a stream processor
+- Stream-table join
 ### Multi-shard data processing
 
+- Treating queries as streams provides an option for implementing large-scale applications that run against the limits of conventional solutions
 
 # Aiming for Correctness
 
 ## The End-to-End Argument for Databases
 
 ### Exactly-once execution of an operation
+
+- Exactly once
+	- Arranging the computation such that the final effect is the same as if no faults had occurred
 ### Duplicate suppression
+
+- TCP
+	- Uses sequence numbers on packets to put them in the correct order at the recipient and to determine whether any packets where lost or duplicated
+- 2PC breaks the one-to-one mapping between a TCP connection and a transaction
+	- Uses transaction coordinator
 ### Uniquely identifying requests
+
 ### End-to-end argument
+
+- Suppressing duplicate transactions
+- Transaction identifier
+	- End user to database
 ### Applying end-to-end thinking in data
+
+- 
 
 ## Enforcing Constraints
 ### Uniqueness constraints require consensus

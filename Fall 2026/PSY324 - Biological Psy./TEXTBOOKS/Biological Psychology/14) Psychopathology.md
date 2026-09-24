@@ -59,6 +59,41 @@
 ## Bipolar Disorder
 # Schizophrenia
 
+- Antipsychotic
+- Butyrophenones
+	- A chemical family that includes antipsychotic drugs (haloperidol) that relieve the positive symptoms of schizophrenia
+- Chlorpromazine
+	- Antipsychotic drug that relieves the positive symptoms of schizophrenia for most, though not all, patients
+- Concordance
+	- Similarity, such as having the same condition as someone else
+- Delusions
+	- Unjustifiable beliefs
+- Differential diagnosis
+	- One that rules other other conditions with similar symptoms
+- DISC1
+- Dopamine hypothesis of schizophrenia
+	- Idea that schizophrenia results from excess activity at dopamine synapses in certain brain areas
+- Glutamate hypothesis of schizophrenia
+	- Proposal that schizophrenia relates in part to deficient activity at glutamate synapses, especially in the prefrontal cortex
+- Hallucinations
+	- False sensory experiences
+- Mesolimbocortical system
+- Microdeletion
+	- Deletion of a small part of a chromosome
+- Negative symptoms
+	- Absence of behaviours ordinarily seen in normal people
+- Neurodevelopmental hypothesis
+	- Proposal that schizophrenia begins with abnormalities in the prenatal or neonatal development of the nervous system, based on either genetics or other influences
+- Phenothiazines
+	- A chemical family that includes antipsychotic drugs (chlorpromazine) that relieve the positive symptoms of schi
+- Positive symptoms
+- Schizophrenia
+- Season-of-birth effect
+- Second-generation antipsychotics
+- Substance-induced psychotic disorder
+- Tardive dyskinesia
+- Two-hit hypothesis
+
 ## Diagnosis
 ## Genetic Influences
 ## Environmental Influences

@@ -49,7 +49,8 @@
               "title": "TODO"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -227,12 +228,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "87120d7f287162c2",
+  "active": "1d04b4143063873b",
   "lastOpenFiles": [
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/13) A Philosophy of Streaming Systems.md",
     "Pasted image 20260924102944.png",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/12) Administering Kafka.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/13) A Philosophy of Streaming Systems.md",
     "images/Pasted image 20260923200437.png",
     "images/Pasted image 20260923183718.png",
     "images/Pasted image 20260923183104.png",
@@ -244,7 +245,6 @@
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/12) Stream Processing.md",
     "Pasted image 20260923202950.png",
     "Pasted image 20260923202029.png",
-    "Pasted image 20260923201656.png",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/11) Batch Processing.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/3) A Tour of Spark's Toolset.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/13) Cognitive Functions.md",
