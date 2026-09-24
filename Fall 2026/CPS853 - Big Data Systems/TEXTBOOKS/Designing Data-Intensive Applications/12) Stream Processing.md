@@ -293,20 +293,91 @@
 	- Publish a correction later
 ### Whose clocks are you using, anyway?
 
-- 
+- Log offline device clocks
+	- Time that the event occurred
+	- Time that the event was sent to the server
+	- Time that the event was received by the server
+
+- Offset between the device clock and server clock = 3rd timestamp from 2nd timestamp
+- Apply offset to event timestamp to estimate the true time
+
 ### Types of windows
+
+- Defining windows
+	- Count events or to calculate the average of values within the window
+- Tumbling window
+	- Fixed length
+	- Every event belongs to one window
+- Hopping windows
+	- Fixed length
+	- Overlap between consecutive windows to provide smoothing
+- Sliding windows
+	- Contains all the events that occur within a certain interval
+- Session windows
+	- Has no fixed duration
+	- Defined by grouping together all events for the same user that occur closely together in time
+
+- Window operations maintain temporary state
 
 ## Stream Joins
 
+- Stream-stream joins
+- Stream-table joins
+- Table-table joins
+
 ### Stream-stream join (window join)
+
+- Combines events from two independent continuous data streams in real time using a shared key and a defined time window
 ### Stream-table join (stream enrichment)
+
+- Enriching the activity events with information from the database
+- Hash join
+	- Load a copy of the database into the stream processor so that it can be queries locally without a network round trip
+- Batch job uses a point-in-time snapshot of the database as input
+- Stream processor is a long running and database can change overtime
+
 ### Table-table join (materialized view maintenance)
+
+- Combines data from two separate database tables into a single result set using a shared related column
+	- INNER JOIN
+	- LEFT (OUTER) JOIN
+	- RIGHT (OUTER) JOIN
+	- FULL (OUTER) JOIN
 ### Time dependence of joins
+
+- All joins require the stream processor to maintain a state derived from one join input and to query that state from the other input
+- Slowly changing dimension (SCD)
+	- Addressed by using a unique identifier for a particular version of the joined record
+	- Deterministic join
+	- Log compaction is not possible
 
 ## Fault Tolerance
 
+- Exactly-once semantics
+
 ### Microbatching and checkpoint
+
+- Batch size is typically around one second
+- Smaller batches incur greater scheduling and coordination overhead
+- Larger batches result in longer delay
+- Provides a tumbling window equal to the batch size
+- Jobs that require larger windows are carry over state
+- Another approach is to periodically generate rolling checkpoints of state and write to durable storage
 ### Atomic commit revisited
+
+- Implementations do not provide transactions across heterogeneous databases
+- Keep the transactions internal by managing both state changes and messaging within the stream processing framework
 ### Idempotence
 
+- An idempotent operation is one that you can perform multiple time and has the same effect as if you performed it only once
+- Deleting a key in a key value store
+- Made idempotent with extra metadata
+	- Monotonically increasing offset
+- Restarting a failed task must replay the same message in the same order
+- Processing must be deterministic
+- Fencing
 ### Rebuilding state after a failure
+
+- Keep the state in a remote datastore and replicate it
+- Keep state local to the stream processor and replicate it periodically
+- Can be rebuild from input streams

@@ -1,5 +1,5 @@
 - [ ] Big data system textbooks
-	- [ ] Designing data intensive application
+	- [x] Designing data intensive application
 	- [ ] Docker docs
 	- [ ] Hadoop
 	- [ ] Hadoop docs
