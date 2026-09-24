@@ -78,20 +78,37 @@
 - All machines are connected
 ### Old AI and new AI
 
-- 
+- Old AI
+	- Systems in which people encoded the rules that cause an algorithm to exhibit intelligent behaviour
+	- In-depth knowledge or trial and error
+- New AI
+	- Create algorithms and models that learn from data and create their own rules that perform as accurately as, or better than, human created runes
 
 ### Search algorithms
+
+- Search algorithms are useful for solving problems in which several actions are required to achieve a goal
+- Evaluate future states and attempt to find the optimal path to the most valuable goal
 ### Biology-inspired algorithms
+
+- Evolutionary algorithms are inspired by the theory of evolution
+- Swarm intelligence
+	- A group of "dumb" individuals exhibiting intelligent behaviour
+- Ant-colony optimization and particle-swarm optimization
+
 ### Machine learning algorithm
 
+- Supervised learning
+	- Training models with algorithms when the training data has known outcomes
+- Unsupervised learning
+	- Uncovers hidden relationships and structure within the data that guides in asking relevant questions
+- Reinforcement learning
+	- Rewarding an individual if a useful action was performed and penalizing that individual if an unfavourable action was performed
 ### Deep learning algorithms
 
-
+- Deep learning is a broader family of approaches and algorithms that are used to achieve narrow intelligence and strive toward general intelligence
+- Solve a problem in a more general way
+	- Spatial reasoning
+	- Layers of artificial neural networks
 
 # Uses for artificial intelligence algorithms
 
-### Agriculture: Optimal plant growth
-### Banking: Fraud detection
-### Cybersecurity: Atta
-### 
-### 
