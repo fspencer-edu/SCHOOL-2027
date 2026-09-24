@@ -1,24 +1,129 @@
 # Data Integration
 
+- Storage engines
+	- Log structured
+	- B-trees
+	- Column oriented storage
+- Replication
+	- Single-leader
+	- Multi-leader
+	- Leaderless approaches
+
 ## Combining Specialized Tools by Deriving Data
 
+- Common to need to integrate an OLTP database with a full-text search index in order to handle queries for arbitrary keywords
+- Keep data in analytical systems
+- Maintain caches or denormalized versions of objects
+- Pass data through ML, classification, ranking, or recommendation systems
+
 ### Reasoning about dataflows
+
 ### Derived data vs. distributed transactions
+
+- Distributed transactions
+	- An atomic commit protocol
+- Log based
+	- Deterministic retry and idempotence
 ### The limits of total ordering
+
+- Limitations of systems at scale
+	- Throughput through a single leader
+	- Geographically distributed regions
+	- Microservices
+	- Client-side state and offline application
+- Total order broadcast
+	- Deciding total order of events
+	- Consensus algorithms
 ### Ordering events to capture causality
+
+- Logical timestamps can provide total ordering without coordination
+- Log events to record the state of the system
+- Conflict resolution algorithms
 
 ## Batch and Stream Processing
 
+- Consuming inputs
+- Transforming
+- Joining
+- Filtering
+- Aggregating
+- Training models
+- Evaluating
+- Writing to outputs
+
+- Stream processors operate on unbounded datasets
+- Batch process inputs have an finite size
+
 ### Maintaining derived state
+
+- Batch processing
+	- Immutable inputs and outputs
+- Stream processing
+	- Managed, fault tolerant state
+
+- Secondary indexes often cross shard boundaries
+	- Send writes to multiple shards or send reads to all shards
+	- Reliable on asynchronous systems
+
 ### Reprocessing data for application evolution
+
+- Stream processing
+	- Changes in the input are reflected in derived views with low delay
+- Batch processing
+	- Large amounts of historical data can be reprocessed in order to derive new views onto a dataset
+
+- Gradual evolution
+	- Restructure a dataset
+	- Do not perform migration as a sudden process
+
 ### Unifying batch and stream processing
+
+- Lambda architecture
+	- Early proposal for unifying batch and stream processing
+- Kappa architecture
+	- Batch computation and stream computation implemented in the same system
+
+- Ability to replay historical events through the same processing engine that handles the stream of recent events
+	- Log based message brokers
+- Exactly once semantics for stream processors
+- Tools for windowing by event time, not by processing time
 
 # Unbundling Databases
 
+- Store some data, and process and query that data
+- Filesystems
+	- Cannot handle many small files
+- Unix
+	- Low-level hardware abstraction
+- Relational databases
+	- High level abstraction of data structures on disk, concurrency, crash recovery
+
 ## Composing Data Storage Technologies
 
+- Secondary indexes
+	- Efficiently search for records based on the value of a field
+- Materialized views
+	- Precomputed caches of query results
+- Replication logs
+	- Copies of the data on other nodes
+- Full text search indexes
+	- Keyword search in text
+	- Build in some relational databases
+
 ### Creating an index
+
+ - Reprocesses the existing database and derives the index as a new view onto the existing dataset
 ### The meta-database of everything
+
+- Federated databases (unifying reads)
+	- Also known as polystore
+	- Foreign data wrapper (PostgreSQL)
+	- Applications that needs a specialized data model or query interface can access the underlying storage engines directly
+	- Users that want to combine data can use a federated interface
+		- High level language with complicated implementation
+	- Read only querying
+- Unbundled databases (unifying writes)
+	- Small tools that 
 
 ### Making unbuilding work
 ### Unbundled vs. integrated systems

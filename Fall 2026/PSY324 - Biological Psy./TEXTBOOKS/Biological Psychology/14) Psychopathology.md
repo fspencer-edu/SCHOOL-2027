@@ -43,11 +43,16 @@
 - Mania
 	- A condition characterized by restless activity, excitement, laughter, self confidence, rambling speech, and loss of inhibitions
 - Monoamine oxidase inhibitors (MAOIs)
+	- Drugs that block the enzyme monoamine oxidase (MAO), a presynaptic terminal enzyme that metabolizes catecholamines and serotonin into inactive forms
 - Psychedelics
 - Seasonal affective disorder (SAD)
+	- Depression that recurs during a particular season, such as winter
 - Selective serotonin reuptake inhibitors (SSRIs)
+	- Drugs that block the reuptake of serotonin in the presynaptic terminal
 - serotonin norepinephrine reuptake inhibitors (SNRIs)
+	- Drugs that block the reuptake of serotonin and norepinephrine
 - Tricyclics
+	- Anti-depressant drugs that block the reuptake of catecholamines and serotonin py presynaptic terminals
 
 ## Major Depressive Disorder
 ## Antidepressant Drugs
