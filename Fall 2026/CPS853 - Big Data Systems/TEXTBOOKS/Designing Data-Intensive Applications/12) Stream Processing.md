@@ -56,7 +56,7 @@
 - Fan out
 	- Each message is delivered to all the consumers
 
-![[Pasted image 20260923195926.png]]
+<img src="/images/Pasted image 20260923195926.png" alt="image" width="500">
 
 - Combined load balancing and fan out
 	- Consumer groups in Kafka
@@ -83,7 +83,7 @@
 
 ### Using logs for message storage
 
-![[Pasted image 20260923200437.png]]
+<img src="/images/Pasted image 20260923200437.png" alt="image" width="500">
 
 - Within each shard (partition), the broker assigns a monotonically increasing sequence number or offset to every message
 ### Logs compared to traditional messaging
@@ -125,7 +125,7 @@
 - Change data capture (CDC)
 	- The process of observing all data changes written to a database and extracting them in a form in which they can be replicated to other systems
 
-![[Pasted image 20260923201656.png]]
+<img src="/images/Pasted image 20260923201656.png" alt="image" width="500">
 ### Implementing CDC
 
 - Derived data system
@@ -146,7 +146,7 @@
 	- Keeps most recent updates for each key
 	- Merges segments
 
-![[Pasted image 20260923202029.png]]
+<img src="/images/Pasted image 20260923202029.png" alt="image" width="500">
 
 - Update with a null value (tombstone) indicates that a key was deleted and is removed during log compaction
 - Rebuild a derived data system
@@ -182,7 +182,7 @@
 - Changelog
 	- Represents the evolution of state over time
 
-![[Pasted image 20260923202950.png]]
+<img src="/images/Pasted image 20260923202950.png" alt="image" width="500">
 
 ### Advantages of immutable events
 

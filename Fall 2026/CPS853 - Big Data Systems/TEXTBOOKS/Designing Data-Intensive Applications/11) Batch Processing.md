@@ -245,7 +245,7 @@ for count, url in top5:
 	- Used in batch processors
 		- Joins and aggregations
 
-![[Pasted image 20260923183104.png]]
+<img src="/images/Pasted image 20260923183104.png" alt="image" width="500">
 
 - Two mappers output with the same key are processed by the same reducer task
 - Each mapper creates a separate output file on its local disk for every reducer
@@ -262,7 +262,7 @@ for count, url in top5:
 - Sort merge join
 	- An algorithm that first sorts two large datasets by a shared join key and then merges them by scanning both sorted streams simultaneously
 
-![[Pasted image 20260923183718.png]]
+<img src="/images/Pasted image 20260923183718.png" alt="image" width="500">
 ## Querying Languages
 
 - BigQuery
