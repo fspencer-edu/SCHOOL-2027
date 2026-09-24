@@ -27,12 +27,53 @@
 - Other data structures are useful in planning and searching
 
 ### Graphs: Representing search problems and solutions
+
+- A graph is a data structure containing several states with connections among them
+- Each state is a node, and a connection between two states is an edge
+
 ### Representing a graph as a concrete data structure
-### Trees 
-### 
-### 
+
+- Other representations of graphs include an incidence matrix, an adjacency matrix, and an adjacency list
+
+### Trees: The concrete structures used to represent search solutions
+
+- A tree is a popular data structure that simulates a hierarchy of values or objects
+- A hierarchy is an arrangement of things in which a single object is related to several other objects below it
+- A tree is connected acyclic graph
+- The value or object represented at a specific point is called a node
+- A path is a sequence of nodes and edges connecting nodes that are not directly connected
+- Degree
+	- Number of children a node has
 
 # Uniformed search: Looking blindly for solutions
+
+- Uniformed search also known as unguided search, blind search, or brute force search
+- Have no additional information about the domain of the problem apart from the representation of the problem
+- Breadth-first search (BFS)
+	- Explores all options at a specific depth before moving to options deeper in the tree
+- Depth-first search
+	- Explores a specific path from the start until if finds a goal at the utmost depth
+
 # Breadth-first search: Looking wide before looking deep
+
+- Traverse or generate a tree
+- Starts at the root, and explores every node at that depth before the next depth of nodes
+- First-in, first-out queue
 # Depth-first search: Looking deep before looking wide
+
+- Depth first search used to traverse a tree or generate nodes and paths in a tree
 # Use cases for uniformed search algorithms
+
+- Finding paths between nodes in a network
+- Crawling web pages
+- Finding social network connection
+
+## Graph Categories
+
+- Undirected graph
+- Directed graph
+- Disconnected graph
+- Acyclic graph
+- Complete graph
+- Complete bipartite graph
+- Weighted graph
