@@ -161,10 +161,24 @@
 ### Dataflow: Interplay between state changes and application code
 
 - Log based message brokers
-	- 
+	- Order of state change
+	- Fault tolerance
 ### Stream processors and services
 
+- Service oriented architecture has loose coupling
+- Dataflow approach is faster than service architecture
+	- Uses database query and caching to get state instead of processing a query
+	- Subscribing to a stream of changes
+
 ## Observing Derived State
+
+- Write path
+	- When a piece of information is written, it can go through multiple stages of batch and stream processing
+
+![[Pasted image 20260924102944.png]]
+
+- Read path
+	- Read from the derived data
 
 ### Materialized views and caching
 ### Stateful, offline, capable clients
