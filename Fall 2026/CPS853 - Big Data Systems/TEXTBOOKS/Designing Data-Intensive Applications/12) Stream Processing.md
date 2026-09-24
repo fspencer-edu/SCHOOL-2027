@@ -157,28 +157,143 @@
 
 ### CDC vs. Event sourcing
 
-- C
+- CDC
+	- Application uses the database in mutable ways
+		- Updating and deleting
+		- Avoids race conditions by extracting logs in order of write
+- Event sourcing
+	- Built on immutable events that are written to an event log
+	- Append only
+	- Events are designed to reflect changes on the application level rather than low level state change
+
+- Outbox pattern
+	- Decouple internal from external schemas
+	- Outboxes are tables with their own schema and exposed to the CDC system rather than the internal domain model in the database
+	- Outboxes keep both write in the same system
+		- Allows both writes to appear in a single transaction
+	- Increases data that the database has to write to storage
+- Log compaction for CDC
+	- Log compaction can discard previous events for the same key
+- Event sourcing
+	- Events are modeled at a higher level
+
 ## State, Streams, and Immutability
 
+- Changelog
+	- Represents the evolution of state over time
+
+![[Pasted image 20260923202950.png]]
+
 ### Advantages of immutable events
+
+- Help to diagnose bugs
+- Capture more information that the current state
 ### Deriving several views from the same event log
+
 ### Concurrency control
+
+- Downside of CQRS is that the consumers of the event log are asynchronous
+	- User cloud make a write to the long
+	- Read from a derived view and not see the changes
+- Perform the updates of the read view synchronously with appending the event to the log
 ### Limitations of immutability
+
+- Excision/shunning
+	- Rewrite history and pretend that the data was never written
+- Crypto shredding
+	- Data that will be deleted is stored encrypted, and then loss the encryption key
+- Puncturable encryption
 
 # Processing Streams
 
+- Processing streams to produce other derived streams
+	- Operator or a job
+- A stream processor consumes input streams in a read-only fashion and writes its output to a different location
+
 ## Uses of Stream Processing
 
+- Monitoring purposes
+	- Fraud detection
+	- Trading systems
+	- Manufacturing systems
+	- Military and intelligence
+
 ### Complex event processing
+
+- Complex event processing (CEP)
+	- Analyzing event streams
+	- Event patterns (regular expressions)
+	- Specify rules to search for certain patterns of events in a stream
+	- High level declarative query language
+- Complex event
+- Queries are stored long-term
+- When an event arrives, the engine checks whether it has now seen an event pattern that matches any of its standing queries
+	- Esper
+	- Apama
+	- TIBCO StreamBase
 ### Stream analytics
+
+- Measuring the rate of a ertain type of event
+- Calculating the rolling average of a value over a time period
+- Comparing current statistics to previous time intervals
+
+- Probabilistic algorithm
+	- Bloom filters for set membership
+	- HyperLogLog for cardinality estimation
+	- Percentile estimation algorithms
+- Produce approximate results
+
 ### Maintaining materialized views
+
+- Stream of changes to a database can be used to keep derived data systems up to date
+- Materialized view maintenance
+	- Poor efficiency
+		- All data is reprocessed every time the view is updated
+	- Data freshness
+		- Changes in source data are not reflected in a materialized view until its query is run again, during its next update
+
+- Incremental view maintenance (IVM)
+	- Convert queries written in SQL into operators capable of incremental computations
+	- Ingest streams of events to expose materialized views in real time
+
 ### Search on streams
+
+- Queries are stored, and documents are evaluated again every query
+- Index the queries and documents to narrow the set of matches
 ### Event driven architectures and RPC
+
+- Actor framework is a managing concurrency and distributed execution of communicating modules
+- Stream processing is primarily a data management technique
+- Communication between actors is often ephemeral and one-to-one
+- Event logs are durable and multi-subscriber
+- Actors can communicate in different ways
+	- Cyclic request/response
+- Stream processors are acyclic pipelines
+
+- Distributed RPC
+	- Allows user queries to be farmed out to a set of nodes that also process event streams
+	- Queries are interleaved with events from the input streams
+
 ## Reasoning About Time
 
+- Timestamps
+	- Allows the processing to be deterministic
+	- Running the same process on the same input produces the same result
+- Processing time
+	- Determines windowing
+	- Used if creation and event processing is negligibly short
+	- Breaks if there is processing lag
+
 ### Event time vs. processing time
+
 ### Handling straggler events
+
+- Straggler events
+	- Ignore
+	- Publish a correction later
 ### Whose clocks are you using, anyway?
+
+- 
 ### Types of windows
 
 ## Stream Joins
