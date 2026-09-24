@@ -175,7 +175,7 @@
 - Write path
 	- When a piece of information is written, it can go through multiple stages of batch and stream processing
 
-![[Pasted image 20260924102944.png]]
+<img src="/images/Pasted image 20260924102944.png" alt="image" width="500">
 
 - Read path
 	- Read from the derived dataset
@@ -246,7 +246,7 @@
 	- One containing the payee account
 	- One containing the payer account
 
-![[Pasted image 20260924122443.png]]
+<img src="/images/Pasted image 20260924122443.png" alt="image" width="500">
 
 
 - Events for a given account are processed strictly in log order with at-least-once semantics

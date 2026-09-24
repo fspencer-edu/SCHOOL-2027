@@ -71,10 +71,27 @@
 ### General intelligence: Humanlike solutions
 
 - General intelligence is humanlike intelligence
-- Learn from various 
-### 
-### 
-### 
+- Learn from various experiences and interactions in the world
+- Memory, spatial reasoning through visual inputs, use of knowledge, and extrapolation
+### Super intelligence: The great unknown
+
+- All machines are connected
+### Old AI and new AI
+
+- 
+
+### Search algorithms
+### Biology-inspired algorithms
+### Machine learning algorithm
+
+### Deep learning algorithms
+
 
 
 # Uses for artificial intelligence algorithms
+
+### Agriculture: Optimal plant growth
+### Banking: Fraud detection
+### Cybersecurity: Atta
+### 
+### 
