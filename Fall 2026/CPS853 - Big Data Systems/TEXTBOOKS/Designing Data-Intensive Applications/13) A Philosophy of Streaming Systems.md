@@ -123,16 +123,45 @@
 		- High level language with complicated implementation
 	- Read only querying
 - Unbundled databases (unifying writes)
-	- Small tools that 
+	- Small tools that communicate through a uniform low-level API (pipes)
+	- Composed using a higher level language
 
 ### Making unbuilding work
+
+- Loose coupling in log based integration
+	- Asynchronous event streams
+	- Easier to deploy, improve, and maintain software components
 ### Unbundled vs. integrated systems
 
 ## Designing Applications Around Dataflow
 
 ### Application code as a derivation function
+
+- A secondary index is a kind of derived dataset with a straightforward transformation function
+- A full text search index is created by applying various NLP functions
+	- Language detection
+	- Word segmentation
+	- Stemming or lemmatization
+	- Spelling correction
+	- Synonym identification
+	- And building a data structure for efficient lookups (inverted index)
+- ML model is derived from the training data after various feature extraction and statistical analysis functions
+- Cache contains an aggregation of data in the form in which it is going to be displayed in UI
 ### Separation of application code and state
+
+- Deployment and cluster management tools
+	- Kubernetes
+	- Docker
+	- Mesos
+	- YARN
+- Most web applications are deployed stateless services
+- Observer pattern
+	- Reader of the variable do not get notified of the change
+
 ### Dataflow: Interplay between state changes and application code
+
+- Log based message brokers
+	- 
 ### Stream processors and services
 
 ## Observing Derived State
