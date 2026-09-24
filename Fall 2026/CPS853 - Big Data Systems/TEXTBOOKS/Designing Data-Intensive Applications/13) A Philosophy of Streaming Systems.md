@@ -264,17 +264,49 @@
 ### Correctness of dataflow systems
 
 - integrity
-	- Reprsenting the content of the write operation as a single message
+	- Representing the content of the write operation as a single message
 	- Deriving all other state updates from that single message via deterministic derivation function
-	- Passing a client gener
+	- Passing a client generated request ID through all these levels of processing
+	- Making message immutable and allowing derived data to be reprocessed
 ### Loosely interpreted constraints
+
+- Correction mechanisms
+- Compensating transaction
+	- Change to correct a mistake from a violated constraint
 ### Coordination-avoiding data systems
+
+- Dataflow systems can maintain integrity guarantees on derived data without atomic commit, linearizability, or synchronous cross-shard coordination
+- Coordination avoiding data system
+	- Achieve better performance
+	- Fault tolerance
 
 ## Trust, but Verify
 
+- System model
+	- Assume that processes can crash, lose power, or drop messages
+	- Takes a binary approach towards faults
+
 ### Maintaining integrity in the face of software bugs
+
 ### Don't just blindly trust what they promise
+
+- Auditing
+	- Checking the integrity of data
+- Self validating and self auditing systems
+	- Continually check their own integrity rather than rely on blind trust
+- HDFS
+- S3
 ### Designing for auditability
+
+- Event based systems can provide better auditability
 ### The end-to-end argument again
 ### Tools for auditable data systems
 
+- Logging all changes to a separate audit table
+- Blockchains
+	- Shared append-only logs with cryptographic consistency check
+- Merkle trees
+	- Trees of hashes that can be used to efficiently prove that a record appears in a dataset
+- Certificate transparency
+	- Cryptographically verified append-only logs and Merkel trees to check the validity of TLS/SSL
+	- Avoids needing a consensus protocol by having a single leader per log
