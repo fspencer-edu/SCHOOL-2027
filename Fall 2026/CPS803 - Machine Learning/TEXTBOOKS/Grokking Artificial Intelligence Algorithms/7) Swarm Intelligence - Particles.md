@@ -45,7 +45,27 @@
 
 - Particles in the swarm update their position given a cognitive ability and factors in the environment
 	- Inertia
-- Three 
+- Three components are used
+	- Inertia
+		- Resistance to movement or change in direction
+	- Cognitive
+		- Internal cognitive ability of a specific particle
+	- Social
+		- Ability of a particle to interact with the swarm
 
-# Particle swarm optimization life cycle
+### Stopping criteria
+
+- Particles in the swarm cannot keep updating and searching indefinitely
+- Exploration
+	- Time
+- Exploitation
+	- Convergence
+
+- Determine stagnation of best solution
+
 # Use cases for particle swarm optimization algorithms
+
+- Brain stimulation
+- Optimizing weights in an artificial neural network
+- Motion tracking in videos
+- Speech enhancement in audio
