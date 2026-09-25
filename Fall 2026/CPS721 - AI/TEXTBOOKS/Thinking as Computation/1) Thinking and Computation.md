@@ -1,3 +1,7 @@
+- Cognitive science is the interdisciplinary study of people as cognitive beings
+- AI is the study of intelligent behaviour achieved through computation means
+- 
+
 # Thinking
 
 ## What is thinking?
