@@ -85,4 +85,14 @@
 	- Track down all of the animals that traveled with the prairie dogs
 	- One Gambian giant rat has died that was on the April 23 shipment
 		- Thought to have been responsible for other mpox outbreaks
-	- 6 different types of 
+	- 6 different types of animals on the flight from Africa in early April
+
+![[Pasted image 20260925160416.png]]
+
+The scenario selected was “Connect the Spots,” in which an outbreak involved people across Wisconsin who developed similar symptoms even though they did not appear to be connected. Patients experienced fever, headache, swollen glands, chills, sore throat, nausea, diarrhea, and a raised fluid-filled rash. Several people became seriously ill and required hospitalization. A working case definition could be a person in Wisconsin during the outbreak period who developed fever and a new vesicular or pustular rash, especially after recent contact with prairie dogs or other animals. Investigators also ruled out illnesses such as chickenpox, MRSA, herpes, and fungal infections.
+
+Investigators developed several hypotheses based on the patients’ shared exposures. Most patients had recent contact with animals, and almost all were linked directly or indirectly to pet prairie dogs. The infectious agent was identified as mpox virus, a zoonotic virus that can spread through bites, scratches, close contact, or contact with infected animals. The prairie dogs had been housed with imported African animals, including a Gambian giant rat, which was suspected of introducing the virus into the animal supply. This animal connection explained how people who did not know one another became part of the same outbreak.
+
+For what can be done about it, control measures focus on stopping further transmission and caring for people who are ill. Patients with severe disease may require supportive medical care, while exposed people and animals should be identified and monitored. Prevention includes avoiding contact with infected animals, isolating infected individuals when necessary, using appropriate protective equipment, and tracing animals linked to the outbreak. Public-health officials can also remove infected animals from circulation, maintain surveillance for new cases, and communicate the findings to help prevent further spread.
+
+Centers for Disease Control and Prevention. (n.d.). _Solve the outbreak_. [https://www.cdc.gov/mobile/applications/sto/web-app.html](https://www.cdc.gov/mobile/applications/sto/web-app.html)
