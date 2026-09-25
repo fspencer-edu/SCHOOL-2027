@@ -90,8 +90,65 @@
 	- A theorem from calculus that calculates the derivative of a composite function
 - Calculate the weight update by plugging the respective values into the formula
 - Apply the results to the weights in the ANN by adding the update value to the respective weight
-- 
 
 # Options for activation functions
+
+- Activation functions introduce non-linear properties to the ANN
+
+![[Pasted image 20260924224704.png]]
+
+- Step unit
+	- Binary classifier
+- Sigmoid
+	- Learning and solving non-linear problems
+	- Pool learning
+	- Vanishing gradient problem
+- Hyperbolic tangent
+	- Steep derivatives, for faster learning
+- Rectified linear unit (ReLU)
+	- Allows some neurons to not activate, which reduces computation
+
 # Designing artificial neural networks
+
+- Inputs and outputs
+	- Define the interface of the network
+- Hidden layers and nodes
+	- More hidden layers allow to solve problem with higher dimensions and more complexity
+- Weights
+	- Starting point from which the weight will be adjusted over many iteration
+	- Exploding gradient problem
+		- Weights move around the desired result
+- Bias
+	- Adding a value to the weighed sum of the input nodes or other layers in the network
+	- Shifts activation function
+- Activation function
+	- Ensure that all nodes on the same layer use the activation function
+- Cost function and learning rate
+	- Mean squared error
 # Artificial neural network types and use cases
+
+## Convolutional neural network
+
+- CNN are designed for image recognition
+- Find the relationship among different objects and unique areas within images
+- Image recognition
+	- Convolution operates on a single pixel and its neighbours in a certain radius
+	- Edge detection
+	- Image sharpening
+	- Image blurring
+- Convolution
+	- Finds features in image
+- Pooling
+	- Downsamples the patterns by summarizing features
+	- Allowing unique signatures in image to be encoded
+
+## Recurrent neural network
+
+- RNNs accept a sequence of inputs with no pre-determined length
+- Memory consisting of hidden layers that represent time
+- Allows the network to retain information about the relationship among the sequences of inputs
+- Pretraining to speech and text recognition and prediction
+## Generative adversarial network
+
+- GAN consists of a generator network and a discriminator network
+- Two components compete to incrementally generate the best solution
