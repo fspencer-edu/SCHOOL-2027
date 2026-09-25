@@ -1,5 +1,6 @@
-# Manual Decision Tree
-
+Fiona Spencer
+501116950
+October 1st, 2026
 ## Training Data
 
 | x1 | x2 | y |
@@ -17,320 +18,194 @@
 
 ---
 
-## Q1 — Entropy
+Q1 - *What is the entropy of this collection of training examples with respect to the target class?*
 
-**Question:** What is the entropy of this collection of training examples with respect to the target class?
+T = 6
+F = 4
+Total = 10
+$$
+Entropy(t)=-\sum_{i=0}^{c-1} p_i(t)\log_2 p_i(t)
+$$
+Where:
+	$i$ = class
+	$t$ = current node
+	$p_i(t)$ = proportion of node that belong to a class
 
-There are:
+For this dataset:
 
-- `T = 6`
-- `F = 4`
-- Total = `10`
+$$
+p_T(t)=\frac{6}{10}=0.6,\qquad
+p_F(t)=\frac{4}{10}=0.4
+$$
+$$
+Entropy(t)
+=
+-\left[
+(0.6)\log_2(0.6)
++
+(0.4)\log_2(0.4)
+\right]
+$$
+$$
+(0.4)\log_2(0.4)
+=
+(0.4)(-1.322)
+\approx -0.529
+$$
+$$
+\boxed{Entropy(t)\approx0.971}
+$$
+
+$\therefore$ The entropy of the training examples with respective to the target class is $\approx 0.971$
+
+---
+
+Q2- _What are the different options for the first split when constructing your decision tree?_
+
+Since `x1` is binary and `x2` is ordinal with `0 < 1 < 2`, the possible binary splits are:
+
+`x1 = 0` vs. `x1 = 1`
+`x2 <= 0` vs. `x2 > 0`
+`x2 <= 1` vs. `x2 > 1`
+
+---
+Q3 - _For each potential first split option, compute the information gain._
+$$
+Gain_{split}
+=
+Entropy(p)
+-
+\sum_{i=1}^{k}
+\frac{n_i}{n}
+Entropy(i)
+$$
+where:
+	$p$ = parent node
+	$k$ = number of child nodes
+	$n_i$ = number of records in child $i$
+	$n$ = number of records in the parent node
+
+Root node:
+$$
+Entropy(p)=0.971
+$$
+
+### Split on `x1`
+
+The split creates two children of size 5 and 5:
+
+$$
+Entropy_{split}
+=
+\frac{5}{10}(0.971)
++
+\frac{5}{10}(0.722)
+$$
+
+$$
+Entropy_{split}
+=
+0.846
+$$
 
 Therefore:
 
 $$
-P(T)=\frac{6}{10}=0.6
-$$
-
-$$
-P(F)=\frac{4}{10}=0.4
-$$
-
-Entropy:
-
-$$
-H(S)=-P(T)\log_2P(T)-P(F)\log_2P(F)
-$$
-
-$$
-H(S)=-(0.6)\log_2(0.6)-(0.4)\log_2(0.4)
-$$
-
-$$
-H(S)\approx0.971
-$$
-
-**Answer:**
-
-$$
-\boxed{H(S)=0.971}
-$$
-
----
-
-## Q2 — Possible First Splits
-
-**Question:** What are the different options for the first split?
-
-Because the tree must be binary:
-
-1. `x1 = 0` vs. `x1 = 1`
-2. `x2 <= 0` vs. `x2 > 0`
-3. `x2 <= 1` vs. `x2 > 1`
-
----
-
-## Q3 — Information Gain
-
-Information gain is:
-
-$$
-IG(S,A)=H(S)-H(S|A)
-$$
-
-where:
-
-$$
-H(S|A)
-=
-\frac{|S_1|}{|S|}H(S_1)
-+
-\frac{|S_2|}{|S|}H(S_2)
-$$
-
-### Split 1 — `x1`
-
-For `x1 = 0`:
-
-- `T = 2`
-- `F = 3`
-
-$$
-H(x1=0)
-=
--\frac25\log_2\frac25
--\frac35\log_2\frac35
-\approx0.971
-$$
-
-For `x1 = 1`:
-
-- `T = 4`
-- `F = 1`
-
-$$
-H(x1=1)
-=
--\frac45\log_2\frac45
--\frac15\log_2\frac15
-\approx0.722
-$$
-
-Weighted entropy:
-
-$$
-H(S|x1)
-=
-\frac5{10}(0.971)
-+
-\frac5{10}(0.722)
-$$
-
-$$
-H(S|x1)\approx0.846
-$$
-
-Information gain:
-
-$$
-IG(x1)
+Gain_{x1}
 =
 0.971-0.846
 =
 \boxed{0.125}
 $$
 
----
+### Split on `x2 <= 0`
 
-### Split 2 — `x2 <= 0`
-
-For `x2 <= 0`:
-
-- `T = 4`
-- `F = 0`
+The split creates children of size 4 and 6:
 
 $$
-H(x2\le0)=0
-$$
-
-For `x2 > 0`:
-
-- `T = 2`
-- `F = 4`
-
-$$
-H(x2>0)
+Entropy_{split}
 =
--\frac26\log_2\frac26
--\frac46\log_2\frac46
-\approx0.918
-$$
-
-Weighted entropy:
-
-$$
-H(S|x2\le0)
-=
-\frac4{10}(0)
+\frac{4}{10}(0)
 +
-\frac6{10}(0.918)
+\frac{6}{10}(0.918)
 $$
 
 $$
-H(S|x2\le0)\approx0.551
+Entropy_{split}
+=
+0.551
 $$
 
-Information gain:
+Therefore:
 
 $$
-IG(x2\le0)
+Gain_{x2\le0}
 =
 0.971-0.551
 =
 \boxed{0.420}
 $$
 
----
+### Split on `x2 <= 1`
 
-### Split 3 — `x2 <= 1`
-
-For `x2 <= 1`:
-
-- `T = 5`
-- `F = 2`
+The split creates children of size 7 and 3:
 
 $$
-H(x2\le1)
+Entropy_{split}
 =
--\frac57\log_2\frac57
--\frac27\log_2\frac27
-\approx0.863
-$$
-
-For `x2 > 1`:
-
-- `T = 1`
-- `F = 2`
-
-$$
-H(x2>1)
-=
--\frac13\log_2\frac13
--\frac23\log_2\frac23
-\approx0.918
-$$
-
-Weighted entropy:
-
-$$
-H(S|x2\le1)
-=
-\frac7{10}(0.863)
+\frac{7}{10}(0.863)
 +
-\frac3{10}(0.918)
+\frac{3}{10}(0.918)
 $$
 
 $$
-H(S|x2\le1)\approx0.880
+Entropy_{split}
+=
+0.880
 $$
 
-Information gain:
+Therefore:
 
 $$
-IG(x2\le1)
+Gain_{x2\le1}
 =
 0.971-0.880
 =
 \boxed{0.091}
 $$
 
-### Results
-
 | Split | Information Gain |
 |---|---:|
-| `x1 = 0` vs. `x1 = 1` | `0.125` |
-| `x2 <= 0` vs. `x2 > 0` | **`0.420`** |
-| `x2 <= 1` vs. `x2 > 1` | `0.091` |
-
-Therefore the best root split is:
-
-$$
-\boxed{x2\le0}
-$$
+| `x1` | `0.125` |
+| `x2 <= 0` | **`0.420`** |
+| `x2 <= 1` | `0.091` |
 
 ---
+Q4 - _Build the complete decision tree based on the given specifications and training set_.
 
-## Q4 — Complete Decision Tree
+Tree building requirements:
 
-### Step 1 — Root
+![[Pasted image 20260925182255.png|600]]
 
-Choose `x2 <= 0` because it has the highest information gain:
+`x2 <= 0` is chosen as the root because it has the largest information gain, `0.420`, so it produces the greatest reduction in uncertainty.
 
-$$
-IG=0.420
-$$
+- For `x2 <= 0`, there are 4 training instances and all are `T` (`T=4, F=0`). Since the node is pure and also has fewer than 6 instances, it becomes a leaf predicting `T`.
 
-For `x2 <= 0`:
+- For `x2 > 0`, there are 6 training instances (`T=2, F=4`). Because the node has at least 6 instances, it is allowed to split again.
 
-$$
-T=4,\quad F=0
-$$
+- The attribute `x2` has already been used on this root-to-leaf path, so it cannot be used again. The remaining attribute is `x1`, so the node is split on `x1`.
 
-There are only 4 instances, so the node cannot be split.
+- For `x1 = 0`, the 3 instances are all `F` (`T=0, F=3`), so this becomes a leaf predicting `F`.
 
-Prediction:
-
-$$
-\boxed{T}
-$$
-
-For `x2 > 0`:
-
-$$
-T=2,\quad F=4
-$$
-
-There are 6 instances, so this node can be split.
-
----
-
-### Step 2 — Split `x2 > 0`
-
-`x2` cannot be used again on the same path, so use `x1`.
-
-For `x1 = 0`:
-
-$$
-T=0,\quad F=3
-$$
-
-Only 3 instances remain, so this becomes:
-
-$$
-\boxed{F}
-$$
-
-For `x1 = 1`:
-
-$$
-T=2,\quad F=1
-$$
-
-Only 3 instances remain, so use the majority class:
-
-$$
-\boxed{T}
-$$
-
----
-
-## Final Decision Tree
+- For `x1 = 1`, there are 3 instances (`T=2, F=1`). Since fewer than 6 instances remain, the node cannot be split further, so the majority class is used and the leaf predicts `T`.
 
 ```mermaid
 flowchart TD
-    A["x2 <= 0?<br/>T=6, F=4"]
-    A -->|Yes| B["T<br/>T=4, F=0"]
-    A -->|No| C["x1 = 0?<br/>T=2, F=4"]
-    C -->|Yes| D["F<br/>T=0, F=3"]
-    C -->|No| E["T<br/>T=2, F=1"]
+    A["x2 <= 0?"]
+    A -->|Yes| B["T<br/>4T, 0F"]
+    A -->|No| C["x1 = 0?"]
+    C -->|Yes| D["F<br/>0T, 3F"]
+    C -->|No| E["T<br/>2T, 1F"]
+```
+
+
