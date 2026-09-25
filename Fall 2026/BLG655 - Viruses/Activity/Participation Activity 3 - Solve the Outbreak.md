@@ -46,7 +46,7 @@
 		- Rainforests
 		- Contact with rare and exotic plants and animals
 
-![[Pasted image 20260925155432.png]]
+<img src="/images/Pasted image 20260925155432.png" alt="image" width="500">
 
 - Clue 3
 	- Cindy has been in intensive car for several days
@@ -61,7 +61,7 @@
 	- 12/14 have been in contact with animals
 	- Rule out exotic animals
 
-![[Pasted image 20260925155723.png]]
+<img src="/images/Pasted image 20260925155723.png" alt="image" width="500">
 
 - Clue 4
 	- Prairie dogs
@@ -79,7 +79,7 @@
 			- Rash with raised bumps with fluid
 		- Illness is serious lasting up to 2-4 weeks
 
-![[Pasted image 20260925160003.png]]
+<img src="/images/Pasted image 20260925160003.png" alt="image" width="500">
 
 - Clue 5
 	- Track down all of the animals that traveled with the prairie dogs
@@ -87,7 +87,7 @@
 		- Thought to have been responsible for other mpox outbreaks
 	- 6 different types of animals on the flight from Africa in early April
 
-![[Pasted image 20260925160416.png]]
+<img src="/images/Pasted image 20260925160416.png" alt="image" width="500">
 
 The scenario selected was “Connect the Spots,” in which an outbreak involved people across Wisconsin who developed similar symptoms even though they did not appear to be connected. Patients experienced fever, headache, swollen glands, chills, sore throat, nausea, diarrhea, and a raised fluid-filled rash. Several people became seriously ill and required hospitalization. A working case definition could be a person in Wisconsin during the outbreak period who developed fever and a new vesicular or pustular rash, especially after recent contact with prairie dogs or other animals. Investigators also ruled out illnesses such as chickenpox, MRSA, herpes, and fungal infections.
 

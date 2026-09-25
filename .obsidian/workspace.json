@@ -182,8 +182,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -298,12 +297,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "852088555ba607e7",
+  "active": "ebf7035dc389d5f5",
   "lastOpenFiles": [
-    "Pasted image 20260925160416.png",
-    "Pasted image 20260925160003.png",
-    "Pasted image 20260925155723.png",
-    "Pasted image 20260925155432.png",
+    "images/Pasted image 20260925133250.png",
+    "images/Pasted image 20260925133540.png",
+    "images/Pasted image 20260925132646.png",
+    "images/Pasted image 20260925132911.png",
+    "images/Pasted image 20260925133359.png",
+    "images/Pasted image 20260925134422.png",
+    "images/Pasted image 20260925131759.png",
+    "images/Pasted image 20260925155432.png",
+    "images/Pasted image 20260925155723.png",
+    "images/Pasted image 20260925134309.png",
+    "images/Pasted image 20260925160003.png",
     "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 2 - Find a review.md",
     "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 3 - Solve the Outbreak.md",
     "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 1 - Finding Virus Outbreak.md",
@@ -311,16 +317,9 @@
     "TODO.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/7) Lists in Prolog.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/6) Case Study - Interpreting Visual Scenes.md",
-    "Pasted image 20260925134422.png",
-    "Pasted image 20260925134309.png",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/9) Case Study - Planning Courses of Action.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/8) Case Study - Understanding Natural Language.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/5) Case Study - Satisfying Constraints.md",
-    "Pasted image 20260925133728.png",
-    "Pasted image 20260925133540.png",
-    "Pasted image 20260925133359.png",
-    "Pasted image 20260925133250.png",
-    "Pasted image 20260925132911.png",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/12) Can Computers Really Think?.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 2.md",
     "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 2.md",

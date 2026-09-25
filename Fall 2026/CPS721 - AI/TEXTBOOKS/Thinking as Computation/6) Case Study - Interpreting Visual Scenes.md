@@ -23,7 +23,7 @@
 - Constraints
 	- Image properties and background knowledge about the permissible interpretations of region types
 
-![[Pasted image 20260925134309.png]]
+<img src="/images/Pasted image 20260925134309.png" alt="image" width="500">
 
 - Constraints work together to identify the regions and that there can be redundancy
 
@@ -31,7 +31,7 @@
 
 - Interpreting an image of a polyhedral object involves labeling each edge
 
-![[Pasted image 20260925134422.png]]
+<img src="/images/Pasted image 20260925134422.png" alt="image" width="500">
 ## Constraints on vertices and edges
 
 ## Impossible objects

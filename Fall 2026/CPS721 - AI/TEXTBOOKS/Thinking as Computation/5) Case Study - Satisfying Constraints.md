@@ -97,7 +97,7 @@ N = 25
 Yes
 ```
 
-![[Pasted image 20260925131759.png]]
+<img src="/images/Pasted image 20260925131759.png" alt="image" width="500">
 
 ## Crypt-arithmetic as constraint satisfaction
 
@@ -143,7 +143,7 @@ dig(C), dig(D),
 - The end result of shuffling constraints is that the program will now run in under one-tenth of a second
 # A third example: The eight queens
 
-![[Pasted image 20260925132436.png]]
+<img src="/images/Pasted image 20260925132436.png" alt="image" width="500">
 
 - Constraint satisfaction
 	- 8 variables
@@ -151,7 +151,7 @@ dig(C), dig(D),
 		- Domain is 1 to 8 representing the columns
 	- Different columns
 
-![[Pasted image 20260925132646.png]]
+<img src="/images/Pasted image 20260925132646.png" alt="image" width="500">
 
 - Make sure that each queen has its own left and right diagonal
 - A queen that is located on (row1, col1) can capture a queen that is located on (row2, col2) if and only if one of the following conditions hold
@@ -164,7 +164,7 @@ dig(C), dig(D),
 	- They are in the same right diagonal
 		- $(row_1+col_1)=(row_2+col_2)$
 
-![[Pasted image 20260925132911.png]]
+<img src="/images/Pasted image 20260925132911.png" alt="image" width="500">
 
 - The negation of the cap predicate is used at each stage
 - Find column in numeric order
@@ -183,14 +183,14 @@ dig(C), dig(D),
 	- If x is married to y, then x = y
 	- If x is a patient of y, then x = y, and y is the doctor
 
-![[Pasted image 20260925133250.png]]
+<img src="/images/Pasted image 20260925133250.png" alt="image" width="500">
 
 ## Hidden variables
 
 - Determine how to express the constraints
 - Hidden variables
 
-![[Pasted image 20260925133359.png]]
+<img src="/images/Pasted image 20260925133359.png" alt="image" width="500">
 
 ## A more complex logic problem
 
@@ -203,7 +203,7 @@ dig(C), dig(D),
 	- Assigning people to jobs
 - The task is to find periods for the classes
 
-![[Pasted image 20260925133540.png]]
+<img src="/images/Pasted image 20260925133540.png" alt="image" width="500">
 
 - Variables
 	- $P_i$ for the period
@@ -214,4 +214,4 @@ dig(C), dig(D),
 	- 5 periods must be available, non consecutive, with no more than two per day
 	- 5 periods must all be distinct
 
-![[Pasted image 20260925133728.png]]
+<img src="/images/Pasted image 20260925133728.png" alt="image" width="500">
