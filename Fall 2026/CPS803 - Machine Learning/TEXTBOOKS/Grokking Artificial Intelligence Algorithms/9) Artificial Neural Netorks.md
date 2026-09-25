@@ -95,7 +95,7 @@
 
 - Activation functions introduce non-linear properties to the ANN
 
-![[Pasted image 20260924224704.png]]
+<img src="/images/Pasted image 20260924224704.png" alt="image" width="500">
 
 - Step unit
 	- Binary classifier
