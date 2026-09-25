@@ -9,14 +9,38 @@
 - Representing by a 2D grid of pixels
 - Image components
 	- Regions or edges that appear in an image
-- Interrret 
-	-
-
+- Interpret 
+	- Identify what the regions or edges actually represent in the scene
 # Aerial sketch maps
+
+- Statements constrain the permissible interpretations of regions that appear in images in terms of size, shape, borders, and containment
 ## Constraints on image regions
+
+- List of regions, along with the properties they have in the image
+- Variables
+	- Regions of the image
+	- Each variable must take a value from one of the region types
+- Constraints
+	- Image properties and background knowledge about the permissible interpretations of region types
+
+![[Pasted image 20260925134309.png]]
+
+- Constraints work together to identify the regions and that there can be redundancy
+
 # Polyhedral objects
+
+- Interpreting an image of a polyhedral object involves labeling each edge
+
+![[Pasted image 20260925134422.png]]
 ## Constraints on vertices and edges
+
 ## Impossible objects
+
+- Impossible objects
+	- Images having only local interpretations
 # Object recognition
 
+- The task of object recognition is to determine whether the image contains a depiction fo a particular object
+
 ## Handling occlusion
+
