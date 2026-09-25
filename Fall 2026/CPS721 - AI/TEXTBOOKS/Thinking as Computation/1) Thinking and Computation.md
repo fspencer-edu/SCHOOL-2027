@@ -94,4 +94,5 @@ $S_1, S_2, ..., S_n$
 
 - Symbolic representations of knowledge
 - Turing machine
-- Chur
+- Church-Turing thesis
+	- Any physical computer to be built
