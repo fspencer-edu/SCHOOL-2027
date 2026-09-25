@@ -82,7 +82,9 @@ A = red, B = white, C = blue, D = white, E = blue
 - Using the `is` relation
 	- Getting the value of an arithmetic expression to use with another predicate
 
-_Arithm_
+_Arithmetic programs_
+
+- 
 
 ## Crypt-arithmetic as constraint satisfaction
 
