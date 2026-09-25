@@ -13,7 +13,7 @@
 	- [ ] Computational Intelligence
 	- [ ] Thinking as Computation
 - [ ] ML textbooks
-	- [ ] Grokking AI
+	- [x] Grokking AI
 	- [ ] Hands on ML with Scikit Learn
 	- [ ] Intro. to Data Mining
 	- [ ] PyTorch Docs
@@ -24,12 +24,39 @@
 - [ ] Viruses Among Us
 
 
-
-
 ## Assignments
-- [ ] AI assignment 1
+
 - [ ] Virus video
 - [ ] Viruses post
+
+- [ ] Thinking as computation
+- [ ] AI assignment 1
+
+- [ ] ML assignment
+
+- [ ] Big data lab 3
+
+- [ ] Read biological psychology research paper
+
+---
+## Prism Insights
+
+- [ ] Fix header footer editing
+- [ ] Add data source
+- [ ] Fix client admin page and permissions
+- [ ] Add dashboard builder query route
+- [ ] Create example dashboards for Irving Oil
+- [ ] Client external documentation
+	- [ ] Client admin
+	- [ ] Client user
+- [ ] Prism internal documentation
+	- [ ] Economist
+	- [ ] Developer
+- [ ] Fix slicers and dashboard components
+- [ ] Add more drill throughs
+- [ ] Add geojson map
+- [ ] Add dashboard caching
+
 
 
 
