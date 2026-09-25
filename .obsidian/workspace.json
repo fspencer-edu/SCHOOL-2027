@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Nature Inspired Alg./0) Nature-Inspired Optimization Algorithms.md",
+                "file": "OTHER TEXTBOOKS/Textbook Table.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0) Nature-Inspired Optimization Algorithms"
+              "title": "Textbook Table"
             }
           },
           {
@@ -97,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -214,8 +215,10 @@
   },
   "active": "1d04b4143063873b",
   "lastOpenFiles": [
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Optimization Algorithms/0) Optimization Algorithms.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Nature Inspired Alg./0) Nature-Inspired Optimization Algorithms.md",
+    "OTHER TEXTBOOKS/Textbook Table.md",
+    "OTHER TEXTBOOKS",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Optimization Algorithms/0) Optimization Algorithms.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Nature Inspired Alg.",
     "TODO.md",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Optimization Algorithms",
@@ -250,7 +253,6 @@
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/3) Solving Problems by Searching.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/4) Search in Complex Environments.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/2) Intelligent Agents.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/2) End-To-End machine Learning.md",
     "Pasted image 20260924102944.png",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/12) Administering Kafka.md.tmp",
     "images/Pasted image 20260923200437.png",
@@ -259,7 +261,6 @@
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/3) A Tour of Spark's Toolset.md.tmp",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/3) The Prolog Languages.md.tmp",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/3) Solving Problems by Searching.md.tmp",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/14) Deep Computer Visual Using Convolutional Neural Networks.md.tmp",
     "Untitled.canvas"
   ]
 }
