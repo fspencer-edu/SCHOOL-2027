@@ -24,16 +24,27 @@
 - A technique for providing that something is true for all natural numbers
 - Prove that for ann n, $S(n)$ is true
 	- Prove that S(0) is true
-	- Prove that for any natural number n, if S(n) is true, than S(n+1) is also strue
+	- Prove that for any natural number n, if S(n) is true, than S(n+1) is also true
 # Nonterminating programs
 
 - Third programming requirement
 	- A program must be in a form suitable for back chaining
 - When the body of a clause contains a recursive predicate, make sure that its new variables are instantiate by early atoms in the body
+- - When a clause is recursive, the recursive predicate should appear toward the end of the clause
+	- New variables can be instantiated
 # A more complex predicate
 
-- 
-
+- Different recursive predicates require different measures of size
 ## Recursion and termination, reconsidered
 
+- Termination
+	- A recursive program will terminate if the query that matches the head of a clause is always bigger than the queries from the body of the clause
+
 # Efficiency in Prolog
+
+- Forces the program to reconsider the same queries over and over
+- If the stack had k blocks in it, the program would try to establish the same bottom queries over and over $2^k$ times
+
+![[Pasted image 20260925112835.png]]
+
+- 
