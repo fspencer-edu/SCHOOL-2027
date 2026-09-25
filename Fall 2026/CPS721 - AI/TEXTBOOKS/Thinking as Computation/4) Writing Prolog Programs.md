@@ -12,7 +12,7 @@
 	- Grammatically correct, logically correct, and in a form suitable for back chaining
 # A blocks world
 
-![[Pasted image 20260925092751.png]]
+<img src="/images/Pasted image 20260925092751.png" alt="image" width="500">
 
 # Recursion in Prolog
 
@@ -45,6 +45,6 @@
 - Forces the program to reconsider the same queries over and over
 - If the stack had k blocks in it, the program would try to establish the same bottom queries over and over $2^k$ times
 
-![[Pasted image 20260925112835.png]]
+<img src="/images/Pasted image 20260925112835.png" alt="image" width="500">
 
 - 

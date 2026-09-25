@@ -12,7 +12,7 @@
 
 _Map Colouring_
 
-![[Pasted image 20260925113242.png]]
+<img src="/images/Pasted image 20260925113242.png" alt="image" width="500">
 
 ```prolog
 solution(A,B,C,D,E)
@@ -37,7 +37,7 @@ A = red, B = white, C = blue, D = white, E = blue
 	- Going to a new line
 # A first example: Sudoku
 
-![[Pasted image 20260925113659.png]]
+<img src="/images/Pasted image 20260925113659.png" alt="image" width="500">
 
 ## The anonymous variable in Prolog
 
@@ -48,7 +48,7 @@ A = red, B = white, C = blue, D = white, E = blue
 
 ## Sudoku as constraint satisfaction
 
-![[Pasted image 20260925120204.png]]
+<img src="/images/Pasted image 20260925120204.png" alt="image" width="500">
 
 - Negation needs its arguments to be instantiated
 
@@ -58,7 +58,7 @@ A = red, B = white, C = blue, D = white, E = blue
 
 ## Guessed values and forced values
 
-![[Pasted image 20260925120523.png]]
+<img src="/images/Pasted image 20260925120523.png" alt="image" width="500">
 
 # A second example: Crypt-arithmetic
 ## Arithmetic in Prolog
@@ -76,7 +76,13 @@ A = red, B = white, C = blue, D = white, E = blue
 	- Subtraction, -
 	- Multiplication, *
 	- Division, /
-	- Exponentiation
+	- Exponentiation, **
+
+- Requires variables to be instantiated before
+- Using the `is` relation
+	- Getting the value of an arithmetic expression to use with another predicate
+
+_Arithm_
 
 ## Crypt-arithmetic as constraint satisfaction
 
