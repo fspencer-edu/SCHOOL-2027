@@ -61,7 +61,7 @@
 	- Sum results of weighted outputs of hidden nodes to the output node
 	- Activation function for output node
 
-![[Pasted image 20260924174848.png]]
+<img src="/images/Pasted image 20260924174848.png" alt="image" width="500">
 
 
 # Backpropagation: Training an ANN
