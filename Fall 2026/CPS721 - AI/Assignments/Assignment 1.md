@@ -1,6 +1,6 @@
 # Part 1 -  Knowledge Base
 
-## a)
+## a) KB
 
 - q1a_trip_kb.pl
 - Add knowledge base in the q1_kb section
@@ -26,7 +26,7 @@ ticket(Name, City, Data, Price)
 	- All prices as positive integers
 
 
-## b)
+## b) Queries
 
 - Create queries for each of the 12 statements and add then to the file q1b_queries.pl
 
@@ -37,13 +37,54 @@ ticket(Name, City, Data, Price)
 
 
 # Part 2 - Arithmetic
-## a)
+## a) KB
+
+- Calculate the bill at an e-store on three products
+	- `laptop, monitor, keyboard`
+
+```prolog
+cost(Product, Count)
+numPurchased(Product, Count)
+shippingCost(Product, Cost)
+expressSheippingRate(Rate)
+taxRate(Rate)
+freeRegularShippingMin(Amount)
+freeExpressShippingMin(Amount)
+```
+
+## b) CALC
+
+```prolog
+subtotal(Sub)
+
+costWithShipping(ShippingType, Cost)
+
+totalCost(ShippingType, Cost)
+```
 
 
-## b)
-
-
-## c)
+## c) LOG
 
 
 # Part 3 - Recursive
+
+## a) KB
+
+- recursive program to calculate the cost of staying at a hotel for a given amount of time
+- All trip planning os in october, 1-31
+- Hotel will have rooms on all days
+- Assume that in any query, checn in and check out will be given as non negative integers
+- Variable queries for `Hotel, City, Cost = H, L, C`
+
+```prolog
+stayCost(Hotel, City, CheckinDate, CheckoutDate, Cost)
+```
+## b) CALC
+
+- Recursive program to find possible round trips and the cost of those round trips
+- Write a program to find possible multi-city round trips and their costs
+
+```prolog
+roundTrip(City, Start, End, NumFlights, Cost)
+```
+## c) QUERIES and LOG
