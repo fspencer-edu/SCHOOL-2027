@@ -92,17 +92,17 @@
             }
           },
           {
-            "id": "8efb6c0ca54e4a23",
+            "id": "5ca3d84c65a93d30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/BLG655 - Viruses/Assignments/Assignment 1 - Viral Outbreak News Video.md",
+                "file": "Fall 2026/CPS721 - AI/NOTES/Week 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Assignment 1 - Viral Outbreak News Video"
+              "title": "Week 3"
             }
           }
         ],
@@ -283,12 +283,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "8efb6c0ca54e4a23",
+  "active": "5ca3d84c65a93d30",
   "lastOpenFiles": [
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/5) Managing Apache Kafka Programmatically.md.tmp",
-    "Fall 2026/BLG655 - Viruses/Assignments/Assignment 1 - Viral Outbreak News Video.md",
-    "Fall 2026/BLG655 - Viruses/Assignments",
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/Computational Intelligence - A Logical Approach/1) Computation Intelligence and Knowledge.md.tmp",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/13) Loading and Preprocessing Data with TensorFlow.md.tmp",
+    "images/Pasted image 20260928120044.png",
+    "Fall 2026/CPS721 - AI/NOTES/Week 2.md",
+    "Fall 2026/CPS721 - AI/NOTES/Week 3.md",
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/7) Lists in Prolog.md",
+    "Pasted image 20260928120044.png",
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/8) Case Study - Understanding Natural Language.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/12) Can Computers Really Think?.md",
+    "Fall 2026/BLG655 - Viruses/Assignments/Assignment 1 - Viral Outbreak News Video.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/5) Managing Apache Kafka Programmatically.md.tmp",
+    "Fall 2026/BLG655 - Viruses/Assignments",
     "Fall 2026/CPS721 - AI/Assignments/Assignment 1.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/15) Sqoop.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/11) Securing Kafka.md.tmp",
@@ -297,8 +305,6 @@
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Hands-On ML with Scikit-Learn, Keras, and TensorFlow/3) Classification.md.tmp",
     "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Grokking Artificial Intelligence Algorithms/2) Search Fundamentals.md.tmp",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/11) Case Study - Other Ways of Thinking.md.tmp",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/21) Structured Streaming Basics.md.tmp",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/0) Hadoop.md.tmp",
     "images/Pasted image 20260925182255.png",
     "TODO.md",
     "Fall 2026/CPS803 - Machine Learning/Assignments/Assignment 1 - Step 3 (Manual Decision Tree).md",
@@ -310,17 +316,12 @@
     "images/Pasted image 20260925132911.png",
     "images/Pasted image 20260925133359.png",
     "images/Pasted image 20260925134422.png",
-    "images/Pasted image 20260925131759.png",
-    "images/Pasted image 20260925155432.png",
     "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 2 - Find a review.md",
     "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 1 - Finding Virus Outbreak.md",
     "OTHER TEXTBOOKS/Textbook Table.md",
-    "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/7) Lists in Prolog.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/6) Case Study - Interpreting Visual Scenes.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/9) Case Study - Planning Courses of Action.md",
-    "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/8) Case Study - Understanding Natural Language.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/5) Case Study - Satisfying Constraints.md",
-    "Fall 2026/CPS721 - AI/NOTES/Week 2.md",
     "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 2.md",
     "Fall 2026/CPS721 - AI/Quizes/AI - quiz 1.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/4) Writing Prolog Programs.md",
@@ -330,7 +331,6 @@
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/2) A Procedural for Thinking.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/1) Thinking and Computation.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/0) Thinking as Computation.md",
-    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Nature Inspired Alg./0) Nature-Inspired Optimization Algorithms.md",
     "Untitled.canvas"
   ]
 }
