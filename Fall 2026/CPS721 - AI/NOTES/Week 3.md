@@ -137,9 +137,11 @@ Q3 - member(X, [a, b, c])
 Match on 2 with X = a, T = [b, c]
 Sucess with X = a
 
+member(X, [b, c])
 Match on 2 with X = b, T = [c]
 Sucess with X = b
 
+member(X, [c])
 Match on 2 with X = c, T = []
 Sucess with X = c
 ```
@@ -148,11 +150,45 @@ Sucess with X = c
 	- `append(L1, L2, L)` holds when L is the result of joining L1 and L2
 
 ```prolog
-append([a, b])
+append([a, b], [c, d, e], [a, b, c, d, e])
+append([], [a, b], [a, b])
+append([a, b], [], [a, b])
+append([], [], [])
 ```
 
 - Implementing Append
 
+
+Base case
+
+append([], L, L).
+
+Recursive Call
+
+append(L1, L2, L) : - append
+
+
 ```prolog
 append([a, b], [c, d, e], L)
+
+Match on 2, with H = a, L1 = [b], L2 = [c, d, e], L = [a|L3]
+append([b], [c, d, e], L3)
+
+Match on 2, with H = b, L1 = [], L2 = [c, d, e], L = [b|L4]
+append([], [c, d, e], L4)
+
+Success on 1, with L4 = [c, d, e]
+
+L3 = [b|L4] = [b, c, d, e]
+L = [a|L3] = [a, b, c, d, e]
 ```
+
+- Queries with Append
+- Defining last using append
+- Defining prefix using append
+- Defining member using append
+
+Example `replaceFirst`
+Example `replaceAll`
+Example `Length`
+
