@@ -26,37 +26,43 @@
 
 ## Assignments
 
-- [ ] Virus video
-- [ ] Viruses post
+- [ ] Go through slides for viruses
 
 - [ ] Thinking as computation
-- [ ] AI assignment 1
 
-- [ ] ML assignment
+- [ ] Go through ML textbooks
 
-- [ ] Big data lab 3
+- [ ] Spark
 
+- [ ] Go through biological psychology textbook
 - [ ] Read biological psychology research paper
 
 ---
 ## Prism Insights
 
-- [ ] Fix header footer editing
-- [ ] Add data source
-- [ ] Fix client admin page and permissions
+### Main
+- [ ] Add data source/org data
 - [ ] Add dashboard builder query route
 - [ ] Create example dashboards for Irving Oil
+
+### User Guides
 - [ ] Client external documentation
 	- [ ] Client admin
 	- [ ] Client user
 - [ ] Prism internal documentation
 	- [ ] Economist
 	- [ ] Developer
+
+### Dashboards
 - [ ] Fix slicers and dashboard components
 - [ ] Add more drill throughs
 - [ ] Add geojson map
 - [ ] Add dashboard caching
 
+
+- Send updated email to Julie and Adam
+- Update cheyennes matrix code
+- Move naics to server or check
 
 
 
