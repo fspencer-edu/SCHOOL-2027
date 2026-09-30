@@ -321,13 +321,63 @@
 	- Specialized transporter proteins move molecules back into the presynaptic cell
 	- Recycling
 	- Half the effect on the postsynaptic cell
-- Acetylochline
-	- 
-
+- Acetylcholine
+	- Undergoes reuptake after the enzyme breaks into two fragments
+		- Acetate
+		- Choline
+- Rapid series of action potential at a synapse can deplete the neurotransmitter faster than the presynaptic cell replenishes it, impairing transmission
+- Enzymes break down any transmitter molecules that the transporters do not reuptake
+- Breakdown products wash away and end up in blood and urine
+- Neuropeptides
+	- Diffuse without uptake
+- Amphetamine and cocaine
+	- Inhibit the transporters for dopamine, serotonin, and norepinephrine
+	- Decreases reuptake and prologs the effects of the neurotransmitters
+	- Increased arousal
+- A few hours after taking a stimulant drug, a user has less than usual dopamine and enters a withdrawal state
+	- Reduced energy, motivation and mild depression
+	- Enzymes break down extra dopamine in the synaptic cleft
+- Methylphenidate (Ritalin)
+	- Deficit/hyperactivity disorder
+	- Blocks the reuptake of dopamine
+	- More gradual effects
 ### Negative Feedback from the Postsynaptic Cell
 
+- Many presynaptic terminals have receptors sensitive to the same transmitter they release
+- Autoreceptors
+	- Respond to the released transmitter by inhibiting further synthesis and release
+	- Negative feedback
+- Some postsynaptic neurons respond to stimulation by releasing chemicals that travel back to the presynaptic terminal to inhibit further release of the transmitter
+	- Anandamide
+	- 2-AG (sn-2 arachidonylglycerol)
+-  Cannabinoids
+	- Active chemicals in marijuana
+	- Mimic effects of the reverse transmitters
+	- Decrease the release of both glutamate and GABA
+	- Decrease anxiety
+
+<img src="/images/Pasted image 20260930091927.png" alt="image" width="500">
+
+- Amphetamine
+	- Blocks reuptake of dopamine and several other transmitters
+- Cocaine
+	- Blocks reuptake of dopamine and several other transmitters
+- Methylphenidate (Ritalin)
+	- Blocks reuptake of dopamine and others, but gradually
+- MDMA
+	- Releases dopamine, serotonin, and norepinephrine
+- Nicotine
+	- Stimulates nicotinic-type acetylcholine receptor, which increases dopamine release
+- Opiates
+	- Stimulates endorphin receptors
+- Cannabinoids
+	- Excites negative feedback receptors on presynaptic cells
+- Hallucinogens
+	- Stimulates serotonin type 2A receptors
 
 ### Electrical Synapses
+
+- 
 
 ## Hormones
 

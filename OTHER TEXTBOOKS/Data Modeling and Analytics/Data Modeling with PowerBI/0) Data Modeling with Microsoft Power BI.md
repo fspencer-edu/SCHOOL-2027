@@ -1,0 +1,24 @@
+https://learning.oreilly.com/library/view/data-modeling-with/9781098148546/foreword01.html
+
+![[Pasted image 20260930093516.png|400]]
+
+1) What is a Data Model?
+2) Building a Data Model
+3) Real-World Examples
+4) Performance Tuning
+5) Understanding a PowerBI Data Model
+6) Building a Data Model in PowerBI
+7) Real-World Examples using PowerBI
+8) Performance Tuning in the PowerBI Data Model
+9) Understanding a Data Model from the DAX Point of View
+10) Building a Data Model with DAX
+11) Real-World Examples Using DAX
+12) Performance Turning with DAX
+13) Understanding a Data Model From the Power Query Point of View
+14) Building a Data Model with Power Query and M
+15) Real-World Examples Using Power Query and M
+16) Performance Tuning the Data Model with Power Query
+17) Understanding a Relational Data Model
+18) Building a Data Model with SQL
+19) Real-World Examples Using SQL
+20) Performance Tuning the Data Model with SQL

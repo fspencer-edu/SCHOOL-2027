@@ -52,14 +52,14 @@ flowchart TD
 
 # 1. ML research foundation
 
-|   # | Textbook                                                           | Level                   | Context                                          | Link                                                                                                             |
-| --: | ------------------------------------------------------------------ | ----------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-|   1 | **Hands-On Machine Learning with Scikit-Learn and PyTorch**        | Intermediate            | Classification, ensembles, PyTorch, practical ML | [O’Reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9798341607972/)                        |
-|   2 | **Probabilistic Machine Learning: An Introduction — Kevin Murphy** | Intermediate → Advanced | Probability, Bayesian ML, probabilistic models   | [MIT Press](https://mitpress.ublish.com/book/probabilistic-machine-learning-an-introduction)                     |
-|   3 | **Numerical Linear Algebra — Trefethen & Bau**                     | Advanced                | SVD, QR, eigenvalues, numerical stability        | [Official page](https://people.maths.ox.ac.uk/trefethen/text.html)                                               |
-|   4 | **Convex Optimization — Boyd & Vandenberghe**                      | Advanced                | Constraints, duality, convex optimization        | [Free official book](https://web.stanford.edu/~boyd/cvxbook/)                                                    |
-|   5 | **Elements of Information Theory — Cover & Thomas**                | Advanced                | Entropy, KL divergence, mutual information       | [Wiley](https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X)                                             |
-|   6 | **Gaussian Processes for Machine Learning**                        | Advanced                | Bayesian prediction, kernels, uncertainty        | [Free MIT Press edition](https://direct.mit.edu/books/oa-monograph/2320/Gaussian-Processes-for-Machine-Learning) |
+|   # | Textbook                                                           | Level                   | Context                                          | Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --: | ------------------------------------------------------------------ | ----------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   1 | **Hands-On Machine Learning with Scikit-Learn and PyTorch**        | Intermediate            | Classification, ensembles, PyTorch, practical ML | [O’Reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9798341607972/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|   2 | **Probabilistic Machine Learning: An Introduction — Kevin Murphy** | Intermediate → Advanced | Probability, Bayesian ML, probabilistic models   | [MIT Press](https://mitpress.ublish.com/book/probabilistic-machine-learning-an-introduction)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|   3 | **Numerical Linear Algebra — Trefethen & Bau**                     | Advanced                | SVD, QR, eigenvalues, numerical stability        | [Official page](https://people.maths.ox.ac.uk/trefethen/text.html)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|   4 | **Convex Optimization — Boyd & Vandenberghe**                      | Advanced                | Constraints, duality, convex optimization        | [Free official book](https://web.stanford.edu/~boyd/cvxbook/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|   5 | **Elements of Information Theory — Cover & Thomas**                | Advanced                | Entropy, KL divergence, mutual information       | [Wiley](https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|   6 | **Gaussian Processes for Machine Learning**                        | Advanced                | Bayesian prediction, kernels, uncertainty        | [Free MIT Press edition]([https://direct.mit.edu/books/oa-monograph/2320/Gaussian-Processes-for-Machine-Learning](https://watermark02.silverchair.com/book_9780262256834.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAkEwggI9BgkqhkiG9w0BBwagggIuMIICKgIBADCCAiMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMR12QTokLxv5g5GzeAgEQgIIB9OJlCTndNcetqJ8tGByRzU7RVMwnOZFQ5TMwKw1q73ZEZOmsl5BcV9NJ1Wc9iqrlykJgfgmy4fvD_rIYeDEdCgFRkmRo28z3kXt1zn0g3g3Y0kLZF1YKr_OBWsrMAK6_odB2W7YYqsnttqYFrGMhJhPf9p70-QAI92rnEDX8H18V2Wvvdv7oLF402ANDlG-XL2W9iZwNZDx67QZqP0GYbomSyuTxM1oIhVevEyhPfvs4l--bBQewWdiMG0q1asMfVn5gE75Z4AH672PS-nTCNUcRAaRNAFJmxsFgMkkKF8kMimCiaD9ebCPQI6A0TXIQ5AYJqSLy17j3aYwmktpIfFxI3FiMtbCgA92kJpnIJW-XJmVj9yvJzj4m-Qygi4c1FA5tnwZepiSjnGswM5Wrui6iiobMpCdpn27aQbYNPLFTxmf_UuAJgv-m7d0WEIm03NcKFm0ymCPpvKF-Uli2hcUSGXTV-Fjcg9OMDe8Rj7LnFZUcEeq3wTT3oam6v1UJMv0JxeE6MbA5IcmgohHHlujvueGCVUtI7LgqeFS4LNXdNZed_NVEAuXozmuIdyO3hthBnqNlnfm4c6NdD9sSA-3hkMOolZKUEU2GDtIdAN1afXXxGgY18o-_f2m_hzC9nxr-jVUZywI6GyQFweI2rM7yeBOh)) |
 
 **Flow:**  
 **Hands-On ML → Probabilistic ML → Numerical Linear Algebra → Convex Optimization → Information Theory → Gaussian Processes**
@@ -68,13 +68,13 @@ flowchart TD
 
 # 2. Data modeling & analytics engineering
 
-|#|Textbook|Level|Context|Link|
-|--:|---|---|---|---|
-|1|**Analytics Engineering with SQL and dbt**|Intermediate|dbt, SQL models, testing, analytics engineering|[O’Reilly](https://www.oreilly.com/library/view/analytics-engineering-with/9781098142377/)|
-|2|**Data Modeling with Microsoft Power BI**|Intermediate|Star schemas, dimensions, relationships|[O’Reilly](https://www.oreilly.com/library/view/data-modeling-with/9781098148546/)|
-|3|**Universal Data Modeling**|Intermediate → Advanced|Relational, NoSQL, dimensional, Data Vault|[O’Reilly](https://www.oreilly.com/library/view/universal-data-modeling/0642572229368/)|
-|4|**Data Management at Scale, 2nd Ed.**|Intermediate|Data products, governance, enterprise architecture|[O’Reilly](https://www.oreilly.com/library/view/data-management-at/9781098138851/)|
-|5|**Fundamentals of Data Engineering**|Intermediate|End-to-end data engineering architecture|[O’Reilly](https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/)|
+|   # | Textbook                                      | Level                   | Context                                            | Link                                                                                       |
+| --: | --------------------------------------------- | ----------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+|   1 | [[0) Analytics Engineering with SQL and dbt]] | Intermediate            | dbt, SQL models, testing, analytics engineering    | [O’Reilly](https://www.oreilly.com/library/view/analytics-engineering-with/9781098142377/) |
+|   2 | [[0) Data Modeling with Microsoft Power BI]]  | Intermediate            | Star schemas, dimensions, relationships            | [O’Reilly](https://www.oreilly.com/library/view/data-modeling-with/9781098148546/)         |
+|   3 | [[0) Universal Data Modeling]]                | Intermediate → Advanced | Relational, NoSQL, dimensional, Data Vault         | [O’Reilly](https://www.oreilly.com/library/view/universal-data-modeling/0642572229368/)    |
+|   4 | [[0) Data Management at Scale, 2nd Ed.]]      | Intermediate            | Data products, governance, enterprise architecture | [O’Reilly](https://www.oreilly.com/library/view/data-management-at/9781098138851/)         |
+|   5 | [[0) Fundamentals of Data Engineering]]       | Intermediate            | End-to-end data engineering architecture           | [O’Reilly](https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/)       |
 
 ### Concepts to learn
 
@@ -128,11 +128,11 @@ flowchart TD
 
 # 3. Data engineering & distributed systems
 
-|#|Textbook|Level|Context|Link|
-|--:|---|---|---|---|
-|1|**Data Pipelines with Apache Airflow, 2nd Ed.**|Intermediate → Advanced|DAGs, orchestration, scheduling|[O’Reilly](https://www.oreilly.com/library/view/data-pipelines-with/9781633436374/)|
-|2|**Databricks Data Intelligence Platform**|Intermediate|Spark, Delta, Unity Catalog, ML|[O’Reilly](https://www.oreilly.com/library/view/databricks-data-intelligence/9798868804441/)|
-|3|**Apache Iceberg: The Definitive Guide**|Advanced|Lakehouse tables, metadata, transactions|[O’Reilly](https://www.oreilly.com/library/view/apache-iceberg-the/9781098148614/)|
+|   # | Textbook                                           | Level                   | Context                                  | Link                                                                                         |
+| --: | -------------------------------------------------- | ----------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------- |
+|   1 | [[0) Data Pipelines with Apache Airflow, 2nd Ed.]] | Intermediate → Advanced | DAGs, orchestration, scheduling          | [O’Reilly](https://www.oreilly.com/library/view/data-pipelines-with/9781633436374/)          |
+|   2 | [[0) Databricks Data Intelligence Platform]]       | Intermediate            | Spark, Delta, Unity Catalog, ML          | [O’Reilly](https://www.oreilly.com/library/view/databricks-data-intelligence/9798868804441/) |
+|   3 | [[0) Apache Iceberg - The Definitive Guide]]       | Advanced                | Lakehouse tables, metadata, transactions | [O’Reilly](https://www.oreilly.com/library/view/apache-iceberg-the/9781098148614/)           |
 
 Also learn:
 
@@ -206,13 +206,13 @@ Recommended certification order:
 
 # 6. Infrastructure & platform engineering
 
-|#|Textbook|Level|Context|Link|
-|--:|---|---|---|---|
-|1|**Terraform in Depth**|Advanced|Infrastructure as code|[O’Reilly](https://www.oreilly.com/library/view/terraform-in-depth/9781633438002/)|
-|2|**Argo CD: Up and Running**|Intermediate → Advanced|Kubernetes GitOps deployments|[O’Reilly](https://www.oreilly.com/library/view/argo-cd-up/9781098141998/)|
-|3|**Observability Engineering, 2nd Ed.**|Advanced|Telemetry, SLOs, distributed debugging|[O’Reilly](https://www.oreilly.com/library/view/observability-engineering-2nd/9781098179915/)|
-|4|**Mastering API Architecture**|Intermediate → Advanced|Gateways, REST, microservices, service mesh|[O’Reilly](https://www.oreilly.com/library/view/mastering-api-architecture/9781492090625/)|
-|5|**Effective Platform Engineering**|Advanced|Internal platforms, self-service infrastructure|[O’Reilly](https://www.oreilly.com/library/view/effective-platform-engineering/9781633436497/)|
+|   # | Textbook                                  | Level                   | Context                                         | Link                                                                                           |
+| --: | ----------------------------------------- | ----------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+|   1 | [[0) Terraform in Depth]]                 | Advanced                | Infrastructure as code                          | [O’Reilly](https://www.oreilly.com/library/view/terraform-in-depth/9781633438002/)             |
+|   2 | [[0) Argo CD - Up and Running]]           | Intermediate → Advanced | Kubernetes GitOps deployments                   | [O’Reilly](https://www.oreilly.com/library/view/argo-cd-up/9781098141998/)                     |
+|   3 | [[0) Observability Engineering, 2nd Ed.]] | Advanced                | Telemetry, SLOs, distributed debugging          | [O’Reilly](https://www.oreilly.com/library/view/observability-engineering-2nd/9781098179915/)  |
+|   4 | [[0) Mastering API Architecture]]         | Intermediate → Advanced | Gateways, REST, microservices, service mesh     | [O’Reilly](https://www.oreilly.com/library/view/mastering-api-architecture/9781492090625/)     |
+|   5 | [[0) Effective Platform Engineering]]     | Advanced                | Internal platforms, self-service infrastructure | [O’Reilly](https://www.oreilly.com/library/view/effective-platform-engineering/9781633436497/) |
 
 ### Core tool flow
 
@@ -233,12 +233,12 @@ Also learn:
 
 # 7. Commercial ML engineering
 
-|#|Textbook|Level|Context|Link|
-|--:|---|---|---|---|
-|1|**Hands-On Machine Learning**|Intermediate|Train and evaluate models|[O’Reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9798341607972/)|
-|2|**Machine Learning Production Systems**|Intermediate → Advanced|Production pipelines and serving|[O’Reilly](https://www.oreilly.com/library/view/machine-learning-production/9781098156008/)|
-|3|**Machine Learning Platform Engineering**|Advanced|MLflow, Kubeflow, Feast, Kubernetes|[O’Reilly](https://www.oreilly.com/library/view/machine-learning-platform/9781633437333/)|
-|4|**Building Machine Learning Systems with a Feature Store**|Advanced|Features, training, online inference|[O’Reilly](https://www.oreilly.com/library/view/building-machine-learning/9781098165222/)|
+|   # | Textbook                                                      | Level                   | Context                              | Link                                                                                        |
+| --: | ------------------------------------------------------------- | ----------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------- |
+|   1 | [[0) Hands-On Machine Learning]]                              | Intermediate            | Train and evaluate models            | [O’Reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9798341607972/)   |
+|   2 | [[0) Machine Learning Production Systems]]                     | Intermediate → Advanced | Production pipelines and serving     | [O’Reilly](https://www.oreilly.com/library/view/machine-learning-production/9781098156008/) |
+|   3 | [[0) Machine Learning Platform Engineering]]                  | Advanced                | MLflow, Kubeflow, Feast, Kubernetes  | [O’Reilly](https://www.oreilly.com/library/view/machine-learning-platform/9781633437333/)   |
+|   4 | [[0) Building Machine Learning Systems with a Feature Store]] | Advanced                | Features, training, online inference | [O’Reilly](https://www.oreilly.com/library/view/building-machine-learning/9781098165222/)   |
 
 Core technologies:
 
@@ -248,14 +248,14 @@ Core technologies:
 
 # 8. Modern AI / RAG
 
-|#|Textbook|Level|Context|Link|
-|--:|---|---|---|---|
-|1|**Designing Large Language Model Applications**|Intermediate → Advanced|LLM architecture, embeddings|[O’Reilly](https://www.oreilly.com/library/view/designing-large-language/9781098150495/)|
-|2|**RAG from First Principles**|Advanced|Retrieval, chunking, reranking|[O’Reilly](https://www.oreilly.com/library/view/rag-from-first/9781835888667/)|
-|3|**Hands-On RAG for Production**|Advanced|Production RAG, GraphRAG, agents|[O’Reilly](https://www.oreilly.com/library/view/hands-on-rag-for/9798341621701/)|
-|4|**RAG with Python Cookbook**|Intermediate → Advanced|Practical RAG recipes|[O’Reilly](https://www.oreilly.com/library/view/rag-with-python/9798341600553/)|
-|5|**Building Generative AI Services with FastAPI**|Intermediate → Advanced|AI APIs, vector DBs, caching|[O’Reilly](https://www.oreilly.com/library/view/building-generative-ai/9781098160296/)|
-|6|**LLMs in Production**|Advanced|LoRA, fine-tuning, serving, LLMOps|[O’Reilly](https://www.oreilly.com/library/view/llms-in-production/9781633437203/)|
+|   # | Textbook                                            | Level                   | Context                            | Link                                                                                     |
+| --: | --------------------------------------------------- | ----------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------- |
+|   1 | [[0) Designing Large Language Model Applications]]  | Intermediate → Advanced | LLM architecture, embeddings       | [O’Reilly](https://www.oreilly.com/library/view/designing-large-language/9781098150495/) |
+|   2 | [[0) RAG from First Principles]]                    | Advanced                | Retrieval, chunking, reranking     | [O’Reilly](https://www.oreilly.com/library/view/rag-from-first/9781835888667/)           |
+|   3 | [[0) Hands-On RAG for Production]]                  | Advanced                | Production RAG, GraphRAG, agents   | [O’Reilly](https://www.oreilly.com/library/view/hands-on-rag-for/9798341621701/)         |
+|   4 | [[0) RAG with Python Cookbook]]                     | Intermediate → Advanced | Practical RAG recipes              | [O’Reilly](https://www.oreilly.com/library/view/rag-with-python/9798341600553/)          |
+|   5 | [[0) Building Generative AI Services with FastAPI]] | Intermediate → Advanced | AI APIs, vector DBs, caching       | [O’Reilly](https://www.oreilly.com/library/view/building-generative-ai/9781098160296/)   |
+|   6 | [[0) LLMs in Production]]                           | Advanced                | LoRA, fine-tuning, serving, LLMOps | [O’Reilly](https://www.oreilly.com/library/view/llms-in-production/9781633437203/)       |
 
 Also learn:
 
@@ -275,16 +275,16 @@ Also learn:
 
 # 9. Research & decision intelligence
 
-|#|Textbook|Level|Context|Link|
-|--:|---|---|---|---|
-|1|**Bayesian Analysis with Python, 3rd Ed.**|Intermediate|Practical Bayesian modeling|[O’Reilly](https://www.oreilly.com/library/view/bayesian-analysis-with/9781805127161/)|
-|2|**Design and Analysis of Experiments**|Intermediate → Advanced|A/B testing, factorial designs, ANOVA|[O’Reilly](https://www.oreilly.com/library/view/design-and-analysis/9781119320937/)|
-|3|**Causal Inference: The Mixtape**|Intermediate → Advanced|Causal effects and quasi-experiments|[Yale](https://yalebooks.yale.edu/book/9780300251685/causal-inference/)|
-|4|**Causal AI**|Advanced|Causal ML/AI|[Official resources](https://www.robertosazuwaness.com/causal-ai-book/)|
-|5|**Optimization Algorithms**|Intermediate → Advanced|Search, metaheuristics, optimization|[O’Reilly](https://www.oreilly.com/library/view/optimization-algorithms/9781633438835/)|
-|6|**Introduction to Evolutionary Computing**|Advanced|Genetic and evolutionary algorithms|[Springer](https://link.springer.com/book/10.1007/978-3-662-44874-8)|
-|7|**Reinforcement Learning: An Introduction**|Advanced|MDPs, Q-learning, policy learning|[Free official book](http://incompleteideas.net/book/the-book-2nd.html)|
-|8|**Dynamic Programming and Optimal Control**|Advanced|Sequential decisions and optimal control|[Official resources](https://www.mit.edu/~dimitrib/dpbook.html)|
+|   # | Textbook                                    | Level                   | Context                                  | Link                                                                                    |
+| --: | ------------------------------------------- | ----------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------- |
+|   1 | **Bayesian Analysis with Python, 3rd Ed.**  | Intermediate            | Practical Bayesian modeling              | [O’Reilly](https://www.oreilly.com/library/view/bayesian-analysis-with/9781805127161/)  |
+|   2 | **Design and Analysis of Experiments**      | Intermediate → Advanced | A/B testing, factorial designs, ANOVA    | [O’Reilly](https://www.oreilly.com/library/view/design-and-analysis/9781119320937/)     |
+|   3 | **Causal Inference: The Mixtape**           | Intermediate → Advanced | Causal effects and quasi-experiments     | [Yale](https://yalebooks.yale.edu/book/9780300251685/causal-inference/)                 |
+|   4 | **Causal AI**                               | Advanced                | Causal ML/AI                             | [Official resources](https://www.robertosazuwaness.com/causal-ai-book/)                 |
+|   5 | **Optimization Algorithms**                 | Intermediate → Advanced | Search, metaheuristics, optimization     | [O’Reilly](https://www.oreilly.com/library/view/optimization-algorithms/9781633438835/) |
+|   6 | **Introduction to Evolutionary Computing**  | Advanced                | Genetic and evolutionary algorithms      | [Springer](https://link.springer.com/book/10.1007/978-3-662-44874-8)                    |
+|   7 | **Reinforcement Learning: An Introduction** | Advanced                | MDPs, Q-learning, policy learning        | [Free official book](http://incompleteideas.net/book/the-book-2nd.html)                 |
+|   8 | **Dynamic Programming and Optimal Control** | Advanced                | Sequential decisions and optimal control | [Official resources](https://www.mit.edu/~dimitrib/dpbook.html)                         |
 
 **Flow:**  
 **Bayesian Statistics → Experimental Design → Causality → Optimization → Evolutionary Computing → RL → Optimal Control**
