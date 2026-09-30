@@ -191,12 +191,12 @@ Important concepts:
 
 # 5. AWS certification textbooks
 
-|#|Certification / Book|Level|Context|Link|
-|--:|---|---|---|---|
-|1|**AWS Certified Solutions Architect – Associate Study Guide**|Intermediate|Broad AWS architecture|[O’Reilly](https://www.oreilly.com/library/view/aws-certified-solutions/9781119982623/)|
-|2|**AWS Certified Data Engineer Associate Study Guide**|Intermediate → Advanced|Pipelines, storage, quality, governance|[O’Reilly](https://www.oreilly.com/library/view/aws-certified-data/9781098170066/)|
-|3|**AWS Certified Machine Learning Engineer Study Guide**|Intermediate → Advanced|SageMaker, training, deployment, MLOps|[O’Reilly](https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/)|
-|4|**AWS Certified Data Engineer Study Guide — Sybex**|Intermediate → Advanced|Deeper DEA-C01 reference|[O’Reilly](https://www.oreilly.com/library/view/aws-certified-data/9781394286584/)|
+|   # | Certification / Book                                             | Level                   | Context                                 | Link                                                                                    |
+| --: | ---------------------------------------------------------------- | ----------------------- | --------------------------------------- | --------------------------------------------------------------------------------------- |
+|   1 | [[0) AWS Certified Solutions Architect – Associate Study Guide]] | Intermediate            | Broad AWS architecture                  | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-solutions/9781119982623/) |
+|   2 | [[0) AWS Certified Data Engineer Associate Study Guide]]         | Intermediate → Advanced | Pipelines, storage, quality, governance | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-data/9781098170066/)      |
+|   3 | [[0) AWS Certified Machine Learning Engineer Study Guide]]       | Intermediate → Advanced | SageMaker, training, deployment, MLOps  | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/)   |
+|   4 | [[0) AWS Certified Data Engineer Study Guide — Sybex]]           | Intermediate → Advanced | Deeper DEA-C01 reference                | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-data/9781394286584/)      |
 
 Recommended certification order:
 
