@@ -52,14 +52,14 @@ flowchart TD
 
 # 1. ML research foundation
 
-|#|Textbook|Level|Context|Link|
-|--:|---|---|---|---|
-|1|**Hands-On Machine Learning with Scikit-Learn and PyTorch**|Intermediate|Classification, ensembles, PyTorch, practical ML|[O’Reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9798341607972/)|
-|2|**Probabilistic Machine Learning: An Introduction — Kevin Murphy**|Intermediate → Advanced|Probability, Bayesian ML, probabilistic models|[MIT Press](https://mitpress.ublish.com/book/probabilistic-machine-learning-an-introduction)|
-|3|**Numerical Linear Algebra — Trefethen & Bau**|Advanced|SVD, QR, eigenvalues, numerical stability|[Official page](https://people.maths.ox.ac.uk/trefethen/text.html)|
-|4|**Convex Optimization — Boyd & Vandenberghe**|Advanced|Constraints, duality, convex optimization|[Free official book](https://web.stanford.edu/~boyd/cvxbook/)|
-|5|**Elements of Information Theory — Cover & Thomas**|Advanced|Entropy, KL divergence, mutual information|[Wiley](https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X)|
-|6|**Gaussian Processes for Machine Learning**|Advanced|Bayesian prediction, kernels, uncertainty|[Free MIT Press edition](https://direct.mit.edu/books/oa-monograph/2320/Gaussian-Processes-for-Machine-Learning)|
+|   # | Textbook                                                           | Level                   | Context                                          | Link                                                                                                             |
+| --: | ------------------------------------------------------------------ | ----------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+|   1 | **Hands-On Machine Learning with Scikit-Learn and PyTorch**        | Intermediate            | Classification, ensembles, PyTorch, practical ML | [O’Reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9798341607972/)                        |
+|   2 | **Probabilistic Machine Learning: An Introduction — Kevin Murphy** | Intermediate → Advanced | Probability, Bayesian ML, probabilistic models   | [MIT Press](https://mitpress.ublish.com/book/probabilistic-machine-learning-an-introduction)                     |
+|   3 | **Numerical Linear Algebra — Trefethen & Bau**                     | Advanced                | SVD, QR, eigenvalues, numerical stability        | [Official page](https://people.maths.ox.ac.uk/trefethen/text.html)                                               |
+|   4 | **Convex Optimization — Boyd & Vandenberghe**                      | Advanced                | Constraints, duality, convex optimization        | [Free official book](https://web.stanford.edu/~boyd/cvxbook/)                                                    |
+|   5 | **Elements of Information Theory — Cover & Thomas**                | Advanced                | Entropy, KL divergence, mutual information       | [Wiley](https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X)                                             |
+|   6 | **Gaussian Processes for Machine Learning**                        | Advanced                | Bayesian prediction, kernels, uncertainty        | [Free MIT Press edition](https://direct.mit.edu/books/oa-monograph/2320/Gaussian-Processes-for-Machine-Learning) |
 
 **Flow:**  
 **Hands-On ML → Probabilistic ML → Numerical Linear Algebra → Convex Optimization → Information Theory → Gaussian Processes**
