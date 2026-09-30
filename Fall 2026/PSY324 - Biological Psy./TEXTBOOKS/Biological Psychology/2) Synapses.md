@@ -1,5 +1,11 @@
 # The Concepts of the Synapse
 
+
+## Properties of Synapses
+## Relationship Among EPSP, IPSP, and Action Potentials
+
+**Key Terms**
+
 - Excitatory postsynaptic potential (EPSP)
 	- Graded depolarization
 - Inhibitory postsynaptic potential (IPSP)
@@ -21,8 +27,8 @@
 - Temporal summation
 	- A cumulative effect of repeated stimuli within a brief time
 
-## Properties of Synapses
-## Relationship Among EPSP, IPSP, and Action Potentials
+
+---
 # Chemical Events at the Synapse
 
 - Acetylcholine
