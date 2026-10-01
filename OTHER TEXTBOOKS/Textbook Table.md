@@ -138,11 +138,11 @@ Also learn:
 | 2   | [[0) AWS Certified Data Engineer Associate Study Guide]]         | Intermediate → Advanced | Pipelines, storage, quality, governance                                     | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-data/9781098170066/)      |
 | 3   | [[0) AWS Certified Machine Learning Engineer Study Guide]]       | Intermediate → Advanced | SageMaker, training, deployment, MLOps                                      | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/)   |
 | 4   | [[0) AWS Certified Data Engineer Study Guide — Sybex]]           | Intermediate → Advanced | Deeper DEA-C01 reference                                                    | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-data/9781394286584/)      |
-| 5   | 0) AWS Certified Security Study Guide, 2nd Ed.                   | Advanced                | IAM, KMS, encryption, GuardDuty, Security Hub, incident response, DevSecOps | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-security/9781394253463/)  |
-| 6   | 0) AWS Certified SysOps Administrator Study Guide, 3rd Ed.       | Intermediate → Advanced | Cloud operations, monitoring, automation, reliability, troubleshooting      | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-sysops/9781119813101/)    |
-| 7   | 0) AWS Certified DevOps Engineer – Professional                  | Advanced                | CI/CD, IaC, deployment automation, observability, resilient operations      | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-devops/9781836207634/)    |
-| 8   | 0) AWS Certified Advanced Networking Study Guide, 2nd Ed.        | Advanced                | VPC, Transit Gateway, Direct Connect, VPNs, DNS, hybrid networking          | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-advanced/9781394171859/)  |
-| 9   | AWS Certified Generative AI Developer – Professional             | Advanced                | Bedrock, foundation models, RAG, agents, GenAI application development      | [AWS Certification](https://aws.amazon.com/certification/)                              |
+| 5   | [[0) AWS Certified Security Study Guide, 2nd Ed.]]               | Advanced                | IAM, KMS, encryption, GuardDuty, Security Hub, incident response, DevSecOps | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-security/9781394253463/)  |
+| 6   | [[0) AWS Certified SysOps Administrator Study Guide, 3rd Ed.]]   | Intermediate → Advanced | Cloud operations, monitoring, automation, reliability, troubleshooting      | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-sysops/9781119813101/)    |
+| 7   | [[0) AWS Certified DevOps Engineer – Professional]]              | Advanced                | CI/CD, IaC, deployment automation, observability, resilient operations      | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-devops/9781836207634/)    |
+| 8   | [[0) AWS Certified Advanced Networking Study Guide, 2nd Ed.]]    | Advanced                | VPC, Transit Gateway, Direct Connect, VPNs, DNS, hybrid networking          | [O’Reilly](https://www.oreilly.com/library/view/aws-certified-advanced/9781394171859/)  |
+| 9   | [[AWS Certified Generative AI Developer – Professional]]         | Advanced                | Bedrock, foundation models, RAG, agents, GenAI application development      | [AWS Certification](https://aws.amazon.com/certification/)                              |
 
 Recommended certification order:
 
@@ -151,24 +151,24 @@ Recommended certification order:
 ---
 
 # 6. Infrastructure & platform engineering
-| #   | Resource                                                  | Level                   | Focus                                                                         | Link                                                                                                            |
-| --- | --------------------------------------------------------- | ----------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| 1   | [[0) Terraform in Depth]]                                 | Advanced                | Infrastructure as code                                                        | [O’Reilly](https://www.oreilly.com/library/view/terraform-in-depth/9781633438002/)                              |
-| 2   | [[0) Argo CD - Up and Running]]                           | Intermediate → Advanced | Kubernetes GitOps deployments                                                 | [O’Reilly](https://www.oreilly.com/library/view/argo-cd-up/9781098141998/)                                      |
-| 3   | [[0) Observability Engineering, 2nd Ed.]]                 | Advanced                | Telemetry, SLOs, distributed debugging                                        | [O’Reilly](https://www.oreilly.com/library/view/observability-engineering-2nd/9781098179915/)                   |
-| 4   | [[0) Mastering API Architecture]]                         | Intermediate → Advanced | Gateways, REST, microservices, service mesh                                   | [O’Reilly](https://www.oreilly.com/library/view/mastering-api-architecture/9781492090625/)                      |
-| 5   | [[0) Effective Platform Engineering]]                     | Advanced                | Internal platforms, self-service infrastructure                               | [O’Reilly](https://www.oreilly.com/library/view/effective-platform-engineering/9781633436497/)                  |
-| 6   | 0) Docker Docs                                            | Beginner → Advanced     | Containers, images, networking, storage, Compose                              | [Docker Docs](https://docs.docker.com/)                                                                         |
-| 7   | 0) Docker Deep Dive, 5th Ed.                              | Beginner → Intermediate | Docker internals, images, containers, networking, security                    | [O’Reilly](https://www.oreilly.com/library/view/docker-deep-dive/9781806024032/)                                |
-| 8   | 0) Kubernetes Docs                                        | Beginner → Advanced     | Pods, deployments, services, networking, cluster concepts                     | [Kubernetes Docs](https://kubernetes.io/docs/)                                                                  |
-| 9   | 0) The Kubernetes Book, 3rd Ed.                           | Beginner → Intermediate | Kubernetes fundamentals, workloads, services, RBAC, StatefulSets              | [O’Reilly](https://www.oreilly.com/library/view/the-kubernetes-book/9781805806639/)                             |
-| 10  | 0) Cloud Native DevOps with Kubernetes, 2nd Ed.           | Intermediate → Advanced | Production Kubernetes, deployment, reliability, security, scaling             | [O’Reilly](https://www.oreilly.com/library/view/cloud-native-devops/9781098116811/)                             |
-| 11  | 0) Prometheus: Up & Running, 2nd Ed.                      | Intermediate            | Metrics, PromQL, exporters, alerting, Alertmanager                            | [O’Reilly](https://www.oreilly.com/library/view/prometheus-up/9781098131135/)                                   |
-| 12  | 0) Mastering Prometheus                                   | Intermediate → Advanced | Prometheus at scale, Kubernetes monitoring, Loki, Tempo                       | [O’Reilly](https://www.oreilly.com/library/view/mastering-prometheus/9781805125662/)                            |
-| 13  | 0) Observability with Grafana                             | Intermediate → Advanced | Grafana dashboards, Prometheus, Loki, Tempo, logs and traces                  | [O’Reilly](https://www.oreilly.com/library/view/observability-with-grafana/9781803248004/)                      |
-| 14  | 0) Linux — Michael Kofler                                 | Beginner → Intermediate | Linux administration, filesystems, processes, networking, shell, security     | [O’Reilly](https://www.oreilly.com/library/view/linux/9781806108176/?utm_source=chatgpt.com)                    |
-| 15  | 0) UNIX and Linux System Administration Handbook, 5th Ed. | Intermediate → Advanced | Production Linux, storage, networking, DNS, security, performance, automation | [O’Reilly](https://www.oreilly.com/library/view/unix-and-linux/9780134278308/?utm_source=chatgpt.com)           |
-| 16  | 0) Network Programming with Go                            | Intermediate → Advanced | TCP/IP, sockets, DNS, routing, HTTP, TLS, network services                    | [O’Reilly](https://www.oreilly.com/library/view/network-programming-with/9781098128890/?utm_source=chatgpt.com) |
+| #   | Resource                                                      | Level                   | Focus                                                                         | Link                                                                                                            |
+| --- | ------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 1   | [[0) Terraform in Depth]]                                     | Advanced                | Infrastructure as code                                                        | [O’Reilly](https://www.oreilly.com/library/view/terraform-in-depth/9781633438002/)                              |
+| 2   | [[0) Argo CD - Up and Running]]                               | Intermediate → Advanced | Kubernetes GitOps deployments                                                 | [O’Reilly](https://www.oreilly.com/library/view/argo-cd-up/9781098141998/)                                      |
+| 3   | [[0) Observability Engineering, 2nd Ed.]]                     | Advanced                | Telemetry, SLOs, distributed debugging                                        | [O’Reilly](https://www.oreilly.com/library/view/observability-engineering-2nd/9781098179915/)                   |
+| 4   | [[0) Mastering API Architecture]]                             | Intermediate → Advanced | Gateways, REST, microservices, service mesh                                   | [O’Reilly](https://www.oreilly.com/library/view/mastering-api-architecture/9781492090625/)                      |
+| 5   | [[0) Effective Platform Engineering]]                         | Advanced                | Internal platforms, self-service infrastructure                               | [O’Reilly](https://www.oreilly.com/library/view/effective-platform-engineering/9781633436497/)                  |
+| 6   | [[0) Docker Docs]]                                            | Beginner → Advanced     | Containers, images, networking, storage, Compose                              | [Docker Docs](https://docs.docker.com/)                                                                         |
+| 7   | [[0) Docker Deep Dive, 5th Ed.]]                              | Beginner → Intermediate | Docker internals, images, containers, networking, security                    | [O’Reilly](https://www.oreilly.com/library/view/docker-deep-dive/9781806024032/)                                |
+| 8   | [[0) Kubernetes Docs]]                                        | Beginner → Advanced     | Pods, deployments, services, networking, cluster concepts                     | [Kubernetes Docs](https://kubernetes.io/docs/)                                                                  |
+| 9   | [[0) The Kubernetes Book, 3rd Ed.]]                           | Beginner → Intermediate | Kubernetes fundamentals, workloads, services, RBAC, StatefulSets              | [O’Reilly](https://www.oreilly.com/library/view/the-kubernetes-book/9781805806639/)                             |
+| 10  | [[0) Cloud Native DevOps with Kubernetes, 2nd Ed.]]           | Intermediate → Advanced | Production Kubernetes, deployment, reliability, security, scaling             | [O’Reilly](https://www.oreilly.com/library/view/cloud-native-devops/9781098116811/)                             |
+| 11  | [[0) Prometheus: Up & Running, 2nd Ed.]]                      | Intermediate            | Metrics, PromQL, exporters, alerting, Alertmanager                            | [O’Reilly](https://www.oreilly.com/library/view/prometheus-up/9781098131135/)                                   |
+| 12  | [[0) Mastering Prometheus]]                                   | Intermediate → Advanced | Prometheus at scale, Kubernetes monitoring, Loki, Tempo                       | [O’Reilly](https://www.oreilly.com/library/view/mastering-prometheus/9781805125662/)                            |
+| 13  | [[0) Observability with Grafana]]                             | Intermediate → Advanced | Grafana dashboards, Prometheus, Loki, Tempo, logs and traces                  | [O’Reilly](https://www.oreilly.com/library/view/observability-with-grafana/9781803248004/)                      |
+| 14  | [[0) Linux — Michael Kofler]]                                 | Beginner → Intermediate | Linux administration, filesystems, processes, networking, shell, security     | [O’Reilly](https://www.oreilly.com/library/view/linux/9781806108176/?utm_source=chatgpt.com)                    |
+| 15  | [[0) UNIX and Linux System Administration Handbook, 5th Ed.]] | Intermediate → Advanced | Production Linux, storage, networking, DNS, security, performance, automation | [O’Reilly](https://www.oreilly.com/library/view/unix-and-linux/9780134278308/?utm_source=chatgpt.com)           |
+| 16  | [[0) Network Programming with Go]]                            | Intermediate → Advanced | TCP/IP, sockets, DNS, routing, HTTP, TLS, network services                    | [O’Reilly](https://www.oreilly.com/library/view/network-programming-with/9781098128890/?utm_source=chatgpt.com) |
 ### Core tool flow
 
 **Docker → Kubernetes → Helm → Terraform → Argo CD → OpenTelemetry → Prometheus/Grafana**
@@ -183,9 +183,9 @@ Recommended certification order:
 | 2   | [[0) Machine Learning Production Systems]]                    | Intermediate → Advanced | Production pipelines and serving                                              | [O’Reilly](https://www.oreilly.com/library/view/machine-learning-production/9781098156008/) |
 | 3   | [[0) Machine Learning Platform Engineering]]                  | Advanced                | MLflow, Kubeflow, Feast, Kubernetes                                           | [O’Reilly](https://www.oreilly.com/library/view/machine-learning-platform/9781633437333/)   |
 | 4   | [[0) Building Machine Learning Systems with a Feature Store]] | Advanced                | Features, training, online inference                                          | [O’Reilly](https://www.oreilly.com/library/view/building-machine-learning/9781098165222/)   |
-| 5   | 0) Designing Machine Learning Systems                         | Intermediate → Advanced | End-to-end ML system design, data distribution shifts, retraining, monitoring | [O’Reilly](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/)  |
-| 6   | 0) Reliable Machine Learning                                  | Intermediate → Advanced | ML reliability, SLOs, monitoring, testing, incident response                  | [O’Reilly](https://www.oreilly.com/library/view/reliable-machine-learning/9781098106218/)   |
-| 7   | 0) Practical MLOps                                            | Beginner → Intermediate | CI/CD, deployment, cloud MLOps, monitoring, automation                        | [O’Reilly](https://www.oreilly.com/library/view/practical-mlops/9781098103002/)             |
+| 5   | [[0) Designing Machine Learning Systems]]                     | Intermediate → Advanced | End-to-end ML system design, data distribution shifts, retraining, monitoring | [O’Reilly](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/)  |
+| 6   | [[0) Reliable Machine Learning]]                              | Intermediate → Advanced | ML reliability, SLOs, monitoring, testing, incident response                  | [O’Reilly](https://www.oreilly.com/library/view/reliable-machine-learning/9781098106218/)   |
+| 7   | [[0) Practical MLOps]]                                        | Beginner → Intermediate | CI/CD, deployment, cloud MLOps, monitoring, automation                        | [O’Reilly](https://www.oreilly.com/library/view/practical-mlops/9781098103002/)             |
 
 Core technologies:
 
@@ -194,22 +194,22 @@ Core technologies:
 ---
 
 # 8. Modern AI / RAG
-| #   | Textbook                                                      | Level                   | Context                                                                           | Link                                                                                        |
-| --- | ------------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| 1   | [[0) Designing Large Language Model Applications]]            | Intermediate → Advanced | LLM architecture, embeddings                                                      | [O’Reilly](https://www.oreilly.com/library/view/designing-large-language/9781098150495/)    |
-| 2   | [[0) RAG from First Principles]]                              | Advanced                | Retrieval, chunking, reranking                                                    | [O’Reilly](https://www.oreilly.com/library/view/rag-from-first/9781835888667/)              |
-| 3   | [[0) Hands-On RAG for Production]]                            | Advanced                | Production RAG, GraphRAG, agents                                                  | [O’Reilly](https://www.oreilly.com/library/view/hands-on-rag-for/9798341621701/)            |
-| 4   | [[0) RAG with Python Cookbook]]                               | Intermediate → Advanced | Practical RAG recipes                                                             | [O’Reilly](https://www.oreilly.com/library/view/rag-with-python/9798341600553/)             |
-| 5   | [[0) Building Generative AI Services with FastAPI]]           | Intermediate → Advanced | AI APIs, vector DBs, caching                                                      | [O’Reilly](https://www.oreilly.com/library/view/building-generative-ai/9781098160296/)      |
-| 6   | [[0) LLMs in Production]]                                     | Advanced                | LoRA, fine-tuning, serving, LLMOps                                                | [O’Reilly](https://www.oreilly.com/library/view/llms-in-production/9781633437203/)          |
-| 7   | 0) AI Engineering                                             | Intermediate → Advanced | Foundation models, RAG, agents, evals, inference, architecture                    | [O’Reilly](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)              |
-| 8   | 0) LLM Engineer’s Handbook                                    | Intermediate → Advanced | Training, fine-tuning, RAG, inference, monitoring, MLOps                          | [O’Reilly](https://www.oreilly.com/library/view/llm-engineers-handbook/9781836200079/)      |
-| 9   | 0) Evals for AI Engineers                                     | Intermediate → Advanced | LLM evaluation, agent evaluation, testing, improvement loops                      | [O’Reilly](https://www.oreilly.com/library/view/evals-for-ai/9798341660717/)                |
-| 10  | 0) Building LLM Powered Applications                          | Intermediate → Advanced | LangChain, orchestration, fine-tuning, application architecture                   | [O’Reilly](https://www.oreilly.com/library/view/building-llm-powered/9781835462317/)        |
-| 11  | 0) Natural Language Processing with Transformers, Revised Ed. | Intermediate → Advanced | Hugging Face Transformers, Datasets, Tokenizers, Accelerate, training, deployment | [O’Reilly](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) |
-| 12  | 0) Transformers: The Definitive Guide                         | Intermediate → Advanced | Transformer architecture, fine-tuning, modern foundation models, deployment       | [O’Reilly](https://www.oreilly.com/library/view/transformers-the-definitive/9781098167004/) |
-| 13  | 0) Hands-On Large Language Models                             | Intermediate → Advanced | Embeddings, sentence transformers, semantic search, rerankers, fine-tuning        | [O’Reilly](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/)     |
-| 14  | 0) Large Language Models: The Hard Parts                      | Advanced                | Evaluation, open-source LLMs, local inference, llama.cpp, quantization            | [O’Reilly](https://www.oreilly.com/library/view/large-language-models/9798341622517/)       |
+| #   | Textbook                                                          | Level                   | Context                                                                           | Link                                                                                        |
+| --- | ----------------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 1   | [[0) Designing Large Language Model Applications]]                | Intermediate → Advanced | LLM architecture, embeddings                                                      | [O’Reilly](https://www.oreilly.com/library/view/designing-large-language/9781098150495/)    |
+| 2   | [[0) RAG from First Principles]]                                  | Advanced                | Retrieval, chunking, reranking                                                    | [O’Reilly](https://www.oreilly.com/library/view/rag-from-first/9781835888667/)              |
+| 3   | [[0) Hands-On RAG for Production]]                                | Advanced                | Production RAG, GraphRAG, agents                                                  | [O’Reilly](https://www.oreilly.com/library/view/hands-on-rag-for/9798341621701/)            |
+| 4   | [[0) RAG with Python Cookbook]]                                   | Intermediate → Advanced | Practical RAG recipes                                                             | [O’Reilly](https://www.oreilly.com/library/view/rag-with-python/9798341600553/)             |
+| 5   | [[0) Building Generative AI Services with FastAPI]]               | Intermediate → Advanced | AI APIs, vector DBs, caching                                                      | [O’Reilly](https://www.oreilly.com/library/view/building-generative-ai/9781098160296/)      |
+| 6   | [[0) LLMs in Production]]                                         | Advanced                | LoRA, fine-tuning, serving, LLMOps                                                | [O’Reilly](https://www.oreilly.com/library/view/llms-in-production/9781633437203/)          |
+| 7   | [[0) AI Engineering]]                                             | Intermediate → Advanced | Foundation models, RAG, agents, evals, inference, architecture                    | [O’Reilly](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)              |
+| 8   | [[0) LLM Engineer’s Handbook]]                                    | Intermediate → Advanced | Training, fine-tuning, RAG, inference, monitoring, MLOps                          | [O’Reilly](https://www.oreilly.com/library/view/llm-engineers-handbook/9781836200079/)      |
+| 9   | [[0) Evals for AI Engineers]]                                     | Intermediate → Advanced | LLM evaluation, agent evaluation, testing, improvement loops                      | [O’Reilly](https://www.oreilly.com/library/view/evals-for-ai/9798341660717/)                |
+| 10  | [[0) Building LLM Powered Applications]]                          | Intermediate → Advanced | LangChain, orchestration, fine-tuning, application architecture                   | [O’Reilly](https://www.oreilly.com/library/view/building-llm-powered/9781835462317/)        |
+| 11  | [[0) Natural Language Processing with Transformers, Revised Ed.]] | Intermediate → Advanced | Hugging Face Transformers, Datasets, Tokenizers, Accelerate, training, deployment | [O’Reilly](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) |
+| 12  | [[0) Transformers - The Definitive Guide]]                        | Intermediate → Advanced | Transformer architecture, fine-tuning, modern foundation models, deployment       | [O’Reilly](https://www.oreilly.com/library/view/transformers-the-definitive/9781098167004/) |
+| 13  | [[0) Hands-On Large Language Models]]                             | Intermediate → Advanced | Embeddings, sentence transformers, semantic search, rerankers, fine-tuning        | [O’Reilly](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/)     |
+| 14  | [[0) Large Language Models - The Hard Parts]]                     | Advanced                | Evaluation, open-source LLMs, local inference, llama.cpp, quantization            | [O’Reilly](https://www.oreilly.com/library/view/large-language-models/9798341622517/)       |
 
 Also learn:
 
@@ -301,18 +301,17 @@ Also learn:
 
 # 13. Computer vision / vision ML
 
-|#|Textbook / Resource|Level|Context|Link|
-|---|---|---|---|---|
-|1|[[0) Modern Computer Vision with PyTorch, 2nd Ed.]]|Intermediate → Advanced|CNNs, transfer learning, object detection, segmentation, vision transformers, deployment|[O’Reilly](https://www.oreilly.com/library/view/modern-computer-vision/9781803231334/)|
-|2|[[0) AI and ML for Coders in PyTorch]]|Beginner → Intermediate|PyTorch foundations, CNNs, image classification, transfer learning|[O’Reilly](https://www.oreilly.com/library/view/ai-and-ml/9781098199166/)|
-|3|[[0) Computer Vision Projects with PyTorch]]|Intermediate → Advanced|Classification, detection, segmentation, pose estimation, anomaly detection, video analytics|[O’Reilly](https://www.oreilly.com/library/view/computer-vision-projects/9781484282731/)|
-|4|[[0) Vision Language Models]]|Intermediate → Advanced|Vision transformers, multimodal models, CLIP-style systems, Hugging Face, VLMs|[O’Reilly](https://www.oreilly.com/library/view/vision-language-models/9798341624030/)|
-|5|[[0) Transformers: The Definitive Guide]]|Intermediate → Advanced|Vision transformers, multimodal transformers, attention architectures|[O’Reilly](https://www.oreilly.com/library/view/transformers-the-definitive/9781098167004/)|
-|6|[[0) Hands-On Machine Learning with Scikit-Learn and PyTorch]]|Intermediate → Advanced|Vision transformers, DETR, ViT, Swin, DINO, multimodal ML|[O’Reilly](https://www.oreilly.com/library/view/hands-on-machine-learning/9798341607972/)|
-|7|[[0) Learn Computer Vision Using OpenCV]]|Intermediate|OpenCV, image processing, object detection, tracking, classical computer vision|[O’Reilly](https://www.oreilly.com/library/view/learn-computer-vision/9781484242612/)|
-|8|[[0) Deep Learning for Computer Vision]]|Intermediate → Advanced|Deep learning for image recognition and practical vision systems|[O’Reilly](https://www.oreilly.com/library/view/deep-learning-for/9781788295628/)|
-|9|OpenCV Documentation|Beginner → Advanced|Image processing, feature extraction, geometry, video, camera calibration|[OpenCV](https://docs.opencv.org/)|
-|10|torchvision Documentation|Intermediate|PyTorch vision datasets, transforms, models, detection and segmentation|[PyTorch](https://pytorch.org/vision/stable/index.html)|
+| #   | Textbook / Resource                                 | Level                   | Context                                                                                      | Link                                                                                     |
+| --- | --------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| 1   | [[0) Modern Computer Vision with PyTorch, 2nd Ed.]] | Intermediate → Advanced | CNNs, transfer learning, object detection, segmentation, vision transformers, deployment     | [O’Reilly](https://www.oreilly.com/library/view/modern-computer-vision/9781803231334/)   |
+| 2   | [[0) AI and ML for Coders in PyTorch]]              | Beginner → Intermediate | PyTorch foundations, CNNs, image classification, transfer learning                           | [O’Reilly](https://www.oreilly.com/library/view/ai-and-ml/9781098199166/)                |
+| 3   | [[0) Computer Vision Projects with PyTorch]]        | Intermediate → Advanced | Classification, detection, segmentation, pose estimation, anomaly detection, video analytics | [O’Reilly](https://www.oreilly.com/library/view/computer-vision-projects/9781484282731/) |
+| 4   | [[0) Vision Language Models]]                       | Intermediate → Advanced | Vision transformers, multimodal models, CLIP-style systems, Hugging Face, VLMs               | [O’Reilly](https://www.oreilly.com/library/view/vision-language-models/9798341624030/)   |
+| 5   | [[0) Learn Computer Vision Using OpenCV]]           | Intermediate            | OpenCV, image processing, object detection, tracking, classical computer vision              | [O’Reilly](https://www.oreilly.com/library/view/learn-computer-vision/9781484242612/)    |
+| 6   | [[0) Deep Learning for Computer Vision]]            | Intermediate → Advanced | Deep learning for image recognition and practical vision systems                             | [O’Reilly](https://www.oreilly.com/library/view/deep-learning-for/9781788295628/)        |
+| 7   | OpenCV Documentation                                | Beginner → Advanced     | Image processing, feature extraction, geometry, video, camera calibration                    | [OpenCV](https://docs.opencv.org/)                                                       |
+| 8   | torchvision Documentation                           | Intermediate            | PyTorch vision datasets, transforms, models, detection and segmentation                      | [PyTorch](https://pytorch.org/vision/stable/index.html)                                  |
+
 
 ### Core vision flow
 
@@ -366,14 +365,14 @@ Also learn:
 
 # 16. Backend & distributed applications
 
-| # | Textbook / Resource | Level | Context | Link |
-|---|---|---|---|---|
-| 1 | [[0) FastAPI — Bill Lubanovic]] | Intermediate → Advanced | Python APIs, async services, validation, testing, deployment | [O’Reilly](https://www.oreilly.com/library/view/fastapi/9781098135492/) |
-| 2 | [[0) gRPC: Up and Running]] | Intermediate → Advanced | RPC, Protocol Buffers, streaming, microservices, production gRPC | [O’Reilly](https://www.oreilly.com/library/view/grpc-up-and/9781492058328/) |
-| 3 | [[0) Redis in Action]] | Intermediate → Advanced | Caching, queues, pub/sub, in-memory data structures, real-time systems | [O’Reilly](https://www.oreilly.com/library/view/redis-in-action/9781617290855/) |
-| 4 | [[0) Building Microservices, 2nd Ed.]] | Intermediate → Advanced | Microservices, integration, deployment, testing, observability, security | [O’Reilly](https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/) |
-| 5 | [[0) Designing Distributed Systems, 2nd Ed.]] | Intermediate → Advanced | Distributed patterns, sidecars, sharding, coordination, cloud-native systems | [O’Reilly](https://www.oreilly.com/library/view/designing-distributed-systems/9781098156343/) |
-| 6 | Temporal Documentation | Intermediate → Advanced | Durable workflows, retries, stateful orchestration, long-running processes | [Official docs](https://docs.temporal.io/) |
+| #   | Textbook / Resource                           | Level                   | Context                                                                      | Link                                                                                          |
+| --- | --------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 1   | [[0) FastAPI — Bill Lubanovic]]               | Intermediate → Advanced | Python APIs, async services, validation, testing, deployment                 | [O’Reilly](https://www.oreilly.com/library/view/fastapi/9781098135492/)                       |
+| 2   | [[0) gRPC - Up and Running]]                  | Intermediate → Advanced | RPC, Protocol Buffers, streaming, microservices, production gRPC             | [O’Reilly](https://www.oreilly.com/library/view/grpc-up-and/9781492058328/)                   |
+| 3   | [[0) Redis in Action]]                        | Intermediate → Advanced | Caching, queues, pub/sub, in-memory data structures, real-time systems       | [O’Reilly](https://www.oreilly.com/library/view/redis-in-action/9781617290855/)               |
+| 4   | [[0) Building Microservices, 2nd Ed.]]        | Intermediate → Advanced | Microservices, integration, deployment, testing, observability, security     | [O’Reilly](https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/)    |
+| 5   | [[0) Designing Distributed Systems, 2nd Ed.]] | Intermediate → Advanced | Distributed patterns, sidecars, sharding, coordination, cloud-native systems | [O’Reilly](https://www.oreilly.com/library/view/designing-distributed-systems/9781098156343/) |
+| 6   | Temporal Documentation                        | Intermediate → Advanced | Durable workflows, retries, stateful orchestration, long-running processes   | [Official docs](https://docs.temporal.io/)                                                    |
 
 ### Core flow
 
@@ -402,14 +401,13 @@ Also learn:
 
 # 18. Data quality & lineage
 
-| # | Textbook / Resource | Level | Context | Link |
-|---|---|---|---|---|
-| 1 | [[0) Fundamentals of Data Observability]] | Beginner → Intermediate | Data incidents, quality, lineage, monitoring, observability architecture | [O’Reilly](https://www.oreilly.com/library/view/fundamentals-of-data/9781098133283/) |
-| 2 | [[0) Data Observability for Data Engineering]] | Intermediate → Advanced | Data quality monitoring, SLAs/SLOs, lineage, observability implementation | [O’Reilly](https://www.oreilly.com/library/view/data-observability-for/9781804616024/) |
-| 3 | [[0) Data Contracts]] | Intermediate → Advanced | Schema contracts, producer/consumer guarantees, evolution, governance | [O’Reilly](https://www.oreilly.com/library/view/data-contracts/9781098157623/) |
-| 4 | [[0) Fundamentals of Data Engineering]] | Intermediate | Data lifecycle, reliability, governance, orchestration, quality | [O’Reilly](https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/) |
-| 5 | Great Expectations Documentation | Intermediate | Data validation, expectations, checkpoints, data quality automation | [Official docs](https://docs.greatexpectations.io/) |
-| 6 | OpenLineage Documentation | Intermediate → Advanced | Open lineage standard for datasets, jobs, and pipeline metadata | [Official docs](https://openlineage.io/docs/) |
+| #   | Textbook / Resource                            | Level                   | Context                                                                   | Link                                                                                   |
+| --- | ---------------------------------------------- | ----------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| 1   | [[0) Fundamentals of Data Observability]]      | Beginner → Intermediate | Data incidents, quality, lineage, monitoring, observability architecture  | [O’Reilly](https://www.oreilly.com/library/view/fundamentals-of-data/9781098133283/)   |
+| 2   | [[0) Data Observability for Data Engineering]] | Intermediate → Advanced | Data quality monitoring, SLAs/SLOs, lineage, observability implementation | [O’Reilly](https://www.oreilly.com/library/view/data-observability-for/9781804616024/) |
+| 3   | [[0) Data Contracts]]                          | Intermediate → Advanced | Schema contracts, producer/consumer guarantees, evolution, governance     | [O’Reilly](https://www.oreilly.com/library/view/data-contracts/9781098157623/)         |
+| 4   | Great Expectations Documentation               | Intermediate            | Data validation, expectations, checkpoints, data quality automation       | [Official docs](https://docs.greatexpectations.io/)                                    |
+| 5   | OpenLineage Documentation                      | Intermediate → Advanced | Open lineage standard for datasets, jobs, and pipeline metadata           | [Official docs](https://openlineage.io/docs/)                                          |
 ### Core flow
 
 **Schema Validation → Great Expectations / Soda → Data Contracts → OpenLineage → Data Observability → Alerts / SLAs**
@@ -418,14 +416,14 @@ Also learn:
 
 # 19. Developer/platform productivity
 
-| # | Textbook / Resource | Level | Context | Link |
-|---|---|---|---|---|
-| 1 | [[0) The Platform Engineer's Handbook]] | Intermediate → Advanced | Internal platforms, Backstage, self-service, golden paths, policy, FinOps | [O’Reilly](https://www.oreilly.com/library/view/the-platform-engineers/9781806380138/) |
-| 2 | [[0) Effective Platform Engineering]] | Advanced | Platform teams, internal developer platforms, self-service infrastructure | [O’Reilly](https://www.oreilly.com/library/view/effective-platform-engineering/9781633436497/) |
-| 3 | [[0) Managing Feature Flags]] | Intermediate → Advanced | Feature flags, progressive delivery, canaries, experimentation | [O’Reilly](https://www.oreilly.com/library/view/managing-feature-flags/9781492028598/) |
-| 4 | [[0) Cloud FinOps]] | Intermediate → Advanced | Cloud cost allocation, optimization, unit economics, FinOps practices | [O’Reilly](https://www.oreilly.com/library/view/cloud-finops/9781492054610/) |
-| 5 | Backstage Documentation | Intermediate → Advanced | Developer portals, service catalogs, templates, plugins | [Official docs](https://backstage.io/docs/) |
-| 6 | OpenFeature Documentation | Intermediate | Vendor-neutral feature flags and progressive delivery | [Official docs](https://openfeature.dev/docs/) |
+| #   | Textbook / Resource                     | Level                   | Context                                                                   | Link                                                                                           |
+| --- | --------------------------------------- | ----------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 1   | [[0) The Platform Engineer's Handbook]] | Intermediate → Advanced | Internal platforms, Backstage, self-service, golden paths, policy, FinOps | [O’Reilly](https://www.oreilly.com/library/view/the-platform-engineers/9781806380138/)         |
+| 2   | [[0) Effective Platform Engineering]]   | Advanced                | Platform teams, internal developer platforms, self-service infrastructure | [O’Reilly](https://www.oreilly.com/library/view/effective-platform-engineering/9781633436497/) |
+| 3   | [[0) Managing Feature Flags]]           | Intermediate → Advanced | Feature flags, progressive delivery, canaries, experimentation            | [O’Reilly](https://www.oreilly.com/library/view/managing-feature-flags/9781492028598/)         |
+| 4   | [[0) Cloud FinOps]]                     | Intermediate → Advanced | Cloud cost allocation, optimization, unit economics, FinOps practices     | [O’Reilly](https://www.oreilly.com/library/view/cloud-finops/9781492054610/)                   |
+| 5   | Backstage Documentation                 | Intermediate → Advanced | Developer portals, service catalogs, templates, plugins                   | [Official docs](https://backstage.io/docs/)                                                    |
+| 6   | OpenFeature Documentation               | Intermediate            | Vendor-neutral feature flags and progressive delivery                     | [Official docs](https://openfeature.dev/docs/)                                                 |
 
 ### Core flow
 
