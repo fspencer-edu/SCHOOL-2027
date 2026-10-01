@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/2) Synapses.md",
+                "file": "Fall 2026/PSY324 - Biological Psy./Assignments/Assignment 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2) Synapses"
+              "title": "Assignment 1"
             }
           },
           {
@@ -251,8 +251,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -368,6 +367,9 @@
   },
   "active": "c4a2d7549c54cbe1",
   "lastOpenFiles": [
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/2) Synapses.md",
+    "Fall 2026/PSY324 - Biological Psy./Assignments/Assignment 1.md",
+    "Fall 2026/PSY324 - Biological Psy./Assignments",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
     "OTHER TEXTBOOKS/Textbook Table.md",
     "0) Hands-On Machine Learning with Scikit-Learn and PyTorch.md",
@@ -404,12 +406,9 @@
     "images/Pasted image 20260930093516.png",
     "images/Pasted image 20260930094521.png",
     "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Building Generative AI with FastAPI",
     "OTHER TEXTBOOKS/Platform Engineering/Mastering API Architecture/0) Mastering API Architecture.md",
     "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/0) Observability Engineering, 2nd Ed..md",
     "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Effective Platform Engineering/0) Effective Platform Engineering.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Argo CD/0) Argo CD - Up and Running.md",
     "Pasted image 20260930094522.png",
     "Pasted image 20260930094521.png",
     "Pasted image 20260930093832.png",
