@@ -1,4 +1,35 @@
 
+Run setup procedure
+        ↓
+read mx.lmimx_log
+        ↓
+find eligible PART_IDs
+        ↓
+PART_ID = running
+        ↓
+run input procedure
+        ↓
+build/reuse partition snapshot
+        ↓
+detect all fixed T slices
+        ↓
+solve every slice sequentially
+        ↓
+write each converged slice to mx.lmimx_gpu_result
+        ↓
+writer.drain()
+        ↓
+call output procedure once
+        ↓
+lfs.lfs3m3xpr_mx finalized
+        ↓
+import log updated
+        ↓
+staging table cleared
+        ↓
+PART_ID = complete
+
+
 ## Basic Example
 
 Assume a parent value:
