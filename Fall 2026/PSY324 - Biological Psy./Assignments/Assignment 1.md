@@ -12,7 +12,7 @@
 ## Abstract
 
 - Violation of expectation (VOE) experiments
-	- Infants tool longer at the same outcomes
+	- Infants took longer at the same outcomes
 - Functional magnetic resonance imaging (fMRI)
 	- Designed to test for physical and psychological expectations in infants
 - Domain general processes
