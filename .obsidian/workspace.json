@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./Assignments/Assignment 1.md",
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/2) Synapses.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Assignment 1"
+              "title": "2) Synapses"
             }
           },
           {
@@ -162,63 +162,16 @@
             }
           },
           {
-            "id": "22bd37543b6133a0",
+            "id": "90844f076ea4fc83",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Textbook Table.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Textbook Table"
-            }
-          },
-          {
-            "id": "cbd34e9dd2ac15fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Distributed Systems/Redis in Action/0) Redis in Action.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0) Redis in Action"
-            }
-          },
-          {
-            "id": "b301799634a626e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MX Matrix Convergence Methods.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MX Matrix Convergence Methods"
-            }
-          },
-          {
-            "id": "b7d85c872cb68b60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 14
+        ]
       }
     ],
     "direction": "vertical"
@@ -280,7 +233,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -394,44 +348,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "b7d85c872cb68b60",
+  "active": "c4a2d7549c54cbe1",
   "lastOpenFiles": [
-    "Untitled.md",
-    "OTHER TEXTBOOKS/Distributed Systems/Redis in Action/0) Redis in Action.md",
-    "OTHER TEXTBOOKS/Distributed Systems/Microservices/0) Building Microservices, 2nd Ed..md",
-    "OTHER TEXTBOOKS/Distributed Systems/Redis in Action",
-    "OTHER TEXTBOOKS/Distributed Systems/Designing Distributed Systems/0) Designing Distributed Systems, 2nd Ed..md",
-    "OTHER TEXTBOOKS/Distributed Systems/Microservices",
-    "MX Matrix Convergence Methods.md",
-    "OTHER TEXTBOOKS/Distributed Systems/Designing Distributed Systems",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
+    "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 3.md",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/2) Synapses.md",
     "Fall 2026/PSY324 - Biological Psy./Assignments/Assignment 1.md",
-    "MX Matrix Convergence Methods.md.tmp",
-    "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 3 - Solve the Outbreak.md",
-    "Fall 2026/BLG655 - Viruses/Assignments/Assignment 1 - Viral Outbreak News Video.md",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/3) Anatomy and Research Methods.md",
+    "OTHER TEXTBOOKS/Software Delivery/Version Control with Git/0) Version Control with Git, 3rd Ed..md",
+    "0) Causal Inference - The Mixtape.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/0) Learning GitHub Actions.md",
+    "OTHER TEXTBOOKS/Software Delivery/Version Control with Git",
+    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/0) Software Engineering at Google.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions",
+    "OTHER TEXTBOOKS/Software Delivery/Software Architecture/0) Fundamentals of Software Architecture, 2nd Ed..md",
+    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google",
+    "OTHER TEXTBOOKS/Software Delivery/Release It/0) Release It!, 2nd Ed..md",
+    "OTHER TEXTBOOKS/Software Delivery/Software Architecture",
     "OTHER TEXTBOOKS/Textbook Table.md",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/19) Spark.md.tmp",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./0) Fundamentals of Data Engineering.md.tmp",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Universal Data Modeling/0) Universal Data Modeling.md.tmp",
-    "OTHER TEXTBOOKS/Distributed Systems",
-    "0) gRPC - Up and Running.md",
-    "0) FastAPI — Bill Lubanovic.md",
-    "TODO.md",
-    "OTHER TEXTBOOKS/Data Quality/Fundamentals of Data Observability/0) Fundamentals of Data Observability.md",
-    "OTHER TEXTBOOKS/Data Quality/Data Observability/0) Data Observability for Data Engineering.md",
-    "OTHER TEXTBOOKS/Data Quality/Fundamentals of Data Observability",
-    "OTHER TEXTBOOKS/Data Quality/Data Contracts/0) Data Contracts.md",
-    "OTHER TEXTBOOKS/Data Quality/Data Observability",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/0) Modern Computer Vision with PyTorch, 2nd Ed..md",
-    "0) Hands-On Machine Learning with Scikit-Learn and PyTorch.md",
-    "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/0) AI and ML for Coders in PyTorch.md",
-    "OTHER TEXTBOOKS/Computer Vision/CV Projects with PyTorch/0) Computer Vision Projects with PyTorch.md",
-    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/0) Vision Language Models.md",
-    "OTHER TEXTBOOKS/Computer Vision/OpenCV/0) Learn Computer Vision Using OpenCV.md",
-    "OTHER TEXTBOOKS/Computer Vision/Deep Learning for CV/0) Deep Learning for Computer Vision.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Transformers/0) Transformers - The Definitive Guide.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/AI Engineering/0) AI Engineering.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/0) LLM Engineer’s Handbook.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/0) Evals for AI Engineers.md",
+    "OTHER TEXTBOOKS/Software Delivery/Release It",
+    "OTHER TEXTBOOKS/Software Delivery",
+    "OTHER TEXTBOOKS/Decision Intelligence/Reinforcement Learning/0) Reinforcement Learning - An Introduction.md",
+    "OTHER TEXTBOOKS/Decision Intelligence/Causal AI",
+    "OTHER TEXTBOOKS/Decision Intelligence/Reinforcement Learning",
+    "Fall 2026/CPS803 - Machine Learning/TEXTBOOKS/Optimization Algorithms/0) Optimization Algorithms.md",
+    "OTHER TEXTBOOKS/Decision Intelligence/Causal AI/0) Causal AI.md",
+    "0) Dynamic Programming and Optimal Control.md",
+    "0) Introduction to Evolutionary Computing.md",
+    "OTHER TEXTBOOKS/Decision Intelligence/Design and Analysis of Experiments/0) Design and Analysis of Experiments.md",
+    "OTHER TEXTBOOKS/Decision Intelligence/Bayesian Analysis with Python/0) Bayesian Analysis with Python, 3rd Ed..md",
+    "OTHER TEXTBOOKS/Decision Intelligence/Design and Analysis of Experiments",
+    "OTHER TEXTBOOKS/Decision Intelligence/Bayesian Analysis with Python",
+    "OTHER TEXTBOOKS/Data Engineering/Streaming Systems/0) Streaming Systems.md",
+    "OTHER TEXTBOOKS/Data Engineering/Data Lake/0) Delta Lake - The Definitive Guide.md",
+    "OTHER TEXTBOOKS/Data Engineering/Fundamentals of Analytics Eng./0) Fundamentals of Analytics Engineering.md",
+    "OTHER TEXTBOOKS/Data Engineering/Database Internal/0) Database Internals — Alex Petrov.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/0) Designing Data-Intensive Applications, 2nd Edition.md",
+    "0) Designing Data-Intensive Applications, 2nd Ed..md",
+    "OTHER TEXTBOOKS/Distributed Systems/FastAPI/0) FastAPI — Bill Lubanovic.md",
     "images/Pasted image 20260930093325.png",
     "images/Pasted image 20260930093832.png",
     "images/Pasted image 20260930091927.png",

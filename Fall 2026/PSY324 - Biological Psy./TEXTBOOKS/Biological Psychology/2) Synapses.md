@@ -377,7 +377,7 @@
 
 ### Electrical Synapses
 
-- 
+- A few special purpose synapses do operate electrically
 
 ## Hormones
 
