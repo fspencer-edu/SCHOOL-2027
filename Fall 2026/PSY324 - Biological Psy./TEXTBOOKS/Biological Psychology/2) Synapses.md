@@ -385,7 +385,7 @@
 ### 
 ### 
 
-
+help help me check which scripts to change, also when running pipeline add a toggle to restart, this should make the defined log table all set back the 0, remove any of the imported data from the pipeline, clear the tables that are defined such as lmimx_gpu_result and lmimx but these are from the first page and not hardcodede, k
 
 
 
