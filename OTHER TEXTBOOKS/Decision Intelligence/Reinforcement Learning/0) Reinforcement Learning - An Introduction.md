@@ -13,3 +13,9 @@ http://incompleteideas.net/book/RLbook2020.pdf
 9) On-policy Prediction with Approximation
 10) On-policy Control with Approximation
 11) Off-policy Methods with Approximation
+12) Eligibility Trace
+13) Policy Gradient Methods
+14) Psychology
+15) Neuroscience
+16) Applications and Case Studies
+17) Frontiers
