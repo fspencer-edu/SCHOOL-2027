@@ -148,101 +148,31 @@
             }
           },
           {
-            "id": "6a9a4cac89be47c0",
+            "id": "cda09bf7bcbf7765",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Infrastructure/Observability with Grafana/0) Observability with Grafana.md",
+                "file": "OTHER TEXTBOOKS/Decision Intelligence/Reinforcement Learning/0) Reinforcement Learning - An Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0) Observability with Grafana"
+              "title": "0) Reinforcement Learning - An Introduction"
             }
           },
           {
-            "id": "9ef8d332b0284223",
+            "id": "84a57a4ac67bd2a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Infrastructure/Network Programming with Go/0) Network Programming with Go.md",
+                "file": "0) Convex Optimization — Boyd & Vandenberghe.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0) Network Programming with Go"
-            }
-          },
-          {
-            "id": "3509a5ea0ee0c6d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Infrastructure/UNIX/0) UNIX and Linux System Administration Handbook, 5th Ed..md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0) UNIX and Linux System Administration Handbook, 5th Ed."
-            }
-          },
-          {
-            "id": "5d4954970dd3fe25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Infrastructure/Linux/0) Linux — Michael Kofler.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0) Linux — Michael Kofler"
-            }
-          },
-          {
-            "id": "db775d6cdef0c24a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Infrastructure/Observability with Grafana/0) Observability with Grafana.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0) Observability with Grafana"
-            }
-          },
-          {
-            "id": "fdab2dde6e043dd8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0) Mastering Prometheus.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0) Mastering Prometheus"
-            }
-          },
-          {
-            "id": "244f416ddef2b0c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0) Prometheus - Up & Running, 2nd Ed..md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0) Prometheus - Up & Running, 2nd Ed."
+              "title": "0) Convex Optimization — Boyd & Vandenberghe"
             }
           }
         ],
@@ -308,7 +238,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -422,32 +353,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "6a9a4cac89be47c0",
+  "active": "cda09bf7bcbf7765",
   "lastOpenFiles": [
-    "OTHER TEXTBOOKS/Infrastructure/UNIX/0) UNIX and Linux System Administration Handbook, 5th Ed..md",
-    "OTHER TEXTBOOKS/Infrastructure/Observability with Grafana",
-    "OTHER TEXTBOOKS/Infrastructure/Network Programming with Go/0) Network Programming with Go.md",
-    "OTHER TEXTBOOKS/Infrastructure/UNIX",
-    "OTHER TEXTBOOKS/Infrastructure/Linux/0) Linux — Michael Kofler.md",
-    "OTHER TEXTBOOKS/Infrastructure/Network Programming with Go",
+    "Screenshot 2026-10-03 at 3.20.09 PM 1.png",
+    "Screenshot 2026-10-03 at 3.20.09 PM.png",
     "OTHER TEXTBOOKS/Textbook Table.md",
+    "OTHER TEXTBOOKS/Decision Intelligence/Causal AI/0) Causal AI.md",
+    "OTHER TEXTBOOKS/Decision Intelligence/Reinforcement Learning/0) Reinforcement Learning - An Introduction.md",
+    "0) Convex Optimization — Boyd & Vandenberghe.md",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/11) Emotional Behaviours.md",
+    "OTHER TEXTBOOKS/Infrastructure/Prometheus/0) Prometheus - Up & Running, 2nd Ed..md",
+    "OTHER TEXTBOOKS/Infrastructure/Mastering Prometheus/0) Mastering Prometheus.md",
+    "OTHER TEXTBOOKS/Infrastructure/Observability with Grafana/0) Observability with Grafana.md",
+    "OTHER TEXTBOOKS/Infrastructure/Linux/0) Linux — Michael Kofler.md",
+    "OTHER TEXTBOOKS/Infrastructure/UNIX/0) UNIX and Linux System Administration Handbook, 5th Ed..md",
+    "OTHER TEXTBOOKS/Infrastructure/Network Programming with Go/0) Network Programming with Go.md",
+    "OTHER TEXTBOOKS/Infrastructure/Prometheus",
+    "OTHER TEXTBOOKS/Infrastructure/Mastering Prometheus",
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/Computational Intelligence - A Logical Approach/8) Actions and Planning.md.tmp",
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/Computational Intelligence - A Logical Approach/5) Representing Knowledge.md.tmp",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/11) Administering Hadoop.md.tmp",
+    "OTHER TEXTBOOKS/Infrastructure/Observability with Grafana",
+    "OTHER TEXTBOOKS/Infrastructure/UNIX",
+    "OTHER TEXTBOOKS/Infrastructure/Network Programming with Go",
     "OTHER TEXTBOOKS/Infrastructure/Linux",
     "OTHER TEXTBOOKS/Infrastructure",
-    "OTHER TEXTBOOKS/Infrastructure/Observability with Grafana/0) Observability with Grafana.md",
-    "0) Mastering Prometheus.md",
-    "0) Prometheus - Up & Running, 2nd Ed..md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/11) Emotional Behaviours.md",
     "OTHER TEXTBOOKS/Robotics/ROS Programming/0) ROS Programming - Building Powerful Robots.md",
     "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/0) Mastering ROS 2 for Robotics Programming, 4th Ed..md",
-    "OTHER TEXTBOOKS/Robotics/ROS Programming",
     "OTHER TEXTBOOKS/Robotics/ROS for Robotics Programming/0) Hands-On ROS for Robotics Programming.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming",
     "OTHER TEXTBOOKS/Robotics/ROS Robotics Projects/0) ROS Robotics Projects, 2nd Ed..md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
-    "OTHER TEXTBOOKS/Robotics/ROS for Robotics Programming",
     "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/0) Deep Reinforcement Learning and Its Industrial Use Cases.md",
-    "OTHER TEXTBOOKS/Robotics/ROS Robotics Projects",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning",
     "OTHER TEXTBOOKS/ML Lifecycle/MLFlow for Gen AI on Databricks/0) Practical MLflow for Generative AI on Databricks.md",
     "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/0) Cloud FinOps.md",
     "OTHER TEXTBOOKS/ML Lifecycle/Learning Ray/0) Learning Ray.md",
@@ -456,9 +392,6 @@
     "OTHER TEXTBOOKS/Platform Producitivity/Platform Engineer's Handbook/0) The Platform Engineer's Handbook.md",
     "OTHER TEXTBOOKS/Platform Producitivity/Effective Platform Engineering/0) The Platform Engineer's Handbook.md",
     "OTHER TEXTBOOKS/Platform Engineering/Effective Platform Engineering/0) Effective Platform Engineering.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/2) Synapses.md",
-    "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 3.md",
-    "Fall 2026/PSY324 - Biological Psy./Assignments/Assignment 1.md",
     "images/Pasted image 20260930093325.png",
     "images/Pasted image 20260930093832.png",
     "images/Pasted image 20260930091927.png",
@@ -468,7 +401,6 @@
     "Pasted image 20260930094522.png",
     "Pasted image 20260930094521.png",
     "Pasted image 20260930093832.png",
-    "Pasted image 20260930093516.png",
     "Untitled.canvas"
   ]
 }

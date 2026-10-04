@@ -1,17 +1,15 @@
-https://learning.oreilly.com/library/view/causal-ai/9781633439917/
+http://incompleteideas.net/book/RLbook2020.pdf
 
-![](https://learning.oreilly.com/covers/urn:orm:book:9781633439917/296w/?format=webp)
+![[Screenshot 2026-10-03 at 3.20.09 PM 1.png|400]]
 
-1) Why Causal AI
-2) A Primer on Probabilistic Generative Modeling
-3) Building and Validating a Causal Graph
-4) Building a Causal Graphical Model
-5) Testing the DAG with Causal Constraints
-6) Connecting Causality and Deep Learning
-7) Structural Causal Models
-8) Interventions and Causal Effects
-9) Counterfactuals and Parallel Worlds
-10) Identification and the Causal Hierarchy
-11) Building a Causal Inference Workflow
-12) Causal Decisions and Reinforcement Learning
-13) Causality and Large Language Models
+1) Intro. to Reinforcement Learning
+2) Multi-armed Bandits
+3) Finite Markov Decision Processes
+4) Dynamic Programming
+5) Monte Carlo Methods
+6) Temporal Difference Learning
+7) n-step Bootstrapping
+8) Planning and Learning with Tabular Methods
+9) On-policy Prediction with Approximation
+10) On-policy Control with Approximation
+11) Off-policy Methods with Approximation

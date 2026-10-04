@@ -14,4 +14,6 @@ https://learning.oreilly.com/library/view/observability-with-grafana/97818032480
 10) Automation with Infrastructure as Code
 11) Architecting an Observability Platform
 12) Real User Monitoring with Grafana
-13) Application Performance with Grafana 
+13) Application Performance with Grafana Pyroscope and K6
+14) Supporting DevOps Processes with Observability
+15) Troubleshooting, Implementing Best Practices, and more with Grafana
