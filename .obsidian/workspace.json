@@ -223,12 +223,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/2) Collecting, Labeling, and Validating Data.md",
+                "file": "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/4) Data Journey and Data Storage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2) Collecting, Labeling, and Validating Data"
+              "title": "4) Data Journey and Data Storage"
             }
           },
           {
@@ -424,6 +424,10 @@
   },
   "active": "cbd7fe74c0bfffd3",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md.tmp",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/3) Feature Engineering and Feature Selection.md",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/4) Data Journey and Data Storage.md",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/2) Collecting, Labeling, and Validating Data.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/9) Building Data Pipelines.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/19) Advanced TFX.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/16) Model Monitoring and Logging.md.tmp",
@@ -447,9 +451,6 @@
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/7) High-Performance Modeling.md",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/6) Model Resource Management Techniques.md",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/5) Advanced Labeling, Augmentation, and Data Preprocessing.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/4) Data Journey and Data Storage.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/3) Feature Engineering and Feature Selection.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/2) Collecting, Labeling, and Validating Data.md",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/0) Machine Learning Production Systems.md",
     "OTHER TEXTBOOKS/Commercial ML/ML/1) The ML Landscape.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 4",
@@ -463,7 +464,6 @@
     "Screenshot 2026-10-03 at 3.20.09 PM 1.png",
     "Screenshot 2026-10-03 at 3.20.09 PM.png",
     "OTHER TEXTBOOKS/Infrastructure/Prometheus",
-    "OTHER TEXTBOOKS/Infrastructure/Mastering Prometheus",
     "images/Pasted image 20260930093325.png",
     "images/Pasted image 20260930093832.png",
     "images/Pasted image 20260930091927.png",
