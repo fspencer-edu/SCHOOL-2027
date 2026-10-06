@@ -297,4 +297,40 @@ dig(A), dig(B),
 A > B, dig(C).
 ```
 
+
+- Solving the puzzel
+	- chris is married to docter
+	- Laywer plays the piano
+	- Engineer is not crhis
+	- Sandy is patient of violinist
+
+```prolog
+solve([Doc, Law, Eng, Piano, Violin, Flute]) :-
+	person(Doc), Person(Law), Person(Eng), allDiff([Doc, Law, Eng]),
+	person(Piano), person(Violin), person(Flute), allDiff([Piano, Violin, Flute]),
+	not Doc = crhis,
+	Law = Piano
+	not eng = crhis
+	not Violin = sandy,
+	Violin = Doc
+```
+
+- chris is married to docter
+- lawyer plays the piano
+- Pat is not married to the engineer
+- Sandy is patient of violinist
+
+```prolog
+solve([Doc, Eng, Piano, Violin, Flute]) :-
+	person(Doc), Person(Law), Person(Eng), allDiff([Doc, Law, Eng]),
+	person(Piano), person(Violin), person(Flute), allDiff([Piano, Violin, Flute]),
+	chrisSpouse = Doc
+	Law = Piano
+	not PatSpouse = Eng,
+	not Violin = Sandy, Doc = Violin,
+	
+	
+```
+
+
 # Part 2 - Terms II
