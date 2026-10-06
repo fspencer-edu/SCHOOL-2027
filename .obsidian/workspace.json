@@ -218,17 +218,17 @@
             }
           },
           {
-            "id": "cbd7fe74c0bfffd3",
+            "id": "7d4ed913ed98c99c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/4) Data Journey and Data Storage.md",
+                "file": "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/4) Training Data and Preprocessing for VLMs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4) Data Journey and Data Storage"
+              "title": "4) Training Data and Preprocessing for VLMs"
             }
           },
           {
@@ -237,16 +237,114 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS721 - AI/NOTES/Week 4.md",
+                "file": "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/11) Autoencoders and Image Manipulation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 4"
+              "title": "11) Autoencoders and Image Manipulation"
+            }
+          },
+          {
+            "id": "6550700dacd0db3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/13) Advanced GANs to Manipulate Image.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "13) Advanced GANs to Manipulate Image"
+            }
+          },
+          {
+            "id": "4b6aa5f0e9eb242b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/14) Combining CV and Reinforcement Learning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "14) Combining CV and Reinforcement Learning"
+            }
+          },
+          {
+            "id": "557d7882a6481ff0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/15) Combining CV and NLP Techniques.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "15) Combining CV and NLP Techniques"
+            }
+          },
+          {
+            "id": "9bf6cb67f726bc16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/16) Foundation Models in CV.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "16) Foundation Models in CV"
+            }
+          },
+          {
+            "id": "536573f167e5109d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/17) Applications of Stable Diffusion.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "17) Applications of Stable Diffusion"
+            }
+          },
+          {
+            "id": "59d5108184c40f09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/8) Advanced Object Detection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "8) Advanced Object Detection"
+            }
+          },
+          {
+            "id": "42247f32f75412c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/CPS853 - Big Data Systems/Project/Group Project.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Group Project"
             }
           }
         ],
-        "currentTab": 15
+        "currentTab": 22
       }
     ],
     "direction": "vertical"
@@ -422,48 +520,48 @@
       "bases:Create new base": false
     }
   },
-  "active": "cbd7fe74c0bfffd3",
+  "active": "59d5108184c40f09",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/7) Basics of Object Detection.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/6) Practical Aspects of Image Classification.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/5) Transformer Learning for Image Classification.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/4) Intro. Convolutional Neural Network.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/3) Building a Deep Neural Network with PyTorch.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/2) PyTorch Fundamentals.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/1) AI Neural Network Fundamentals.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/0) Modern Computer Vision with PyTorch, 2nd Ed..md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/18) Moving a Model to Production.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/17) Applications of Stable Diffusion.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/16) Foundation Models in CV.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/15) Combining CV and NLP Techniques.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/14) Combining CV and Reinforcement Learning.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/13) Advanced GANs to Manipulate Image.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/12) Image Generation Using GANs.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/11) Autoencoders and Image Manipulation.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/10) Applications of Object Detection and Segmentation.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/9) Image Segmentation.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/8) Advanced Object Detection.md",
+    "OTHER TEXTBOOKS/Computer Vision/OpenCV/0) Learn Computer Vision Using OpenCV.md",
+    "Fall 2026/CPS721 - AI/NOTES/Week 4.md",
+    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/11) Advanced Topics and Cutting-Edge Research.md",
+    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/10) Any-To-Any Models.md",
+    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/9) Video-Language Models.md",
+    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/8) Document AI.md",
+    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/7) Deployment Models for Inference at Scale.md",
+    "Fall 2026/CPS853 - Big Data Systems/Project",
     "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/3) Feature Engineering and Feature Selection.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/4) Data Journey and Data Storage.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/2) Collecting, Labeling, and Validating Data.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/9) Building Data Pipelines.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/19) Advanced TFX.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/16) Model Monitoring and Logging.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/1) Intro. to ML Production Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/23) The Future of ML Production Systems and Next Steps.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/22) Generative AI.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/21) ML Pipelines for NLP.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/20) ML Pipelines for Computer Vision Problems.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/19) Advanced TFX.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/18) Orchestrating ML Pipelines.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/17) Privacy and Legal Requirements.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/16) Model Monitoring and Logging.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/15) Model Management and delivery.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/14) Model Serving Examples.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/13) Model Serving Infrastructure.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/12) Model Serving Patterns.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/11) Intro. to Model Serving.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/10) Neural Architecture Search.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/9) Interpretability.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/8) Model Analysis.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/7) High-Performance Modeling.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/6) Model Resource Management Techniques.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/5) Advanced Labeling, Augmentation, and Data Preprocessing.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/0) Machine Learning Production Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/ML/1) The ML Landscape.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 4",
     "MX Matrix Convergence Methods.md.tmp",
     "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/0) Cloud FinOps.md.tmp",
     "OTHER TEXTBOOKS/Platform Engineering/Effective Platform Engineering/0) Effective Platform Engineering.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Spark",
-    "OTHER TEXTBOOKS/Decision Intelligence/Convex Optimization",
     "images/Screenshot 2026-10-03 at 3.20.09 PM 1.png",
     "images/Screenshot 2026-10-03 at 3.20.09 PM.png",
     "Screenshot 2026-10-03 at 3.20.09 PM 1.png",
     "Screenshot 2026-10-03 at 3.20.09 PM.png",
-    "OTHER TEXTBOOKS/Infrastructure/Prometheus",
     "images/Pasted image 20260930093325.png",
     "images/Pasted image 20260930093832.png",
     "images/Pasted image 20260930091927.png",

@@ -249,4 +249,52 @@ solve(ListOfVars) :-
 	- 0 to 9
 - dig[]
 
+```prolog
+9567 +
+1085
+------
+10652
+```
+
+```prolog
+not S = E, not S = N, not S = D, ...
+not E = N, not E = D, ...
+allDiff(List).
+
+allDiff([]).
+allDiff([H|T]) :-
+	not member(H, T), allDiff(T).
+	
+solve([S, E, N, D, M, O, R, Y]) :-
+	dig(S), dig(E), dig(N), dig(D),
+	dig(M), dig(O), dig(R), dig(Y).
+	
+S > 0
+```
+
+- Performance of first solution
+	- Do not want to generate everything before testing as we saw before
+	- After guess D and E, just set Y to D + E mod 10
+
+```prolog
+% instead of
+
+dig(A), dig(B),
+dig(C), C is A + B
+
+% use
+dig(A), dig(B),
+C is A + B, dig(C).
+
+---
+% instead of
+
+dig(A), dig(B),
+dig(C), A > B
+
+% use
+dig(A), dig(B),
+A > B, dig(C).
+```
+
 # Part 2 - Terms II
