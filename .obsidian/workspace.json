@@ -134,133 +134,21 @@
             }
           },
           {
-            "id": "55089076c075dcf1",
+            "id": "2bb2932ebf6ea3c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/8) Model Analysis.md",
+                "file": "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8) Model Analysis"
-            }
-          },
-          {
-            "id": "17cb916bb79d2e46",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/18) Orchestrating ML Pipelines.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "18) Orchestrating ML Pipelines"
-            }
-          },
-          {
-            "id": "9b7e87e55f139482",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/19) Advanced TFX.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "19) Advanced TFX"
-            }
-          },
-          {
-            "id": "8e0d325aa0c94c63",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/20) ML Pipelines for Computer Vision Problems.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "20) ML Pipelines for Computer Vision Problems"
-            }
-          },
-          {
-            "id": "a34125e780868827",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/21) ML Pipelines for NLP.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "21) ML Pipelines for NLP"
-            }
-          },
-          {
-            "id": "fdcd7620ae9da267",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/22) Generative AI.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "22) Generative AI"
-            }
-          },
-          {
-            "id": "7d4ed913ed98c99c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/4) Training Data and Preprocessing for VLMs.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4) Training Data and Preprocessing for VLMs"
-            }
-          },
-          {
-            "id": "59d5108184c40f09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/16) Foundation Models in CV.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "16) Foundation Models in CV"
-            }
-          },
-          {
-            "id": "42247f32f75412c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS721 - AI/NOTES/Week 4.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Week 4"
+              "title": "Lec 3"
             }
           }
         ],
-        "currentTab": 16
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -437,11 +325,38 @@
       "bases:Create new base": false
     }
   },
-  "active": "59d5108184c40f09",
+  "active": "2bb2932ebf6ea3c6",
   "lastOpenFiles": [
-    "MX Matrix Convergence Methods.md.tmp",
+    "Screenshot 2026-10-06 at 9.04.55 PM.png",
+    "Pasted image 20261006210511.png",
+    "Pasted image 20261006210303.png",
+    "Pasted image 20261006210205.png",
+    "Pasted image 20261006205751.png",
+    "Pasted image 20261006205227.png",
+    "Pasted image 20261006205107.png",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 2.md",
+    "Pasted image 20261006202102.png",
+    "Pasted image 20261006202025.png",
+    "Pasted image 20261006201847.png",
+    "Pasted image 20261006201325.png",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 1.md",
+    "Fall 2026/PSY324 - Biological Psy./Midterm Overview.md",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 4.md",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 3.md",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/10) Reproductive Behaviours.md",
+    "Fall 2026/PSY324 - Biological Psy./Biological Psychology - Course Outline.md",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Untitled",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/8) Model Analysis.md",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/18) Orchestrating ML Pipelines.md",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/19) Advanced TFX.md",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/20) ML Pipelines for Computer Vision Problems.md",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/21) ML Pipelines for NLP.md",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/22) Generative AI.md",
+    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/4) Training Data and Preprocessing for VLMs.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 4.md",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/16) Foundation Models in CV.md",
+    "MX Matrix Convergence Methods.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/15) Combining CV and NLP Techniques.md",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/14) Combining CV and Reinforcement Learning.md",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/13) Advanced GANs to Manipulate Image.md",
@@ -451,20 +366,6 @@
     "Fall 2026/CPS853 - Big Data Systems/Project/Group Project.md",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/17) Applications of Stable Diffusion.md",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/9) Image Segmentation.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/8) Advanced Object Detection.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/7) Basics of Object Detection.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/6) Practical Aspects of Image Classification.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/5) Transformer Learning for Image Classification.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/4) Intro. Convolutional Neural Network.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/3) Building a Deep Neural Network with PyTorch.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/2) PyTorch Fundamentals.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/1) AI Neural Network Fundamentals.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/0) Modern Computer Vision with PyTorch, 2nd Ed..md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/18) Moving a Model to Production.md",
-    "OTHER TEXTBOOKS/Computer Vision/OpenCV/0) Learn Computer Vision Using OpenCV.md",
-    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/11) Advanced Topics and Cutting-Edge Research.md",
-    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/10) Any-To-Any Models.md",
-    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/9) Video-Language Models.md",
     "Fall 2026/CPS853 - Big Data Systems/Project",
     "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/9) Building Data Pipelines.md.tmp",
@@ -472,18 +373,6 @@
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/16) Model Monitoring and Logging.md.tmp",
     "Fall 2026/CPS721 - AI/NOTES/Week 4",
     "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/0) Cloud FinOps.md.tmp",
-    "OTHER TEXTBOOKS/Platform Engineering/Effective Platform Engineering/0) Effective Platform Engineering.md.tmp",
-    "OTHER TEXTBOOKS/Data Engineering/Spark",
-    "images/Screenshot 2026-10-03 at 3.20.09 PM 1.png",
-    "images/Screenshot 2026-10-03 at 3.20.09 PM.png",
-    "Screenshot 2026-10-03 at 3.20.09 PM 1.png",
-    "Screenshot 2026-10-03 at 3.20.09 PM.png",
-    "images/Pasted image 20260930093325.png",
-    "images/Pasted image 20260930093832.png",
-    "images/Pasted image 20260930091927.png",
-    "images/Pasted image 20260930094522.png",
-    "images/Pasted image 20260930093516.png",
-    "images/Pasted image 20260930094521.png",
     "Untitled.canvas"
   ]
 }
