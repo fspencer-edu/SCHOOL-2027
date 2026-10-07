@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 3.md",
+                "file": "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lec 3"
+              "title": "Lec 4"
             }
           },
           {
@@ -190,7 +190,7 @@
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -252,7 +252,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125
+    "width": 256.953125,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -366,8 +367,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "ebf7035dc389d5f5",
+  "active": "2bb2932ebf6ea3c6",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Data Engineering/Spark/10) Machine Learning with MLib.md.tmp",
+    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/8) Communicating with External Input.md.tmp",
+    "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/14) Real-World Use Cases of Apache Iceberg.md.tmp",
+    "OTHER TEXTBOOKS/Modern AI and RAG/AI Engineering/0) AI Engineering.md.tmp",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/0) Evals for AI Engineers.md.tmp",
+    "images/Pasted image 20261007170438.png",
+    "images/Pasted image 20261007164738.png",
+    "images/Pasted image 20261007173319.png",
+    "images/Pasted image 20261007165345.png",
+    "images/Pasted image 20261007164311.png",
+    "images/Pasted image 20261007164852.png",
+    "images/Pasted image 20261007172954.png",
+    "images/Pasted image 20261007163828.png",
+    "images/Pasted image 20261007165245.png",
+    "images/Pasted image 20261007171755.png",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 3.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./1) Data Engineering Described.md",
     "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md.tmp",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./13) Cloud Networking.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./12) Serialization and Compression Technical Details.md",
@@ -381,7 +399,6 @@
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./4) Choosing Technologies Across the Data Engineering Lifecycle.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./3) Designing Good Data Architecture.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./2) The Data Engineering Lifecycle.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./1) Data Engineering Described.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./0) Fundamentals of Data Engineering.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/1) What is a Data Model?.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/0) Data Modeling with Microsoft Power BI.md",
@@ -393,26 +410,11 @@
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/15) Real-World Examples Using Power Query and M.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/14) Building a Data Model with Power Query and M.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/13) Understanding a Data Model From the Power Query Point of View.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/12) Performance Turning with DAX.md",
-    "images/Pasted image 20261006210303.png",
-    "images/Pasted image 20261006210511.png",
-    "images/Pasted image 20261006202102.png",
-    "images/Pasted image 20261006205751.png",
-    "images/Pasted image 20261006201325.png",
-    "images/Screenshot 2026-10-06 at 7.54.43 PM.png",
-    "images/Pasted image 20261006205227.png",
-    "images/Pasted image 20261006200940.png",
-    "images/Pasted image 20261006195935.png",
-    "images/Pasted image 20261006210205.png",
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Untitled",
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes",
     "MX Matrix Convergence Methods.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/Project",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/9) Building Data Pipelines.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/19) Advanced TFX.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/16) Model Monitoring and Logging.md.tmp",
-    "Fall 2026/CPS721 - AI/NOTES/Week 4",
-    "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/0) Cloud FinOps.md.tmp",
     "Untitled.canvas"
   ]
 }
