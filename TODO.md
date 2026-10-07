@@ -26,16 +26,11 @@
 
 ## Assignments
 
-- [ ] Go through slides for viruses
+- [ ] AI Assignment 2
+- [ ] Big data project
+- [ ] Virus essay
+- [ ] ML assignment 2
 
-- [ ] Thinking as computation
-
-- [ ] Go through ML textbooks
-
-- [ ] Spark
-
-- [ ] Go through biological psychology textbook
-- [ ] Read biological psychology research paper
 
 ---
 ## Prism Insights

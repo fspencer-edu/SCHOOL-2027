@@ -153,16 +153,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/5) Templating Tasks Using the Airflow Context.md",
+                "file": "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/13) Migrating to Apache Iceberg.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5) Templating Tasks Using the Airflow Context"
+              "title": "13) Migrating to Apache Iceberg"
+            }
+          },
+          {
+            "id": "b86873d89a25a2c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Data Engineering/Data Lake/6) Bulding Native Applications with Delta Lake.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6) Bulding Native Applications with Delta Lake"
+            }
+          },
+          {
+            "id": "4657e9bb9dd03749",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./1) Data Engineering Described.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1) Data Engineering Described"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -338,31 +366,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "1376e5a102b3382a",
+  "active": "ebf7035dc389d5f5",
   "lastOpenFiles": [
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/4) Asset Aware Scheduling.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/3) Time Based Scheduling.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/2) Anatomy of an Airflow DAG.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/1) Meet Apache Airflow.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/17) Airflow Deployment Options.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/16) Securing Airflow.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/15) Operating Airflow in Production.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/14) Project - Keeping family traditions alive.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/13) Project - Finding the fastest way to get around NYC.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/12) Best Practices.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/11) Running Tasks in Containers.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/10) Testing.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/9) Extending Airflow with Custom Operators and Sensors.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/8) Communicating with External Input.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/7) Triggering Workflows with External Input.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/6) Defining Dependencies Between Tasks.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/5) Templating Tasks Using the Airflow Context.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/0) Data Pipelines with Apache Airflow, 2nd Ed..md",
-    "OTHER TEXTBOOKS/Computer Vision/CV Projects with PyTorch/0) Computer Vision Projects with PyTorch.md",
-    "OTHER TEXTBOOKS/Computer Vision/OpenCV/0) Learn Computer Vision Using OpenCV.md",
-    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/0) Modern Computer Vision with PyTorch, 2nd Ed..md",
-    "OTHER TEXTBOOKS/Computer Vision/Deep Learning for CV/0) Deep Learning for Computer Vision.md",
-    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 3.md",
+    "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md.tmp",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./13) Cloud Networking.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./12) Serialization and Compression Technical Details.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./11) The Future of Data Engineering.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./10) Security and Privacy.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./9) Serving Data for Analytics, Machine Learning, and Reverse ETL.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./8) Queries, Modeling, and Transformation.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./7) Ingestion.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./6) Storage.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./5) Data Generation in Source System.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./4) Choosing Technologies Across the Data Engineering Lifecycle.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./3) Designing Good Data Architecture.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./2) The Data Engineering Lifecycle.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./1) Data Engineering Described.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./0) Fundamentals of Data Engineering.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/1) What is a Data Model?.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/0) Data Modeling with Microsoft Power BI.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/20) Performance Tuning the Data Model with SQL.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/19) Real-World Examples Using SQL.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/18) Building a Data Model with SQL.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/17) Understanding a Relational Data Model.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/16) Performance Tuning the Data Model with Power Query.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/15) Real-World Examples Using Power Query and M.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/14) Building a Data Model with Power Query and M.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/13) Understanding a Data Model From the Power Query Point of View.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/12) Performance Turning with DAX.md",
     "images/Pasted image 20261006210303.png",
     "images/Pasted image 20261006210511.png",
     "images/Pasted image 20261006202102.png",
@@ -373,14 +404,10 @@
     "images/Pasted image 20261006200940.png",
     "images/Pasted image 20261006195935.png",
     "images/Pasted image 20261006210205.png",
-    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 2.md",
-    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 1.md",
-    "Fall 2026/PSY324 - Biological Psy./Midterm Overview.md",
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Untitled",
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes",
     "MX Matrix Convergence Methods.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/Project",
-    "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/9) Building Data Pipelines.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/19) Advanced TFX.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/16) Model Monitoring and Logging.md.tmp",
