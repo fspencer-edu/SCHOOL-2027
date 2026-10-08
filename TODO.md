@@ -28,6 +28,7 @@
 
 - [ ] AI Assignment 2
 - [ ] Big data project
+- [ ] Virus post
 - [ ] Virus essay
 - [ ] ML assignment 2
 
