@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 4.md",
+                "file": "Fall 2026/PSY324 - Biological Psy./Midterm Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lec 4"
+              "title": "Midterm Overview"
             }
           },
           {
@@ -369,6 +369,7 @@
   },
   "active": "2bb2932ebf6ea3c6",
   "lastOpenFiles": [
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 4.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/10) Machine Learning with MLib.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/8) Communicating with External Input.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/14) Real-World Use Cases of Apache Iceberg.md.tmp",
@@ -414,7 +415,6 @@
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes",
     "MX Matrix Convergence Methods.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/Project",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/9) Building Data Pipelines.md.tmp",
     "Untitled.canvas"
   ]
 }
