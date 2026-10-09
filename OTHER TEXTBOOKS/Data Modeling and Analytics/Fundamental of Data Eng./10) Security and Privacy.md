@@ -1,6 +1,3 @@
-# 
-# 
-# 
-# 
-# 
-# 
+# People
+# Processes
+# Technology

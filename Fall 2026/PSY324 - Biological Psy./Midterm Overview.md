@@ -265,7 +265,6 @@
 
 ![Nervous System Diagram Generator | Labeled & Blank](https://images.openai.com/static-rsc-4/tNXF977Cs84f5jW1AF5rnZPTMSXKZUfq7Z1vi1VMGG8zTlT3wfv9crdtoT-VeGbpO_XJqxumPIKq3ECEaJfoT1dIVTIrlS81dXk1o0QSs-qJYBgwt3OuSTOysSDhd4M9GpRSiwI76r_t1clRl7a5pTZZ-lh_XnLohCvRY1QBKIo?purpose=inline)
 
-[conceptviz.app](https://conceptviz.app/tools/nervous-system-diagram-generator)
 ## Nerves
 
 - Bundles of axons in the peripheral nervous system
@@ -466,7 +465,7 @@
 
 ## Graded Potentials
 
-- SMall changes in membrane voltage, often occurring in dendrites or cell body
+- Small changes in membrane voltage, often occurring in dendrites or cell body
 - Unlike action potentials, their size varies with the strength if the input
 - They decrease in amplitude as they spread passively
 - Multiple graded potentials can combine
@@ -481,7 +480,7 @@
 
 - A graded potential that decreases the probability of an action potential
 - Often involved Cl- conductance or K+ leaving the cell
-- Can cayse hyperpolarization or stablie the membrane voltage through shutning inhibition
+- Can cause hyperpolarization or stable the membrane voltage through stoping inhibition
 - GABA activating GABA-A receptors commonly inhibits mature neurons
 ### Temporal Summation
 
@@ -978,7 +977,7 @@ Glutamate -> GABA (using glutamic acid decarboxylase)
 	- Promotes mobilization of energy
 #### Parasympathetic Nervous System
 
-- Ret and digest
+- Rest and digest
 	- Supports energy conservation and maintanence
 	- Decreases heart rate
 	- Promotes digestive activity
@@ -1424,6 +1423,8 @@ VI - Multiform/polymorphic
 - Cannot reliably measure deep structures such as the hippocampus
 - Indirectly measure brain activity
 - Lower spacial resolution than fMRI
+
+<img src="/images/Pasted image 20261008144228.png" alt="image" width="500">
 # Spatial vs. Temporal Resolution
 
 - Spatial resolution

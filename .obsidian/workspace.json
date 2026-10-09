@@ -134,77 +134,21 @@
             }
           },
           {
-            "id": "2bb2932ebf6ea3c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./Midterm Overview.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Midterm Overview"
-            }
-          },
-          {
-            "id": "1376e5a102b3382a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/13) Migrating to Apache Iceberg.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "13) Migrating to Apache Iceberg"
-            }
-          },
-          {
-            "id": "b86873d89a25a2c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Data Engineering/Data Lake/6) Bulding Native Applications with Delta Lake.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6) Bulding Native Applications with Delta Lake"
-            }
-          },
-          {
             "id": "4657e9bb9dd03749",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./1) Data Engineering Described.md",
+                "file": "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./12) Serialization and Compression Technical Details.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1) Data Engineering Described"
-            }
-          },
-          {
-            "id": "1cf1cca5d55971a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./Midterm Overview.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Midterm Overview"
+              "title": "12) Serialization and Compression Technical Details"
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -266,8 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125,
-    "collapsed": true
+    "width": 256.953125
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -381,8 +324,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "1cf1cca5d55971a2",
+  "active": "4657e9bb9dd03749",
   "lastOpenFiles": [
+    "images/Pasted image 20261008144228.png",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./13) Cloud Networking.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./11) The Future of Data Engineering.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./10) Security and Privacy.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./9) Serving Data for Analytics, Machine Learning, and Reverse ETL.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./8) Queries, Modeling, and Transformation.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./7) Ingestion.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./6) Storage.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./5) Data Generation in Source System.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./4) Choosing Technologies Across the Data Engineering Lifecycle.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./3) Designing Good Data Architecture.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./2) The Data Engineering Lifecycle.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./1) Data Engineering Described.md",
+    "OTHER TEXTBOOKS/Data Engineering/Fundamentals of Analytics Eng./0) Fundamentals of Analytics Engineering.md",
+    "OTHER TEXTBOOKS/Data Engineering/Databricks/0) Databricks Data Intelligence Platform.md",
+    "OTHER TEXTBOOKS/Data Engineering/Data Lake/6) Bulding Native Applications with Delta Lake.md",
+    "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/13) Migrating to Apache Iceberg.md",
+    "Fall 2026/PSY324 - Biological Psy./Midterm Overview.md",
+    "Pasted image 20261008144228.png",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/13) Monitoring Kafka.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Database Internal/14) Consensus.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/Hands-On LLMs/0) Hands-On Large Language Models.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/LLM - The Hard Parts/0) Large Language Models - The Hard Parts.md.tmp",
@@ -397,38 +360,18 @@
     "images/Pasted image 20261008124939.png",
     "images/Pasted image 20261008142417.png",
     "images/Pasted image 20261008142559.png",
-    "Pasted image 20261008142803.png",
     "TODO.md",
-    "Fall 2026/PSY324 - Biological Psy./Midterm Overview.md",
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 4.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/10) Machine Learning with MLib.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/8) Communicating with External Input.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/14) Real-World Use Cases of Apache Iceberg.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/AI Engineering/0) AI Engineering.md.tmp",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/0) Evals for AI Engineers.md.tmp",
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 3.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./1) Data Engineering Described.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md.tmp",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./13) Cloud Networking.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./12) Serialization and Compression Technical Details.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./11) The Future of Data Engineering.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./10) Security and Privacy.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./9) Serving Data for Analytics, Machine Learning, and Reverse ETL.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./8) Queries, Modeling, and Transformation.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./7) Ingestion.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./6) Storage.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./5) Data Generation in Source System.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./4) Choosing Technologies Across the Data Engineering Lifecycle.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./3) Designing Good Data Architecture.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./2) The Data Engineering Lifecycle.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./0) Fundamentals of Data Engineering.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/1) What is a Data Model?.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/0) Data Modeling with Microsoft Power BI.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/20) Performance Tuning the Data Model with SQL.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/19) Real-World Examples Using SQL.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/18) Building a Data Model with SQL.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/17) Understanding a Relational Data Model.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/16) Performance Tuning the Data Model with Power Query.md",
     "Untitled.canvas"
   ]
 }
