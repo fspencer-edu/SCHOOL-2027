@@ -4,151 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "481d5f2ca02c862d",
+        "id": "46db223150056a1e",
         "type": "tabs",
         "children": [
           {
-            "id": "c4a2d7549c54cbe1",
+            "id": "c08878bc8bcf1051",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/2) Synapses.md",
+                "file": "OTHER TEXTBOOKS/Data Engineering/Spark/0) Learning Spark, 2nd Ed..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2) Synapses"
+              "title": "0) Learning Spark, 2nd Ed."
             }
           },
           {
-            "id": "d7241ebe55dd636b",
+            "id": "2d77e7ad2a3ebe60",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/3) Anatomy and Research Methods.md",
+                "file": "OTHER TEXTBOOKS/Data Engineering/Spark/2) Downloading Apache Spark and Getting Started.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3) Anatomy and Research Methods"
+              "title": "2) Downloading Apache Spark and Getting Started"
             }
           },
           {
-            "id": "9bc7b7d8ec314de9",
+            "id": "d983e52b41cd7431",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/4) Genetics, Development, and Plasticity.md",
+                "file": "OTHER TEXTBOOKS/Data Engineering/Spark/3) Apache Spark's Structured APIs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4) Genetics, Development, and Plasticity"
+              "title": "3) Apache Spark's Structured APIs"
             }
           },
           {
-            "id": "852c18e7ee500102",
+            "id": "c110ca6e6233b126",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/5) Vision.md",
+                "file": "OTHER TEXTBOOKS/Data Engineering/Spark/4) Spark SQL and DataFrames - Intro. to Build-In Data Sources.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5) Vision"
-            }
-          },
-          {
-            "id": "d19356f06838eb05",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/6) Hearing, the Mechanical Senses, and the Chemical Senses.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6) Hearing, the Mechanical Senses, and the Chemical Senses"
-            }
-          },
-          {
-            "id": "f5164a70129c4acd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/7) Movement.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "7) Movement"
-            }
-          },
-          {
-            "id": "e93c91b515facea1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/8) Wakefulness and Sleep.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "8) Wakefulness and Sleep"
-            }
-          },
-          {
-            "id": "66e819bbb9833ba5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/9) Internal Regulation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "9) Internal Regulation"
-            }
-          },
-          {
-            "id": "4c1825b7dc17d379",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/10) Reproductive Behaviours.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "10) Reproductive Behaviours"
-            }
-          },
-          {
-            "id": "4657e9bb9dd03749",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./12) Serialization and Compression Technical Details.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "12) Serialization and Compression Technical Details"
+              "title": "4) Spark SQL and DataFrames - Intro. to Build-In Data Sources"
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,7 +126,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125
+    "width": 256.953125,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -324,10 +241,33 @@
       "bases:Create new base": false
     }
   },
-  "active": "4657e9bb9dd03749",
+  "active": "2d77e7ad2a3ebe60",
   "lastOpenFiles": [
-    "images/Pasted image 20261008144228.png",
+    "images/Pasted image 20261008210246.png",
+    "images/Pasted image 20261008205313.png",
+    "images/Pasted image 20261008211239.png",
+    "images/Pasted image 20261008212031.png",
+    "images/Pasted image 20261008211933.png",
+    "images/Pasted image 20261008210506.png",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/4) Spark SQL and DataFrames - Intro. to Build-In Data Sources.md",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/0) Learning Spark, 2nd Ed..md",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/3) Apache Spark's Structured APIs.md",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/2) Downloading Apache Spark and Getting Started.md",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/1) Intro. to Apache Spark - A Unified Analytics Engine.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/1) The FTI Pipeline Architecture for ML Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/0) Building Machine Learning Systems with a Feature Store.md",
+    "Pasted image 20261008212031.png",
+    "Pasted image 20261008211933.png",
+    "Pasted image 20261008211239.png",
+    "Pasted image 20261008210506.png",
+    "Pasted image 20261008210246.png",
+    "OTHER TEXTBOOKS/Textbook Table.md",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/2) Synapses.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Universal Data Modeling/0) Universal Data Modeling.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./0) Fundamentals of Data Engineering.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./13) Cloud Networking.md",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./12) Serialization and Compression Technical Details.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./11) The Future of Data Engineering.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./10) Security and Privacy.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./9) Serving Data for Analytics, Machine Learning, and Reverse ETL.md",
@@ -339,39 +279,16 @@
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./3) Designing Good Data Architecture.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./2) The Data Engineering Lifecycle.md",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./1) Data Engineering Described.md",
-    "OTHER TEXTBOOKS/Data Engineering/Fundamentals of Analytics Eng./0) Fundamentals of Analytics Engineering.md",
-    "OTHER TEXTBOOKS/Data Engineering/Databricks/0) Databricks Data Intelligence Platform.md",
-    "OTHER TEXTBOOKS/Data Engineering/Data Lake/6) Bulding Native Applications with Delta Lake.md",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/13) Migrating to Apache Iceberg.md",
-    "Fall 2026/PSY324 - Biological Psy./Midterm Overview.md",
-    "Pasted image 20261008144228.png",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/13) Monitoring Kafka.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Database Internal/14) Consensus.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/Hands-On LLMs/0) Hands-On Large Language Models.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/LLM - The Hard Parts/0) Large Language Models - The Hard Parts.md.tmp",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Management/0) Data Management at Scale, 2nd Ed..md.tmp",
     "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/0) Observability Engineering, 2nd Ed..md.tmp",
-    "images/Pasted image 20261008142227.png",
-    "images/Pasted image 20261008142803.png",
-    "images/Pasted image 20261008103256.png",
-    "images/Pasted image 20261008142536.png",
-    "images/Pasted image 20261008142118.png",
-    "images/Pasted image 20261008142241.png",
-    "images/Pasted image 20261008124939.png",
-    "images/Pasted image 20261008142417.png",
-    "images/Pasted image 20261008142559.png",
-    "TODO.md",
-    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 4.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/10) Machine Learning with MLib.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/8) Communicating with External Input.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/14) Real-World Use Cases of Apache Iceberg.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/AI Engineering/0) AI Engineering.md.tmp",
-    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 3.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./12) Serialization and Compression Technical Details.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./0) Fundamentals of Data Engineering.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/1) What is a Data Model?.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/0) Data Modeling with Microsoft Power BI.md",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/20) Performance Tuning the Data Model with SQL.md",
     "Untitled.canvas"
   ]
 }
