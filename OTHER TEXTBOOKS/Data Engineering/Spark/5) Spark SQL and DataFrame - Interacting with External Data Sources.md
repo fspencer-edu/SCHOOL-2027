@@ -1,3 +1,5 @@
+- 
+
 # Spark SQL and Apache Hive
 # Querying with Spark SQL Shell, Beeline, and Tableau
 # External Data Sources

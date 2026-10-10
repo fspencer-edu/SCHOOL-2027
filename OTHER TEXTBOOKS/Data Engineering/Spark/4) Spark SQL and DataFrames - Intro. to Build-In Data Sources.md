@@ -197,7 +197,302 @@ UNCACHE TABLE <table-name>
 
 ## Reading Tables into DataFrames
 
-- Data engineers build data pipelines as part of their
+- Data engineers build data pipelines as part of their regular data ingestion and ETL processes
+- Populate Spark SQL databases and tables with cleansed data for consumption by applications downstream
+- Use SQL to query the table and assign the returned result to a DataFrame
 
+```python
+# In Python
+us_flights_df = spark.sql("SELECT * FROM us_delay_flights_tbl")
+us_flights_df2 = spark.table("us_delay_flights_tbl")
+```
+
+- Read data in other formats using Spark's built-in data sources
 
 # Data Sources for DataFrames and SQL Tables
+
+- Spark SQL provides an interface to a variety of data sources
+
+## DataFrameReader
+
+- Core construct for reading data from a data source into a DataFrame
+
+```python
+DataFrameReader.format(args).option("key", "value").schema(args).load()
+```
+
+- Only access a `DataFrameReader` through a `SparkSession` instance
+- Cannot create an instance of `DataFrameReader`
+
+- Parquet metadata usually contains the schema and is inferred when read
+- For streaming data sources, provide a schema
+	- Columnar storage
+	- Fast compression algorithm
+
+## DataFrameWriter
+
+- `DataFrameWriter` does the reverse
+- Saves or writes data to a specified built-in data source
+- Access its instance from the DataFrame to save
+
+```python
+DataFrameWriter.format(args)
+  .option(args)
+  .bucketBy(args)
+  .partitionBy(args)
+  .save(path)
+
+DataFrameWriter.format(args).option(args).sortBy(args).saveAsTable(table)
+
+val location = ... 
+df.write.format("json").mode("overwrite").save(location)
+```
+
+## Parquet
+
+- Parquet is an open source columnar file format that offers many I/O optimizations
+
+### Reading Parquet files into a DataFrame
+
+- Parquet files are stored in a directly structure that contains the data file, metadata, and number of compressed files, and status files
+- Metadata in the footer contains the version of the file format, the schema, and column data
+
+```parquet
+_SUCCESS
+_committed_1799640464332036264
+_started_1799640464332036264
+part-00000-tid-1799640464332036264-91273258-d7ef-4dc7-<...>-c000.snappy.parquet
+
+# In Python
+file = """/databricks-datasets/learning-spark-v2/flights/summary-data/parquet/
+  2010-summary.parquet/"""
+df = spark.read.format("parquet").load(file)
+```
+
+### Reading Parquet files into a Spark SQL table
+
+- Create a Spark SQL unmanaged table or view directly
+
+```python
+-- In SQL
+CREATE OR REPLACE TEMPORARY VIEW us_delay_flights_tbl
+    USING parquet
+    OPTIONS (
+      path "/databricks-datasets/learning-spark-v2/flights/summary-data/parquet/
+      2010-summary.parquet/" )
+      
+# In Python
+spark.sql("SELECT * FROM us_delay_flights_tbl").show()
+```
+
+### Writing DataFrame to Parquet files
+
+```python
+# In Python
+(df.write.format("parquet")
+  .mode("overwrite")
+  .option("compression", "snappy")
+  .save("/tmp/data/parquet/df_parquet"))
+```
+
+### Writing DataFrames to Spark SQL tables
+
+- Writing a DataFrame to a SQL table is as easy as writing to a file
+
+```python
+# In Python
+(df.write
+  .mode("overwrite")
+  .saveAsTable("us_delay_flights_tbl"))
+```
+
+## JSON
+
+- JavaScript Object Notation (JSON)
+	- Single line mode
+	- Multi-line mode
+
+### Reading a JSON file into a DataFrame
+
+- Read a JSON file into a DataFrame
+
+```python
+# In Python
+file = "/databricks-datasets/learning-spark-v2/flights/summary-data/json/*"
+df = spark.read.format("json").load(file)
+```
+
+### Reading a JSON file into a Spark SQL table
+
+```SQL
+-- In SQL
+CREATE OR REPLACE TEMPORARY VIEW us_delay_flights_tbl
+    USING json
+    OPTIONS (
+      path  "/databricks-datasets/learning-spark-v2/flights/summary-data/json/*"
+    )
+```
+
+### Writing DataFrames to JSON files
+
+```python
+# In Python
+(df.write.format("json")
+  .mode("overwrite")
+  .option("compression", "snappy")
+  .save("/tmp/data/json/df_json"))
+```
+
+### JSON data source options
+
+## CSV
+
+- Common text file format captures each datum or field delimited by a comma
+
+### Reading a CSV file into a DataFrame
+
+```python
+# In Python
+file = "/databricks-datasets/learning-spark-v2/flights/summary-data/csv/*"
+schema = "DEST_COUNTRY_NAME STRING, ORIGIN_COUNTRY_NAME STRING, count INT"
+df = (spark.read.format("csv")
+  .option("header", "true")
+  .schema(schema)
+  .option("mode", "FAILFAST")  # Exit if any errors
+  .option("nullValue", "")     # Replace any null data field with quotes
+  .load(file))
+```
+
+### Reading a CSV file into a Spark SQL table
+
+```SQL
+-- In SQL
+CREATE OR REPLACE TEMPORARY VIEW us_delay_flights_tbl
+    USING csv
+    OPTIONS (
+      path "/databricks-datasets/learning-spark-v2/flights/summary-data/csv/*",
+      header "true",
+      inferSchema "true",
+      mode "FAILFAST"
+    )
+```
+
+### Writing DataFrame to CSV files
+
+```python
+df.write.format("csv").mode("overwrite").save("/tmp/data/csv/df_csv")
+```
+
+### CSV data source options
+
+## Avro
+
+- Message serializing and deserializing
+- Direct mapping to JSON, speed and efficiency, and bindings available for many programming languages
+
+### Reading an Avro file into a DataFrame
+
+```python
+# In Python
+df = (spark.read.format("avro")
+  .load("/databricks-datasets/learning-spark-v2/flights/summary-data/avro/*"))
+df.show(truncate=False)
+```
+
+### Reading an Avro file into a Spark SQL table
+
+```SQL
+-- In SQL 
+CREATE OR REPLACE TEMPORARY VIEW episode_tbl
+    USING avro
+    OPTIONS (
+      path "/databricks-datasets/learning-spark-v2/flights/summary-data/avro/*"
+    )
+
+spark.sql("SELECT * FROM episode_tbl").show(truncate=False)
+```
+
+### Writing DataFrames to Avro Files
+
+```python
+# In Python
+(df.write
+  .format("avro")
+  .mode("overwrite")
+  .save("/tmp/data/avro/df_avro"))
+```
+
+## ORC
+
+- Vectorized reader
+	- Reads blocks of rows instead of one row at a time
+	- Streamlining operations and reducing GPU usage for intensive operations like scans, filters, aggregations, and joins
+- Hive ORC SerDe
+
+### Reading an ORC file into a DataFrame
+
+```python
+file = "/databricks-datasets/learning-spark-v2/flights/summary-data/orc/*"
+df = spark.read.format("orc").option("path", file).load()
+df.show(10, False)
+```
+
+### Reading an ORC file into a Spark SQL table
+
+```SQL
+-- In SQL
+CREATE OR REPLACE TEMPORARY VIEW us_delay_flights_tbl
+    USING orc
+    OPTIONS (
+      path "/databricks-datasets/learning-spark-v2/flights/summary-data/orc/*"
+    )
+```
+
+### Writing dataFrames to ORC files
+
+```python
+# In Python
+(df.write.format("orc")
+  .mode("overwrite")
+  .option("compression", "snappy")
+  .save("/tmp/data/orc/flights_orc"))
+```
+
+## Images
+
+- Images files
+	- Support deep learning and ML frameworks
+		- TensorFlow
+		- PyTorch
+
+### Reading an image file into a DataFrame
+
+```python
+# In Python
+from pyspark.ml import image
+
+image_dir = "/databricks-datasets/learning-spark-v2/cctvVideos/train_images/"
+images_df = spark.read.format("image").load(image_dir)
+images_df.printSchema()
+```
+
+## Binary Files
+
+- Converts each binary file into a single DataFrame that contains the raw content and metadata of the file
+- Binary file data source produces a DataFrame
+	- path: StringType
+	- modificationTime: TimestampType
+	- length: LongType
+	- content: BinaryType
+
+### Reading a binary file into a DataFrame
+
+```python
+# In Python
+path = "/databricks-datasets/learning-spark-v2/cctvVideos/train_images/"
+binary_files_df = (spark.read.format("binaryFile")
+  .option("pathGlobFilter", "*.jpg")
+  .load(path))
+binary_files_df.show(5)
+```
+
