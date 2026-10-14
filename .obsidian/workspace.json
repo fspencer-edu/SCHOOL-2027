@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private/Naics Pipeline.md",
+                "file": "Private/Prism Insight TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Naics Pipeline"
+              "title": "Prism Insight TODO"
             }
           },
           {
@@ -196,7 +196,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125
+    "width": 256.953125,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -312,9 +313,9 @@
   },
   "active": "81020de3ca7e6cb3",
   "lastOpenFiles": [
+    "Private/Naics Pipeline.md",
     "Private/Prism Insight TODO.md",
     "Private/NAICS Classification.md",
-    "Private/Naics Pipeline.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/7) Optimizing and Tuning Spark Applications.md",
     "images/Pasted image 20261013135416.png",
     "images/Pasted image 20261013135727.png",
