@@ -111,6 +111,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Private/Naics Pipeline.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Naics Pipeline"
+            }
+          },
+          {
+            "id": "12d0a87c46de039b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Private/NAICS Classification.md",
                 "mode": "source",
                 "source": false
@@ -120,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -182,8 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125,
-    "collapsed": true
+    "width": 256.953125
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -297,11 +310,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "0a84a0cce1e782b9",
+  "active": "12d0a87c46de039b",
   "lastOpenFiles": [
+    "Private/Naics Pipeline.md",
+    "Private/NAICS Classification.md",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/7) Optimizing and Tuning Spark Applications.md",
     "images/Pasted image 20261013135416.png",
     "images/Pasted image 20261013135727.png",
-    "Private/NAICS Classification.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/6) Spark SQL and Datasets.md",
     "Pasted image 20261013135727.png",
     "Pasted image 20261013135416.png",
@@ -325,7 +340,6 @@
     "images/Pasted image 20261009133541.png",
     "images/Pasted image 20261009113849.png",
     "images/Pasted image 20261009142146.png",
-    "images/Screenshot 2026-10-09 at 2.30.22 PM.png",
     "Fall 2026/CPS853 - Big Data Systems/cps853_midterm_501116950.md",
     "Fall 2026/CPS853 - Big Data Systems/Video.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/12) Epilogue - Apache Spark 3.0.md",
@@ -334,7 +348,6 @@
     "OTHER TEXTBOOKS/Data Engineering/Spark/10) Machine Learning with MLib.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/9) Building Reliable Data Lake.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/8) Structured Streaming.md",
-    "OTHER TEXTBOOKS/Data Engineering/Spark/7) Optimizing and Tuning Spark Applications.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/3) Apache Spark's Structured APIs.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/2) Downloading Apache Spark and Getting Started.md",
     "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 4.md",
