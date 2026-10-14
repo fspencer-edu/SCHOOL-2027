@@ -125,16 +125,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private/NAICS Classification.md",
+                "file": "Private/Prism Insight TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NAICS Classification"
+              "title": "Prism Insight TODO"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -310,10 +310,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "12d0a87c46de039b",
+  "active": "81020de3ca7e6cb3",
   "lastOpenFiles": [
-    "Private/Naics Pipeline.md",
+    "Private/Prism Insight TODO.md",
     "Private/NAICS Classification.md",
+    "Private/Naics Pipeline.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/7) Optimizing and Tuning Spark Applications.md",
     "images/Pasted image 20261013135416.png",
     "images/Pasted image 20261013135727.png",
@@ -356,7 +357,6 @@
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/1) The FTI Pipeline Architecture for ML Systems.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/0) Building Machine Learning Systems with a Feature Store.md",
-    "OTHER TEXTBOOKS/Textbook Table.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/13) Monitoring Kafka.md.tmp",
     "Untitled.canvas"
   ]
