@@ -1,4 +1,8 @@
+
+- Data arrives continuously and needs to be processed in a real-time manner
 # Evolution of the Apache Spark Stream Processing Engine
+
+- 
 # The Programming Model of Structured Streaming
 # The Fundamentals of a Structured Streaming Query
 # Streaming Data Sources and Sings
