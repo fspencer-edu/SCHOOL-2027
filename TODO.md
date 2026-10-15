@@ -32,6 +32,10 @@
 - [ ] Virus essay
 - [ ] ML assignment 2
 
+- [ ] Finish biological psychology textbook
+- [ ] Finish ml texbook
+- [ ] Finish AI textbook
+
 
 ---
 ## Prism Insights
