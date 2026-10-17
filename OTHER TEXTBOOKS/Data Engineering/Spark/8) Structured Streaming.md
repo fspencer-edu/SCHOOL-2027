@@ -635,8 +635,291 @@ from pyspark.sql.functions import *
 
 <img src="/images/Pasted image 20261017103753.png" alt="image" width="500">
 
-## 
+- To provide a lateness bound to a query, specify watermarks
+## Handling late data with watermarks
+
+- A watermark is defined as a moving threshold in event time that trails behind the maximum event time seen y the query in the processed data
+- Trailing gap, known as the watermark delay
+	- Defines how long the engine will wait for late data to arrive
+	- Engine can automatically finalize the aggregates of certain groups and drop then from the state
+	- Limits total amount of state that the engine has to maintain to compute the results of the query
+
+```python
+# In Python
+(sensorReadings
+  .withWatermark("eventTime", "10 minutes")
+  .groupBy("sensorId", window("eventTime", "10 minutes", "5 minutes"))
+  .mean("value"))
+```
+
+- Call `withWatermark()` before the `groupBy()` and on the same timestamp column as that used to define windows
+- Any date late by more than 10 minutes will be ignores, and all time windows that are more than 10 minutes older than the latest input data will be cleaned up from state
+
+<img src="/images/Pasted image 20261017150550.png" alt="image" width="500">
+
+- Set the watermark delay based on the requirements of the application
+
+### Semantic guarantees with watermarks
+
+- A watermark of 10 minutes guarantees that the engine will never drop any data that is delayed by less than 10 minutes compared to the latest event time seen in the input data
+- Guarantees is strict only in one direction
+- Data delayed by more than 10 minutes is not guaranteed to be dropped, and may get aggregated
+
+### Supported output modes
+
+- Aggregations with time windows can use all 3 output modes
+	- Update mode
+	- Complete mode
+	- Append mode
+
 # Streaming Joins
+
+- Structured Streaming supports joining a streaming Dataset with another static or streaming Dataset
+
+## Stream-Static Joins
+
+- Static Dataset
+	- Ads on websites that make money when users click on them
+	- Static dataset of all the ads
+	- Another stream of events for each click
+
+```python
+# In Python
+# Static DataFrame [adId: String, impressionTime: Timestamp, ...]
+# reading from your static data source 
+impressionsStatic = spark.read. ... 
+
+# Streaming DataFrame [adId: String, clickTime: Timestamp, ...] 
+# reading from your streaming source
+clicksStream = spark.readStream. ...
+
+matched = clicksStream.join(impressionsStatic, "adId")
+```
+
+- Every micro batch of clicks is inner-joined against the static impression table to generate the output stream of matched events
+- Left outer joins
+- Right outer joins
+- Other outer joins are not supported because they are not easy to run incrementally
+
+```pyhon
+matched = clicksStream.join(impressionsStatic, "adId", "leftOuter")
+
+```
+
+- Stream-static joins are stateless operations
+	- Do not require watermarking
+- Static DataFrame is read repeatedly while joining with the streaming data of every micro-batch
+	- Cached
+- If the underlying static data changes, then changes to those files will not be picked up until the streaming query is restarted
+
+## Stream-Stream Joins
+
+- Generating joins between two data streams
+- View of either Dataset is incomplete
+- Matching events from the two streams may arrive in any order and may be arbitrarily delayed
+	- Buffering the input data from both sides at the streaming state
+	- Continuously checking for matches as new data is received
+
+<img src="/images/Pasted image 20261017151501.png" alt="image" width="500">
+### Inner joins with optional watermarking
+
+```python
+# In Python
+# Streaming DataFrame [adId: String, impressionTime: Timestamp, ...]
+impressions = spark.readStream. ... 
+
+# Streaming DataFrame[adId: String, clickTime: Timestamp, ...]
+clicks = spark.readStream. ...
+matched = impressions.join(clicks, "adId")
+```
+
+- The processing engine will recognize it to be a stream-stream join
+- Buffer all clicks and impression as state
+- Generate a matching impression-and-click
+
+<img src="/images/Pasted image 20261017151619.png" alt="image" width="500">
+
+- The engine may buffer an event forever and accumulate an unbounded amount of streaming state
+- What is the max time range between the generation of the two events at their respective sources
+- What is the maximum duration an event can be delayed in transit between the source and the processing engine
+
+- Delay limits and event-time constraints can be encoded in the DataFrame operation using watermarks and time range conditions
+	- Define watermark delays on both inputs
+	- Define a constraint on event time across the two inputs
+
+```python
+# In Python
+# Define watermarks
+impressionsWithWatermark = (impressions
+  .selectExpr("adId AS impressionAdId", "impressionTime")
+  .withWatermark("impressionTime", "2 hours"))
+
+clicksWithWatermark = (clicks
+  .selectExpr("adId AS clickAdId", "clickTime")
+  .withWatermark("clickTime", "3 hours"))
+
+# Inner join with time range conditions
+(impressionsWithWatermark.join(clicksWithWatermark,
+  expr(""" 
+    clickAdId = impressionAdId AND 
+    clickTime BETWEEN impressionTime AND impressionTime + interval 1 hour""")))
+```
+
+- The processing engine can automatically calculate how long events need to be buffered to generated correct results, and when events can be dropped
+
+<img src="/images/Pasted image 20261017151951.png" alt="image" width="500">
+
+- Inner joins
+	- Specifying watermarking and event time constraints are both operational
+		- Potentially unbounded state
+
+## Outer joins with watermarking
+
+- Inner joins will output only those ads for which both events have been received
+- For all ads imporessioms to be reported use left outer join
+
+```python
+# In Python
+# Left outer join with time range conditions
+(impressionsWithWatermark.join(clicksWithWatermark,
+  expr(""" 
+    clickAdId = impressionAdId AND 
+    clickTime BETWEEN impressionTime AND impressionTime + interval 1 hour"""),
+  "leftOuter"))  # only change: set the outer join type
+```
+
+- Watermark delay and event time constraints are not optional for outer joins
+- Engine must know when an event is not going to match with anything else in the fugure
 # Arbitrary Stateful Computations
 
+- `mapGroupsWithState()`
+
+## Modeling Arbitrary Stateful Operations with mapGroupsWithState()
+
+- Define a function with the following signature `K, V, S, U`
+
+```scala
+// In Scala
+def arbitraryStateUpdateFunction(
+    key: K, 
+    newDataForKey: Iterator[V], 
+    previousStateForKey: GroupState[S]
+): U
+
+// In Scala
+val inputDataset: Dataset[V] =  // input streaming Dataset
+
+inputDataset
+  .groupByKey(keyFunction)   // keyFunction() generates key from input
+  .mapGroupsWithState(arbitraryStateUpdateFunction)
+```
+
+- `key: K`
+	- Data type of the common keys defined in the state and the input
+- `newDataForKey: Iterator[V]`
+	- Data type of the input Dataset
+- `previousStateForKey: GroupState[S]`
+	- Data type of arbitrary state to maintain
+- `U`
+	- Data type of the output of the function
+
+- All types must be encodable by Spark SQL's encoders
+- Define the data types
+	- Input data
+	- Keys
+	- State
+	- Output
+- Define the function
+- Apply the function on the actions
+
+```scala
+// In Scala
+import org.apache.spark.sql.streaming._
+
+ def updateUserStatus(
+    userId: String, 
+    newActions: Iterator[UserAction],
+    state: GroupState[UserStatus]): UserStatus = {
+
+  val userStatus = state.getOption.getOrElse {
+    new UserStatus(userId, false)
+  }
+  newActions.foreach { action => 
+    userStatus.updateWith(action) 
+  }
+  state.update(userStatus) 
+  return userStatus
+}
+val userActions: Dataset[UserAction] = ...
+val latestStatuses = userActions
+  .groupByKey(userAction => userAction.userId) 
+  .mapGroupsWithState(updateUserStatus _)
+```
+
+- When the function is called, there is no well defined order for the input records in the new data iterator
+- The function is called on a key once only if the micro-batch has data for that key
+- The output of `mapGroupsWithState()` is assumed by the incremental processing engine to be continuously updated key/value records
+
+## Using Timeouts to Manage Inactive Groups
+
+- Encode time based inactivity
+	- Each time the function is called on a key, a timeout can be set on the key
+- If that key does not receive any data, the key is marked as `timed out`
+- Two types of timeouts
+	- Processing time
+	- Event time
+
+### Processing time timeouts
+
+- Based on the system time of the machine running the streaming query and are defined as
+	- If a key last received data at the system timestamp, and the current timestamp is more than `T + <Timout duraction>`, then the function will be called again with a new empty data iterator
+
+```scala
+// In Scala
+def updateUserStatus(
+    userId: String, 
+    newActions: Iterator[UserAction],
+    state: GroupState[UserStatus]): UserStatus = {
+
+  if (!state.hasTimedOut) {       // Was not called due to timeout
+    val userStatus = state.getOption.getOrElse {
+      new UserStatus(userId, false)
+    }
+    newActions.foreach { action => userStatus.updateWith(action) }
+    state.update(userStatus) 
+    state.setTimeoutDuration("1 hour") // Set timeout duration
+    return userStatus
+    
+  } else {
+    val userStatus = state.get()
+    state.remove()                  // Remove state when timed out
+    return userStatus.asInactive()  // Return inactive user's status
+  }
+}
+ 
+val latestStatuses = userActions
+  .groupByKey(userAction => userAction.userId) 
+  .mapGroupsWithState(
+    GroupStateTimeout.ProcessingTimeTimeout)(
+    updateUserStatus _)
+```
+
+- The timeout set by the last call to the function is automatically cancelled when the function is called again
+- Timeout execution is imprecise and depends on trigger interval and micro-batch processing times
+- Not robust to slowdowns and downtimes
+### Event time timeouts
+
+- An event-time timeout is based on event time in the data and a watermark defined on the event time
+- The watermark is a moving threshold that lags behind the maximum event time seen while processing the data
+- Must be set to a value large than the current watermark
+- Use timeout mechanisms for more creative processing than fixed duration timeouts
+	- Periodic task
+## Generalization with flatMapGroupsWithState()
+
+ - Every time `mapGroupsWithState()` is called
+	 - Return one and only one record
+		- Engine assumes that generated records are updated key/value data pairs
+- `flatMapGroupsWithState()`
+	- Cost of slightly more complex syntax
+	- Return type is an iterator instead of a single o
 # Performance Tuning
