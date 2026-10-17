@@ -14,7 +14,7 @@
 
 - Streaming computation is modeled as a continuous series of small, map/reduce-style batch processing jobs on small chunks of the stream data
 
-![[Pasted image 20261016094825.png]]
+<img src="/images/Pasted image 20261016094825.png" alt="image" width="500">
 
 - Breaks down the streaming computation into these small tasks
 - Two advantages over continuous operator model
@@ -40,14 +40,14 @@
 
 - Structured Streaming extends this concept to streaming applications by treating a stream as an unbounded, continuously appended table
 
-![[Pasted image 20261016095403.png]]
+<img src="/images/Pasted image 20261016095403.png" alt="image" width="500">
 
 - Structured Streaming will automatically convert this batch-like query to a streaming execution plan
 - Incrementalization
 	- Structured Streaming figures out what state needs to be maintained to update the result each time a record arrives
 	- Each time a trigger fires, Structured Streaming checks for new data and incrementally updates the results
 
-![[Pasted image 20261016095553.png]]
+<img src="/images/Pasted image 20261016095553.png" alt="image" width="500">
 
 - Write output incrementally
 	- Append mode
@@ -200,7 +200,7 @@ streamingQuery.awaitTermination()
 		- The query is explicitly stopped
 		- Trigger is set to `once`
 
-![[Pasted image 20261016105918.png]]
+<img src="/images/Pasted image 20261016105918.png" alt="image" width="500">
 
 - Using Spark SQL to execute the data
 - The full power of Spark SQL's hyper-optimized execution engine is utilized to maximize the stream processing throughput, providing key performance advantages
@@ -227,10 +227,297 @@ filteredLines = lines.filter("isCorruptedUdf(value) = false")
 words = lines.select(explode(split(col("value"), "\\s").alias("word"))
 ```
 
-- Restarted query will apply the filter on all
+- Restarted query will apply the filter on all data processed since the restart
 
+- Source and sink options
+	- Not change the `host` and `port` options for the socket source if data is going to be sent to the host and port
+- Processing details
+	- Checkpoint location must not be changed between restarts
+
+## Monitoring an Active Query
+
+### Querying current status using StreamingQuery
+
+- Query the current health of an active query using the `StreamingQuery` instance
+
+#### Get current metrics using Streaming Query
+
+- `lastProgress()`
+	- Returns information on the last completed micro-batch
+- `id`
+	- Unique identifier tied to a checkpoint location
+- `runId`
+	- Unique identifier for the current (re)started instance of the query
+- `numInputRows`
+	- Number of input rows that were processed in the last micro-batch
+- `inputRowsPerSecond`
+	- Current rate at which input rows are being generated at the source
+- `processedRowsPerSecond`
+	- Current rate at which rows are being processed and written out by the sink
+- `sources` and `sink`
+	- Provides source/sink specific details of the data processed in the last batch
+#### Get current Status using StreamingQuery.status()
+
+- Provides information on what the background query thread is doing at this moment
+
+### Publishing metrics using Dropwizard Metrics
+
+- Spark supports reporting metrics via Dropwizard Metrics
+- Allows metrics to be published to many popular monitoring frameworks
+	- Ganglia
+	- Graphite
+- Set `spark.sql.streaming.metricsEnabled` to `true`
+- Only a subset of the information available through `StreamingQuery.lastProgress()` is published through Dropwizard Metrics
+
+### Publishing metrics using custom StreamingQuery  Listeners
+
+- `StreamingQueryListener`
+	- Event listener interface with which you can inject arbitrary logic to continuously publish metrics
+	- Available only in Scala/Java
+- Define custom listener
+	- Start
+	- Progress
+	- Termination
+
+```scala
+// In Scala
+import org.apache.spark.sql.streaming._
+val myListener = new StreamingQueryListener() {
+  override def onQueryStarted(event: QueryStartedEvent): Unit = {
+    println("Query started: " + event.id)
+  }
+  override def onQueryTerminated(event: QueryTerminatedEvent): Unit = {
+    println("Query terminated: " + event.id)
+  }
+  override def onQueryProgress(event: QueryProgressEvent): Unit = {
+    println("Query made progress: " + event.progress)
+  }
+}
+
+// In Scala
+spark.streams.addListener(myListener)
+```
+
+- After adding listener, all events of streaming queries running on this `SparkSession` will start calling the listener's methods
 # Streaming Data Sources and Sings
+
+- Create DataFrames from streaming sources using `SparkSession.readStream()`
+- Write output from a result DataFrame using `DataFrame.writeStream()`
+
+## Files
+
+- Structured Streaming supports reading and writing data streams to form files in the same formats as the ones supported in batch processing
+	- Plain text
+	- CSV
+	- JSON
+	- Parquet
+	- ORC
+
+### Reading from files
+
+- Structured Streaming can treat files written into a directory as a data stream
+
+```python
+# In Python
+from pyspark.sql.types import *
+inputDirectoryOfJsonFiles =  ... 
+
+fileSchema = (StructType()
+  .add(StructField("key", IntegerType()))
+  .add(StructField("value", IntegerType())))
+
+inputDF = (spark
+  .readStream
+  .format("json")
+  .schema(fileSchema)
+  .load(inputDirectoryOfJsonFiles))
+```
+
+- Returned streaming DataFrame will have the specified schema
+	- All the files must be of the same format
+	- Each file must appear in the directory listing atomically
+	- When there are multiple new files to process, it will select the files with the earliest timestamps
+
+### Writing to fiels
+
+- Structured Streaming supports writing streaming query output to files in the same formats as reads
+- Only supports append mode
+- Difficult to modify existing data files
+
+```python
+# In Python
+outputDir = ...
+checkpointDir = ...
+resultDF = ...
+
+streamingQuery = (resultDF.writeStream
+  .format("parquet")
+  .option("path", outputDir)
+  .option("checkpointLocation", checkpointDir)
+  .start())
+```
+
+- Specify the output directly directory as `start(outputDir)`
+- Structured Streaming achieves end-to-end exactly once guarantees when writing to files by maintaining a log of the data files that have been written to the directly
+- If you change the schema of the result DataFrame between restarts, then the output directly ill have data in multiple schemas
+	- reconciled after
+
+## Apache Kafka
+
+- Apache Kafka is a popular publish/subscribe system that is widely used for storage of data streams
+- Structured Streaming has built-in support for reading from and writing to Apache Kafka
+
+### Reading from Kafka
+
+- Use options to specify how to connect to the source
+
+```python
+# In Python
+inputDF = (spark
+  .readStream
+  .format("kafka")
+  .option("kafka.bootstrap.servers", "host1:port1,host2:port2")
+  .option("subscribe", "events")
+  .load())
+```
+### Writing to Kafka
+
+- Structured Streaming expects the result DataFrame to have a few columns of specific names and types
+- Write to Kafka in all 3 output modes
+	- Complete mode is not recommended
+
+```python
+# In Python
+counts = ... # DataFrame[word: string, count: long]
+streamingQuery = (counts
+  .selectExpr(
+    "cast(word as string) as key", 
+    "cast(count as string) as value")
+  .writeStream
+  .format("kafka")
+  .option("kafka.bootstrap.servers", "host1:port1,host2:port2")
+  .option("topic", "wordCounts")
+  .outputMode("update")
+  .option("checkpointLocation", checkpointDir)
+  .start())
+```
+## Custom Streaming Sources and Sinks
+
+- Read and write to storage systems that do not have built-in support in Structured Streaming
+
+### Writing to any storage system
+
+- `foreachBatch()`
+	- Allows arbitrary operations and custom logic on the output of each micro-batch
+- `foreach()`
+	- Custom write logic on every row
+
+#### Using foreachBatch()
+
+- Specify a function that is executed on the output of every micr-batch of a streaming query
+	- Takes a DataFrame or Dataset that has the output of a micro-batch and a unique identifier
+- Use the connector's batch DataFrame support to write the output of each batch
+
+```python
+# In Python
+hostAddr = "<ip address>"
+keyspaceName = "<keyspace>"
+tableName = "<tableName>"
+
+spark.conf.set("spark.cassandra.connection.host", hostAddr)
+
+def writeCountsToCassandra(updatedCountsDF, batchId):
+    # Use Cassandra batch data source to write the updated counts
+    (updatedCountsDF
+      .write
+      .format("org.apache.spark.sql.cassandra")
+      .mode("append")
+      .options(table=tableName, keyspace=keyspaceName)
+      .save())
+      
+streamingQuery = (counts
+  .writeStream
+  .foreachBatch(writeCountsToCassandra)
+  .outputMode("update")
+  .option("checkpointLocation", checkpointDir)
+  .start())
+```
+
+- `foreachBatch()`
+	- Reuse existing batch data sources
+		- Use existing batch data sources to write the output of streaming queries
+	- Write to multiple locations
+		- OLAP data warehouse and an OLTP database
+		- Write the output DataFrame/Dataset multiple time
+		- Cache the `batchOutputDataFrame`
+			- Write it to multiple locations, then uncache it
+
+```python
+# In Python
+def writeCountsToMultipleLocations(updatedCountsDF, batchId):
+  updatedCountsDF.persist()
+  updatedCountsDF.write.format(...).save()  # Location 1
+  updatedCountsDF.write.format(...).save()  # Location 2
+  updatedCountsDF.unpersist()
+```
+
+- Apply additional DataFrame operations
+	- Many DataFrame API operations are not support on streaming DataFrames because Structured Stream does not support generating incremental plans to those cases
+- Only provides at least once write guarantees
+
+#### Using foreach()
+
+- If `foreachBatch()` is not an option (batch data writer does not exist)
+- Express your custom write logic
+- Express the data writing logic by dividing it into three methods
+	- `open()`
+	- `process()`
+	- `close()`
+
+```python
+# In Python
+# Variation 1: Using function
+def process_row(row):
+    # Write row to storage
+    pass
+
+query = streamingDF.writeStream.foreach(process_row).start()  
+
+# Variation 2: Using the ForeachWriter class
+class ForeachWriter:
+  def open(self, partitionId, epochId):
+    # Open connection to data store
+    # Return True if write should continue
+    # This method is optional in Python 
+    # If not specified, the write will continue automatically
+    return True
+
+  def process(self, row):
+    # Write string to data store using opened connection
+    # This method is NOT optional in Python
+    pass
+
+  def close(self, error):
+    # Close the connection. This method is optional in Python
+    pass
+
+resultDF.writeStream.foreach(ForeachWriter()).start()
+```
+
+### Reading from any storage system
+
 # Data Transformations
+
+- Only the DataFrame operations that can be executed incrementally are supported in Structure Streaming
+- Operations are broadly classified into stateless and stateful operations
+
+## Incremental Execution and Streaming State
+
+- Catalyst optimizer in Spark SQL converts all the DataFrame operations to an optimized logical plan
+- Spark SQL planner recognizes that this is a streaming logical plan that needs to operate on continuous data streams
+- Planner generates a continuous sequence of execution plans
+- Plan processes only a chunk of new data from the input streams and possibly some intermediate
+
 # Stateful Streaming Aggregations
 # Streaming Joins
 # Arbitrary Stateful Computations
