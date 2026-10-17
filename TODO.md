@@ -26,11 +26,9 @@
 
 ## Assignments
 
-- [ ] AI Assignment 2
 - [ ] Big data project
 - [ ] Virus post
 - [ ] Virus essay
-- [ ] ML assignment 2
 
 - [ ] Finish biological psychology textbook
 - [ ] Finish ml texbook
