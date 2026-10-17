@@ -517,8 +517,125 @@ resultDF.writeStream.foreach(ForeachWriter()).start()
 - Spark SQL planner recognizes that this is a streaming logical plan that needs to operate on continuous data streams
 - Planner generates a continuous sequence of execution plans
 - Plan processes only a chunk of new data from the input streams and possibly some intermediate
+- Each execution is considered as a micro-batch, and the partial intermediate result that is communicated between the executions is called the streaming "state"
+- DataFrame operations
+	- Stateless
+	- Stateful
 
+## Stateless Transformations
+
+- All projection operations
+	- `select()`
+	- `explode()`
+	- `map()`
+	- `flatMap()`
+	- `filter()`
+	- `where()`
+- Process each input record individually without needing any information from previous rowsSupports the append and update output modes, but not complete mode
+- Processed output rows cannot be modified by any future data
+## Stateful Transformations
+
+- `count()`
+	- Generates a running count of the number or records received since the beginning of the query
+- Partial count between plans is the state
+- State is maintained in the memory of the Spark executors and is check-pointed to the configured location to tolerate failures
+
+### Distributed and fault tolerant state management
+
+- Spark application running in a cluster has a driver and one or more executors
+
+<img src="/images/Pasted image 20261017102758.png" alt="image" width="500">
+
+- Each micro batch reads a new set of rows, shuffles them within the executors to group them, computes the counts within the micro batch, and adds them to the running counts to produce the new counts
+	- Cached in memory
+- Any failures will cause the in memory state to be lost
+- Save the key/value state update as change logs in the checkpoint location provided by the user
+- Structured Streaming is able to re-execute the failed micro-batch by reprocessing the same input data along with the same state is had before that micro-batch
+
+### Types of Stateful Operations
+
+- Managed stateful operations
+	- Identify and clean up old state, based on an operation specific definition
+		- Streaming aggregation
+		- Stream-stream joins
+		- Streaming deduplication
+- Unmanaged stateful operations
+	- Define custom state cleanup logic
+		- `MapGroupsWithState`
+		- `FlatMapGroupsWithState`
 # Stateful Streaming Aggregations
+
+- Structured Streaming can incrementally execute most DataFrame aggregation operations
+- Aggregate data by
+	- Keys
+	- Time
+
+## Aggregations Not Based on Time
+
+- Global aggregations
+	- Aggregations across al the data stream
+	- `runningCount = sensorReadings.groupBy().count()`
+- Grouped aggregation
+	- Aggregations within each group or key present in the data stream
+	- `baselineValues = sensorReadings.groupBy("sensorId").mean("value")`
+
+
+- All built-in aggregation functions
+	- `sum(), mean(), stddev(), countDistinct(), collect_set(), approx_count_distinct()`
+
+- Multiple aggregations computed together
+
+```python
+# In Python
+from pyspark.sql.functions import *
+multipleAggs = (sensorReadings
+  .groupBy("sensorId")
+  .agg(count("*"), mean("value").alias("baselineValue"), 
+    collect_set("errorCode").alias("allErrorCodes")))
+```
+
+- User defined aggregation functions
+
+## Aggregations with Event-Time Windows
+
+- Aggregate over data bucketed by time windows
+- Count the number of readings received from each sensory in a 5-minute interval
+
+```python
+# In Python
+from pyspark.sql.functions import *
+(sensorReadings
+  .groupBy("sensorId", window("eventTime", "5 minute"))
+  .count())
+```
+
+- `window()`
+	- Allows us to express the 5-minute windows as a dynamically computer grouping column
+	- `eventTime`
+		- Compute the 5-minute time window the sensor reading falls into
+	- Group the reading based on the composite group
+	- Update the count of the composite group
+
+<img src="/images/Pasted image 20261017103602.png" alt="image" width="500">
+
+- Each 5 min window over event time is considered for the grouping
+- Each event is assigned to the appropriate group based on its event time
+- Compute counts corresponding to 10-minute windows sliding every 5 minutes
+
+```python
+# In Python
+(sensorReadings
+  .groupBy("sensorId", window("eventTime", "10 minute", "5 minute"))
+  .count())
+```
+
+<img src="/images/Pasted image 20261017103711.png" alt="image" width="500">
+
+- As the event time moves forward, new groups are automatically created and their aggregates are automatically updated
+
+<img src="/images/Pasted image 20261017103753.png" alt="image" width="500">
+
+## 
 # Streaming Joins
 # Arbitrary Stateful Computations
 

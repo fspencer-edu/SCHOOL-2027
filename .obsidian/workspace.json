@@ -120,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -296,10 +296,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "702a27b85da6bc6b",
+  "active": "757236e6fc426646",
   "lastOpenFiles": [
-    "TODO.md",
+    "images/Pasted image 20261017102758.png",
+    "images/Pasted image 20261017103753.png",
+    "images/Pasted image 20261017103602.png",
+    "images/Pasted image 20261017103711.png",
+    "Pasted image 20261017103753.png",
+    "Pasted image 20261017103711.png",
+    "Pasted image 20261017103602.png",
+    "Pasted image 20261017102758.png",
     "Private/Mock 3 Project Database.md",
+    "TODO.md",
     "Fall 2026/CPS721 - AI/Assignments/Assignment 2.md",
     "Fall 2026/CPS803 - Machine Learning/Assignments/Assignment 2.md",
     "Fall 2026/CPS803 - Machine Learning/Assignments/Assignment 1 - Step 3 (Manual Decision Tree).md",
@@ -308,15 +316,8 @@
     "images/Pasted image 20261016094825.png",
     "images/Pasted image 20261016095553.png",
     "images/Pasted image 20261016095403.png",
-    "images/Pasted image 20261016105918.png",
-    "Pasted image 20261016105918.png",
-    "Pasted image 20261016095553.png",
-    "Pasted image 20261016095403.png",
-    "Pasted image 20261016094825.png",
     "Private/Economic Trade Equations.md",
-    "images/Pasted image 20261015201610.png",
     "Private/Prism Insight TODO.md",
-    "Pasted image 20261015201610.png",
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 1.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/14) Stream Processing.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Data Lake/0) Delta Lake - The Definitive Guide.md.tmp",
@@ -343,7 +344,6 @@
     "OTHER TEXTBOOKS/Data Engineering/Spark/11) Managing, Deploying, and Scaling ML Pipelines with Apache Spark.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/10) Machine Learning with MLib.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/9) Building Reliable Data Lake.md",
-    "OTHER TEXTBOOKS/Data Engineering/Spark/3) Apache Spark's Structured APIs.md",
     "Untitled.canvas"
   ]
 }
