@@ -78,20 +78,6 @@
             }
           },
           {
-            "id": "757236e6fc426646",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Data Engineering/Spark/8) Structured Streaming.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "8) Structured Streaming"
-            }
-          },
-          {
             "id": "12d0a87c46de039b",
             "type": "leaf",
             "state": {
@@ -120,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -297,8 +283,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "757236e6fc426646",
+  "active": "ed983c2625ce056d",
   "lastOpenFiles": [
+    "Private/Prism Insight TODO.md",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/8) Structured Streaming.md",
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/13) Probabilistic Reasoning.md.tmp",
+    "Fall 2026/CPS803 - Machine Learning/Assignments/Assignment 2.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/19) Using Generative Models with Hugging Face Diffusers.md.tmp",
     "OTHER TEXTBOOKS/AWS Cert./Security/0) AWS Certified Security Study Guide, 2nd Ed..md.tmp",
     "images/Pasted image 20261017150550.png",
@@ -310,7 +300,6 @@
     "Pasted image 20261017151501.png",
     "Pasted image 20261017150550.png",
     "Private/Mock 3 Project Database.md",
-    "OTHER TEXTBOOKS/Data Engineering/Spark/8) Structured Streaming.md",
     "images/Pasted image 20261017102758.png",
     "images/Pasted image 20261017103753.png",
     "TODO.md",
@@ -319,16 +308,12 @@
     "Fall 2026/CPS803 - Machine Learning/Assignments/Assignment 1 - Step 3 (Manual Decision Tree).md",
     "Private/416 3D Printing.md",
     "Private/Economic Trade Equations.md",
-    "Private/Prism Insight TODO.md",
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 1.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/14) Stream Processing.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Data Lake/0) Delta Lake - The Definitive Guide.md.tmp",
     "OTHER TEXTBOOKS/Distributed Systems/Microservices/0) Building Microservices, 2nd Ed..md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/6) Making Sentiment Programmable by Using Embeddings.md.tmp",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/0) Data Modeling with Microsoft Power BI.md.tmp",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./9) Serving Data for Analytics, Machine Learning, and Reverse ETL.md.tmp",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./8) Queries, Modeling, and Transformation.md.tmp",
-    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./11) The Future of Data Engineering.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Spark/7) Optimizing and Tuning Spark Applications.md",
     "Private/Naics Pipeline.md",
     "Private/NAICS Classification.md",

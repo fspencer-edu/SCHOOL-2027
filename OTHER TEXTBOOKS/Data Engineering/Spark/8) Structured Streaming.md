@@ -921,5 +921,32 @@ val latestStatuses = userActions
 		- Engine assumes that generated records are updated key/value data pairs
 - `flatMapGroupsWithState()`
 	- Cost of slightly more complex syntax
-	- Return type is an iterator instead of a single o
+	- Return type is an iterator instead of a single object
+	- Take operator output mode that defined whether the output records are new records that can be appended or updated records
+
 # Performance Tuning
+
+- A Spark cluster running streaming queries usually needs to be tuned differently
+	- Cluster resource provisioning
+		- Provision resources since streaming queries are 24/7
+		- Stateless queries need more cores
+		- Stateful queries need more memory
+	- Number of partitions for shuffles
+		- Number of shuffle partitions need to be set much lower than for most batch queries
+	- Setting source rate limits for stability
+		- Source rate limits
+	- Multiple streaming queries in the same Spark application
+		- Executing each query continuously uses resources in the Spark driver
+		- Ensure fairer resource allocation between queries in the same context by setting them to run in separate schedular pools
+
+```python
+ In Python
+# Run streaming query1 in scheduler pool1
+spark.sparkContext.setLocalProperty("spark.scheduler.pool", "pool1")
+df.writeStream.queryName("query1").format("parquet").start(path1)
+
+# Run streaming query2 in scheduler pool2
+spark.sparkContext.setLocalProperty("spark.scheduler.pool", "pool2")
+df.writeStream.queryName("query2").format("parquet").start(path2)
+```
+
