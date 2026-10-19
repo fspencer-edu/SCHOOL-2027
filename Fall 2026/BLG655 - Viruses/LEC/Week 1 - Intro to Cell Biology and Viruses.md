@@ -245,6 +245,184 @@
 		- Viruses are capable of self assembly
 	- Fidelity
 		- Small genomes = less DNA replication
-		- RNA trans
+		- RNA transcription and protein synthesis errors
 	- Economy
-	- 
+		- Viruses from an icosahedral or helical shaped virus particle
+		- Most volume for the least amount of surface area
+
+- Viral structure and morphology
+	- Capsides
+	- Virion membranes
+	- Viral proteins
+	- Genomes
+
+<img src="/images/Pasted image 20261019110347.png" alt="image" width="500">
+
+- Capsids
+	- Provide stability and proteins
+	- Made up of
+		- Capsomers
+			- Identical proteins subunits of capsid
+			- Arranged in bilateral symmetry
+		- Capsid/viral shapes
+			- Icosahedral
+			- Helical
+			- Complex
+				- Bacteriophage (virus that infects bacteria)
+
+- Virion membranes
+	- Naked viruses
+		- Do not have membranes
+	- Enveloped viruses
+		- Membranes stolen from host cells
+
+- Structures at capsid vertices
+	- Knob, projection, or fiber proteins on capsids
+	- Involved in attachment of the virion to its host cell and in delivery of the virus genome into the cell
+
+- Viral proteins
+	- Number of viral proteins depends on the genome size
+	- Types of proteins
+		- Structural
+			- Capsid proteins
+			- Proteins required for attachment and enter to a host cell
+		- Non-structural
+			- Enzymes
+			- Proteins required for interference with the immune response of the host
+			- Proteins for DNA replication
+			- Proteins for RNA transcription
+
+- Viral genomes
+	- Single stranded (ss) or double stranded (ds)
+	- Linear or circular
+
+<img src="/images/Pasted image 20261019110821.png" alt="image" width="500">
+
+- + RNA viruses
+	- Smallest genoems
+	- mRNA immediately made into protein once the virus enters the cell
+	- High mutation rate
+- - RNA viruses
+	- Medium size genome
+	- First convert to + sense strand and then can make proteins
+	- High mutation rate
+- DNA viruses
+	- Largest genome
+	- Replicate DNA, transcription, translation
+	- Lower mutation rate
+
+- Origins of Virus Names
+	- Diseases the virus caused
+	- Morphological characteristics
+	- Places viruses first isolated
+	- Virus discoverers
+	- Acronyms
+
+- Baltimore classification
+	- 7 classes based on type of nucleic acid
+
+1. dsDNA viruses
+2. ssDNA viruses
+3. dsRNA viruses
+4. +ssRNA viruses
+5. -ssRNA viruses
+6. RNA reverse transcribing viruses
+7. DNA reverse transcribing viruses
+
+- The International Committee on Taxonomy of Viruses (ICTV)
+	- Taxonomy describes relationships between viruses
+	- Charged with developing a universal taxonomic scheme to name and classify viruses
+	- ICTV database (ICTVdb)
+
+- Order
+	- Family
+		- Subfamily
+			- Genus
+				- Subgenus
+					- Species
+						- VIRUS NAME
+
+<img src="/images/Pasted image 20261019111259.png" alt="image" width="500">
+
+- Additional lower hierarchical levels
+	- Variant
+		- Differs from original wild-type strain
+		- Distinct genetic changes that appear to be a pattern
+	- Strain
+		- Variant with distinct physical properties due to changes in its genome
+		- Behaves differently
+
+# Viruses are Beneficial and Harfmul
+
+- Viruses live in and outside bodies
+- Viruses thrive in bodies without making us sick
+- Skin, blood, respiratory tract, urine, and brain has viruses
+- Born with a high diversity of viruses in our body
+- Total of all viruses that live on or inside the human body is called Virome
+
+- Human and Aquatic Viromes
+	- Bacteriophages
+		- Found in many organisms and they destroy disease causing bacteria
+	- Endogenous retrovirus
+		- Block replication of attaching viruses
+	- Virus host symbiosis
+		- Mutualistic viruses
+
+- Applications of viruses in Health or Medicine
+	- Bacteriophage therapy
+	- Gene therapy
+		- Delivery of functional copies of dysfunctional genes via retrovirus and adenovirus
+	- Vaccine development
+	- Cancer treatment
+
+# Intro. to Transmission and Pathogenesis
+
+- Disease Transmission
+	- Mechanism by which a virus is spread through the environment to another person
+		- Direct contact
+		- Indirect contact
+		- Vector-borne
+		- Foodborne
+		- Waterborne
+
+- Direct contact
+	- Kissing, sex, touching
+	- Coughing
+	- Animal bite
+	- Mother-infant
+- Indirect contact
+	- Vector borne
+	- Contaiminated food/water
+	- Fomites (objects harboring viruses)
+
+- Mad-made virus transmission
+	- Through modern medial practices
+	- Blood products, transfused blood, transplanted organs, contaminated equipment, surgeon's knives, dentist's drills
+
+- Pathogenesis
+	- The process by which a viral infection causes diseases
+		- Direct damange to cells through cell dealth
+		- Disruption of normal cellular functions
+		- Immune reaction
+	- Pathogenesis is unique to each viral family
+		- Type of cells infected
+		- Type of damage inflicted
+		- Type of immune response elicited
+
+- Disease outbreak terminology
+	- Outbreak
+		- More cases of a disease than expected are observed in a specific area
+		- Last for days, weeks, or years
+- 3 types of outbreaks
+	- Endemic
+		- An outbreak that occurs at a predictable rate in a certain area or among a certain sub-popsultion
+			- Chickpox
+		- Epidemic
+			- An outbreak that spreads rapidly amongst a large number of people within a given population
+				- Ebola
+			- Pandemic
+				- Worldwide spread of new infectious disease
+					- Smallpox
+					- Tuberculosis
+					- Spanish Influenze
+					- Covid-19
