@@ -177,5 +177,13 @@ member(3, L), 1 = 2
 Yes
 ```
 
+- Variables that are not instantiated can be used within lists
+
+```prolog
+append([a, b], L, [a, b, c, d, e, f]).
+L = [c, d, e, f]
+```
+
+
 
 ## The blocks world revisited
