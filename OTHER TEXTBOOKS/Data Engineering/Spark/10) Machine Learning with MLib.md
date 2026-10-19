@@ -481,4 +481,70 @@ rf = RandomForestRegressor(labelCol="price", maxBins=40, seed=42)
 - Hyperopt
 	- Help identify the optimal hyperparameter configuration
 		- Define the `estimator` to evaluate
-		- Specify which hyperparameters to vary, and respective values, 
+		- Specify which hyperparameters to vary, and respective values, using the `ParamGridBuilder`
+		- Define an `evaluator` to specify which metrics to use to compare the various models
+		- Use the `CrossValidator` to perform cross-validation, evaluating each of the various models
+
+```python
+pipeline = Pipeline(stages = [stringIndexer, vecAssembler, rf])
+```
+
+- Very `maxDepth` to be 2, 4, or 6
+- `numTrees` to be 10 or 100
+
+```python
+from pyspark.ml.tuning import ParamGridBuilder
+paramGrid = (ParamGridBuilder()
+            .addGrid(rf.maxDepth, [2, 4, 6])
+            .addGrid(rf.numTrees, [10, 100])
+            .build())
+```
+
+- Define how to evaluate each of the models to determine which one performed best
+- `RegressionEvaluator`
+
+```python
+evaluator = RegressionEvaluator(labelCol="price", 
+                                predictionCol="prediction", 
+                                metricName="rmse")
+                                
+from pyspark.ml.tuning import CrossValidator
+
+cv = CrossValidator(estimator=pipeline, 
+                    evaluator=evaluator, 
+                    estimatorParamMaps=paramGrid, 
+                    numFolds=3, 
+                    seed=42)
+cvModel = cv.fit(trainDF)
+```
+
+- Spark retrains your model on the entire training dataset once it has identified the optimal hyperparameter configuration
+- Trained 19 models
+
+```python
+list(zip(cvModel.getEstimatorParamMaps(), cvModel.avgMetrics))
+```
+
+## Optimizing Pipelines
+
+- `spark.ml` trains the collection of models sequentially rather than in parallel
+- `parallelsim`
+	- Determines number of models to train in parallel, which themselves are fit in parallel
+
+```python
+cvModel = cv.setParallelism(4).fit(trainDF)
+```
+
+- Put the cross validator inside the pipeline, instead of putting the pipeline instead the cross validator
+
+```python
+cv = CrossValidator(estimator=rf, 
+                    evaluator=evaluator, 
+                    estimatorParamMaps=paramGrid, 
+                    numFolds=3, 
+                    parallelism=4, 
+                    seed=42)
+
+pipeline = Pipeline(stages=[stringIndexer, vecAssembler, cv])
+pipelineModel = pipeline.fit(trainDF)
+```
