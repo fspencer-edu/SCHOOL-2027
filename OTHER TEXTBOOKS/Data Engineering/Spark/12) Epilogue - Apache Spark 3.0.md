@@ -133,6 +133,49 @@ df.withColumn("plus_one", pandas_plus_one("id")).show()
 
 ## Iterator Support in Pandas
 
-- If a model is very large, then there is high overhead for h
+- If a model is very large, then there is high overhead for the Pandas UDF to repeatedly load the same model
+- Load the model once instead of for every series in the iterator
+
+```python
+from typing import Iterator      
+
+@pandas_udf('long')
+def pandas_plus_one(iterator: Iterator[pd.Series]) -> Iterator[pd.Series]:
+    return map(lambda s: s + 1, iterator)
+
+df.withColumn("plus_one", pandas_plus_one("id")).show()
+
++---+--------+
+| id|plus_one|
++---+--------+
+|  0|       1|
+|  1|       2|
+|  2|       3|
++---+--------+
+```
+
+## New Pandas Function APIs
+
+- take an iterator as input and output another iterator
+
+```python
+def pandas_filter(
+    iterator: Iterator[pd.DataFrame]) -> Iterator[pd.DataFrame]:
+  for pdf in iterator:
+    yield pdf[pdf.id == 1]
+
+df.mapInPandas(pandas_filter, schema=df.schema).show()
+
++---+
+| id|
++---+
+|  1|
++---+
+```
 
 # Changed Functionality
+
+- Languages supported and deprecated
+- Changes to the DataFrame and Dataset API
+- DataFrame and SQL explain commands
+- 
