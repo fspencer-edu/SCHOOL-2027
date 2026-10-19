@@ -41,54 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Data Engineering/Spark/11) Managing, Deploying, and Scaling ML Pipelines with Apache Spark.md",
+                "file": "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/0) Hadoop.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11) Managing, Deploying, and Scaling ML Pipelines with Apache Spark"
-            }
-          },
-          {
-            "id": "9bf01e5fcfc4399c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Data Engineering/Spark/10) Machine Learning with MLib.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "10) Machine Learning with MLib"
-            }
-          },
-          {
-            "id": "ed983c2625ce056d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Data Engineering/Spark/9) Building Reliable Data Lake.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "9) Building Reliable Data Lake"
-            }
-          },
-          {
-            "id": "12d0a87c46de039b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/Prism Insight TODO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Prism Insight TODO"
+              "title": "0) Hadoop"
             }
           },
           {
@@ -97,16 +55,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private/Mock 3 Project Database.md",
+                "file": "Private/416 3D Printing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mock 3 Project Database"
+              "title": "416 3D Printing"
+            }
+          },
+          {
+            "id": "9ca9a435b0631855",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -140,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "chey",
+                "query": "spark",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,12 +132,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125,
-    "collapsed": true
+    "width": 256.953125
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -283,38 +251,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "ed983c2625ce056d",
+  "active": "53ed45c898cc7c74",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Data Engineering/Databricks/0) Databricks Data Intelligence Platform.md",
+    "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/0) Apache Iceberg - The Definitive Guide.md",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/11) Managing, Deploying, and Scaling ML Pipelines with Apache Spark.md",
+    "Private/416 3D Printing.md",
+    "Fall 2026/CPS721 - AI/Assignments/q1_list_equality.md",
+    "Private/Prism Insight TODO.md",
+    "Untitled.canvas",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/10) Machine Learning with MLib.md",
+    "Pasted image 20261018155026.png",
+    "Pasted image 20261018154742.png",
+    "Pasted image 20261018154625.png",
+    "Screenshot 2026-10-18 at 3.43.34 PM 1.png",
+    "Screenshot 2026-10-18 at 3.43.34 PM.png",
+    "Pasted image 20261018154057.png",
+    "Screenshot 2026-10-14 at 10.42.54 PM.png",
+    "Screenshot 2026-10-16 at 3.10.36 PM.png",
+    "Screenshot 2026-10-18 at 3.05.48 PM.png",
+    "Screenshot 2026-10-18 at 3.01.14 PM.png",
+    "Private/3D Printing Quote.md",
+    "Private/Mock 3 Project Database.md",
+    "OTHER TEXTBOOKS/Data Engineering/Spark/9) Building Reliable Data Lake.md",
+    "Fall 2026/PSY324 - Biological Psy./Midterm Overview.md.tmp",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Hadoop/22) Composable Data at Cerner.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Platform Enginerring/9) Model Training and Validation - Part 2.md.tmp",
     "OTHER TEXTBOOKS/AWS Cert./Data Engineer - Adv./4) Storage Services.md.tmp",
-    "Private/Prism Insight TODO.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/8) Structured Streaming.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/13) Probabilistic Reasoning.md.tmp",
     "Fall 2026/CPS803 - Machine Learning/Assignments/Assignment 2.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/19) Using Generative Models with Hugging Face Diffusers.md.tmp",
     "OTHER TEXTBOOKS/AWS Cert./Security/0) AWS Certified Security Study Guide, 2nd Ed..md.tmp",
-    "images/Pasted image 20261017150550.png",
-    "images/Pasted image 20261017151501.png",
-    "images/Pasted image 20261017151951.png",
-    "images/Pasted image 20261017151619.png",
-    "Pasted image 20261017151951.png",
-    "Pasted image 20261017151619.png",
-    "Pasted image 20261017151501.png",
-    "Pasted image 20261017150550.png",
-    "Private/Mock 3 Project Database.md",
-    "images/Pasted image 20261017102758.png",
-    "images/Pasted image 20261017103753.png",
     "TODO.md",
-    "Fall 2026/CPS721 - AI/Assignments/Assignment 2.md",
     "Fall 2026/CPS803 - Machine Learning/Assignments/Assignment 2.md",
     "Fall 2026/CPS803 - Machine Learning/Assignments/Assignment 1 - Step 3 (Manual Decision Tree).md",
-    "Private/416 3D Printing.md",
     "Private/Economic Trade Equations.md",
     "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 1.md.tmp",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/14) Stream Processing.md.tmp",
-    "OTHER TEXTBOOKS/Data Engineering/Data Lake/0) Delta Lake - The Definitive Guide.md.tmp",
-    "OTHER TEXTBOOKS/Distributed Systems/Microservices/0) Building Microservices, 2nd Ed..md.tmp",
-    "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/6) Making Sentiment Programmable by Using Embeddings.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Spark/7) Optimizing and Tuning Spark Applications.md",
     "Private/Naics Pipeline.md",
     "Private/NAICS Classification.md",
@@ -325,12 +299,6 @@
     "OTHER TEXTBOOKS/Data Engineering/Spark/5) Spark SQL and DataFrame - Interacting with External Data Sources.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/4) Spark SQL and DataFrames - Intro. to Build-In Data Sources.md",
     "Fall 2026/CPS853 - Big Data Systems/cps853_midterm_501116950.md",
-    "Fall 2026/CPS853 - Big Data Systems/Video.md",
-    "OTHER TEXTBOOKS/Data Engineering/Spark/12) Epilogue - Apache Spark 3.0.md",
-    "OTHER TEXTBOOKS/Data Engineering/Spark/0) Learning Spark, 2nd Ed..md",
-    "OTHER TEXTBOOKS/Data Engineering/Spark/11) Managing, Deploying, and Scaling ML Pipelines with Apache Spark.md",
-    "OTHER TEXTBOOKS/Data Engineering/Spark/10) Machine Learning with MLib.md",
-    "OTHER TEXTBOOKS/Data Engineering/Spark/9) Building Reliable Data Lake.md",
-    "Untitled.canvas"
+    "Fall 2026/CPS853 - Big Data Systems/Video.md"
   ]
 }
