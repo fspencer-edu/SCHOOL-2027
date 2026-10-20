@@ -161,3 +161,61 @@ score(SA, CA, M)
 [t, t, f, t, f]
 [A1, A2, A3, A4, A5]
 ```
+
+- Compute grades
+
+```prolog
+score([], [], 0).
+score([H|T2], [H|T1], S) :- score(T1, T2, score2), S is score2 + 1.
+score([H1|T1], [H2|T2], S) :- not H1 = H2, score(T1, T2, S).
+
+solve([A1, A2, A3, A4, A5]) :-
+	ans(A1), ans(A2), ans(A3), ans(A4), ans(A5),
+	score([t,t,f,t,f], [A1, A2, A3, A4, A5], SA),
+	score([f,t,t,t,f], [A1, A2, A3, A4, A5], SB),
+	score([t,f,t,t,f], [A1, A2, A3, A4, A5], SC),
+	score([f,t,t,f,t], [A1, A2, A3, A4, A5], SD),
+	score([t,f,t,f,t], [A1, A2, A3, A4, A5], SE),
+	SC > SA, SD > SB, not SE = 0, not SE = 5.
+```
+
+# The Restaurant
+
+- John ate at the same restaurant for 5 days straight
+- First and second course
+
+1. Drank coffee after mil, and tea the day after he drank coffee
+2. Duck for the second course on both Tues and Wed
+3. John's first course on Tues was chow mein
+4. John drake water the day after he drank tea, and juice on friday
+5. No egg rolls on monday or thursday, and had egg rolls at least twice
+6. Sour soup ordered as the first course, never the second
+
+```prolog
+M T W R F
+1 2 3 4 5
+
+M1 T1 W1 R1 F1
+M2 T2 W2 R2 F2
+
+tea, coffee, milk, juice, water
+day(1), day(2), day(3), day(4), day(5)
+
+food(duck), food(cm), food(egg), food(soup), food(rice)
+
+
+solve([T, C, M, J, W, M1, M2, T1, T2, W1, W2, R1, R2, F1, F2]) :-
+	day(C), day(M), C > M, T is C + 1, day(T), %1
+	T2 = Duck, W2 = duck, %2
+	T1 = cm, %3
+	J = 5, W is T + 1, day(W) %4
+	food(M1), not M1 = er, food(M2), not M2 = er, food(R1), not R1 = er, food(R2), not R2 = er, food(W1), food(W2), food(F1), food(F2),
+	count([T1, T2, W1, W2, F1, F1], er, Z), Z > = 2, %5
+	count([M1, T1, W1, R1, F1], soup, Z1), Z1 >= 1, count([M2, T2, W2, T2, F2], soup, Z2), Z2 = 0, %6
+	allDiff([T, C, M, J, W]).
+```
+
+- Move setting values to the top
+- All food, then all drink
+	- Do not backtrack over food and drink since separate
+- Move all diff before food, to check drinks

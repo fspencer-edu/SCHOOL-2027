@@ -289,4 +289,13 @@
 
 # Other Vaccine Issues
 
-- 
+- Additives and side effects
+- Delivery challenges
+- Needle-free delivery under development
+- Global access limitations
+
+- Economics of vaccines
+	- Limited manufacturers
+	- Lower profitability than chronic drugs
+	- Greatest need in low-income regions
+	- UNICEF & GAVI major players
