@@ -257,3 +257,36 @@
 
 - New generation of vaccines
 	- Made using recombinant DNA methods
+	- Usually safer (uses parts rather than whole viruses)
+		- Recombinant subunits
+		- Viral vector vaccines
+		- RNA vaccines
+
+<img src="/images/Screenshot 2026-10-20 at 8.44.17 AM 1.png" alt="image" width="500">
+
+
+<img src="/images/Screenshot 2026-10-20 at 8.44.21 AM.png" alt="image" width="500">
+
+<img src="/images/Screenshot 2026-10-20 at 8.44.25 AM.png" alt="image" width="500">
+
+<img src="/images/Screenshot 2026-10-20 at 8.44.28 AM.png" alt="image" width="500">
+
+<img src="/images/Screenshot 2026-10-20 at 8.44.31 AM.png" alt="image" width="500">
+
+<img src="/images/Screenshot 2026-10-20 at 8.44.35 AM.png" alt="image" width="500">
+
+# Immunizing the Compromised Host
+
+- Immunocompromised hosts
+	- Transplat patients
+	- HIV infection
+	- Cancer therapy
+- Live vaccines not recommended
+
+# Common components of vaccines
+
+<img src="/images/Pasted image 20261020084602.png" alt="image" width="500">
+
+# Other Vaccine Issues
+
+- 
