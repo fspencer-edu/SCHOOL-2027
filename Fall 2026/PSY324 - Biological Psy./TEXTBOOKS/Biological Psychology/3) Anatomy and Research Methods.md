@@ -1,4 +1,110 @@
-# Anatomy and Research Methods
+
+# Structure of the Vertebrate Nervous System
+
+## Terminology to Describe the Nervous System
+
+- CNS
+	- Brain
+	- Spinal cord
+- PNS
+	- Connects the brain and spinal cord to the rest of the body
+	- Autonomic nervous system (controls body's organs)
+		- Enteric nervous system (controls digestive system)
+
+Dorsal = towards back
+Ventral = towards the stomach
+Anterior = toward the front end
+Posterior = toward the rear end
+Superior = above another part
+Inferior = below another part
+Lateral = toward the side, away from the midline
+Medial = toward the midline, away from the side
+Proximal = located close to point of origin
+Distal = located more distant from the point of origin
+Ipsilateral = same side of the body
+Contralateral = opposite side of body
+Coronal plane = a plane that shows the brain as seen from the front
+Sagittal plane = a plane that shows the brain from the side
+Horizontal plane/transverse plane = a plane that show the brain from above
+
+<img src="/images/Pasted image 20261020210404.png" alt="image" width="500">
+
+- Lamina
+	- A row or layer of cell bodies separated from other cell bodies by a layer of axons and dendrites
+- Column
+	- A set of cells perpendicular to the surface of the cortex, with similar properties
+- Tract
+	- A set of axons within the CNS, also known as projections
+- Nerve
+	- A set of axons in the periphery
+	- CNS to a muscle or gland
+	- Sensory organ to the CNS
+- Nucleus
+	- A cluster of neuron cell bodies within the CNS
+- Ganglion
+	- A cluster of neuron cell bodies, usually outside the CNS
+- Gyrus
+	- A protuberance on the surface of the brain
+- Sulcus
+	- A fold or groove that separates one gyrus from another
+- Fissure
+	- A long, deep sulcus
+
+## The Spinal Cord
+
+- Communicates with all the sense organs and muscles except those of the head
+- Segmented structure
+	- Left and right sides have a sensory and motor nerve
+- Entering dorsal roots carry sensory information
+- Existing ventral roots carry motor information
+- A neuron cluster outside the CNS is called a ganglion
+- A cluster inside the CNS is called a nucleus
+- Cell bodies of sensory neurons are outside the spinal cord
+- Cell bodies of motor neurons are inside the spinal cord
+
+<img src="/images/Pasted image 20261020211719.png" alt="image" width="500">
+
+- H-shaped gray matter in the center is densely packed with cell bodies and dendrites
+- Surrounding white matter consists of axons
+
+<img src="/images/Pasted image 20261020211842.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261020211903.png" alt="image" width="500">
+
+## The Automatic Nervous System
+
+- The autonomic nervous system consists of neurons that receive information from and send commands to the heart, intestines, and other organs
+
+1) Sympathetic
+	1) Vigorous activity
+	2) Chains of ganglia left and right of the spinal cord
+	3) Fight or flight
+2) Parasympathetic
+	1) Rest and digest system
+	2) Cranial nerves and nerves from the sacral spinal cord
+	3) Not arranged in a chain near the spinal cord
+	4) Preganglionic axons extend from the spinal cord to parasympathetic ganglia close to each organ
+
+<img src="/images/Pasted image 20261020212259.png" alt="image" width="500">
+
+- Sympathetic
+	- Norepinephrine
+- Parasympathetic
+	- Releases acetylcholine
+
+- Cold medicines block parasympathetic activity or increase sympathetic activity
+
+## The Hindbrain
+
+- 3 major divisions of the brain
+	- Hindbrain
+	- Midbrain
+	- Forebrain
+
+## The Midbrain
+## The Forebrain
+## The Ventricles
+
 
 - Amygdala
 	- Temporal lobe structure important for evaluating emotional information
@@ -73,13 +179,7 @@
 - White matter
 	- Area of the nervous system consisting of myelinated axons
 
-## Terminology to Describe the Nervous System
-## The Spinal Cord
-## The Automatic Nervous System
-## The Hindbrain
-## The Midbrain
-## The Forebrain
-## The Ventricles
+
 # The Cerebral Cortex
 
 - Anterior commissure

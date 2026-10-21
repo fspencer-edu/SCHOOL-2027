@@ -378,14 +378,90 @@
 ### Electrical Synapses
 
 - A few special purpose synapses do operate electrically
+- Electrical transmission is faster than even the fastest chemical transmission
+- Where synchrony between cells is important
+	- Cells that control breathing
+	- Coordinating rapid escape movements
+- Membrane of one neuron makes direct contact with the membrane of another
+- Gap junction
+	- Large pores lines up for sodium and other ions to pass readily
+	- Two neurons act if there were a single neuron
 
+<img src="/images/Screenshot 2026-10-20 at 8.48.03 PM.png" alt="image" width="500">
 ## Hormones
 
-### 
-### 
-### 
+- Hormonal influences resemble synaptic transmission
+- Many chemicals serve as both hormones and neurotransmitters
+- Hormone
+	- Chemical secreted by cells in one part of the body and conveyed by the blood to influence other cells
+- Endocrine glands
 
-help help me check which scripts to change, also when running pipeline add a toggle to restart, this should make the defined log table all set back the 0, remove any of the imported data from the pipeline, clear the tables that are defined such as lmimx_gpu_result and lmimx but these are from the first page and not hardcodede, k
+<img src="/images/Pasted image 20261020205144.png" alt="image" width="500">
+
+- Hypothalamus
+	- Various releasing hormones
+		- Promote/inhibit release from pituitary
+- Anterior pituitary
+	- Thyroid stimulating hormone
+	- Luteinizing hormone
+	- Follicle stimulating hormone
+	- ACTH
+	- Prolactin
+	- Growth hormone
+		- Stimulates thyroid gland
+		- Simulates ovulation
+		- Promotes ovum maturation, sperm production
+		- Increases steroid hormone production by adrenal gland
+		- Increases milk production
+		- Increases body growth
+- Posterior pituitary
+	- Oxytocin
+	- Vasopressin
+		- Uterine contractions, milk release, sexual pleasure
+		- Raises blood pressure, decreases urine volume
+- Pineal
+	- Melatonin
+		- Sleepiness
+		- Puberty
+- Adrenal cortex
+	- Aldosterone
+	- Cortisol
+		- Reduces release of salt in the urine
+		- Elevated blood sugar and metabolism
+- Adrenal medulla
+	- Epinephrine
+	- Norepinephrine
+		- Similar to actions of sympathetic nervous system
+- Pancreas
+	- Insulin
+	- Glucagon
+		- Glucose enters cells
+		- Helps convert stored glycogen into blood glucose
+- Ovary
+	- Estrogens and progesterone
+		- Female sexual characteristics and pregnancy
+- Testis
+	- Testosterone
+		- Male sexual characteristics and pubic hair
+- Kidney
+	- Renin
+		- Regulates blood pressure, contributes to hypovolemic thirst
+- Fat cells
+	- Leptin
+		- Decreases appetite, increases activity
+
+- Hormones secreted by the brain control the secretion of other hormones
+- Pituitary gland
+	- Anterior
+	- Posterior
+		- Extension of the hypothalamus
+		- Neurons in the hypothalamus synthesize the hormones of oxytocin and vasopressin
+
+<img src="/images/Pasted image 20261020205843.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261020205910.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261020205935.png" alt="image" width="500">
 
 
 

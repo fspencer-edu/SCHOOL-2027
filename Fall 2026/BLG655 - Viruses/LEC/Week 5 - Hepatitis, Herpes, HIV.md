@@ -432,3 +432,28 @@
 
 <img src="/images/Pasted image 20261020134502.png" alt="image" width="500">
 
+<img src="/images/Pasted image 20261020203214.png" alt="image" width="500">
+
+- CCR5 $\Delta$ 32 Mechanisms for HIV Resistance
+
+ <img src="/images/Pasted image 20261020203256.png" alt="image" width="500">
+
+- Managing HIV Patients
+	- CD4+ T lymphocyte coutes
+	- Virus load monitoring
+		- Used to make recommendations for antiviral treatment of patients
+		- Measure HIV-1 RNA copies per ml of plasm
+			- 100,000 copies per ml of plasma = clinical AIDS
+			- An absence of detectable RNA copies suggests a slower progress to AIDS
+
+- HIV Antiviral Therapy
+	- Nucleoside reverse transcriptase inhibitors
+	- Non-nucleoside reverse transcription inhibitors
+	- Protease inhibitors
+	- Fusion inhibitors
+	- CCR5-blocking entry inhibitors
+	- Integrase inhibitors
+	- Pharmacokinetic enhancers
+- Still no HIV vaccine
+- An AIDS patient harbours 100 M genetically distinct variants of HIV
+- HIV variants can escape both antibody and T cell-immune responses
