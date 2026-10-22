@@ -1,5 +1,11 @@
 # Visual Coding
 
+
+## Principles of Vision
+## The Eye and Its Connections to the Brain
+## Visual Receptors: Rods and Cones
+## Color Vision
+
 - Bipolar cells
 	- Type of neuron in the retina that receives input directly from the receptors
 - Blind splot
@@ -37,11 +43,13 @@
 - Visual field
 	- Area of the world that an individual can see at any time
 
-## Principles of Vision
-## The Eye and Its Connections to the Brain
-## Visual Receptors: Rods and Cones
-## Color Vision
 # Visual Processing in the Brain
+
+## An Overview of the Mammalian Visual System
+## Processing in the Retina
+## Further Processing
+## The Primary Visual Cortex
+## Development of the Visual Cortex
 
 - Astigmatism
 	- A decreased responsiveness to one kind of line or another, caused by an asymmetric curvature of the eyes
@@ -70,12 +78,13 @@
 - Strabismus (strabismic amblyopia, or lazy eye)
 	- A condition in which the eyes do not point in the same direction
 
-## An Overview of the Mammalian Visual System
-## Processing in the Retina
-## Further Processing
-## The Primary Visual Cortex
-## Development of the Visual Cortex
+
 # Specialized Visual Processes
+
+
+## The Ventral and Dorsal Streams
+## Shape Perception
+## Motion Perception
 
 - Dorsal streams
 	- Visual path in the parietal cortex that helps the motor system locate objects
@@ -98,6 +107,3 @@
 - Visual agnosia
 	- An inability to recognize objects despite otherwise satisfactory vision
 
-## The Ventral and Dorsal Streams
-## Shape Perception
-## Motion Perception

@@ -286,12 +286,128 @@
 
 ## Determinants of Neuronal Survival
 
-- 
+- Each ganglion of the sympathetic nervous system has enough axons to supply all the muscles and glands in its area, with no left over
+- Ite Levi-Montalcini
+	- Hypothesized that muscles sent chemical messages to tell sympathetic ganglion how many neurons to form
+	- Muscles do not determine how many axons form, they determine how many survive
+- The sympathetic nervous system forms more neurons that it needs
+- When a neuron forms a synapse onto a muscle, the muscle delivers a protein called nerve growth factor (NGF)
+	- Promotes the survival and growth of the axon
+- If an axon does not connect to a appropriate postsynaptic cell, the neuron kills itself through a process called apoptosis
+- Functioning of the brain depends on the precision and patterns of its neuron circuits
+- Each brain area has a period of massive cell death
+- Loss of cells often indicates maturation
+
+<img src="/images/Pasted image 20261022182351.png" alt="image" width="500">
+
+- Neurotrophin
+	- Nerve growth factor
+	- A chemical that promotes the survival and activity of neurons
+- Brain-derived neurotrophic factor (BDNF)
+- Essential for growth of axons and dendrites, formation of new synapses, and learning
+- Neurons need input from incoming axons
 
 ## The Vulnerable Developing Brain
+
+- Gastrulation
+	- An early stage of embryological development
+- Early brain development vulnerabilities
+	- Fever
+	- Malnutrition
+	- Exposure to bisphenol-A (BPA)
+	- Iron deficiency
+	- Thyroid deficiency
+	- Exposure to lead
+- Fetal alcohol syndrome
+	- Children of mothers who drink heavily during pregnancy
+	- Hyperactivity, impulsiveness, attention deficits, motor problems, heart defects, facial abnormalities, thinning of cerebral cortex
+	- Interferes with neuron proliferation
+	- Impairs neuron migration and differentiation
+
+<img src="/images/Pasted image 20261022182923.png" alt="image" width="500">
+
+- Alcohol inhibits receptors for glutamate
+	- Brain's main excitatory transmitter, and enhances receptors for GABA, the main inhibitory transmitter
+- Stress to the mother changes her behaviour and the offspring's behaviour
 ## Differentiation of the Cortex
+
+- Ferrets are born so immature that their optic nerves have not yet reached the thalamus
+- Researchers damaged the superior colliculus and occipital cortex (targets for optic nerves)
+- Also damaged the auditory input
+- Optic nerve attached to the auditory area
+- Auditory thalamus and cortex reorganized, developing some of the characteristic appearance of visual areas
+- The rewired temporal cortex, receiving input from the optic nerve, produce visual responses
+
+<img src="/images/Pasted image 20261022183533.png" alt="image" width="500">
+
+- To some extent the sensory input instructs the cortex about how to develop
+
 ## Fine-Tuning by Experience
+
+- Brains have evolved the ability to remodel themselves in response to experience
+### Experience and Dendritic Branching
+
+- Central structure of dendrites becomes stable by adolescence
+- Peripheral branches of dendrites remain flexible throughout life
+- Some branches extended between one viewing and another, whereas others retracted or disappeared
+- Turnover of synapses, relates to learning
+
+<img src="/images/Pasted image 20261022183914.png" alt="image" width="500">
+
+- A rat in an enriched environment developed a thicker cortex, more dendritic branching, and improved learning
+- Physical activity improve neural plasticity and learning
+- Near transfer
+	- Training on one task produces improvement on a similar task
+- Far transfer
+	- Describes how well a person applies knowledge or training from one context to another
+
+### Effects of Special Experiences
+
+- Generalized training programs to enhance overall intelligence have produce only temporary or modest benefits
+- Prolonged practice of a particular activity does produce definite brain changes that enhance the ability to perform the task
+
+#### Brain Adaptations after Sensory Loss
+
+- People who are blind had increased touch information that invaded the cortical area
+- In people who are blind since brith, the occipital cortex also responds to language and other auditory information
+- Touch and vision came to activate the auditory cortex in deaf people
+#### Effects of Music Training
+
+- Musicians have greater cortical thickness in several cortical areas than non-musicians
+- A larger than average section of the somatosensory cortex in the right hemisphere was devoted to representing the fingers of the left hand
+
+<img src="/images/Pasted image 20261022184903.png" alt="image" width="500">
+
+- As one brain area expands, one or more others contract
+
+#### Brain Changes after Briefer Practice
+
+- Two brain areas enlarged after briefly learning to juggle three balls
+
+#### When Brain Reorganization Goes Too Far
+
+<img src="/images/Pasted image 20261022185330.png" alt="image" width="500">
+
+- Cortical representation of one finger overlaps another finger
+- Musician's cramp or focal hand dystonia
+	- Moving one finger without moving another becomes more difficult
+- Proprioceptive training
+	- Provides bursts of vibration to affected muscles or train the person to reach toward targets
+	- Improves sensation and muscle control
+
 ## Brain Development and Behavioural Development
+
+### Adolescence
+
+- Areas of the prefrontal cortex responsible for inhibiting behaviours are not fully mature in adolescents
+
+### Old Age
+
+- Neurons lose their synapses, and remaining synapses change more slowly
+- Thickness of the temporal cortex shrinks by about 1/2 a percent per year
+- Volume of hippocampus gradually declines
+
+**Key Terms**
 
 - Apoptosis
 	- A programmed mechanism of cell death
@@ -318,11 +434,57 @@
 - Synaptogenesis
 	- Formation of synapses
 
-
 # Plasticity after Brain Damage
 
+- Almost all survivors of brain damage show behavioural recovery to some degree
+
 ## Brain Damage and Immediate Treatments
+
+- Causes of brain damage
+	- Tumors
+	- Infections
+	- Exposure to radiation or toxic substances
+	- Degenerative conditions
+		- Parkinson's disease
+		- Alzheimer's disease
+- Closed head injury
+	- Rotational forces
+		- Drive brain tissue against the inside of the skill
+	- Blood clots that interrupt blood flow to the brain
+- Stroke/cerebrovascular accident
+	- Temporary interruption of normal blood flow to the brain area
+- Ischemia
+	- The result of a blood clot of another obstruction in an artery
+- Hemorrhage
+	- Result of a ruptured artery
+
+<img src="/images/Pasted image 20261022190511.png" alt="image" width="500">
+
+- In ischemia
+	- cerebrospinal fluid flows into the brain and accumulates causing damage
+- Hemorrhage
+	- Neurons are flooded with blood and excess oxygen, calcium, and other chemicals
+	- Causing edema
+		- Accumulation of fluid
+- Both impair the sodium-potassium pump, leading to an accumulation of sodium inside neurons
+	- Overstimulates neurons, causing damage
+- Tissue plasminogen activator (tPA)
+	- Breaks up blood clots
+	- Receive within 4.5 hours after a stroke
+
+- Block glutamate synapses, block calcium entry, or protect neurons in other ways
+- Exposure to cannabinoids
+	- Minimizes the damage caused by strokes in laboratory animals
+	- Decrease the release of glutamate
+	- Exert anti-inflammatory effects, protect the blood-brain barrier, reduce edema, and lower body temperature after a stroke
+
 ## Later Mechanisms of Recovery
+
+### Overcoming Diaschisis
+### Axon Sprouting
+### Denervation Supersensitivity
+### Reorganize Sensory Representation and the Phantom Limb
+### Learned Adjustments in Behaviour
 
 
 - Cerebrovascular accident
