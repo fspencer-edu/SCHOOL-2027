@@ -574,6 +574,38 @@ Layer VI
 	
 ## Correlating Brain Anatomy with Behaviour
 
+- Franz Gall
+	- Observed some people with excellent verbal memories who had protruding eyes
+- Phrenology
+	- Relating skull anatomy to behaviour
+	- pseudoscience
+- Computerized axial tomography (CT or CAT scan)
+	- Injects a dye into the blood to increase constrast in the image
+	- Scanner rotates slowly to take a measurement at each angle
+- Magnetic resonance imaging (MRI)
+	- Applies a powerful magnetic field to align all the axes of rotation, and then tilts them with a brief radio frequency field
+	- Depict anatomical detailed smaller than a millimeter in diameter
+
+- Examine effects of brain damage
+	- Study victims of stroke
+	- Lesion
+	- Ablation
+	- Gene knockout
+	- Transcranial magnetic stimulation
+- Examine effects of stimulating a brain area
+	- Stimulating electrodes
+	- Ontogenetic stimulation
+- Record brain activity during behaviour
+	- Record from electrodes in brain
+	- Electrocenphalograph (EEG)
+	- Evoked protentials
+	- Magneticephalograph (MEG)
+	- Postiron emission tomography (PET)
+	- Functional magnetic resonance imaging (fMRI)
+- Correlate brain anatomy with behaviour
+	- Computerized axial tomography (CAT)
+	- Magnetic resonance imaging (MIR)
+	
 **Key Terms**
 
 - Ablation

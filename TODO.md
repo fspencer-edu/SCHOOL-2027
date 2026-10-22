@@ -31,11 +31,10 @@
 - [ ] Virus essay
 
 - [ ] Finish biological psychology textbook
-- [ ] Finish spark textbook
-- [ ] Start kafka
-- [ ] Finish ml texbook
 - [ ] Finish AI textbook
-- [ ] Finish craft dashboard
+
+
+- [ ] Start NAICS classification
 
 
 ---
