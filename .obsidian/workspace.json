@@ -160,37 +160,8 @@
               "icon": "lucide-file",
               "title": "14) Psychopathology"
             }
-          },
-          {
-            "id": "ee263d418b3ad2ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TODO"
-            }
-          },
-          {
-            "id": "5399af048cee1b99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/416 3D Printing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "416 3D Printing"
-            }
           }
-        ],
-        "currentTab": 12
+        ]
       }
     ],
     "direction": "vertical"
@@ -252,8 +223,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125,
-    "collapsed": true
+    "width": 256.953125
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -367,8 +337,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "5399af048cee1b99",
+  "active": "fa2187bc19501cbf",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Infrastructure/Network Programming with Go/0) Network Programming with Go.md.tmp",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/21) ML Pipelines for NLP.md.tmp",
+    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/0) Observability Engineering, 2nd Ed..md.tmp",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
+    "TODO.md",
+    "Private/PRISM INSIGHTS Feature Development.md",
+    "Fall 2026/CPS721 - AI/NOTES/Week 6.md",
+    "Private/NAICS Classification.md",
+    "Private/Organizational Certificates.md",
+    "Private/Prism Insight TODO.md",
+    "Private/416 3D Printing.md",
+    "Private/Certificates.md",
+    "Private/Chyenne.md",
+    "Private/CRAFT Database.md",
+    "Private/Economic Trade Equations.md",
+    "Private/Naics Pipeline.md",
+    "Private/Private Test.md",
+    "Fall 2026/CPS721 - AI/NOTES/Week 5.md",
     "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/7) Triggering Workflows with External Input.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/MLOps/3) MLOps For Containers and Edge Devices.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/5) Post-Training Vision Language Models.md.tmp",
@@ -384,7 +372,6 @@
     "images/Pasted image 20261022182351.png",
     "images/Pasted image 20261022184903.png",
     "Pasted image 20261022190511.png",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/13) Cognitive Functions.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/11) Emotional Behaviours.md",
@@ -396,25 +383,8 @@
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/5) Vision.md",
     "Pasted image 20261022185330.png",
     "Pasted image 20261022184903.png",
-    "TODO.md",
-    "Private/416 3D Printing.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/3) Anatomy and Research Methods.md",
-    "Private/PRISM INSIGHTS Feature Development.md",
     "MX Matrix Convergence Methods.md.tmp",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/2) Synapses.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/1) The Cellular Foundations of Behaviour.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/0) Biological Psychology.md",
-    "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/7) Lists in Prolog.md",
-    "Fall 2026/CPS721 - AI/NOTES/Week 5.md",
-    "Fall 2026/BLG655 - Viruses/LEC/Week 5 - Hepatitis, Herpes, HIV.md",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/3) Building a Deep Neural Network with PyTorch.md.tmp",
-    "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/5) Intro. to NLP.md.tmp",
-    "OTHER TEXTBOOKS/AWS Cert./Data Engineer - Adv./6) Data Catalogs.md.tmp",
-    "Fall 2026/BLG655 - Viruses/LEC/Week 4 - Host Resistance to Viral Infections.md",
-    "Fall 2026/BLG655 - Viruses/LEC/Week 3 - Transmission, Pathogenesis and Epidemiology.md",
-    "OTHER TEXTBOOKS/ML Lifecycle/ML Engineering with MLflow/0) Machine Learning Engineering with MLflow.md.tmp",
-    "Fall 2026/BLG655 - Viruses/LEC/Week 2 - Virus Replication and Detection.md",
-    "Private/3D Printing Quote.md",
     "Untitled.canvas"
   ]
 }
