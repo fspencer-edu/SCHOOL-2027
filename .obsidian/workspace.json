@@ -174,8 +174,23 @@
               "icon": "lucide-file",
               "title": "TODO"
             }
+          },
+          {
+            "id": "5399af048cee1b99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Private/416 3D Printing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "416 3D Printing"
+            }
           }
-        ]
+        ],
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -352,8 +367,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "fa2187bc19501cbf",
+  "active": "5399af048cee1b99",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/7) Triggering Workflows with External Input.md.tmp",
+    "OTHER TEXTBOOKS/Commercial ML/MLOps/3) MLOps For Containers and Edge Devices.md.tmp",
+    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/5) Post-Training Vision Language Models.md.tmp",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Modeling with PowerBI/0) Data Modeling with Microsoft Power BI.md.tmp",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./6) Storage.md.tmp",
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Management/1) The Journey to Becoming Data-rive.md.tmp",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/4) Genetics, Development, and Plasticity.md",
     "images/Pasted image 20261022183914.png",
     "images/Pasted image 20261022183533.png",
     "images/Pasted image 20261022185330.png",
@@ -372,10 +394,8 @@
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/7) Movement.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/6) Hearing, the Mechanical Senses, and the Chemical Senses.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/5) Vision.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/4) Genetics, Development, and Plasticity.md",
     "Pasted image 20261022185330.png",
     "Pasted image 20261022184903.png",
-    "Pasted image 20261022183914.png",
     "TODO.md",
     "Private/416 3D Printing.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/3) Anatomy and Research Methods.md",
@@ -393,11 +413,6 @@
     "Fall 2026/BLG655 - Viruses/LEC/Week 4 - Host Resistance to Viral Infections.md",
     "Fall 2026/BLG655 - Viruses/LEC/Week 3 - Transmission, Pathogenesis and Epidemiology.md",
     "OTHER TEXTBOOKS/ML Lifecycle/ML Engineering with MLflow/0) Machine Learning Engineering with MLflow.md.tmp",
-    "OTHER TEXTBOOKS/Data Quality/Data Contracts/0) Data Contracts.md.tmp",
-    "OTHER TEXTBOOKS/Decision Intelligence/Design and Analysis of Experiments/0) Design and Analysis of Experiments.md.tmp",
-    "OTHER TEXTBOOKS/Decision Intelligence/Causal AI/0) Causal AI.md.tmp",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/0) Software Engineering at Google.md.tmp",
-    "OTHER TEXTBOOKS/Software Delivery/Release It/0) Release It!, 2nd Ed..md.tmp",
     "Fall 2026/BLG655 - Viruses/LEC/Week 2 - Virus Replication and Detection.md",
     "Private/3D Printing Quote.md",
     "Untitled.canvas"
