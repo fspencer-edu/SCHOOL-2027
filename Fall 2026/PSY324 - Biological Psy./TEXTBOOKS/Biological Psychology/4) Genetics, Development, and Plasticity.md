@@ -480,10 +480,56 @@
 
 ## Later Mechanisms of Recovery
 
+- Ischemia kills a cluster of cells that were starved of blood
+- Penumbra
+	- A set of cells that are impaired by having less than the usual among of blood
+- During the weeks after a stroke or other damage, neurons show greater than their usual level of plasticity
+
 ### Overcoming Diaschisis
+
+- Diaschisis
+	- Decreased activity of surviving neurons because of damage to other neurons
+	- Injecting amphetamine enhanced both behaviours
+	- Injecting a drug to block dopamine synapses impaired behavioural recovery
+
+### Regrowth of Axons
+
+- Axons do not grow back in the adult mammalian brain or spinal cord
+- Causes astrocytes to form scar tissue
+- Scare tissue produces a mixture of effects
+	- Produce a chemical called chondroitins that inhibits axon regeneration
+	- Reduce inflammation that would spread the damage
+- Electrical stimulation of receptors in the spinal cord cal also help rats regain movement after spinal cord damage
+- Glial cells derived from a patient's olfactory bulb
+	- Transplant those cells to spots just above and below the area of damage in the spinal cord
 ### Axon Sprouting
+
+- The surface of dendrites and cell bodies is covered with synapses
+- Axon secrete neurotrophins that induce other axons to form new branches, or collateral sprouts
+- In area of damage, sprouting and new synapses form at a higher rate than usual
+
+<img src="/images/Pasted image 20261023153034.png" alt="image" width="500">
+
 ### Denervation Supersensitivity
+
+- Neurons make adjustment to maintain a nearly constant level of arousal
+- After learning strengthens one set of synapses, other synapses weaken
+- Denervation supersensitivity (receptor supersensitivity)
+	- One set of synapses becomes inactive, the remaining synapses become more responsive
+- Strengthens desirable and undesirable connections, causing pain
 ### Reorganize Sensory Representation and the Phantom Limb
+
+- Cortical area previously responsible for the third finger, becomes responsive to the secod and fourth fingers
+
+<img src="/images/Pasted image 20261023153331.png" alt="image" width="500">
+
+- The loss of sensory input from a monkey's forelimb had left vacant synaptic sites at several levels of the CNS
+- Axons representing the face sprouted into those sites int he spinal cord, brainstem, and thalamus
+- People with amputations experience a phantom limb
+	- A continuing sensation of an amputated body part
+	- Develop when the relevant portion of the somatosensory cortex reorganizes and becomes responsive to alternative inputs
+- 
+
 ### Learned Adjustments in Behaviour
 
 
