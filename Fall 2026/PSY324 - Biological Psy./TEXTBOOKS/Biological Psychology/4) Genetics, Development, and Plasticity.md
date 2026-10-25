@@ -528,9 +528,11 @@
 - People with amputations experience a phantom limb
 	- A continuing sensation of an amputated body part
 	- Develop when the relevant portion of the somatosensory cortex reorganizes and becomes responsive to alternative inputs
-- 
+- Many amputees who learn to use an artifical arm report that their phantom sensations gradually disappear
 
 ### Learned Adjustments in Behaviour
+
+- 
 
 
 - Cerebrovascular accident
