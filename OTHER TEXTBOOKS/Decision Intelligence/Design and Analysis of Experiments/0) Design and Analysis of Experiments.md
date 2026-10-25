@@ -14,6 +14,6 @@ https://learning.oreilly.com/library/view/design-and-analysis/9781119320937/
 [[10) Fitting Regression Models]]
 [[11) Response Surface Methods and Designs]]
 [[12) Robust Parameter Design and Process Robustness Studies]]
-[[13) Sexperiments with Random Factors]]
+[[13) Experiments with Random Factors]]
 [[14) Nested and Split-Plot Design]]
 [[15) The Other Design and Analysis Topics]]
