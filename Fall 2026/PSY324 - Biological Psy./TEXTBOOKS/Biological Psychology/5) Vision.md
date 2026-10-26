@@ -45,12 +45,50 @@
 - When fixating on a certain portion of the retina the fovea is used
 	- A tiny area specialized for acute, detailed vision
 	- Blood vessels and ganglion cells axons are almost absent near the fovea (unimpeded vision)
-- 
-### 
-### 
+- Ganglion cells in the fovea of humans and other primates are called midget ganglion cells
+	- Small and responds to a single cone
+	- Provide 70% of the input to the brain
+	- Vision is dominated near the fovea
+- Birds' eye occupy most of the head
+- Many bird species have two fovea-like areas per eye
+- Predatory birds have a greater density of visual receptors on the top half of retinas (looking down) than the bottom half (looking up)
+
+<img src="/images/Pasted image 20261026142007.png" alt="image" width="500">
+
+- In the fovea, each bipolar cell receives excitation from just one cone, and relays its information to a single midget ganglion cell
+- In the periphery, input from rods converges onto each bipolar cell, resulting in higher sensitivity to faint light and low sensitivity to spatial location
+
 
 ## Visual Receptors: Rods and Cones
+
+- Retina has two types or receptors
+	- Rods
+		- Abundant in the periphery
+		- Respond to faint light
+		- Less useful in daylight because bright light bleaches them
+	- Cones
+		- Abundant in and near the fovea
+		- Useful in bright light and essential for colour vision
+
+<img src="/images/Pasted image 20261026142246.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261026142329.png" alt="image" width="500">
+
+- Rods outnumber cones 20 to 1
+- Cones provide about 90% of the brain's input
+- In the fovea, each cone has its own line to the brain
+- Ratio is higher in species that are active at night
+- Both rods and cones contain photopigments
+	- Chemicals that release energy when struck by light
+	- 11-cis-retinal bound to proteins called opsins
+		- Modify the photopigments' sensitivity to different wavelengths of length
+	- Light converts 11-cis-retinal to all-trans-retinal
+
 ## Color Vision
+
+- 
+
+**Key Terms**
 
 - Bipolar cells
 	- Type of neuron in the retina that receives input directly from the receptors
