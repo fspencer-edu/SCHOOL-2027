@@ -528,12 +528,19 @@
 - People with amputations experience a phantom limb
 	- A continuing sensation of an amputated body part
 	- Develop when the relevant portion of the somatosensory cortex reorganizes and becomes responsive to alternative inputs
-- Many amputees who learn to use an artifical arm report that their phantom sensations gradually disappear
+- Many amputees who learn to use an artificial arm report that their phantom sensations gradually disappear
 
 ### Learned Adjustments in Behaviour
 
-- 
+- Deafferented
+	- Limb has lost its afferent (sensory) input
+- A monkey fails to use one deafferented forelimb only because walking on three limbs is easier than using an impaired limb
+- When it has no choice but to use its deafferented limb it does
 
+<img src="/images/Pasted image 20261026120320.png" alt="image" width="500">
+
+
+**Key Terms**
 
 - Cerebrovascular accident
 	- result of interrupted blood flow to the brain resulting from either a blood clot or a ruptured artery

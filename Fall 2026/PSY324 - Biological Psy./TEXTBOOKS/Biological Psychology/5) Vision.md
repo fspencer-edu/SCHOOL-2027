@@ -1,8 +1,54 @@
 # Visual Coding
 
+- Renes Descartes
+	- Nerves from the eye sent the brain a pattern of impulses arranged like a picture of the perceived object
+- Impulses in certain neurons indicate light, and impulses in others indicate sound, touch, or other sensations
+- Johannes Muller
+	- Law of specific nerve energies
 
 ## Principles of Vision
+
+- Hasan Ibn al-Haytham
+	- When you open your eyes at night, you immediately see the distant starts
 ## The Eye and Its Connections to the Brain
+
+- Light enters the eye through an opening in the center of the iris called the pupil
+- Focused by the lens and cornea Projected onto the retina
+- Light from the left side of the world strikes the right half of the retina, and vice versa
+- Light from above strikes the bottom half, and life from below strikes the top half
+	- Image inversion
+
+<img src="/images/Pasted image 20261026121148.png" alt="image" width="500">
+
+### Route within the Retina
+
+- Messages go from the receptors at the back of the eye to bipolar cells, located closer to the center of the eye
+- Bipolar cells send their messages to ganglion cells, located still closer to the center of the eye
+- Ganglion cells' axons unite and travel back to the brain as the optic nerve
+- Amacrine cells get information form bipolar cells and send it to bipolar cells, ganglion cells, and other amacrine cells
+	- Refine the response of bipolar and ganglion cells
+
+<img src="/images/Pasted image 20261026121443.png" alt="image" width="500">
+
+- Receptors send their messages to bipolar and horizontal cells, which send messages to amacrine and ganglion cells
+- Optic nerve exits the eye at the blind spot and continues to the brain
+
+- Light passes through ganglion, amacrine, and bipolar cells (transparent) to the receptors
+- Blind splot
+	- Ganglion cells axons join to form the optic nerve that exists through the back of the eye
+	- No receptors
+	- Brain fills in the gap
+	- Blind spot of one eye is visible to the other eye
+
+### Fovea and Periphery of the Retina
+
+- When fixating on a certain portion of the retina the fovea is used
+	- A tiny area specialized for acute, detailed vision
+	- Blood vessels and ganglion cells axons are almost absent near the fovea (unimpeded vision)
+- 
+### 
+### 
+
 ## Visual Receptors: Rods and Cones
 ## Color Vision
 
