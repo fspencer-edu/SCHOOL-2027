@@ -8,7 +8,7 @@ https://learning.oreilly.com/library/view/designing-distributed-systems/97810981
 [[4) Ambassadors]]
 [[5) Adapters]]
 [[6) Replicated Load Balanced Services]]
-[[7) Scatter/Gather]]
+[[7) Scatter and Gather]]
 [[8) Functions and Event Driven Processing]]
 [[9) Ownership Election]]
 [[10) Batch Computational Patterns]]

@@ -2,9 +2,4 @@
 # Dynamic Configuration with Sidecars
 # Modular Application Containers
 # Building a Simple PaaS with Sidecars
-# 
-# 
-# 
-# 
-# 
-# 
+# Designing Sidecars for Modularity and Reusability
