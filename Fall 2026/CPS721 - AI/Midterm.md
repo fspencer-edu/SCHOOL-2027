@@ -197,3 +197,75 @@ nrSQRT(N, Xi, Eps, Xi) :- R is Xi^2 - N, abs(R, RA), RA < Eps.
 
 nrSQRT(N, Xi, Eps, Result) :- R is Xi^2 - N, abs(R, RA), RA >= Eps, Next is 0.5(Xi + N/xi), nrSQRT(N, Next, Eps, Result).
 ```
+
+# Arithmetic Abstract Syntax Trees
+
+$(3a + 5(b+a))/(c-(a-(bc)))$
+
+- Convert to a binary tree
+
+```mermaid
+flowchart TD
+    A["/"] --> B["+"]
+    A --> C["−"]
+    B --> D["*"]
+    B --> E["*"]
+    D --> F["3"]
+    D --> G["a"]
+    E --> H["5"]
+    E --> I["+"]
+    I --> J["b"]
+    I --> K["a"]
+    C --> L["c"]
+    C --> M["−"]
+    M --> N["a"]
+    M --> O["*"]
+    O --> P["b"]
+    O --> Q["c"]
+
+```
+
+a - 1
+b - 5
+c - -2
+
+# Terms
+
+- Can have more complex arguments
+
+`person(isaac, netwon)`
+
+# Arithmetics Using Terms
+
+- Expressions with only sum and products
+- A single variable with an input value
+- Use following library predicates
+
+$(5+X)*((X+2)*5)$
+
+```mermaid
+flowchart TD
+    A["*"] --> B["+"]
+    A --> C["*"]
+    B --> D["5"]
+    B --> E["X"]
+    C --> F["+"]
+    C --> G["5"]
+    F --> H["X"]
+    F --> I["2"]
+```
+
+
+```prolog
+expr(m, expr(a, 5, X), expr(m, expr(a, X, 2), 5)).
+```
+
+```prolog
+evalPS(N, V, N) :- number(N).
+
+evalPS(X, V, V) :- var(X).
+
+evalPS(expr(a, L, R), V, Z) :- evalPS(L, V, Z1), evalPS(R, V, Z2), Z is Z1 + Z2
+
+evalPS(expr(m, L, R), V, Z) :- evalPS(L, V, Z1), evalPS(R, V, Z2), Z is Z1 * Z2
+```

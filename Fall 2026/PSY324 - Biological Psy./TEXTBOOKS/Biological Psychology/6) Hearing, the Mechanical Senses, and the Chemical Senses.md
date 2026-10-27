@@ -75,8 +75,44 @@
 
 - Information goes from the ganglion cells to the lateral geniculate nucleus of the thalamus and then to the primary visual cortex in the occipital cortex (V1 or striate cortex)
 - Activity from V1 projects to the frontal cortex
+- Corresponds to your conscious visual experience
+- Aphantasia
+	- Inability to voluntarily create mental images or experience a "mind's eye"
+	- Tend to be attracted toward math and science
+- Hyperphantasia 
+	- Can image a visual scene almost as vividly as seeing it
+- Blindsight
+	- Ability to respond to visual information without perceiving it consciously
+- Continuous flash suppression
+	- Rapidly changing stimuli captures attention
+	- Viewer is not conscious of the steady picture
 
+### Simple and Complex Receptive Fields
 
+- David Hubel and Torsten Wiesel
+- Simple cell
+	- Receptive field with fixed excitatory and inhibitory zones
+
+<img src="/images/Pasted image 20261027120957.png" alt="image" width="500">
+
+- Cells responds best to a vertical line in a particular location
+- Other simple cells respond to lines at other orientations
+
+- Complex cells
+	- Located in areas V1 and V2
+	- Respond to bars and edges
+	- Respond equally anywhere within a large receptive field
+- End stoped or hypercomplex cell resembles a complex cell except that it has a strong inhibitory area at one end of its bar shaped receptive field
+
+<img src="/images/Pasted image 20261027121158.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261027121218.png" alt="image" width="500">
+
+ - Cortical cells that responds to a single bar or line also responds even more strongly to a sine wave grating of bars or lines
+
+### Are Visual Cortex Cells Feature Detectors?
+
+- 
 
 
 - Amplitude
