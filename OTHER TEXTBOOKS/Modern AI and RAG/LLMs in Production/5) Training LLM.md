@@ -1,7 +1,7 @@
 # Multi-GPU Environments
 # Basic Training Techniques
-# Advanced Training Techiques
-# 
+# Advanced Training Techniques
+# Training tips and tricks
 # 
 # 
 # 

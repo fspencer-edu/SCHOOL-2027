@@ -172,11 +172,159 @@
 
 # Visual Processing in the Brain
 
-## An Overview of the Mammalian Visual System
+- Rods and cones of the retina make synapses with horizontal cells and bipolar cells
+- Horizontal cells make inhibitory contact onto bipolar cells
+- Make synapses onto amacrine cells and ganglion cells
+
+<img src="/images/Pasted image 20261026224256.png" alt="image" width="500">
+
+- Axons of the ganglion cells form the optic nerve, which leaves the retina and travels until the optic nerve from both eye meet at the optic chiasm
+- Half of the axons from each eye cross the opposite side of the brain
+- Information from the nasal half of each eye crosses to the contralateral hemisphere
+- Temporal half goes to the ipsilateral hemisphere
+
+<img src="/images/Pasted image 20261026224517.png" alt="image" width="500">
+
+- Most of the optic nerves goes to the alteral geniculate nucleus
+- Most of the optic nerve goes to the lateral geniculate nucleus of the thalamus
+- Other axons go from the eye to the superior colliculus and part of the hypothalamus
+
 ## Processing in the Retina
+
+- Lateral inhibition
+	- Sharpening contrasts to emphasize the borders of objects
+	- Receptors send message to excite nearby bipolar cells
+	- Message to horizontal cells that slightly inhibit those bipolar cells and the neighbours to their sides
+- Light on the rods or cones decreases the there inhibitory output
+
+<img src="/images/Pasted image 20261026225307.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261026225318.png" alt="image" width="500">
+
+- Lateral inhibition
+	- Reduced activity in a neuron because of activity in neighbouring neurons
+	- Heightens constrast
+- In olfaction
+	- A strong stimulus uses lateral inhibition to suppress the response to one that follows slight after it
+- In touch
+	- Stimulating a spot on the skin weakens the response to stimulation of a neighbouring split
+- In hearing
+	- Lateral inhibition helps us hear speech during irrelevant noise
+
 ## Further Processing
+
+- Each cell in the visual system of the brain has a receptive field
+	- An area in visual space from which light excites or inhibits the cell
+- Rods and cones with tiny receptive fields connect to a bipolar cell
+- Bipolar cells report to a ganglion, with a larger receptive field
+- Ganglion cells converge at the next level and so on
+
+<img src="/images/Pasted image 20261026225714.png" alt="image" width="500">
+
+
+- Ganglion cells are spaced out evenly across the retina
+- Alternating excitatory-inhibitory
+<img src="/images/Pasted image 20261026225828.png" alt="image" width="500">
+
+- Primate ganglion cell types
+	- Parvocellular neurons
+		- Small cell bodies and small receptive fields
+		- Near the fovea
+		- Detect visual details and colours
+	- Magnocellular
+		- Larger cell bodies and receptive fields
+		- Distributed evenly throughout the retina
+		- Respond to movement and overall patterns
+		- No colour of fine details
+	- Koniocellular
+		- Small cell bodies
+		- Occur throughout the retinal
+		- Variety of functions
+
+<img src="/images/Pasted image 20261026230112.png" alt="image" width="500">
+
 ## The Primary Visual Cortex
+
+- Information goes from the ganglion cells to the lateral geniculate nucleus of the thalamus and then to the primary visual cortex in the occipital cortex (V1 or striate cortex)
+- Activity from V1 projects to the frontal cortex
+- Corresponds to your conscious visual experience
+- Aphantasia
+	- Inability to voluntarily create mental images or experience a "mind's eye"
+	- Tend to be attracted toward math and science
+- Hyperphantasia 
+	- Can image a visual scene almost as vividly as seeing it
+- Blindsight
+	- Ability to respond to visual information without perceiving it consciously
+- Continuous flash suppression
+	- Rapidly changing stimuli captures attention
+	- Viewer is not conscious of the steady picture
+
+### Simple and Complex Receptive Fields
+
+- David Hubel and Torsten Wiesel
+- Simple cell
+	- Receptive field with fixed excitatory and inhibitory zones
+
+<img src="/images/Pasted image 20261027120957.png" alt="image" width="500">
+
+- Cells responds best to a vertical line in a particular location
+- Other simple cells respond to lines at other orientations
+
+- Complex cells
+	- Located in areas V1 and V2
+	- Respond to bars and edges
+	- Respond equally anywhere within a large receptive field
+- End stoped or hypercomplex cell resembles a complex cell except that it has a strong inhibitory area at one end of its bar shaped receptive field
+
+<img src="/images/Pasted image 20261027121158.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261027121218.png" alt="image" width="500">
+
+ - Cortical cells that responds to a single bar or line also responds even more strongly to a sine wave grating of bars or lines
+
+### Are Visual Cortex Cells Feature Detectors?
+
+- Feature detectors
+	- Neurons whose response indicate the presence of a particular feature
+- Other brain areas interpret the visual stimulus and send messages back to reorganize V1 activity
+- Brain is constantly forming hypotheses or expectations about the world, and modifying them based on prediction errors
+
 ## Development of the Visual Cortex
+
+-  Many properties of the visual system develop before birth in mammals
+
+### Deprived Experience in one Eye
+
+- A period of deprivation weakens the response to the deprived eye
+- Cells gradually return to their previous levels of responsiveness
+
+### Deprived Experience in Both Eyes
+
+- Sensitive period
+	- When experiences have a particularly strong and enduring influence
+	- Depends on inhibitory neurons
+	- Cortical plasticity is greatest in early life, but it never ends
+
+### Uncorrelated Stimulation in the Two Eyes
+
+- Stereoscopic depth perception requires the brain to detect retinal disparity
+	- Discrepancy between the left and right eye
+- Neuron responsive to corresponding areas of the left and right eyes
+- Strabismus
+	- "Lazy eye"
+	- Eyes do not point in the same direction
+- Wear a patch to increase attention to the ignored eye
+- 3 dimensional action video games that require attention to both eyes
+- Wear a head-mounted device that controls the input so that each eye has a clear view of only part of the scene
+### Early Exposure to a Limited Array of Patterns
+
+- Astigmatism
+	- A blurring of vision for lines in one direction
+	- Caused by an asymmetric curvature of the eyes
+
+### Impaired Infant Vision and Long-Term Consequences
+
+**Key Terms**
 
 - Astigmatism
 	- A decreased responsiveness to one kind of line or another, caused by an asymmetric curvature of the eyes
@@ -208,10 +356,83 @@
 
 # Specialized Visual Processes
 
-
 ## The Ventral and Dorsal Streams
+
+- The primary visual cortex (V1) sends information to the secondary visual cortex (V2)
+	- Processes the information further and transmits it to additional areas
+	- More elongated
+	- Cells respond to corners, textures, or complex shapes
+- V2 and V3
+	- Some cells are highly responsive to colour, and other helps with stereoscopic depth perception
+- V4
+	- Cluster of cells responsive to specific colours
+
+<img src="/images/Pasted image 20261027134505.png" alt="image" width="500">
+
+- Ventral stream
+	- Is the "what" pathway
+	- Identifying and recognizing objects
+	- Through temporal cortex
+- Doral stream
+	- "Where" or "how"
+	- Visually guided movements
+	- Through the parietal movements
+- Brain exposed to carbon monoxide causing damage to the ventral stream
+	- Could not distinguish objects
+	- Use vision to guide their actions, but they have trouble identifying what objects are
+- Dorsal stream damage
+	- Read, recognize faces, and describe objects
+	- Cannot accurately reach and grasp an object
+
 ## Shape Perception
+
+### The Inferior Temporal Cortex
+
+- Cells in the inferior temporal cortex learn to recognize familiar objects
+- Responds to an object from other viewpoints and distances
+- Exchanges information with the prefrontal cortex with connections for identifying difficult or ambiguous patterns
+- Prefrontal cortex forms hypotheses
+- Temporal cortex confirms these hypothesis
+- Visual agnosia
+	- Inability to recognize objects despite otherwise satisfactory vision
+- Fusiform gyrus
+	- Responds mainly to faces
+### Recognizing Faces
+
+- Human newborns come in the world predisposed to pay more attention to faces than other stationary displays
+- Fusiform gyrus responds strongly to a face viewed from any angle
+- Prosopagnosia
+	- Impaired ability to recognize faces
+	- Damage to the right fusiform gyrus
 ## Motion Perception
+
+### The Middle Temporal Cortex
+
+- MT (middle temporal cortex)
+	- Also known as area V5
+- MST (medial superior temporal cortex)
+- Receive input mostly from the magnocellular path, which detects overall patterns and movements
+- Both colour insensitive
+
+- MT
+	- Detect acceleration or deceleration
+	- Respond to motion in all three dimensions
+	- Photographs that imply movements
+- MST
+	- Expansion
+	- Contraction
+	- Rotation
+- MT and MST neurons enable you to distinguish between the result of eye movements and the result of object movements
+
+### Motion Blindness
+
+- Motion blindness
+	- Being able to see objects, but unable to see whether they are moving, direction, and speed
+- Saccades
+	- Quick, simultaneous, ballistic jumps of both eyes between two or more focal points
+- During a voluntary eye movement, you become motion blind for a split second
+
+**Key Terms**
 
 - Dorsal streams
 	- Visual path in the parietal cortex that helps the motor system locate objects

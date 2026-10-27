@@ -134,35 +134,21 @@
             }
           },
           {
-            "id": "b046b9adf638d4e9",
+            "id": "cd1c541787a9405c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS721 - AI/Midterm.md",
+                "file": "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/2) Foundation Models.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Midterm"
-            }
-          },
-          {
-            "id": "66d509c2dc858b78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/5) Training LLM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5) Training LLM"
+              "title": "2) Foundation Models"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -338,44 +324,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "66d509c2dc858b78",
+  "active": "cd1c541787a9405c",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/1) Getting Started with RAG.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/11) RAG Web Apps.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/10) Evaluating RAG Systems.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/9) Graph RAG.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/8) Agentic RAG.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/7) Retrieval.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/6) Vector Databases and Similarity Search.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/5) Embeddings.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/4) Data Preparation.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/3) Loading Data.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/2) Foundation Models.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/0) RAG with Python Cookbook.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Transformers/0) Transformers - The Definitive Guide.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Principles/0) RAG from First Principles.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/11) Future Directions.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/10) Training Transformers From Scratch.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/9) Dealing with Few To No Labels.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/8) Making Transformers Efficient In Production.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/7) Question Answering.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/6) Summarization.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/5) Text Generation.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/4) Multilingual Named Entity Recognition.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/3) Transformer Anatomy.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/2) Text Classification.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/1) Hello Transformers.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/NLP with Transformers/0) Natural Language Processing with Transformers, Revised Ed..md",
+    "Pasted image 20261027141437.png",
+    "Pasted image 20261027141417.png",
+    "Pasted image 20261027140858.png",
+    "Pasted image 20261027134505.png",
     "images/Pasted image 20261027121158.png",
     "images/Pasted image 20261027120957.png",
     "images/Pasted image 20261027121218.png",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/4) Data Engineering - LLM.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/3) LLM - Model Operations.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/2) LLM - A Deep Dive.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/1) Why Large Language Models Have Captured Attention.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/12) Production.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/11) Deploying an LLM on a Raspberry Pi.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/10) Creating a Coding Copolit Project.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/9) Creating an LLM Project.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/8) LLM Applications.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/7) Prompt Engineering.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/6) LLP Services.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/5) Training LLM.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLMs in Production/0) LLMs in Production.md",
-    "Fall 2026/CPS721 - AI/Midterm.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/10) Inference Pipeline Deployment.md",
-    "Fall 2026/CPS721 - AI/NOTES/Week 6.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/12) MLOps Principles.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/0) LLM Engineer’s Handbook.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/11) MLOps and LLMOps.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/9) RAG Inference Pipeline.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/8) Inference Optimization.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/7) Evaluating LLMs.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/6) Fine-Tuning with Preference Alignment.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/5) Supervised Fine-Tuning.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/4) RAG Feature Pipeline.md",
     "Pasted image 20261027121218.png",
     "Pasted image 20261027121158.png",
     "Pasted image 20261027120957.png",
-    "images/Pasted image 20261026230112.png",
-    "images/Pasted image 20261026225318.png",
-    "images/Pasted image 20261026224517.png",
-    "images/Pasted image 20261026225828.png",
-    "images/Pasted image 20261026224256.png",
     "OTHER TEXTBOOKS/Modern AI and RAG/AI Engineering/5) Prompt Engineering.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/6) Evaluating Multi-Turn Conversations.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/4) Intro. Convolutional Neural Network.md.tmp",

@@ -1,119 +1,63 @@
 # Hearing
+## Sound and the Ear
 
-- Rods and cones of the retina make synapses with horizontal cells and bipolar cells
-- Horizontal cells make inhibitory contact onto bipolar cells
-- Make synapses onto amacrine cells and ganglion cells
+- Human hearing is sensitive to sounds that vibrate the eardrum by less than one-tenth the diameter of an atom
 
-<img src="/images/Pasted image 20261026224256.png" alt="image" width="500">
+### Physics and Psychology of Sound
 
-- Axons of the ganglion cells form the optic nerve, which leaves the retina and travels until the optic nerve from both eye meet at the optic chiasm
-- Half of the axons from each eye cross the opposite side of the brain
-- Information from the nasal half of each eye crosses to the contralateral hemisphere
-- Temporal half goes to the ipsilateral hemisphere
+- Sound waves are periodic compressions of air, water, or other media
+- Varying in amplitude and frequency
+- Amplitude
+	- Intensity of a sound wave
+- Frequency
+	- Number of compressions per sound
+	- Measured in hertz (Hz, cycles per second)
+- Pitch
+	- Related aspect of perception
 
-<img src="/images/Pasted image 20261026224517.png" alt="image" width="500">
+<img src="/images/Pasted image 20261027140858.png" alt="image" width="500">
 
-- Most of the optic nerves goes to the alteral geniculate nucleus
-- Most of the optic nerve goes to the lateral geniculate nucleus of the thalamus
-- Other axons go from the eye to the superior colliculus and part of the hypothalamus
+- Ability to perceive high frequencies decreases with age and exposure to load noises
+- Timbre
+	- Tone quality or tone complexity
+- Prosody
+	- Conveying emotional information by tone of voice
+### Structures of the Ear
 
-## Processing in the Retina
+1) Outer ear
+	1) Pinna
+		1) Flesh and cartilage attached to each side of the head
+		2) Helps locate the sounds of a sound
+2) Middle ear
+	1) Tympanic membrane (eardrum)
+		1) Connects to 3 bonds that transmit the vibrations to the oval window (membrane of the inner ear)
+			1) Hammer/malleus
+			2) Anvil/incus
+			3) Stirrup/stapes
+3) Inner ear
+	1) Cochlea
+		1) Snail-shaped structure
+	2) Hair cells
+		1) Lie along the basilar membrane of the cochlea
 
-- Lateral inhibition
-	- Sharpening contrasts to emphasize the borders of objects
-	- Receptors send message to excite nearby bipolar cells
-	- Message to horizontal cells that slightly inhibit those bipolar cells and the neighbours to their sides
-- Light on the rods or cones decreases the there inhibitory output
+- Vibrations in the fluid of the cochlea displace the hair cells, which stimulate the auditory nerve
 
-<img src="/images/Pasted image 20261026225307.png" alt="image" width="500">
-
-<img src="/images/Pasted image 20261026225318.png" alt="image" width="500">
-
-- Lateral inhibition
-	- Reduced activity in a neuron because of activity in neighbouring neurons
-	- Heightens constrast
-- In olfaction
-	- A strong stimulus uses lateral inhibition to suppress the response to one that follows slight after it
-- In touch
-	- Stimulating a spot on the skin weakens the response to stimulation of a neighbouring split
-- In hearing
-	- Lateral inhibition helps us hear speech during irrelevant noise
-
-## Further Processing
-
-- Each cell in the visual system of the brain has a receptive field
-	- An area in visual space from which light excites or inhibits the cell
-- Rods and cones with tiny receptive fields connect to a bipolar cell
-- Bipolar cells report to a ganglion, with a larger receptive field
-- Ganglion cells converge at the next level and so on
-
-<img src="/images/Pasted image 20261026225714.png" alt="image" width="500">
+<img src="/images/Pasted image 20261027141417.png" alt="image" width="500">
 
 
-- Ganglion cells are spaced out evenly across the retina
-- Alternating excitatory-inhibitory
-<img src="/images/Pasted image 20261026225828.png" alt="image" width="500">
+<img src="/images/Pasted image 20261027141437.png" alt="image" width="500">
 
-- Primate ganglion cell types
-	- Parvocellular neurons
-		- Small cell bodies and small receptive fields
-		- Near the fovea
-		- Detect visual details and colours
-	- Magnocellular
-		- Larger cell bodies and receptive fields
-		- Distributed evenly throughout the retina
-		- Respond to movement and overall patterns
-		- No colour of fine details
-	- Koniocellular
-		- Small cell bodies
-		- Occur throughout the retinal
-		- Variety of functions
+## Pitch Perception
 
-<img src="/images/Pasted image 20261026230112.png" alt="image" width="500">
+- Frequency theory
+	- The basilar membrane vibrates in synchrony with sound waves, causing auditory nerve axons to produce action potentials at the same frequency
+	- 
 
-## The Primary Visual Cortex
+## The Auditory Cortex
+## Sound Localization
+## Individual Differences
 
-- Information goes from the ganglion cells to the lateral geniculate nucleus of the thalamus and then to the primary visual cortex in the occipital cortex (V1 or striate cortex)
-- Activity from V1 projects to the frontal cortex
-- Corresponds to your conscious visual experience
-- Aphantasia
-	- Inability to voluntarily create mental images or experience a "mind's eye"
-	- Tend to be attracted toward math and science
-- Hyperphantasia 
-	- Can image a visual scene almost as vividly as seeing it
-- Blindsight
-	- Ability to respond to visual information without perceiving it consciously
-- Continuous flash suppression
-	- Rapidly changing stimuli captures attention
-	- Viewer is not conscious of the steady picture
-
-### Simple and Complex Receptive Fields
-
-- David Hubel and Torsten Wiesel
-- Simple cell
-	- Receptive field with fixed excitatory and inhibitory zones
-
-<img src="/images/Pasted image 20261027120957.png" alt="image" width="500">
-
-- Cells responds best to a vertical line in a particular location
-- Other simple cells respond to lines at other orientations
-
-- Complex cells
-	- Located in areas V1 and V2
-	- Respond to bars and edges
-	- Respond equally anywhere within a large receptive field
-- End stoped or hypercomplex cell resembles a complex cell except that it has a strong inhibitory area at one end of its bar shaped receptive field
-
-<img src="/images/Pasted image 20261027121158.png" alt="image" width="500">
-
-<img src="/images/Pasted image 20261027121218.png" alt="image" width="500">
-
- - Cortical cells that responds to a single bar or line also responds even more strongly to a sine wave grating of bars or lines
-
-### Are Visual Cortex Cells Feature Detectors?
-
-- 
-
+**Key Terms**
 
 - Amplitude
 	- The intensity of a sound wave
