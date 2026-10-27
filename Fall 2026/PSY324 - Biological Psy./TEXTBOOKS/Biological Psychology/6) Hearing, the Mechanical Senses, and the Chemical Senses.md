@@ -1,5 +1,84 @@
 # Hearing
 
+- Rods and cones of the retina make synapses with horizontal cells and bipolar cells
+- Horizontal cells make inhibitory contact onto bipolar cells
+- Make synapses onto amacrine cells and ganglion cells
+
+<img src="/images/Pasted image 20261026224256.png" alt="image" width="500">
+
+- Axons of the ganglion cells form the optic nerve, which leaves the retina and travels until the optic nerve from both eye meet at the optic chiasm
+- Half of the axons from each eye cross the opposite side of the brain
+- Information from the nasal half of each eye crosses to the contralateral hemisphere
+- Temporal half goes to the ipsilateral hemisphere
+
+<img src="/images/Pasted image 20261026224517.png" alt="image" width="500">
+
+- Most of the optic nerves goes to the alteral geniculate nucleus
+- Most of the optic nerve goes to the lateral geniculate nucleus of the thalamus
+- Other axons go from the eye to the superior colliculus and part of the hypothalamus
+
+## Processing in the Retina
+
+- Lateral inhibition
+	- Sharpening contrasts to emphasize the borders of objects
+	- Receptors send message to excite nearby bipolar cells
+	- Message to horizontal cells that slightly inhibit those bipolar cells and the neighbours to their sides
+- Light on the rods or cones decreases the there inhibitory output
+
+<img src="/images/Pasted image 20261026225307.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261026225318.png" alt="image" width="500">
+
+- Lateral inhibition
+	- Reduced activity in a neuron because of activity in neighbouring neurons
+	- Heightens constrast
+- In olfaction
+	- A strong stimulus uses lateral inhibition to suppress the response to one that follows slight after it
+- In touch
+	- Stimulating a spot on the skin weakens the response to stimulation of a neighbouring split
+- In hearing
+	- Lateral inhibition helps us hear speech during irrelevant noise
+
+## Further Processing
+
+- Each cell in the visual system of the brain has a receptive field
+	- An area in visual space from which light excites or inhibits the cell
+- Rods and cones with tiny receptive fields connect to a bipolar cell
+- Bipolar cells report to a ganglion, with a larger receptive field
+- Ganglion cells converge at the next level and so on
+
+<img src="/images/Pasted image 20261026225714.png" alt="image" width="500">
+
+
+- Ganglion cells are spaced out evenly across the retina
+- Alternating excitatory-inhibitory
+<img src="/images/Pasted image 20261026225828.png" alt="image" width="500">
+
+- Primate ganglion cell types
+	- Parvocellular neurons
+		- Small cell bodies and small receptive fields
+		- Near the fovea
+		- Detect visual details and colours
+	- Magnocellular
+		- Larger cell bodies and receptive fields
+		- Distributed evenly throughout the retina
+		- Respond to movement and overall patterns
+		- No colour of fine details
+	- Koniocellular
+		- Small cell bodies
+		- Occur throughout the retinal
+		- Variety of functions
+
+<img src="/images/Pasted image 20261026230112.png" alt="image" width="500">
+
+## The Primary Visual Cortex
+
+- Information goes from the ganglion cells to the lateral geniculate nucleus of the thalamus and then to the primary visual cortex in the occipital cortex (V1 or striate cortex)
+- Activity from V1 projects to the frontal cortex
+
+
+
+
 - Amplitude
 	- The intensity of a sound wave
 - Cochlea
@@ -31,11 +110,7 @@
 - Tympanic membrane
 	- The eardrum
 
-## Sound and the Ear
-## Pitch Perception
-## The Auditory Cortex
-## Sound Localization
-## Individual Differences
+
 
 # The Mechanical Senses
 

@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a604275069f5b1e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/5) Vision.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5) Vision"
-            }
-          },
-          {
             "id": "e20c17f48e0a183d",
             "type": "leaf",
             "state": {
@@ -146,23 +132,8 @@
               "icon": "lucide-file",
               "title": "14) Psychopathology"
             }
-          },
-          {
-            "id": "ec76234136b85e56",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/10) Interfaces for Human Reviews.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "10) Interfaces for Human Reviews"
-            }
           }
-        ],
-        "currentTab": 10
+        ]
       }
     ],
     "direction": "vertical"
@@ -224,7 +195,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125
+    "width": 256.953125,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -338,8 +310,33 @@
       "bases:Create new base": false
     }
   },
-  "active": "ec76234136b85e56",
+  "active": "e20c17f48e0a183d",
   "lastOpenFiles": [
+    "Pasted image 20261026230112.png",
+    "Pasted image 20261026225828.png",
+    "Pasted image 20261026225714.png",
+    "Pasted image 20261026225318.png",
+    "Pasted image 20261026225307.png",
+    "Pasted image 20261026224517.png",
+    "Pasted image 20261026224256.png",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/5) Vision.md",
+    "Pasted image 20261026223211.png",
+    "Pasted image 20261026222913.png",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands-On LLMs/0) Hands-On Large Language Models.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/9) Knowledge-Enhanced RAG the Future of RAG.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/8) Multimodal RAG.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/7) From RAG to AI Agents.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/6) Evaluating Your RAG Application.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/5) The RAG Platform.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/4) Deploying RAG to Production.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/3) Scaling Your RAG Stack.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/2) The Base RAG Stack.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/1) Intro. to RAG.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Hands On Rag for Production/0) Hands-On RAG for Production.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/12) Improving LLM Agents.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/11) Data Analysis for Traces.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/10) Interfaces for Human Reviews.md",
     "OTHER TEXTBOOKS/Modern AI and RAG/AI Engineering/5) Prompt Engineering.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/6) Evaluating Multi-Turn Conversations.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/4) Intro. Convolutional Neural Network.md.tmp",
@@ -352,40 +349,15 @@
     "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/3) Error Analysis.md",
     "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/2) LLMs and Evaluation Basics.md",
     "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/1) Introduction to AI Engineers.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/12) Improving LLM Agents.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/11) Data Analysis for Traces.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/10) Interfaces for Human Reviews.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Evals for AI Engineers/0) Evals for AI Engineers.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
-    "OTHER TEXTBOOKS/ML Lifecycle/ML Engineering with MLflow/0) Machine Learning Engineering with MLflow.md",
-    "Fall 2026/CPS721 - AI/Midterm.md",
     "images/Pasted image 20261026142329.png",
     "images/Pasted image 20261026142007.png",
-    "images/Pasted image 20261026142246.png",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/13) Design Patterns and System Architecture.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/12) Retrieval Augmented Generation (RAG).md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/11) Representation Learning and Embeddings.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/10) Interfacing LLMs with External Tools.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/9) LLM - Inference Optimization.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/8) Alignment Training and Reasoning.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/7) Advanced Fine Tuning Techniques.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/6) Fine Tuning.md",
-    "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/5) Adapting LLMs to Your Use Case.md",
-    "Pasted image 20261026142329.png",
-    "Pasted image 20261026142246.png",
-    "Pasted image 20261026142007.png",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/18) Intro. to RAG.md.tmp",
-    "images/Pasted image 20261026121148.png",
-    "images/Pasted image 20261026120320.png",
-    "images/Pasted image 20261026121443.png",
-    "Pasted image 20261026121443.png",
     "OTHER TEXTBOOKS/Distributed Systems/Designing Distributed Systems/7) Scatter",
     "Private/Chyenne.md.tmp",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Data Management/3) Mapping Domains to a Technology Architecture.md.tmp",
     "OTHER TEXTBOOKS/Data Modeling and Analytics/Universal Data Modeling/0) Universal Data Modeling.md.tmp",
     "OTHER TEXTBOOKS/Infrastructure/Network Programming with Go/0) Network Programming with Go.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/21) ML Pipelines for NLP.md.tmp",
     "Untitled.canvas"
   ]
 }

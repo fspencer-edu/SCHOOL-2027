@@ -86,7 +86,50 @@
 
 ## Color Vision
 
-- 
+- Visible light consists of electromagnetic radiation within the range from less than 400 nm to more than 700 nm
+
+<img src="/images/Pasted image 20261026222913.png" alt="image" width="500">
+
+### The Trichromatic (Young Helmholtz) Theory
+
+- Thomas Young
+	- Founded the modern wave theory of light
+	- Defined energy in its modern form
+	- Founded the calculation of annuities
+	- Coefficient of elasticity
+	- Anatomy of the eye
+- Hermann von Helmholtz
+	- Trichromatic theory of colour vision
+	- Perceive colour through the relative rates of response by 3 kinds of cones, each maximally sensitive to a different set of wavelengths
+
+<img src="/images/Pasted image 20261026223211.png" alt="image" width="500">
+
+- Humans discriminate among wavelengths by the ratio of activity across the 3 types of cones
+- More intense light increase the activity of all three cones with the same ratio
+- Long- and medium-wavelength cones are more abundant that short-wavelength (blue) cones
+- Visual field
+	- Total area that the eye can see at one time while looking straight ahead at a single point
+
+### The Opponent Process Theory
+
+- Negative colour afterimage
+	- See the complementary colours of an image after staring at it
+- Ewald Hering
+	- After staring at one colour, you fatigue that response and tend to swing to the opposite
+
+### The Retinex Theory
+
+- Colour constancy
+	- The ability to recognize colours despite changes in lighting
+- Perceive the brightness of an object by comparing it to other objects
+- Retinex theory
+	- Cortex compares information from various parts of the retina to determine the brightness and colour for each area
+### Colour Vision Deficiency
+
+- Complete colourblindness
+- Perception of only black and white
+- Fail to develop one type of cone, or develop an abnormal type of cone
+- Red-green deficiency
 
 **Key Terms**
 
