@@ -27,12 +27,10 @@
 ## Assignments
 
 - [ ] Big data project
-- [ ] Virus post
 - [ ] Virus essay
+- [ ] AI assignment 3
 
-- [ ] Finish biological psychology textbook
 - [ ] Finish AI textbook
-
 
 - [ ] Start NAICS classification
 

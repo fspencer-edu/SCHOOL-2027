@@ -4,7 +4,7 @@ https://learning.oreilly.com/library/view/rag-from-first/9781835888667/
 
 [[1) Data Import]]
 [[2) Text Chunking]]
-[[3) Informatio Embedding]]
+[[3) Information Embedding]]
 [[4) Vector Storage]]
 [[5) Pre-Retrieval Processing]]
 [[6) Index Optimization]]
