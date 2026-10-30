@@ -4,53 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "0419ba9dabeda174",
+        "id": "2c9fca3f7e31e18f",
         "type": "tabs",
         "children": [
           {
-            "id": "85864e09cd0dad2a",
+            "id": "36a7dd657dccbda5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/1) What Is Observability?.md",
+                "file": "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/1) Thinking and Computation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1) What Is Observability?"
+              "title": "1) Thinking and Computation"
             }
           },
           {
-            "id": "1d360bb46e714dab",
+            "id": "9baade312aa4126e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/13) Paying Less with Reserved Instances and Committed Used Discounts.md",
+                "file": "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/7) Managing Data within Workflows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "13) Paying Less with Reserved Instances and Committed Used Discounts"
-            }
-          },
-          {
-            "id": "6c30a4f192d447cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Robotics/ROS for Robotics Programming/0) Hands-On ROS for Robotics Programming.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0) Hands-On ROS for Robotics Programming"
+              "title": "7) Managing Data within Workflows"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -226,44 +212,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "6c30a4f192d447cb",
+  "active": "9baade312aa4126e",
   "lastOpenFiles": [
-    "3) Getting Started with ROS.md",
-    "OTHER TEXTBOOKS/Robotics/ROS for Robotics Programming/0) Hands-On ROS for Robotics Programming.md",
-    "2) Unit Testing of GoPiGo.md",
-    "1) Assembling the Robot.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/1) Intro. to ROS 2.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/0) Mastering ROS 2 for Robotics Programming, 4th Ed..md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/16) Implementing ROS 2 Visualization and Simulation Plugins.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/15) ROS 2 and Deep Reinforcement Learning.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/14) Interfacing LLM with ROS 2.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/13) Testing, Continuous Integration, and Continuous Deployment with ROS 2.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/12) Designing and Programming a DIY Mobile Robot from Scratch.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/11) Aerial Robotics and ROS 2.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/9) Robot Manipulation Using Movelt 2.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/10) Working with ROS 2 and Perception Stack.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/8) ROS 2 Navigation Stack - Nav2.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/6) Controlling Robots Using the Ros2_control Package.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/7) Implementing ROS 2 Applications Using BehaviourTree.CPP.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/5) Simulating Robots In A Realistic Environment.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/4) Working with Robot 3D Modeling in ROS 2.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/3) Implementing ROS 2 Concepts.md",
-    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/2) Getting Started with ROS 2 Programming.md",
+    "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/2) PyTorch Fundamentals.md.tmp",
+    "OTHER TEXTBOOKS/Platform Engineering/Effective Platform Engineering/4) Governance, Compliance, and Trust.md.tmp",
+    "OTHER TEXTBOOKS/Platform Engineering/Argo CD/4) Managing Applications.md.tmp",
+    "OTHER TEXTBOOKS/Platform Engineering/Argo CD/11) Extending Argo CD.md.tmp",
+    "OTHER TEXTBOOKS/Platform Engineering/Argo CD/9) Security.md.tmp",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/6) Managing Your Workflow Environments.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/5) Runners.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/4) Working with Workflows.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/3) What's In An Action?.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/2) How Does Actions Work?.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/1) The Basics.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/14) Migrating to GitHub Actions.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/13) Advanced Workflow Techniques.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/12) Advanced Workflows.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/11) Creating Custom Actions.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/10) Monitoring, Logging, and Debugging.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/9) Action and Security.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/8) Managing Workflow Executions.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/7) Managing Data within Workflows.md",
+    "OTHER TEXTBOOKS/Software Delivery/Learning GitHub Actions/0) Learning GitHub Actions.md",
     "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/0) Deep Reinforcement Learning and Its Industrial Use Cases.md",
-    "OTHER TEXTBOOKS/Platform Producitivity/Platform Engineer's Handbook/1) Platform Engineering - Laying the Groundwork.md",
-    "OTHER TEXTBOOKS/Platform Producitivity/Platform Engineer's Handbook/0) The Platform Engineer's Handbook.md",
-    "OTHER TEXTBOOKS/Platform Producitivity/Platform Engineer's Handbook/15) Appendix - Comprehensive Setup Guide for MacOS, Linux, and Windows.md",
-    "OTHER TEXTBOOKS/Platform Producitivity/Platform Engineer's Handbook/14) Agentic and AI-Augmented Platforms.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Managing Feature Flags/0) Managing Feature Flags.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Managing Feature Flags/1) Introduction to Feature Flags.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/19) Managing to Unit Economics - FinOps Nirvana.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/18) FinOps For the Container.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/17) Automating Cost Management.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/16) Metric-Driven Cost Optimization.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/15) Aligning Teams to Business Goals.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/14) RI and CUD Strategies.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/13) Paying Less with Reserved Instances and Committed Used Discounts.md",
+    "1) Assembling the Robot.md.tmp",
     "8) CI",
     "OTHER TEXTBOOKS/Distributed Systems/Designing Distributed Systems/5) Adapters.md.tmp",
     "OTHER TEXTBOOKS/Distributed Systems/Microservices/5) Implementing Microservice Communication.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/23) The Future of ML Production Systems and Next Steps.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/0) Machine Learning Production Systems.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/21) ML Pipelines for NLP.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/4) Data Journey and Data Storage.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/6) Model Resource Management Techniques.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/3) Feature Engineering and Feature Selection.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/11) Intro. to Model Serving.md.tmp",
     "images/Pasted image 20261027194521.png",
     "images/Pasted image 20261027193844.png",
     "images/Pasted image 20261027200100.png",
