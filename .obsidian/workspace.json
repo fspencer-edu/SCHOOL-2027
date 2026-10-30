@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Platform Engineering/Terraform/4) Expressions and Iterations.md",
+                "file": "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/13) Paying Less with Reserved Instances and Committed Used Discounts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4) Expressions and Iterations"
+              "title": "13) Paying Less with Reserved Instances and Committed Used Discounts"
+            }
+          },
+          {
+            "id": "6c30a4f192d447cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Robotics/ROS for Robotics Programming/0) Hands-On ROS for Robotics Programming.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0) Hands-On ROS for Robotics Programming"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -212,8 +226,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "1d360bb46e714dab",
+  "active": "6c30a4f192d447cb",
   "lastOpenFiles": [
+    "3) Getting Started with ROS.md",
+    "OTHER TEXTBOOKS/Robotics/ROS for Robotics Programming/0) Hands-On ROS for Robotics Programming.md",
+    "2) Unit Testing of GoPiGo.md",
+    "1) Assembling the Robot.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/1) Intro. to ROS 2.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/0) Mastering ROS 2 for Robotics Programming, 4th Ed..md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/16) Implementing ROS 2 Visualization and Simulation Plugins.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/15) ROS 2 and Deep Reinforcement Learning.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/14) Interfacing LLM with ROS 2.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/13) Testing, Continuous Integration, and Continuous Deployment with ROS 2.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/12) Designing and Programming a DIY Mobile Robot from Scratch.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/11) Aerial Robotics and ROS 2.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/9) Robot Manipulation Using Movelt 2.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/10) Working with ROS 2 and Perception Stack.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/8) ROS 2 Navigation Stack - Nav2.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/6) Controlling Robots Using the Ros2_control Package.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/7) Implementing ROS 2 Applications Using BehaviourTree.CPP.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/5) Simulating Robots In A Realistic Environment.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/4) Working with Robot 3D Modeling in ROS 2.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/3) Implementing ROS 2 Concepts.md",
+    "OTHER TEXTBOOKS/Robotics/Mastering ROS 2 for Robotics Programming/2) Getting Started with ROS 2 Programming.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/0) Deep Reinforcement Learning and Its Industrial Use Cases.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Platform Engineer's Handbook/1) Platform Engineering - Laying the Groundwork.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Platform Engineer's Handbook/0) The Platform Engineer's Handbook.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Platform Engineer's Handbook/15) Appendix - Comprehensive Setup Guide for MacOS, Linux, and Windows.md",
+    "OTHER TEXTBOOKS/Platform Producitivity/Platform Engineer's Handbook/14) Agentic and AI-Augmented Platforms.md",
+    "8) CI",
     "OTHER TEXTBOOKS/Distributed Systems/Designing Distributed Systems/5) Adapters.md.tmp",
     "OTHER TEXTBOOKS/Distributed Systems/Microservices/5) Implementing Microservice Communication.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/23) The Future of ML Production Systems and Next Steps.md.tmp",
@@ -223,33 +264,6 @@
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/6) Model Resource Management Techniques.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/3) Feature Engineering and Feature Selection.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/11) Intro. to Model Serving.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/12) Model Serving Patterns.md.tmp",
-    "OTHER TEXTBOOKS/Modern AI and RAG/RAG Cookbook/2) Foundation Models.md.tmp",
-    "OTHER TEXTBOOKS/Platform Engineering/Terraform/3) Terraform Variables and Modules.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Terraform/2) Terraform HCL Components.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Terraform/1) A Brief of Overview of Terraform.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/22) Fin's Case Study In Modern Engineering.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/21) Observability for Large Language Models.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/20) Performance Engineering with Observability.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/19) Observability for Mobile and Frontend.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/0) Observability Engineering, 2nd Ed..md",
-    "18) Observability for CI/CD Pipelines.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/1) What Is Observability?.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/17) Ontologies as a Shared Language for Humans and AI.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/16) Telemetry Management with Pipelines.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/15) Cheap and Accurate Enough Sampling.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/14) Efficient Data Storage with ClickHouse.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/13) Efficient Data Storage with Retriever.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/12) Acting on and Debugging SLO-Based Alerts.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/11) Using Service Level Objectives for Reliability.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/10) The Role of AI Agents For Observability.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/9) Observability-Driven Development.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/8) Getting Started with Observability Analysis.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/7) Instrumenting Your Code with OpenTelemetry.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/6) Making Structured Events Arbitrarily Wide.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/5) Structured Events Are the Building Blocks of Observability.md",
-    "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/4) Getting Started with Instrumentation.md",
     "images/Pasted image 20261027194521.png",
     "images/Pasted image 20261027193844.png",
     "images/Pasted image 20261027200100.png",
