@@ -5,7 +5,7 @@ https://learning.oreilly.com/library/view/building-machine-learning/978109816522
 [[1) The FTI Pipeline Architecture for ML Systems]]
 [[2) Building ML Systems]]
 [[3) ML Pipelines]]
-[[4) Your Friendly Neighbourhood Air Quality Forecasting Service]]
+[[3) Your Friendly Neighbourhood Air Quality Forecasting Service]]
 [[5) Feature Stores]]
 [[6) Hops works Feature Store]]
 [[7) Model-Independent Transformations]]

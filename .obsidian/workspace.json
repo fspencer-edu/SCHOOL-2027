@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9baade312aa4126e",
+            "id": "4da3a599233b2f08",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
+                "file": "OTHER TEXTBOOKS/Data Science/Essential Math for AI/2) Data, Data, Data.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2) Building ML Systems"
-            }
-          },
-          {
-            "id": "46d584b99867ad79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/16) Emerging Technologies In Healthcare Systems.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "16) Emerging Technologies In Healthcare Systems"
+              "title": "2) Data, Data, Data"
             }
           }
         ]
@@ -211,42 +197,47 @@
       "bases:Create new base": false
     }
   },
-  "active": "9baade312aa4126e",
+  "active": "4da3a599233b2f08",
   "lastOpenFiles": [
+    "images/Pasted image 20261031230643.png",
+    "images/Pasted image 20261031225925.png",
+    "images/Pasted image 20261031224241.png",
+    "images/Pasted image 20261031224952.png",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/1) Why Learn the Mathematics of AI?.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/14) Artificial Intelligence, Ethics, Mathematics, Law, and Policy.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/13) Artificial Intelligence and Partial Differential Equations.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/12) Mathematical Logic.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/11) Probability.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/10) Operations Research.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/9) Graph Models.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/8) Probabilistic Generative MOdels.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/7) Natural Language and Finance AI - Vectorization and Time Series.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/6) Singular Value Decomposition - Image Processing, Natural Language Processing, and Social Media.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/5) Convolutional Neural Networks and Compute Vision.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/4) Optimization for Neural Networks.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/3) Fitting Functions to Data.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/2) Data, Data, Data.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/0) Essential Math for AI.md",
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI",
+    "OTHER TEXTBOOKS/Data Science",
     "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/16) Emerging Technologies In Healthcare Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/5) Feature Stores.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) Your Friendly Neighbourhood Air Quality Forecasting Service.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) ML Pipelines.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/1) The FTI Pipeline Architecture for ML Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Designing ML Systems/1) Overview of ML Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Designing ML Systems/0) Designing Machine Learning Systems.md",
+    "Pasted image 20261031230643.png",
+    "Pasted image 20261031225925.png",
+    "Pasted image 20261031224952.png",
+    "Pasted image 20261031224241.png",
+    "images/Pasted image 20261031205017.png",
+    "images/Pasted image 20261031204523.png",
+    "images/Pasted image 20261031211715.png",
     "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/15) Using Reinforcement Learning In Unity Environments for Training AI Agents.md",
     "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/14) Predictive Modeling Of Rheumatoid Arthritis Symptoms - A High Performance Approach Using HSFO-SVM and UNET-CNN.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/13) Hybrid Approaches - Combining Deep Reinforcement Learning with Other Techniques.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/12) Early Brain Smoke Detection Based on Optimized Cuckoo Search Using LSTM-Gated Multi-Perceptron Neural Network.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/11) Diabetic Retinopathy Detection and Classification Using Deep Reinforcement Learning.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/10) Deep Reinforcement Learning In Robotics and Autonomous Systens.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/9) Deep Reinforcement Learning In Healthcare and Biomedical Research.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/8) Cultivating Expertise In Deep and Reinforcement Learning Principles.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/7) Clinical Intelligence - Deep Reinforcement Learning for Healthcare and Biomedical Advancements.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/6) AI In Blockchain and Smart Contracts for Distributed Innovation.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/5) Application of Deep Reinforcement Learning in Adversarial Malware Detection.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/4) Deep Reinforcement Learning in Healthcare and Biomedical Applications.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/3) Deep Reinforcement Learning Algorithms.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/2) Deep Reinforcement Learning - Robotics and Autonomous Systems.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/1) Deep Reinforcement Learning Applications In Real-World Scenarios.md",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/0) Deep Reinforcement Learning and Its Industrial Use Cases.md",
-    "OTHER TEXTBOOKS/Robotics/ROS for Robotics Programming/0) Hands-On ROS for Robotics Programming.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/1) The FTI Pipeline Architecture for ML Systems.md",
-    "Pasted image 20261031211715.png",
-    "Pasted image 20261031205017.png",
-    "Pasted image 20261031204523.png",
-    "Pasted image 20261031204304.png",
-    "Pasted image 20261031203938.png",
-    "Pasted image 20261031203633.png",
-    "Pasted image 20261031203632.png",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/0) Building Machine Learning Systems with a Feature Store.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/25) Compute as a Service.md",
     "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md.tmp",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/24) Continuous Delivery.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/23) Continuous Integration.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/22) Large Scale Changes.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/21) Dependency Management.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/8) First-Order Logic.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/2) PyTorch Fundamentals.md.tmp",
     "OTHER TEXTBOOKS/Platform Engineering/Effective Platform Engineering/4) Governance, Compliance, and Trust.md.tmp",
@@ -254,11 +245,6 @@
     "OTHER TEXTBOOKS/Platform Engineering/Argo CD/11) Extending Argo CD.md.tmp",
     "OTHER TEXTBOOKS/Platform Engineering/Argo CD/9) Security.md.tmp",
     "1) Assembling the Robot.md.tmp",
-    "8) CI",
-    "OTHER TEXTBOOKS/Distributed Systems/Designing Distributed Systems/5) Adapters.md.tmp",
-    "images/Pasted image 20261027194521.png",
-    "images/Pasted image 20261027193844.png",
-    "images/Pasted image 20261027200100.png",
     "Untitled.canvas"
   ]
 }
