@@ -8,7 +8,7 @@ https://learning.oreilly.com/library/view/deep-reinforcement-learning/9781394272
 [[4) Deep Reinforcement Learning in Healthcare and Biomedical Applications]]
 [[5) Application of Deep Reinforcement Learning in Adversarial Malware Detection]]
 [[6) AI In Blockchain and Smart Contracts for Distributed Innovation]]
-[[7) Clinical Intelligence - Depp Reinforcement Learning for Healthcare and Biomedical Advancements]]
+[[7) Clinical Intelligence - Deep Reinforcement Learning for Healthcare and Biomedical Advancements]]
 [[8) Cultivating Expertise In Deep and Reinforcement Learning Principles]]
 [[9) Deep Reinforcement Learning In Healthcare and Biomedical Research]]
 [[10) Deep Reinforcement Learning In Robotics and Autonomous Systens]]

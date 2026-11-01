@@ -8,35 +8,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "36a7dd657dccbda5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS721 - AI/TEXTBOOKS/Thinking as Computation/1) Thinking and Computation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1) Thinking and Computation"
-            }
-          },
-          {
             "id": "9baade312aa4126e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/25) Compute as a Service.md",
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "25) Compute as a Service"
+              "title": "2) Building ML Systems"
+            }
+          },
+          {
+            "id": "46d584b99867ad79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/16) Emerging Technologies In Healthcare Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "16) Emerging Technologies In Healthcare Systems"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,32 +213,40 @@
   },
   "active": "9baade312aa4126e",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/16) Emerging Technologies In Healthcare Systems.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/15) Using Reinforcement Learning In Unity Environments for Training AI Agents.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/14) Predictive Modeling Of Rheumatoid Arthritis Symptoms - A High Performance Approach Using HSFO-SVM and UNET-CNN.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/13) Hybrid Approaches - Combining Deep Reinforcement Learning with Other Techniques.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/12) Early Brain Smoke Detection Based on Optimized Cuckoo Search Using LSTM-Gated Multi-Perceptron Neural Network.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/11) Diabetic Retinopathy Detection and Classification Using Deep Reinforcement Learning.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/10) Deep Reinforcement Learning In Robotics and Autonomous Systens.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/9) Deep Reinforcement Learning In Healthcare and Biomedical Research.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/8) Cultivating Expertise In Deep and Reinforcement Learning Principles.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/7) Clinical Intelligence - Deep Reinforcement Learning for Healthcare and Biomedical Advancements.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/6) AI In Blockchain and Smart Contracts for Distributed Innovation.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/5) Application of Deep Reinforcement Learning in Adversarial Malware Detection.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/4) Deep Reinforcement Learning in Healthcare and Biomedical Applications.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/3) Deep Reinforcement Learning Algorithms.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/2) Deep Reinforcement Learning - Robotics and Autonomous Systems.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/1) Deep Reinforcement Learning Applications In Real-World Scenarios.md",
+    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/0) Deep Reinforcement Learning and Its Industrial Use Cases.md",
+    "OTHER TEXTBOOKS/Robotics/ROS for Robotics Programming/0) Hands-On ROS for Robotics Programming.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/1) The FTI Pipeline Architecture for ML Systems.md",
+    "Pasted image 20261031211715.png",
+    "Pasted image 20261031205017.png",
+    "Pasted image 20261031204523.png",
+    "Pasted image 20261031204304.png",
+    "Pasted image 20261031203938.png",
+    "Pasted image 20261031203633.png",
+    "Pasted image 20261031203632.png",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/0) Building Machine Learning Systems with a Feature Store.md",
+    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/25) Compute as a Service.md",
     "OTHER TEXTBOOKS/Platform Engineering/Terraform/0) Terraform in Depth.md.tmp",
     "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/24) Continuous Delivery.md",
     "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/23) Continuous Integration.md",
     "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/22) Large Scale Changes.md",
     "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/21) Dependency Management.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/20) Static Analysis.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/19) Google's Code Review Tool.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/18) Build Systems and Build Philosophy.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/17) Code Search.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/16) Version Control and Branch Management.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/15) Deprecation.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/14) Larger Testing.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/13) Test Doubles.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/12) Unit Testing.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/11) Testing Overview.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/10) Documentation.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/9) Code Review.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/8) Style Guides and Rules.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/7) Measuring Engineering Productivity.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/6) Leading at Scale.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/5) How to Lead a Team.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/4) Engineering for Equity.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/3) Knowledge Sharing.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/2) How to Work Well On Teams.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/1) What Is Software Engineering?.md",
-    "OTHER TEXTBOOKS/Software Delivery/Software Engineering at Google/25) Compute as a Service.md",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/8) First-Order Logic.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/Modern CV with PyTorch/2) PyTorch Fundamentals.md.tmp",
     "OTHER TEXTBOOKS/Platform Engineering/Effective Platform Engineering/4) Governance, Compliance, and Trust.md.tmp",
@@ -249,17 +256,9 @@
     "1) Assembling the Robot.md.tmp",
     "8) CI",
     "OTHER TEXTBOOKS/Distributed Systems/Designing Distributed Systems/5) Adapters.md.tmp",
-    "OTHER TEXTBOOKS/Distributed Systems/Microservices/5) Implementing Microservice Communication.md.tmp",
     "images/Pasted image 20261027194521.png",
     "images/Pasted image 20261027193844.png",
     "images/Pasted image 20261027200100.png",
-    "images/Pasted image 20261027195559.png",
-    "images/Pasted image 20261027193538.png",
-    "images/Pasted image 20261027191348.png",
-    "images/Pasted image 20261027194032.png",
-    "images/Pasted image 20261027194634.png",
-    "images/Pasted image 20261027195739.png",
-    "images/Pasted image 20261027191748.png",
     "Untitled.canvas"
   ]
 }
