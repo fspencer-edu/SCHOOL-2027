@@ -276,4 +276,35 @@ reachable(X) :-
 	initLoc(X).
 	
 initLoc(boston).
+
+reacable(boston) :-
+	road(Y,boston),
+	reachable(Y).
+	
+road(toronto,edmonton).   % Fails
+road(ottawa,montreal).   % Fails
+road(montreal,boston).   % Succeeds
+
+Y = montreal
 ```
+
+```prolog
+reachable(montreal)
+
+initLoc(montreal).  % Fails
+
+reachable(montreal) :-
+	read(Y,montreal),
+	reachable(Y).
+	
+road(ottawa,montreal).   % Succeeds
+Y = ottawa
+```
+
+```prolog
+reachable(ottawa)
+
+initLoc(ottawa).  % Fails
+```
+
+- Therefore, `reachable(boston)` fails

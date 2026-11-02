@@ -72,65 +72,9 @@
               "icon": "lucide-file",
               "title": "New tab"
             }
-          },
-          {
-            "id": "1283e10f21921536",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Week 8"
-            }
-          },
-          {
-            "id": "b2884ffb0404082a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/Notes/Unit 1 - Supervised Learning, Classification.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Unit 1 - Supervised Learning, Classification"
-            }
-          },
-          {
-            "id": "fe02caf73bb7df16",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/Notes/Unit 3 - Model Overfitting, Regression, and Gradient Descent.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Unit 3 - Model Overfitting, Regression, and Gradient Descent"
-            }
-          },
-          {
-            "id": "eace56ee6f061a91",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Week 8"
-            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -307,8 +251,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "eace56ee6f061a91",
+  "active": "364470e81cdb0155",
   "lastOpenFiles": [
+    "Fall 2026/CPS721 - AI/Example Midterm/Midterm 2.md",
+    "Fall 2026/CPS721 - AI/Example Midterm/Midterm 1.md",
+    "Fall 2026/CPS721 - AI/Example Midterm/Midterm Overview.md",
+    "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
+    "Fall 2026/CPS803 - Machine Learning/Notes/Unit 3 - Model Overfitting, Regression, and Gradient Descent.md",
+    "Fall 2026/CPS803 - Machine Learning/Notes/Unit 1 - Supervised Learning, Classification.md",
+    "Pasted image 20261102133542.png",
+    "Pasted image 20261102131039.png",
+    "Pasted image 20261102130323.png",
+    "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/23) Natural Language Processing.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/11) Representation Learning and Embeddings.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/5) Intro. to NLP.md.tmp",
     "OTHER TEXTBOOKS/AWS Cert./ML Engineer/8) Model Security.md.tmp",
@@ -318,20 +272,13 @@
     "images/Pasted image 20261102094758.png",
     "Pasted image 20261102123243.png",
     "TODO.md",
-    "Fall 2026/CPS803 - Machine Learning/Notes/Unit 3 - Model Overfitting, Regression, and Gradient Descent.md",
-    "Fall 2026/CPS803 - Machine Learning/Notes/Unit 1 - Supervised Learning, Classification.md",
-    "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
     "Fall 2026/CPS803 - Machine Learning/Notes/Unit 1 - Introduction.md",
     "Fall 2026/CPS803 - Machine Learning/Notes",
-    "Fall 2026/CPS721 - AI/Example Midterm/Midterm 2.md",
     "Pasted image 20261102094758.png",
-    "Fall 2026/CPS721 - AI/Example Midterm/Midterm Overview.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
-    "Fall 2026/CPS721 - AI/Example Midterm/Midterm 1.md",
     "images/Pasted image 20261101230456.png",
     "images/Pasted image 20261101230514.png",
     "Pasted image 20261101230514.png",
-    "Pasted image 20261101230456.png",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/7) Model-Dependent and On-Demand Transformations.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/6) Model-Independent Transformations.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/5) Hops works Feature Store.md",
@@ -351,10 +298,6 @@
     "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/Untitled",
     "OTHER TEXTBOOKS/Data Science/Data Science from Scratch",
     "OTHER TEXTBOOKS/Data Science/Guide to Essential Math",
-    "OTHER TEXTBOOKS/Data Science/Math for Programmers",
-    "OTHER TEXTBOOKS/Data Science/Intro. to Linear Regression Analysis",
-    "images/Pasted image 20261101122505.png",
-    "images/Screenshot 2026-11-01 at 12.15.19 PM.png",
     "Untitled.canvas"
   ]
 }

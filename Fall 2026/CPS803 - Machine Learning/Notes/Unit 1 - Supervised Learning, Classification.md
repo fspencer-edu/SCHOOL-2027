@@ -60,5 +60,58 @@
 	- If $D_t$ contains instances that belong the same class $y_t$, then t is a leaf node labeled as $y_t$
 	- If $D_t$ contains records that belong to more than one class, use an attribute to split the data into small subsets
 	- Recursively apply the procedure
+- Divide the training data into smaller groups until each group contains records belonging to only one class
+
+<img src="/images/Pasted image 20261102131039.png" alt="image" width="500">
 
 
+```python
+(x, y) = (no, yes)
+
+Defaulted No = (7, 3)
+
+partition on Home Owner
+Yes = (3, 0)
+No (4, 3)
+
+partition on Marital Status
+Single, Divorced = (1, 3)
+Married = (3, 0)
+
+partition on Annual Income
+< 80K = (1, 0)
+> 80K = (0, 3)
+```
+
+
+## Design Issues of Decision Tree Induction
+
+- Splitting training instances
+	- Method for expressing test condition
+	- Measure for evaluating the goodness of test condition
+
+- Test conditions
+	- Multi-way split
+	- Binary split
+
+## Measure of Node Impurity
+
+- Greedy approach
+	- Nodes with purer class distribution are preferred
+
+```python
+# high degree of impurity
+C0: 5
+C1: 5
+
+# low degree of impurity
+C0: 9
+C1: 1
+```
+
+### Gini Index
+
+Gini Index = $1 - $
+### Entropy
+
+### Classification Error
