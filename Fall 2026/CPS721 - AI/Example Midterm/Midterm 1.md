@@ -318,6 +318,13 @@ before(B,m4). % success on 3 with B = m3
 
 (b) Add one rule to prove `before(m1,m5)`
 
-```prolog
+- m1 starts with and is inside m2
+- m2 occurs before m3
+- m5 occurs inside m3
+- If interval A occurs before interval B, and interval C occurs during B, then A also occurs before C
 
+```prolog
+before(A,C) :-
+    before(A,B),
+    during(C,B).
 ```

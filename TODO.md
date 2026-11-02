@@ -26,11 +26,15 @@
 
 ## Assignments
 
+- [ ] Go over AI labs and assignments
+- [ ] Go over AI midterm
+
+- [ ] Go over ML labs and assignments
+- [ ] Go over ML midterm
+
 - [ ] Big data project
 - [ ] Virus essay
-- [ ] AI assignment 3
 
-- [ ] Finish AI textbook
 
 - [ ] Start NAICS classification
 
