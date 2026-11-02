@@ -137,13 +137,40 @@ def test_spend_per_signup (get_spends : Callable):
 
 ## Reusable Features with Model-Independent Transformations
 
+- Data transformations
+	- Windowing
+	- Aggregations
+	- Window counts
+	- Transformations to create
+		- Recency
+		- Frequency
+		- Monetary value (RFM)
+- Model independent transformations (MITs)
+	- Computer once in batch or streaming 
+
 ## Real-Time Features with On-Demand Transformations
+
+- On-demand transformation (ODT)
+- Implement as user-defined functions (UDFs)
 ## The ML Transformation Taxonomy and ML Pipelines
 
+- Taxonomy
+	- Model independent transformations that produce reusable features that are stored in a feature store
+	- Model dependent transformations that produce features specific to a single model
+	- On demand transformations that require request time data to be computed in online inference pipelines, but can also be computed in feature pipelines on historical data
 
+<img src="/images/Pasted image 20261101230456.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261101230514.png" alt="image" width="500">
+
+- MITs are only performed in feature pipelines
+- MDTs are performed in both training and inference pipelines
+- Ensure there is no skew between the different implementation
 
 # Feature Pipelines
 
+- A feature pipeline is a program that orchestrates the execution of a dataflow graph of model-independent and on-demand data transformations
+- 
 
 # Training Pipelines
 # Inference Pipelines
