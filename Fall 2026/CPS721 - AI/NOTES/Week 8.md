@@ -344,12 +344,58 @@ NP (6)
 ```prolog
 doctor <- blue hat <- park <- tree (3 modifiers)
 blue hat <- park <- tree (2 modifiers)
-
+Total of 5
 ```
 
 
-**Q** - `[mary, saw, the, docter, with, the, telescope]`
+**Q** - `[mary, saw, the, doctor, with, the, telescope]`
 
+- Doctor with the telescope
+
+```prolog
+S (1)
+	NP (5)
+		proper_noun -> mary
+	VP (3)
+		transitive_verb -> saw
+		NP (6)
+			article -> the
+			NP2 (8)
+				common_noun -> doctor
+				Mods (9) -> []
+		Mods (10)
+			PP (11)
+				preposition -> with
+				NP (6)
+					article -> the
+					NP2 (8)
+						common_noun -> telescope
+						Mods (9) -> []
+			Mods (9) -> []
+```
+
+- Mary saw with the telescope
+
+```prolog
+S (1)
+	NP (5)
+		proper_noun -> mary
+	VP (3)
+		transitive_verb -> saw
+		NP (6)
+			article -> the
+			NP2 (8)
+				common_noun -> doctor
+				Mods (9) -> []
+			Mods (9) -> []
+			PP (11)
+				preposition -> with
+				NP (6)
+					article -> the
+					NP2 (8)
+						common_noun -> telescope
+						Mods (9) -> []
+```
 
 ## Sample Grammar for Noun Phrases
 
@@ -383,6 +429,27 @@ pp([Prep|Rest], Who) :-
 ## Tracing
 
 **Q** - `who([a, small, programmer], X).`
+
+```prolog
+np([a,small,programmer],X)
+
+Art = a
+Rest = [small,programmer]
+X = who
+
+np2([small,programmer], X)
+Adj = small
+Rest = programmer
+X = who
+
+adjective(small,X), np2([programmer], X)
+
+size(X, small), np2([programmer], X)
+	X = john
+	
+
+
+```
 
 
 **Q** - `who([a, programmer, beside, a, programmer], X).`

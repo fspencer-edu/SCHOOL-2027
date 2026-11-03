@@ -109,9 +109,90 @@ C0: 9
 C1: 1
 ```
 
+$p_i$ = proportion of records belonging to class $i$
+$c$ = number of classes
+$log_2$ = log base 2
 ### Gini Index
 
-Gini Index = $1 - $
+Gini Index = $1 - \sum^{c-1}_{i=0}p_i(t)^2$
 ### Entropy
 
+$H(t) = - \sum^c_{i=1}p_ilog_2(p_i)$
+
 ### Classification Error
+
+classification error = $1 - max[p_i(t)]$
+
+- Maximum of $log_2c$
+	- Records are equality distributed among all classes
+	- Least beneficial situation for classification
+- Minimum of 0
+	- When all records belong to one class
+	- Most beneficial situation for classification
+
+**Compute Entropy of a Single Node**
+
+```python
+C1 = 0
+C2 = 6
+
+P(C1) = 0/6 = 0
+P(21) = 6/6 = 1
+
+Entropy(P) = - 0log0 - 1log1 = -0 - 0 = 0
+
+-------------------------------------------
+
+C1 = 1
+C2 = 5
+
+P(C1) = 1/6
+P(C2) = 5/6
+
+Entropy(P) = -(1/6)log2(1/6) - (5/6)log2(5/6) = 0.65
+
+-------------------------------------------
+
+C1 = 2
+C2 = 4
+
+P(C1) = 2/6
+P(C2) = 4/6
+
+Entropy(P) = -(2/6)log2(2/6) - (4/6)log2(4/6) = 0.92
+```
+
+## Finding the Best Split
+
+- Compute impurity measure (P) before splitting
+- Compute impurity measure (M) after splitting
+	- Compute impurity measure of each child node
+	- M is the weighted impurity of child nodes
+- Choose the attribute test condition that produces the highest gain
+	- **Gain = P - M**
+	- Or lowest impurity measure after splitting (M)
+
+<img src="/images/Pasted image 20261103120654.png" alt="image" width="500">
+
+- When a node p is split into k partitions
+
+Entropy_{split} $= \sum^k_{i=1}\frac{n_1}{n} Entropy(i)$
+
+$n_i$ = number of records at child i
+$n$ = number or records at parent node p
+
+## Binary Attributes: Computing Entropy
+
+```python
+P(C1) = 7
+P(C2) = 5
+
+Entropy(P) = -(7/12)log(7/12) - (5/12)log(5/12)
+= 0.98
+
+-------------------------------------------
+
+
+P(N1) => 5, 2
+P(N2) => 1, 5
+```
