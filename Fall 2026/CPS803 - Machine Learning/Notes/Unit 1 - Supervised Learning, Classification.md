@@ -176,7 +176,7 @@ Entropy(P) = -(2/6)log2(2/6) - (4/6)log2(4/6) = 0.92
 
 - When a node p is split into k partitions
 
-Entropy_{split} $= \sum^k_{i=1}\frac{n_1}{n} Entropy(i)$
+$Gain_{split}$ $= \sum^k_{i=1}\frac{n_1}{n} Entropy(i)$
 
 $n_i$ = number of records at child i
 $n$ = number or records at parent node p
@@ -192,7 +192,79 @@ Entropy(P) = -(7/12)log(7/12) - (5/12)log(5/12)
 
 -------------------------------------------
 
+P(N1) => 5, 1
+P(N2) => 2, 4
 
-P(N1) => 5, 2
-P(N2) => 1, 5
+Entropy(N1) = -(5/6)log(5/6) - (1/6)log(1/6)
+= 0.65
+
+Entropy(N1) = -(2/6)log(2/6) - (4/6)log(4/6)
+= 0.92
+
+Weighted Entropy of N1 and N1
+= 6/12 * 0.65 + 6/12 * 0.92
+= 0.785
+
+Gain = 0.980 - 0.785
+= 0.195
 ```
+
+## Continuous Attributes: Computing Entropy
+
+- Sort the attributes on values
+- The candidate split values hare halfway between two sorted values
+- Compute the entropy for each candidate split values
+- Choose the split position that has the least entropy
+
+<img src="/images/Pasted image 20261103174827.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261103174848.png" alt="image" width="500">
+
+- Problem with large number of partitions
+	- Node impurity measures tend of prefer split that result in large number of partitions, each being small but pure
+	- Customer 
+
+## Gain Ratio
+
+$Gain Ratio = \frac{Gain_{split}}{Split Info}$
+
+$Split Info = - \sum^k_{i=1}log_2\frac{n_i}{n}$
+
+- Parent node, $p$ is split into $k$ partitions
+$n$ = number of instances in parent node
+$n_i$ = number of instances in child node $i$
+
+- Adjusts Information Gain by the uncertainty of the splits
+- Larger number of small partitions are penalized
+- Designed to overcome the disadvantages of information gain
+
+<img src="/images/Pasted image 20261103191728.png" alt="image" width="500">
+
+```python
+
+```
+## Design Issues of Decision Tree Induction
+
+- How should training records be split
+- Method for expressing test condition
+- Depending on attribute types
+- Measure for evaluating the goodness of a test
+
+- Stop expanding a node when all instances belong to the same class
+- Split expanding a node when all instances have similar attribute values
+- Early termination when number of instances below minimum threshold
+
+# Decision Tree Based Classification
+
+- Advantages
+	- Relatively inexpensive to construct
+	- Extremely fast at classifying unknown records
+	- Easy to interpret for small sized trees
+	- Robust to noise
+		- Avoid overfitting
+	- Can easily handle redundant attributes
+	- Can easily handle irrelevant attributes
+- Disadvantages
+	- Greedy nature of splitting criterion
+		- Attributes that distinguish between classes together but not individually, may be passed on ver in favour of other attributes
+		- Each decision boundary involved only a single attribute

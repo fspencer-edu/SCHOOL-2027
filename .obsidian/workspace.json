@@ -8,91 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4be15afdd99c2a9d",
+            "id": "7a582a2472e33c61",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fall 2026/CPS721 - AI/Example Midterm/Midterm 1.md",
+                "file": "Fall 2026/CPS803 - Machine Learning/Notes/Unit 4 - Alternative Classification Methods.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Midterm 1"
-            }
-          },
-          {
-            "id": "bebf69e367230089",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS721 - AI/Example Midterm/Midterm 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Midterm 2"
-            }
-          },
-          {
-            "id": "364470e81cdb0155",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS721 - AI/Example Midterm/Quizes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Quizes"
-            }
-          },
-          {
-            "id": "0abb29bb6163f07b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2) Building ML Systems"
-            }
-          },
-          {
-            "id": "f1b26112c2668f90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS803 - Machine Learning/Notes/Unit 1 - Supervised Learning, Classification.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Unit 1 - Supervised Learning, Classification"
-            }
-          },
-          {
-            "id": "99e2840508dbaa74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Week 8"
+              "title": "Unit 4 - Alternative Classification Methods"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125,
-    "collapsed": true
+    "width": 256.953125
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -269,38 +197,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "99e2840508dbaa74",
+  "active": "7a582a2472e33c61",
   "lastOpenFiles": [
+    "images/Pasted image 20261103174827.png",
+    "images/Pasted image 20261103191728.png",
+    "images/Screenshot 2026-11-03 at 7.19.26 PM.png",
+    "images/Pasted image 20261103174848.png",
+    "images/Pasted image 20261103193357.png",
+    "Fall 2026/CPS803 - Machine Learning/Notes/Unit 3 - Model Overfitting, Regression, and Gradient Descent.md",
+    "Fall 2026/CPS803 - Machine Learning/Notes/Unit 4 - Alternative Classification Methods.md",
+    "Pasted image 20261103193357.png",
+    "Fall 2026/CPS803 - Machine Learning/Notes/Unit 6 - Clustering.md",
+    "Fall 2026/CPS803 - Machine Learning/Notes/Unit 5 - Ensemble Techniques.md",
+    "Fall 2026/CPS803 - Machine Learning/Notes/Unit - Alternative Classification Methods.md",
     "Fall 2026/CPS803 - Machine Learning/Notes/Unit 1 - Supervised Learning, Classification.md",
-    "Pasted image 20261103120654.png",
+    "Fall 2026/CPS803 - Machine Learning/Midterm.md",
+    "Screenshot 2026-11-03 at 7.19.26 PM.png",
+    "Pasted image 20261103191728.png",
+    "Pasted image 20261103174848.png",
+    "Pasted image 20261103174827.png",
     "Fall 2026/CPS803 - Machine Learning/Notes/Unit 1 - Introduction.md",
+    "Fall 2026/CPS721 - AI/Example Midterm/Midterm 1.md",
+    "Fall 2026/CPS721 - AI/Example Midterm/Midterm 2.md",
     "Fall 2026/CPS721 - AI/Example Midterm/Quizes.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
+    "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
+    "images/Pasted image 20261103120654.png",
     "OTHER TEXTBOOKS/Data Engineering/Spark/8) Structured Streaming.md.tmp",
     "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/3) Lifecycle of Write and Read queries.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/7) High-Performance Modeling.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/MLOps/6) Monitoring and Logging.md.tmp",
     "Fall 2026/CPS721 - AI/Example Midterm/Midterm Overview.md",
-    "images/Pasted image 20261102130323.png",
-    "images/Pasted image 20261102131039.png",
-    "images/Pasted image 20261102133542.png",
-    "Fall 2026/CPS721 - AI/Example Midterm/Midterm 2.md",
-    "Fall 2026/CPS721 - AI/Example Midterm/Midterm 1.md",
-    "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
-    "Fall 2026/CPS803 - Machine Learning/Notes/Unit 3 - Model Overfitting, Regression, and Gradient Descent.md",
-    "Pasted image 20261102133542.png",
-    "Pasted image 20261102131039.png",
-    "Pasted image 20261102130323.png",
     "Fall 2026/CPS721 - AI/TEXTBOOKS/AI - A Modern Approach/23) Natural Language Processing.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/Designing LLMs/11) Representation Learning and Embeddings.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/5) Intro. to NLP.md.tmp",
     "OTHER TEXTBOOKS/AWS Cert./ML Engineer/8) Model Security.md.tmp",
     "OTHER TEXTBOOKS/AWS Cert./Solutions Arch./6) Authentication and Authorization - AWS Identity and Access Management.md.tmp",
     "OTHER TEXTBOOKS/Platform Engineering/Observability Engineering/32) Where do We Go from Here?.md.tmp",
-    "images/Pasted image 20261102123243.png",
-    "images/Pasted image 20261102094758.png",
-    "Pasted image 20261102123243.png",
     "TODO.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/7) Model-Dependent and On-Demand Transformations.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/6) Model-Independent Transformations.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/5) Hops works Feature Store.md",
@@ -311,11 +245,6 @@
     "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/1) Introduction - Data Science.md",
     "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/27) Go Forth and Do Data Science.md",
     "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/26) Data Ethics.md",
-    "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/25) MapReduce.md",
-    "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/24) Databases and SQL.md",
-    "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/23) Recommender Systems.md",
-    "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/22) Network Analysis.md",
-    "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/21) Natural Language Processing.md",
     "Untitled.canvas"
   ]
 }
