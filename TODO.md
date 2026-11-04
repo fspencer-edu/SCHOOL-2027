@@ -29,14 +29,15 @@
 - [ ] Go over AI labs and assignments
 - [ ] Go over AI midterm
 
-- [ ] Go over ML labs and assignments
-- [ ] Go over ML midterm
-
 - [ ] Big data project
 - [ ] Virus essay
 
-
 - [ ] Start NAICS classification
+- [ ] Prism Insights
+	- [ ] Time Aggregation
+	- [ ] Model Queries
+	- [ ] Org Data
+	- [ ] Page Access Matrix in Client Admin
 
 
 ---
