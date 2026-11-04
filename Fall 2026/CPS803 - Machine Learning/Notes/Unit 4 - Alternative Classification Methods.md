@@ -285,4 +285,32 @@ $g2 = (1)(10) + -20x1 + -20x2$
 $g3 = (1)(-10) + 20g1 + 20g2$
 
 - Minimize the output error
-	- Compare the desired output and ac
+	- Compare the desired output and actual output
+	- Compute the contribution of each output connection to the error
+	- Compute the contribution of each connection in lower layer to these errors
+	- Tweak all connection weights using gradient descent
+
+- Number of feature = number if input units
+- Number of class = number of output units
+- Number of hidden layers and number of units per layer
+	- More the better, but computation is expensive
+- Layer close to the input layer are called layer layers, and closer to the output are upper layers
+- Algorithm
+	- Randomly initialize all the weights
+	- Adjust the weights such that the final output is consistent with class labels y of training examples
+	- Forward propagation to estimate output y given input X and weights $w_i$
+	- Backpropagation to find the weights that minimize the output estimation error
+
+# Classifiers
+
+- Classification problems where classes are skewed
+- Some evaluation measure
+	- Accuracy is not well suited for imbalanced class
+
+- Confusion matrix
+
+<img src="/images/Pasted image 20261103235842.png" alt="image" width="500">
+
+<img src="/images/Pasted image 20261103235855.png" alt="image" width="500">
+
+- Problem with accuracy
