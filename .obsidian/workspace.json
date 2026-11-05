@@ -197,8 +197,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "ebf7035dc389d5f5",
+  "active": "939fce2739482ca2",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Platform Engineering/Mastering API Architecture/4) Service Mesh - Service-to-service Traffic Management.md.tmp",
     "Fall 2026/CPS803 - Machine Learning/ML Formula Sheet.md",
     "Fall 2026/CPS803 - Machine Learning/Notes/Unit 6 - Clustering.md",
     "OTHER TEXTBOOKS/Platform Producitivity/Cloud FinOps/0) Cloud FinOps.md.tmp",
@@ -244,7 +245,6 @@
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) ML Pipelines.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) Your Friendly Neighbourhood Air Quality Forecasting Service.md",
     "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/1) Introduction - Data Science.md",
-    "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/27) Go Forth and Do Data Science.md",
     "Untitled.canvas"
   ]
 }
