@@ -197,7 +197,7 @@ tree_sum(void, 0).
 tree_sum(tree(Value, Left, Right), S) :-
 	tree_sum(Left, LeftSum),
 	tree_sum(Right, RightSum),
-	Sum is Value + LeftSum + RightSum.
+	S is Value + LeftSum + RightSum.
 ```
 
 **Q** - Count leaves
@@ -207,7 +207,7 @@ tree_sum(tree(Value, Left, Right), S) :-
 leaves(void, 0).
 
 % Base case: A leaf node
-leaves(tree(_, void, void), 0)
+leaves(tree(_, void, void), 1)
 
 % Recursive case: count all leaves
 leaves(tree(_, Left, Right), N) :-
@@ -227,7 +227,7 @@ nodes(void, 0).
 nodes(tree(_, Left, Right), N) :-
 	nodes(Left, NLeft),
 	nodes(Right, NRight),
-	N is N Left + NRight + 1.
+	N is NLeft + NRight + 1.
 ```
 
 # Constraint Satisfaction Problems

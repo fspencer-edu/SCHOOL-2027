@@ -101,15 +101,15 @@ merge([X|Xs], [], [X|Result], N) :-
 	
 % Recursive 3: X is smaller than or equal to Y
 merge([X|Xs], [Y|Ys], [X|Result], N) :-
-	X =< Y,
-	merge(Xs, [Y|Ys], Result, N1)
-	N is N1 + 1.
+    X =< Y,
+    merge(Xs, [Y|Ys], Result, N1),
+    N is N1 + 1.
 
 % Recursive 4: Y is smaller than X
-merge([X|Xs], [Y|Ys], [X|Result], N) :-
-	X > Y,
-	merge(Xs, [Y|Ys], Result, N1)
-	N is N1 + 1.
+merge([X|Xs], [Y|Ys], [Y|Result], N) :-
+    X > Y,
+    merge([X|Xs], Ys, Result, N1),
+    N is N1 + 1.
 ```
 
 
@@ -127,7 +127,7 @@ family(
 	person(FirstName2, Lastname, data(Day, Month, Year1), Employer),
 ),
 not(Employer = unemployed),
-not(Year1 = Year2))
+not(Year1 = Year2)
 ```
 
 (b) Define `relatives(X,Y)` to determine whether two people have a common ancestor.
