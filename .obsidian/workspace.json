@@ -257,6 +257,9 @@
   },
   "active": "a826f01299718c48",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/4) Data Journey and Data Storage.md.tmp",
+    "OTHER TEXTBOOKS/Commercial ML/Reliable ML/7) Training Systems.md.tmp",
+    "OTHER TEXTBOOKS/Commercial ML/Reliable ML/5) Evaluating Model Validity and Quality.md.tmp",
     "Fall 2026/CPS721 - AI/Example Midterm/Quizes.md",
     "Fall 2026/CPS721 - AI/Example Midterm/Midterm Overview.md",
     "Fall 2026/CPS721 - AI/Example Midterm/Midterm 2.md",
@@ -293,8 +296,6 @@
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
     "OTHER TEXTBOOKS/Data Engineering/Spark/8) Structured Streaming.md.tmp",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/3) Lifecycle of Write and Read queries.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/7) High-Performance Modeling.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/7) Model-Dependent and On-Demand Transformations.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/6) Model-Independent Transformations.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/5) Hops works Feature Store.md",
@@ -302,7 +303,6 @@
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/0) Building Machine Learning Systems with a Feature Store.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) ML Pipelines.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) Your Friendly Neighbourhood Air Quality Forecasting Service.md",
-    "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/1) Introduction - Data Science.md",
     "Untitled.canvas"
   ]
 }
