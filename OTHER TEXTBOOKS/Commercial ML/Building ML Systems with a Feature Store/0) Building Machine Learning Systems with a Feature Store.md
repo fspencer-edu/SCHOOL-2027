@@ -16,3 +16,5 @@ https://learning.oreilly.com/library/view/building-machine-learning/978109816522
 [[13) Testing AI Systems]]
 [[14) Observability and Monitoring AI Systems]]
 [[15) Personalized Recommender]]
+
+<img src="/images/Screenshot 2026-11-07 at 7.15.23 AM.png" alt="image" width="500"><img src="/images/Screenshot 2026-11-07 at 7.15.28 AM.png" alt="image" width="500">
