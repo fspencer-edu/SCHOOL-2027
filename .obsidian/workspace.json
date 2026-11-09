@@ -8,49 +8,62 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9be2fb749614ebf6",
+            "id": "6a330e3c0a291ad8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Data Science/Guide to Essential Math/1) Mathematical Thinking.md",
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) Your Friendly Neighbourhood Air Quality Forecasting Service.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1) Mathematical Thinking"
+              "title": "3) Your Friendly Neighbourhood Air Quality Forecasting Service"
             }
           },
           {
-            "id": "e94e33034d7a2008",
+            "id": "68014a44c2eea686",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Computer Vision/Deep Learning for CV/1) Image Classification.md",
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/4) Feature Stores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1) Image Classification"
+              "title": "4) Feature Stores"
             }
           },
           {
-            "id": "8bff695a84cbe4eb",
+            "id": "587694aa744d0e77",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/10) Trends In Production ML.md",
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/5) Hops works Feature Store.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10) Trends In Production ML"
+              "title": "5) Hops works Feature Store"
+            }
+          },
+          {
+            "id": "c17847bd4bbd7ce4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/6) Model-Independent Transformations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6) Model-Independent Transformations"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +125,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125
+    "width": 256.953125,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -226,8 +240,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "8bff695a84cbe4eb",
+  "active": "6a330e3c0a291ad8",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Data Science/Essential Math for AI/9) Graph Models.md.tmp",
+    "OTHER TEXTBOOKS/AWS Cert./Solutions Arch./9) Data Ingestion, Transformation, and Analytics.md.tmp",
+    "images/Pasted image 20261109095837.png",
+    "images/Pasted image 20261109095212.png",
+    "images/Pasted image 20261109094000.png",
+    "images/Pasted image 20261109094837.png",
+    "images/Pasted image 20261109100111.png",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/4) Feature Stores.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) Your Friendly Neighbourhood Air Quality Forecasting Service.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/6) Model-Independent Transformations.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/5) Hops works Feature Store.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
+    "Pasted image 20261109100111.png",
+    "Pasted image 20261109095837.png",
+    "Pasted image 20261109095212.png",
+    "Pasted image 20261109094837.png",
+    "Pasted image 20261109094000.png",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/0) Building Machine Learning Systems with a Feature Store.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/1) The FTI Pipeline Architecture for ML Systems.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/10) Trends In Production ML.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/5) Creating Vision Datasets.md.tmp",
     "OTHER TEXTBOOKS/AWS Cert./ML Engineer/2) Data Ingestion and Storage.md.tmp",
     "OTHER TEXTBOOKS/AWS Cert./ML Engineer/3) Data Transformation and Feature Engineering.md.tmp",
@@ -244,7 +278,6 @@
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/1) ML for Computer Vision.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/12) Image and Text Generation.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/11) Advanced Vision Problems.md",
-    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/10) Trends In Production ML.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/0) Practical ML for CV.md",
     "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/9) Introduction To Neural Networks with OpenCV.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV",
@@ -252,28 +285,9 @@
     "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/7) Tracking Objects.md",
     "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/6) Retrieving Images and Searching Using Image Detectors.md",
     "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/5) Detecting and Recognizing Faces.md",
-    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/4) Depth Estimation and Segmentation.md",
-    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/3) Processing Images with OpenCV.md",
-    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/2) Handling Files, Cameras, and GUIs.md",
-    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/1) Setting Up OpenCV.md",
-    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/0) Learning OpenCV 4.md",
-    "OTHER TEXTBOOKS/Computer Vision/OpenCV/1) AI and CV.md",
     "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4",
-    "OTHER TEXTBOOKS/Computer Vision/OpenCV/6) Motion Analysis and Object Tracking.md",
     "OTHER TEXTBOOKS/Untitled",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Untitled",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Artificial Intelligence",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Robot Brains",
-    "images/Screenshot 2026-11-07 at 7.15.28 AM.png",
-    "images/Screenshot 2026-11-07 at 7.15.23 AM.png",
-    "Screenshot 2026-11-07 at 7.15.28 AM.png",
-    "Screenshot 2026-11-07 at 7.15.23 AM.png",
-    "images/Pasted image 20261104001104.png",
-    "images/Pasted image 20261104003624.png",
-    "images/Pasted image 20261104000311.png",
-    "images/Pasted image 20261103235855.png",
-    "images/Pasted image 20261103235842.png",
-    "Pasted image 20261104003624.png",
     "Untitled.canvas"
   ]
 }
