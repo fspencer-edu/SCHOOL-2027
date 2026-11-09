@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/9) Network Models.md",
+                "file": "OTHER TEXTBOOKS/Computer Vision/Deep Learning for CV/1) Image Classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "9) Network Models"
+              "title": "1) Image Classification"
+            }
+          },
+          {
+            "id": "8bff695a84cbe4eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/10) Trends In Production ML.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "10) Trends In Production ML"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -70,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "spark",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -212,48 +226,48 @@
       "bases:Create new base": false
     }
   },
-  "active": "e94e33034d7a2008",
+  "active": "8bff695a84cbe4eb",
   "lastOpenFiles": [
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/8) Multiplicity and Persistency of Synaptic Plasticity.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/7) Conjunctive Long-Term Depression (LTD).md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/6) Pre- and Post-Cerebellar Cortex Neurons.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/5) Inhibitory Interneurons and Glial Cells in the Cerebellar Cortex.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/4) Input and Output Pathways in the Cerebellar Cortex.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/3) the Cerebellum as a Neuronal Machine.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/2) Traditional Views of the Cerebellum.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/1) Neuronal Circuitry - The Key to Unlocking the Brain.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/18) Concluding Thoughts.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/17) Cognitive Functions.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/16) Motor Actions for Tool Use.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/15) Internal Models for Voluntary Motor Control.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/14) Voluntary Eye Movement.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/13) Voluntary Motor Control.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/12) Adaptive Control System Models.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/11) Somatic and Autonomic Reflexes.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/10) Ocular Reflexes.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/9) Network Models.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/0) Modern Discoveries in Neuroscience.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Nanoscience and Its Applications/7) Molecular Modeling Applied to Nanobiosystems.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/9) Model Predictions.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/8) Model Quality and Continuous Evaluation.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/7) Training Pipeline.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/6) Preprocessing.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/5) Creating Vision Datasets.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/4) Object Detection and Image Segmentation.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/3) Image Vision.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/2) ML Models for Vision.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/1) ML for Computer Vision.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/12) Image and Text Generation.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/11) Advanced Vision Problems.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/10) Trends In Production ML.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/0) Practical ML for CV.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/9) Introduction To Neural Networks with OpenCV.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/8) Camera Models and Augmented Reality.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/7) Tracking Objects.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/6) Retrieving Images and Searching Using Image Detectors.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/5) Detecting and Recognizing Faces.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/4) Depth Estimation and Segmentation.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/3) Processing Images with OpenCV.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/2) Handling Files, Cameras, and GUIs.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/1) Setting Up OpenCV.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4/0) Learning OpenCV 4.md",
+    "OTHER TEXTBOOKS/Computer Vision/OpenCV/1) AI and CV.md",
+    "OTHER TEXTBOOKS/Computer Vision/Learning OpenCV 4",
+    "OTHER TEXTBOOKS/Computer Vision/OpenCV/6) Motion Analysis and Object Tracking.md",
+    "OTHER TEXTBOOKS/Computer Vision/OpenCV/5) Object Detection and Recognition.md",
+    "OTHER TEXTBOOKS/Untitled",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Untitled",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Artificial Intelligence",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Robot Brains",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Nanoscience and Its Applications/6) Electrochemical Sensors.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Nanoscience and Its Applications/5) Nanosensors.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Nanoscience and Its Applications/4) Nanoneurobiophysics.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Nanoscience and Its Applications/3) Nanomedicine.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Nanoscience and Its Applications/2) Nanoelectronics.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Nanoscience and Its Applications/1) Nanomaterials - Solar Energy Conversion.md",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Nanoscience and Its Applications",
     "OTHER TEXTBOOKS/Comp. Neuroscience",
     "OTHER TEXTBOOKS/Modern AI and RAG/LLM Handbook/0) LLM Engineer’s Handbook.md.tmp",
-    "OTHER TEXTBOOKS/Robotics/Deep Reinforcement Learning/4) Deep Reinforcement Learning in Healthcare and Biomedical Applications.md.tmp",
-    "OTHER TEXTBOOKS/Platform Engineering/Terraform/11) Alternative Interfaces.md.tmp",
-    "OTHER TEXTBOOKS/Platform Engineering/Terraform/12) Terraform Provides.md.tmp",
     "images/Screenshot 2026-11-07 at 7.15.28 AM.png",
     "images/Screenshot 2026-11-07 at 7.15.23 AM.png",
     "Screenshot 2026-11-07 at 7.15.28 AM.png",
     "Screenshot 2026-11-07 at 7.15.23 AM.png",
-    "OTHER TEXTBOOKS/Data Science/Data Science from Scratch/6) Probability.md.tmp",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Airflow/10) Testing.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/4) Data Journey and Data Storage.md.tmp",
     "images/Pasted image 20261104001104.png",
     "images/Pasted image 20261104003624.png",
     "images/Pasted image 20261104000311.png",

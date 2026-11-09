@@ -1,3 +1,8 @@
+![](https://learning.oreilly.com/covers/urn:orm:book:9780133039665/296w/?format=webp)
+
+
+https://learning.oreilly.com/library/view/modern-discoveries-in/9780133039665/
+
 [[1) Neuronal Circuitry - The Key to Unlocking the Brain]]
 [[2) Traditional Views of the Cerebellum]]
 [[3) the Cerebellum as a Neuronal Machine]]
