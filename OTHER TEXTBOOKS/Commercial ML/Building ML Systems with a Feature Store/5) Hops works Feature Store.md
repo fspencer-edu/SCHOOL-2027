@@ -1,6 +1,7 @@
-# Source Code Organization
-# Feature Pipelines
-# Data Transformations for DataFrames
-# DAG of Feature Functions
-# Credit Card Fraud Features
-# Composition of Transformations
+
+# Hopworks Projects
+# Feature Groups
+# Feature Views
+# Faster Queries for Feature Data
+
+
