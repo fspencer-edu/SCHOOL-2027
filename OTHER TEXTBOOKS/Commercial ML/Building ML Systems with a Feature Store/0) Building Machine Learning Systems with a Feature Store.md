@@ -9,7 +9,7 @@ https://learning.oreilly.com/library/view/building-machine-learning/978109816522
 [[5) Hops works Feature Store]]
 [[6) Model-Independent Transformations]]
 [[7) Model-Dependent and On-Demand Transformations]]
-[[9) Batch Feature Pipelines]]
+[[8) Batch Feature Pipelines]]
 [[10) Streaming and Real-Time Features]]
 [[11) Inference Pipelines]]
 [[12) Agents and LLM Workflows]]

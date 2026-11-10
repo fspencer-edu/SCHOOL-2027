@@ -217,11 +217,266 @@ feature definitions
 
 - Feature definition
 	- Source code that defines the data transformations used to create one or more features in a feature group
-	- 
+	- Source code for MITs and ODTs
 
+## Writing to Feature Groups
+
+- Feature stores provide an API to ingest feature data
+- Offline store is normally a lakehouse table
+	- Provides change data capture (CDC) APIs
+	- Read the data changes for the latest commit
+	- Periodically or continually reads new commits and copies to the online store and/or vector index
+
+<img src="/images/Pasted image 20261109160612.png" alt="image" width="500">
+
+- A batch API and a stream API
+- Clients can use the batch API to write to only the offline store
+- If a feature group is online, clients can write to the stream API
+- Feature data is available at lower latency in the online store via the stream API
+	- Stream API enables fresher features
+
+<img src="/images/Pasted image 20261109160703.png" alt="image" width="500">
+
+### Feature Freshness
+
+- Freshness
+	- Defined as the total time taken from when an event is first read by a feature pipelines to when the computed feature becomes available for use in an inference pipeline
+	- Time taken for feature data to land in the online feature store and read from the online store
+
+<img src="/images/Pasted image 20261109160932.png" alt="image" width="500">
+
+### Data Validation
+
+- Data validation
+	- Specify constraints for valid feature data values
+	- Data validation helps avoid problems with data quality in feature groups
 
 # Data Models for Feature Groups
+
+- Data modeling for feature stores is the process of deciding
+	- What features to create for which entities and what feature to include in feature groups
+	- What relationships between the feature group look like
+	- What the freshness requirements for feature data is
+	- What type of queries will be performed on the feature groups
+- Data model
+	- How to decompose data into different feature groups
+		- Ensuring the integrity of the data
+		- Improving the performance of writing the data
+		- Improving the performance of read (querying) the data
+		- Improving the scalability of the system as data volumes and/or throughput increases
+
+- An entity maps to a feature group and relationships map to foreign keys in a feature group
+- Normalization
+	- Reduce data redundancy and improve data integrity
+	- Eliminate redundant data
+	- Lower data storage cost
+	- Higher query complexity
+- Denormalization
+	- Improve query performance by increasing data redundancy and endangering data integrity
+	- Include redundant data
+	- Higher data store cost
+	- Lower query complexity
+
+- Denormalized data models are more prevalent
+	- Efficiently compress redundant data
+		- Run-length encoding
+- Row-oriented data stores cannot compress, and favour normalized data model
+
+- AI systems
+	- Batch ML systems
+		- Feature groups only need to store data in their offline store
+		- Columnar stores
+		- Star schema
+		- Snowflake schema
+	- Real-time ML systems (LLM/agent)
+		- Groups groups with tables in both offline and online store
+- Star and snowflake schema
+	- Data models that organize data into a fact table that connects to dimension tables
+- Star schema
+	- Columns in the dimenion tables can be redundant
+- Snowflake schema
+	- Extends the star schema to enable dimension tables to be connected to other dimension tables
+	- Normalized data with no redundant data
+- Data vault model
+	- Handle data ingestion, where data can arrive late and schema changes happen frequently
+- One big table (OBT) data model
+	- Simplifies data modeling by storing as much data as possible in a single wide table
+
+## Dimension Modeling with a Credit Card Data Mart
+
+- Dimension modeling
+	- Categorizes data as facts and dimensions
+- Facts
+	- Measure quantities, but can also be qualitative
+- Dimensions
+	- Attribute of facts
+- Slowly changing dimensions (SCD)
+	- Some dimensions change in value over time
+- Data mart
+	- Subset of a data warehouse or lakehouse that contains data focused on specific business line, team, or product
+
+<img src="/images/Pasted image 20261109162133.png" alt="image" width="500">
+
+- Fact table
+	- Store `credit_card_transactions`
+- Dimension tables
+	- `card_details`
+	- `account_details`
+	- `bank_details`
+	- `merchant_details`
+
+- Credit card transactions table is populated using the event sourcing patterns
+
+### Labels are facts, and features are dimensions
+
+- Facts are the labels
+	- Immutable events that have a timestamp associated with them
+- Features are dimensions for the labels
+	- Mutable data
+	- SCDs (Slowly Changing Dimensions), but in real time ML systems, they might be fast-changing dimensions
+	- Save all values for features at all points in time
+
+### Feature stores and SCD types
+
+- 5 well known ways to implement SCDs
+	- Each new feature value replaces the old feature value
+	- There are a limited number of query patterns for reading feature data
+	- Feature stores do not need to support all 5 SCDs types
+
+<img src="/images/Pasted image 20261109162707.png" alt="image" width="500">
+
+- Feature stores hide the complexity of designing a data model that implements these 3 SCD types by implementing the data models in their read/write APIs
+- AWS SageMaker
+	- Specify `event_time` when defining a feature group
+
+```python
+feature_group.create(
+    description = "Some info about the feature group",
+    feature_group_name = "feature_group_name",
+    event_time_feature_name = event_time_feature_name,
+    enable_online_store = True,
+    ...
+    tags = ["tag1","tag2"]
+)
+```
+
+- Feature data in a key-value store
+	- ElastiCache
+	- DynamoDB
+- Historical feature data in a columnar store
+	- Apache Iceberg
+
+## Real-Time Credit Card Fraud Detection ML System
+
+- Service-level objects (SLO) of ml latency or lower
+- Receives a prediction request with the credit card transaction details, retrieves precomputed features from the feature store, compute ODT, merges the precomputed and real-time features in a single feature vector, applies any MDTs, makes the prediction, logs the prediction and the features, and returns the prediction to the client
+
+- Write a streaming feature pipeline to create feature directly from the events from Kafka
+- Windowed aggregations
+	- Compute an aggregation over events that happen in a window of time
+- Create real time features from the input request data with ODTs
+	- Geographic fraud attacks
+
+### Data model for our real-time fraud detection ML system
+
+
+<img src="/images/Pasted image 20261109163430.png" alt="image" width="500">
+
+- Feature groups will need to be stored in both online and offline stores
+
+### Star Schema Data Model
+
+- The feature group that contains the labels for the credit card transaction is known as the label feature group
+- A label feature group is a normal feature group
+
+<img src="/images/Pasted image 20261109163536.png" alt="image" width="500">
+
+- Feast feature store
+- Spine DataFrame contains the same data as the label feature, but is not persisted to the feature store
+- These feature groups are all updated independently in separate feature pipelines
+
+### Snowflake schema data model
+
+- Snowflake schema
+	- Data model that, like the star schema, consists of tables containing labels and features
+	- Feature data is normalized
+	- Suitable as a data model for both online and offline tables
+	- Feature is split until it is normalized
+
+<img src="/images/Pasted image 20261109163909.png" alt="image" width="500">
+
 # Feature Store Data Model for Inference
+
+## Online Inference
+
+- For online inference
+	- Prediction request includes as parameters entity IDs, any passed feature values, and any parameters needed to compute on-demand features
+	- Feature stores provide either language-level APIs or REST API to retrieve the precomputed features
+
+<img src="/images/Pasted image 20261109164220.png" alt="image" width="500">
+
+## Batch Inference
+
+- Read all feature data that has arrived in a given time frame
+- Read all the latest feature data for a batch of entities (such as all active users)
+- Allow batch inference clients to provide a Spine DataFrame containing the foreign key and timestamp for features
+
 # Reading Feature Data with a Feature View
 
+- Feature stores do not provide full SQL query support
+- Provide language level API and/or REST API for retrieving training data, batch inference data, and online inference data
+- Feature stores provide an abstraction that hides the complexity of retrieving/computing features for training and inference for a specific model called a feature view
+	- Selection of features, and labels to be used by one or more models for training and inference
+		- Retrieve point-in-time correct training data
+		- Retrieve point-in-time correct batch inference data
+		- Retrieve precomputed features using foreign keys (entity IDs)
+		- Apply MDTs to feature when reading feature data for training and inference
+		- Apply ODTs in online inference pipelines
 
+- Feature view prevents skew between training and inference by ensuring that the same ordered sequence of features is returned when reading training and inference data
+- Feature views also apply ODTs in online inference pipelines and ensure that they are consistent with the feature pipeline
+
+- Other names for feature store
+	- FeatureLookup (Databricks)
+	- FeatureService (Feast, Tecton)
+- A feature view can either be deployed as a network service or embedded inside a model deployment
+- Extended to support client-side transformations
+
+## Point-in-Time Correct Training Data with Feature Vies
+
+- Every feature value joined to a label must be the one that was available at the label's event time
+- Without including feature data or stale values
+	- Temporal join
+		- Starts from the table containing labels, then joins in features from other tables based on matching entity IDs, and event time alignment
+			- `ASOF LEFT JOIN`
+				- Ensures that there is no future data leakage for the joined feature values
+			- `LEFT JOIN`
+				- Ensures that label rows are preserved even when no matching feature row exists
+
+<img src="/images/Pasted image 20261109165155.png" alt="image" width="500">
+
+```python
+SELECT
+    label.amount,
+    aggs.last_week,
+    bank.country,
+    bank.credit_rating AS b_rating,
+    merchant.chrgbk,
+    label.fraud
+FROM cc_trans_fg AS label
+ASOF LEFT JOIN cc_trans_aggs_fg AS aggs
+    ON label.cc_num = aggs.cc_num
+    AND aggs.event_ts <= label.event_ts
+ASOF LEFT JOIN bank_fg AS bank
+    ON aggs.bank_id = bank.bank_id
+    AND bank.event_ts <= label.event_ts
+ASOF LEFT JOIN merchant_fg AS merchant
+    ON label.merc_id = merchant.merc_id
+    AND merchant.event_ts <= label.event_ts
+WHERE label.event_ts > '2022-01-01 00:00';
+```
+
+## Online Inference with a Feature View
+
+- In online inference, the feature view provides APIs for retrieving precomputed features, similarity search ith vector indexes, and computing ODTs and MDTs
+- 

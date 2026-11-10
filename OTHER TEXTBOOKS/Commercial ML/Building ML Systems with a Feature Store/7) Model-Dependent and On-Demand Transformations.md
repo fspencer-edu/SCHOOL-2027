@@ -1,8 +1,10 @@
-# Batch Feature Pipelines
-# Feature Pipeline Data Sources
-# Synthetic Credit Card Data with LLMs
-# Backfilling and Incremental Updates
-# JobOrchestrators
-# Workflow Orchestrators
-# Data Contracts
-# Data Validation with Great Expectations in Hopsworks
+
+# Feature Transformations
+# Model-Specific Transformations
+# Transformations in Scikit-Learn Pipelines
+# Transformations in Feature Views
+# On-Demand Transformations
+# PyTorch Transformations
+
+# Using pytest
+
