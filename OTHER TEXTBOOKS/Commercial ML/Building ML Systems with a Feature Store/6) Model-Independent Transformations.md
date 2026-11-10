@@ -107,6 +107,18 @@
 	- Filter and join transformations
 	- Group by and aggregation
 
+<img src="/images/Pasted image 20261110075309.png" alt="image" width="500">
+
+
+- Transformation cardinalities
+	- Row size preserving transformation
+	- Row/column size-reducing transformation
+	- Row/column size-increasing transformation
+	- Join transformation
+
+## Row Size Preserving Transformation
+
+
 
 
 # DAG of Feature Functions
