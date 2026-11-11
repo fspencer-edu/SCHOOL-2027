@@ -1,5 +1,7 @@
 ![](https://learning.oreilly.com/covers/urn:orm:book:9781491912201/296w/?format=webp)
 
+https://learning.oreilly.com/library/view/spark-the-definitive/9781491912201/
+
 [[1) What is Apache Spark?]]
 [[2) A Gentle Introduction to Spark]]
 [[3) A Tour of Spark's Toolset]]

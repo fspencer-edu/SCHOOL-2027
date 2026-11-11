@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3134a3bd57016d98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/10) Training Pipelines.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "10) Training Pipelines"
-            }
-          },
-          {
-            "id": "067a86cb295fcf1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/11) Inference Pipelines.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "11) Inference Pipelines"
-            }
-          },
-          {
             "id": "9905d29ba7c3d087",
             "type": "leaf",
             "state": {
@@ -90,6 +62,132 @@
               "icon": "lucide-file",
               "title": "15) Personalized Recommender"
             }
+          },
+          {
+            "id": "cfe28ae07caeaf45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/6) Hearing, the Mechanical Senses, and the Chemical Senses.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6) Hearing, the Mechanical Senses, and the Chemical Senses"
+            }
+          },
+          {
+            "id": "5d6e6490161a8aec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/7) Movement.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "7) Movement"
+            }
+          },
+          {
+            "id": "afd7730f48d1287a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/8) Wakefulness and Sleep.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "8) Wakefulness and Sleep"
+            }
+          },
+          {
+            "id": "31f05faabf9ea699",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/9) Internal Regulation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "9) Internal Regulation"
+            }
+          },
+          {
+            "id": "f8efb1c2740892a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/10) Reproductive Behaviours.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "10) Reproductive Behaviours"
+            }
+          },
+          {
+            "id": "0900a2a2e799cd95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/11) Emotional Behaviours.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "11) Emotional Behaviours"
+            }
+          },
+          {
+            "id": "8ff46c591309240c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "12) Learning, Memory, and Intelligence"
+            }
+          },
+          {
+            "id": "e55c195b1deb4316",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/13) Cognitive Functions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "13) Cognitive Functions"
+            }
+          },
+          {
+            "id": "9a3625f2e019816e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "14) Psychopathology"
+            }
           }
         ]
       }
@@ -125,7 +223,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Transformers for Time series",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -268,54 +366,54 @@
       "bases:Create new base": false
     }
   },
-  "active": "3134a3bd57016d98",
+  "active": "9905d29ba7c3d087",
   "lastOpenFiles": [
-    "images/Pasted image 20261110225800.png",
-    "images/Pasted image 20261110202139.png",
-    "images/Pasted image 20261110201234.png",
-    "images/Pasted image 20261110231453.png",
-    "images/Pasted image 20261110223536.png",
-    "images/Pasted image 20261110230213.png",
-    "images/Pasted image 20261110230713.png",
-    "images/Pasted image 20261110223223.png",
-    "images/Pasted image 20261110230909.png",
-    "images/Pasted image 20261110200602.png",
-    "images/Pasted image 20261110201939.png",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/12) Agents and LLM Workflows.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/10) Training Pipelines.md",
+    "OTHER TEXTBOOKS/Data Quality/Data Contracts/4) An Intro. to Data Contracts.md.tmp",
+    "images/Pasted image 20261111112536.png",
+    "images/Pasted image 20261111085139.png",
+    "images/Pasted image 20261111081212.png",
+    "images/Pasted image 20261111095202.png",
+    "images/Pasted image 20261111113305.png",
+    "images/Pasted image 20261111114910.png",
+    "images/Pasted image 20261111095601.png",
+    "images/Pasted image 20261111085639.png",
+    "images/Pasted image 20261111075641.png",
+    "images/Pasted image 20261111112142.png",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/11) Inference Pipelines.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/9) Streaming and Real-Time Features.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/8) Batch Feature Pipelines.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/7) Model-Dependent and On-Demand Transformations.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/0) Building Machine Learning Systems with a Feature Store.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/10) Streaming and Real-Time Features.md",
-    "OTHER TEXTBOOKS/Textbook Table.md",
-    "Fall 2026/Finals.md",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Mind Hacks/0) Mind Hacks.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain Computer Interface/0) Brain-Computer Interface.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Mind Hacks",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Mechatronics/0) Computational Intelligent Techniques in Mechatronics.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain Computer Interface",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain-Inspired AI/0) Brain-Inspired Artificial Intelligence and Neuromorphic Computing in Healthcare.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Mechatronics",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/1) Foundation of Analytics.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain-Inspired AI",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/0) Cognitive Science, Computational Intelligence, and Data Analytics.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/6) Data Analysis Application are Methodology.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/5) Artificial Intelligence and Machine Learning Application in Data Analysis.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/4) Multivariate Data Analytics and Cognitive Analytics.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/3) Data Theory and Taxonomy of Data.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/2) Foundation of Cognitive Science.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Artificial Intelligence/0) Artificial Intelligence.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/5) Basic Structured Operations.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/4) Structured API Overview.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/3) A Tour of Spark's Toolset.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/2) A Gentle Introduction to Spark.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/1) What is Apache Spark?.md",
+    "OTHER TEXTBOOKS/Modern AI and RAG/Transformers/0) Transformers - The Definitive Guide.md",
+    "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/0) AI and ML for Coders in PyTorch.md",
+    "OTHER TEXTBOOKS/Commercial ML/Transformers/0) Transformers.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Spark/0) Spark.md",
+    "OTHER TEXTBOOKS/Commercial ML/Transformers",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/0) Kafka.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kafka/3) Kafka Producers - Writing Messages to Kafka.md",
     "OTHER TEXTBOOKS/Data Science/Essential Math for AI/14) Artificial Intelligence, Ethics, Mathematics, Law, and Policy.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/Deep Learning for CV/3) Object Detection.md.tmp",
     "OTHER TEXTBOOKS/Platform Engineering/Terraform/1) A Brief of Overview of Terraform.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/6) Model-Independent Transformations.md",
-    "Fall 2026/CPS721 - AI/NOTES/Week 9.md",
     "Private/416 3D Printing.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/5) Hops works Feature Store.md",
-    "Private/3D Printing Quote.md.tmp",
-    "OTHER TEXTBOOKS/ML Lifecycle/Learning Ray/11) Ray's Ecosystem and Beyond.md.tmp",
-    "OTHER TEXTBOOKS/Data Quality/Fundamentals of Data Observability/7) Integrating Data Observability in your Data Stack.md.tmp",
-    "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/1) Intro. to Apache Iceberg.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/23) The Future of ML Production Systems and Next Steps.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/10) Neural Architecture Search.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/4) Feature Stores.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) Your Friendly Neighbourhood Air Quality Forecasting Service.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/1) The FTI Pipeline Architecture for ML Systems.md",
-    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/10) Trends In Production ML.md",
-    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/9) Model Predictions.md",
-    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/8) Model Quality and Continuous Evaluation.md",
-    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/7) Training Pipeline.md",
-    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/6) Preprocessing.md",
     "Untitled.canvas"
   ]
 }
