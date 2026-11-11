@@ -470,12 +470,361 @@ RETURN t.id AS tid, t.date AS date, m.name AS merchant, l.city AS location
 # Tools and Function Calling LLMs
 
 - Function calling LLM
+	- Send it a user query and a set of candidate function
+	- Select the best function by returning a JSON object with the function name and parameter values
+- Most foundation LLMs support JSOn output
+
+```python
+from llama_index.tools import FunctionTool
+from llama_index.agent import FunctionCallingAgent
+from llama_index.llms.openai import OpenAI
+
+llm = OpenAI(model="gpt-5", temperature=0)
+deployment = hopsworks.login().get_model_serving().get_deployment("pm25")
+
+def predict_pm25(city: str, street: str) \
+    -> str:
+    pm25_dict = deployment.predict(inputs={"city": city, "street": street})
+    return str(pm25_dict)
+
+def get_weather(city: str) -> str:
+    weather = # retrieve weather for "city" (see Chapter 3)
+    return f"Weather info for {city} (mocked)"
+
+pm25_tool = FunctionTool.from_defaults(
+    fn=predict_pm25,
+    name="predict_pm25",
+    description="For air quality, PM2.5. Requires city and street."
+)
+weather_tool = FunctionTool.from_defaults(
+    fn=get_weather,
+    name="get_weather",
+    description="For weather, temperature, forecast. Requires city."
+)
+
+
+agent = FunctionCallingAgent.from_tools(
+    [pm25_tool, weather_tool],
+    llm=llm,
+    system_prompt=(
+        "You are a smart assistant. 
+        Decide which function to call based on the user's question. "
+        "Call predict_pm25 for air quality (city and street required), "
+        "and get_weather for weather questions (city required)."
+    ),
+)
+
+# Example use of agent
+user_question = "How is the air quality in Hornsgatan Stockholm today?"
+response = agent.query(user_question)
+print("Answer:", response)
+```
+
+- LLM workflow or agent builds the prompts from the user query and sends it to the function-calling LLM
+
+<img src="/images/Pasted image 20261111123139.png" alt="image" width="500">
+
+
+- Write a mode detailed system prompt for the function-calling LLM
+- Improve documentation of the functions
+- If functions are too complex, refactor them into smaller, composable functions
+- Use a more powerful function calling LLM
+
 # Model Context Protocol
+
+- MCP
+	- Standardizes how agents discvoer and securely communicate with external tools, services, and data sources
+	- Protocol that defines the set of message and rules for how messages can be sent between MCP clients and MCP servers
+	- Replace N different protocols for communicating with N different services ith one protocol
+	- Easy for LLMs to parse and understand
+
+
+<img src="/images/Pasted image 20261111123341.png" alt="image" width="500">
+
+- RESTful API
+	- include a URL path
+	- Request headers, Query parameters
+	- And a request body
+- MCP
+	- Only mandates JSON-RPC 2.0 as the transport layer
+	- Single input schema per tool
+	- Tools that clients can execute should be deterministic
+		- Side-effect free
+	- Resources
+		- Functions that return read-only data
+	- Prompts
+		- return a prompt template to a client
+
+- Primitives
+	- Tools
+	- Resources
+	- Prompts
+- Discovery
+	- Call to discovery what an MCP server offers
+
+- Errors are standardized
+	- Numeric error codes
+
+```python
+from fastmcp import FastMCP
+mcp = FastMCP("CC Fraud")
+
+@mcp.tool()
+def get_cc_features(cc_num: str, merchant_id: int, amount: float, \
+                    ip_address: str, card_present: bool) -> str:
+    df=fv.get_feature_vector(serving_key={"cc_num": cc_num, "merchant_id": \
+       merchant_id}, passed_features ={"amount": amount, "card_present": \
+       card_present, "ip_address": ip_address}, return_type = "pandas")
+    # Return a stringified list of feature values
+
+@mcp.resource( "docs://documents", mime_type="application/xml")
+def list_merchant_category_codes():
+    # Return a list of merchant category codes
+
+@mcp.prompt()
+def explain_fraud(transaction_id: int) -> str:
+    # client will use returned str with an LLM to explain why a credit card 
+    # transaction is marked as fraud
+    # return prompt with all transaction features
+
+mcp.run()
+```
+
+- Both JSON and XML can be used to describe tools and resource schemas
+
+```python
+from fastmcp import Client
+config = {
+    "mcpServers": {
+        "cc_fraud": {"url": "https://featurestorebook.com/cc_fraud/mcp"},
+    }
+}
+client = Client(config)
+cc_fraud_features = client.call_tool(
+    "get_cc_features", {
+        "cc_num": "1234 65678 9012 3456",
+        "merchant_id": 984365,
+        "amount": 148.95,
+        "card_present": True,
+        "ip_address": "1.2.3.4"
+    }
+)
+print(cc_fraud_features)
+```
+
+- Support authentication by the client to the server
+- MCP creates the most value for agents when it is combined with a function calling LLM that can pick the best tool to call and fill in the parameters for the functional call
+
+<img src="/images/Pasted image 20261111123719.png" alt="image" width="500">
+
+1. Initialization phase
+	1. Clients discover tools, resources, and prompts
+2. A usage phase
+	1. Clients invokes tools, uses resources, or retrieves prompt templates
+	2. Elicitation
+		1. Server requests structured data from clients with JSON schemas to validate responses
+	3. Notifications
+3. Termination phase
+	1. Stateful connection between client and server is closed
+
+
 # Agent-to-Agent (A2A) Protocol
+
+- Open protocol, introduced by Google in 2025
+- Enabled agents to discover, communicate, and collaborate with other agents
+- Defines the set of messages and rules
+- Standardized Agent cards
+	- Mechanisms for describing an agent's capabilities
+	- Machine readable
+- Modality-agnostic
+	- Streaming media
+	- Attachments
+	- Structured context
+
+<img src="/images/Pasted image 20261111124027.png" alt="image" width="500">
+
+```python
+{ 
+  "name": "AirQualityPredictor",
+  "description": "Returns tomorrow’s PM2.5 for a given city and street.",
+  "url": "https://featurestorebook.com/aqi/a2a",
+  "version": "1.0",
+  "capabilities": {
+     "streaming": false,
+     "pushNotifications": true,
+     "modalities": ["text", "json"],
+     "tasks": ["forecast_air_quality"]
+  },
+  "inputs": [{
+      "name": "city",
+      "type": "string",
+      "description": "Name of the city for air quality prediction."
+    },
+    { "name": "street",
+      "type": "string",
+      "description": "Name of the street in the city."
+    }],
+  "outputs": [{
+      "name": "pm25_forecast",
+      "type": "float",
+      "description": "The predicted PM2.5 values for the tomorrow"
+    }],
+  "supported_authentication_methods": [{ 
+      "type": "api_key",
+      "description": "API key in header as `Authorization: Bearer <API_KEY>`"
+    }],
+  "meta": {
+    "author": "Hopsworks",
+    "updated": "2025-06-22"
+  }
+}
+```
+
+### AGENT CARD
+
+- Agent identity and description
+- Service endpoint
+- Authentication requirements
+- Capabilities and tasks
+- Input/output formats
+
+- Defined a task as the unit of work requested by a client from a remote agent
+
+```python
+resolver = A2ACardResolver(httpx_client=httpx_client,
+                base_url="http://featurestorebook.com/aqi/a2a")
+agent_card = await resolver.get_agent_card()
+client = A2AClient(httpx_client=httpx_client, agent_card=agent_card)
+send_message_payload = {
+    'message': {
+        'role': 'user',
+        'parts': [{'kind': 'text', 'text': \
+            'What is the air quality like in Hornsgatan, Stockholm?'}],
+        'messageId': uuid4().hex,
+    },
+}
+request = SendMessageRequest(id=str(uuid4()),
+             params=MessageSendParams(**send_message_payload))
+response = await client.send_message(request)
+```
+
+- A2A and MCP are complementary protocols
+- A2A
+	- Standardizes agent APIs and inter-agent coordination
+- MCP
+	- Standardizes intra-agent access to external tools
+
 # From LLM Workflows to Agents
 
+- Agent's non-determinism is a strength and weakness
+- LLM workflows help tame unpredictability with common architectural patterns for actions and data flows
+
+<img src="/images/Screenshot 2026-11-11 at 12.43.47 PM.png" alt="image" width="500">
+
+- Agentic workflow is the level of control over the tasks executed
+- Prompt chaining
+	- Decomposing an LLM program into a linear set of tasks
+	- Chain-of-though prompting with a finite number of tasks
+- Parallel orchestration
+	- Multiagent research system
+	- Receives a research query and launches parallel agents, each searches non-overlapping sources
+	- Results are consolidated by another LLM into a single answer
+- Routing LLM workflow
+	- Dynamic workflow
+	- Decides which tasks to execute based on the input query
+
+- Agentic workflows
+	- Discovers available tools and agents
+- Agentic workflow pattern
+	- Agent control flow is determined on the fly
+	- LLMs that support JSON output that is translated into tool calling
+	- Execute tasks using tools/agents, and ask clients for feedback to refine a goal
+
+- Discovery
+	- Use MCP and A2A protocols to discover tools and agents
+- Planning
+	- Break down complex tasks into subtasks and plan the order of tasks
+	- Acquire information needed to successfully execute task
+- Execution
+	- Use MCP and A2A protocols to execute tools and agents
+- Reflection
+	- Examine task results and improve task performance
+
 ## Planning
+
+- Agents use LLMs for planning, but LLMs are not great at planning
+	- Auto-regressive LLMs cannot plan, as they produce their answers with a fixed amount of computation per token
+- True reasoning and planning would allow the system to search for a solution, using unlimited time
+- LRM (Large Reasoning Models)
+	- Better reasoning capabilities
+	- Explicit reasoning processes between think tokens
+	- Generate more tokens and take a longer time
+	- Self-reflect, and adapt its reasoning steps to improve its final response
+- Classifier
+	- takes the user query and classifies it as the best match with one of its available tools
+	- Planning requires the agent to generate subgoals, estimate the reward for each potential step, and select a path that maximizes the expected reward over a certain number of steps (time horizon)
+	- Backtrack
+	- Validate plans by interacting with the client, if possible
+	- Suggest refinements to the specification
+	- Use heuristics to validate a plan
+		- Eliminate plans with invalid action
+		- Encode domain-specific knowledge about tasks
+- Planning should be decoupled from execution of the plan
+- Start writing LLM workflows and only progress to writing agents if your requirements demand it
+- Workflows are best for predictable tasks
+
 ## Security Challenges
+
+- Develop an agent that allows untrusted input, but has access to private information
+- Agent follow instructions encoded in queries
+	- Inject instructions into the LLM
+
+- A bad actor can compromise any software artifact in the program
+
 ## Domain-Specific (Intermediate) Representations
+
+- Domain-specific representation of the agent's proposed output/response
+- Enable user feedback in a domain language that is easily understood
+
 # A Development Process for Agents
+
+- Agents can perform many tasks
+- Log traces should be stored and made available for error analysis
+- Evaluations of traces should output a score that indicates whether changes to the agent or LLM workflow improved its performance or not
+
+<img src="/images/Pasted image 20261111125846.png" alt="image" width="500">
+
+- Direct grading or scoring
+	- An evaluator assess an output against a scale or categorical label
+	- Evaluators
+		- Human annotators
+		- Domain experts
+		- Well prompted LLM as a judge
+
 # Agent Deployment in Hopsworks
+
+<img src="/images/Pasted image 20261111130049.png" alt="image" width="500">
+
+- Agents run Knative containers
+- RAG services with the feature store and vector index
+- Tracing/logs with Opik
+- LLM serving with vLLM on Kserve
+
+```pythob
+@hopsworks.a2a.agent() 
+class MyAgent: # The name of the class is the name of the agent
+    # This decorator registers the method as a skill
+    @hopsworks.a2a.skill(...) 
+    def skillA(...): 
+        """Description of skill A."""
+```
+
+- Envoy AI Gateway
+	- AI gateway decoupled LLM clients from the target LLM
+	- Easily replace one LLM with another for all agents in a system
+		- Rate limiting based on token throughput
+		- Token cost tracking and attribution to agents/project in Hopsworks
+		- LLM metrics, such as token throughput and time-to-first token
+		- Centralized security, governance, and auditing for LLMs
+		- Load balancing
+		- Elastic scaling up/don the number of GPUs used to serve an LLM to meet service-level aggrements (SLAs)

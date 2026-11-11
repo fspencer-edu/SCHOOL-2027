@@ -13,7 +13,7 @@
 ## When to Retrain or Redesign a Model
 # Logging and Metrics for Agents
 
-## FRom Logs to Traces with Agents
+## From Logs to Traces with Agents
 ## Error Analysis
 ## Guardrails
 ## Online A/B Testing
