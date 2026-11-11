@@ -167,34 +167,252 @@ Then modify the DataFrames as follows and save them back as updates to feature g
 	- A system-managed timestamp storing the ingestion time for each row
 
 ### Polling
+
+- Polling is only used for batch data sources
+- Partition pruning is needed for large tables
+- Default row fetch size to prevent out-of-memory errors
+- Polling can miss updates to tables
+- Polling can also miss late-arriving data in columnar tables
 ### Change Data Capture
 
+- CDC resolves the problems of missing rows within a polling interval and late-arriving data
+- Most lakehouse tables, cloud data warehouses, and row-oriented databases provide CDC APIs
+- Read the changes in a feature group between the start and end timestamp
+
+```python
+df = fg.asof(end_timestamp, exclude_until=start_timestamp).read()
+```
 ## Backfill and Incremental Processing in One Program
 
+```python
+start_time = os.environ.get('START_TIME')
+end_time = os.environ.get('END_TIME')
+df = credit_card_transactions_fg.read(start_time=start_time, end_time=end_time)
+```
 
-
+- There is one type of data transformation to account for when writing a batch feature pipeline 
+	- Time window aggregations
+- Jon schedulers support cron based scheduling of batch programs
 
 # JobOrchestrators
 
+- Orchestrator
+	- Service that schedulers and coordinate the execution of programs with logging and fault tolerance
+	- Streamline and optimize the execution of frequent, repeatable processes
+- Job orchestrator
+	- Schedules the execution of Pandas/Polars/PySpark programs
+
+- Job schedules
+	- Package program with all its dependencies
+		- Containers
+	- Support for one or more execution runtimes
+		- Kubernetes of AWS Fargate
+	- Support for executing and monitoring programs from different languages and frameworks
+	- Logs for execution runs
+- Dependencies
+ - Arguments and environment variables for incremental processing
+ - Resources requested
+
+- Python
+	- Requirements file
+- PySpark
+	- JAR files
+	- Python modules
+	- Drivers
+
 ## Modal
+
+- Modal is a developer friendly serverless platform to deploy, schedule, and manage Python jobs
+- Modal supports automatic containerization
+	- No need to write and compile container images
+	- Add decorators to Python functions
+		- Linux OS type
+		- Resources the image uses
+		- Python libraries
+		- Instances of functions
+		- Read shared secrets
+		- Cron schedule for running the Python program
+
+- Model will compile containers for it and cache them
+
+```python
+import modal
+
+image = modal.Image.debian_slim(python_version="3.12").pip_install("hopsworks")
+
+secret = modal.Secret.from_name(
+    "hopsworks-secret",
+    required_keys=["HOPSWORKS_API_KEY"],
+)
+app = modal.App("hopsworks-feature-group")
+
+@app.function(
+    schedule=modal.Period(days=1), 
+    image=image, 
+    cpu=4.0, 
+    memory=8192, 
+    secrets=[secret]
+)
+def daily_hopsworks_job():
+    import hopsworks
+    import pandas as pd
+    fs = hopsworks.login().get_feature_store()
+    weather_forecast_df = # call remote API
+    fg = fs.get_feature_group(name="weather", version=1)
+    fg.insert(weather_forecast_df)
+
+if __name__ == "__main__":
+    app.deploy()
+```
+
 ## Hopsworks Jobs
 
+- Hopsworks jobs run on the same Kubernetes cluster Hopsworks
+- Jobs are executed as containers in the same Kubernetes namespace
+- Specify
+	- Program, its arguments, and the container image it will use
+	- PySpark jobs
+		- Any additional file dependencies or configuration parameters
+	- Resources for the program
+	- Optional cron schedule for running the program
+
+```python
+job_api = hopsworks.login().get_job_api()
+
+spark_config = job_api.get_configuration('PYSPARK')
+spark_config['appPath'] = '/projects/ccfraud/Resources/f_pipeline.py'
+spark_config['spark.driver.memory'] = 2048
+spark_config['spark.driver.cores'] = 1
+spark_config['spark.executor.memory'] = 8192
+spark_config['spark.executor.cores'] = 1
+spark_config['spark.dynamicAllocation.maxExecutors']= 2
+spark_config['spark.dynamicAllocation.enabled'] = True
+
+job = job_api.create_job('my_spark_job', spark_config)
+
+job.schedule(
+    cron_expression="0 */5 * ? * * *",
+    start_time=datetime.datetime.now(tz=timezone.utc)
+)
+job.save()
+
+execution = job.run()
+print(execution.success)
+out_log_path, err_log_path = execution.download_logs()
+```
+
+- Workflow orchestrators capture visualize lineage information for the DAGs they compute
+- Job orchestrators often delegate DAG visualization to the data processing framework
 
 # Workflow Orchestrators
 
+- Workflow orchestartors
+	- Orchestrate the execution of many programs, organized in a DAG
+- Multistep workflows decompose batch feature pipeline into tasks with dependencies between the tasks
+- Break down larger programs into small tasks
+
+- ML pipeline orchestartor
+	- Kubeflow
+		- Kubernetes native orchestrator for ML piplines
+		- Training pipelines
+		- Does not scale for feature pipelines of batch inference pipelines
+	- Metaflow
+		- Originally developed by Netflix
+		- Automatic containerization similar to Model
+	- Flyte
+		- Originally developed at Lyft
+		- Supports running containers in Kubernetes as training and batch inference pipelines
+	- ZenML
+		- Open source ML pipeline orchestrator similar to Metaflow
+	- Vertex AI Pipeline, Azure ML, and SageMaker Pipelines
+		- Specialized for training pipelines
+		- Containers with prebuilt binaries for popular ML frameworks
+
+- Workflow orchestrator within data engineering
+	- Cloud native Python-based workflow orchestrators
+		- Dagster
+		- Prefect
+	- Databricks Workflows, Snowflake tasks, Google Dataform
+
 ## Airflow
+
+- Apache Airflow is a popular open source orchestrator
+	- Define, schedule, and monitor workflows
+
 ## Cloud Provider Workflow Orchestrators
 
-
-
+- Azure Data Factory (ADF)
+	- Generic workflow orchestrator that you can use to run Spark, Pandas, and Polar programs on Azure
+	- Organizes workflows into pipelines, which define a series of steps or activities needed for data integration or transformation
+	- Each pipeline can contain a sequence of activities
+		- Data movement
+		- Data transformation
+		- Triggering external systems
+- AWS Step Function
+	- General purpose serverless workflow orchestrator for AWS
+	- Coordinate multiple AWS services and build workflows with frameworks like PySpark, Polars, Pandas, and DuckDB
+- Google Cloud Composer
+	- Fully managed orchestration service on GCP that is build on Airflow
+	- Users to connect and orchestrator various Goggle Cloud Services and APIs
 
 # Data Contracts
 
+- Hopsworks performs schema validation on writing data to feature group
+- Data contracts should provide guarantees on the quality of data and its timely delivery to data consumers
+	- Service level objectives (SLOs) for a feature group
+	- Domain (valid range) of values for a given feature
+	- Expected and worst-case freshness for feature data
+	- How late can data arrive before it should be discarded
+	- What percentage of missing values can be tolerated for a given feature
 
+- Design governance policies with tags
+	- Personally identifiable information (PII)
 
+```python
+fg = fs.get_feature_group("cc_trans_fg", version=1)
+fg.add_tag(name="PII", value="false")
+```
+
+- Enforce a governance policy in code by checking whether the correct tags values are set for an asset, feature group, feature view, model, or deployment
+
+```python
+search_api = project.get_search_api()
+tag_search_result = search_api.featurestore_search("PII")
+tag_search_result.to_dict()
+```
 
 # Data Validation with Great Expectations in Hopsworks
 
+- Data is validated before it is written to feature group
 
+<img src="/images/Pasted image 20261110200602.png" alt="image" width="500">
 
+- Write-audit-publish (WAP) patterns
+	- Ingesting all source data
+	- One or mode data pipelines apply data validation rules, detect anomalies, and identify duplicates
+	- Pipeline transform the validated data to a consumable layer for downstream applications
+
+- Implement the data validation rules as an expectation suite in Great Expectations
+- Governance requires both a way to define a policy and a mechanism to enforce it
+	- Provides tags and schematized tags to define policies and attach them to feature gorup
+
+<img src="/images/Pasted image 20261110200817.png" alt="image" width="500">
+
+```python
+expectation_suite = ge.core.ExpectationSuite( .. )
+fg.save_expectation_suite(
+    expectation_suite, run_validation=True, validation_ingestion_policy="ALWAYS"
+)
+
+# remove the expectation suite from the feature group
+fg.delete_expectation_suite()
+
+if fg.contains_tag("NO_PII"):
+    if check_for_pii_data(df):
+        fg.create_alert(receiver="email", severity="warning",\
+            status=f"PII data")
+```
+
+- In feature pipelines
+	- Define governance policies as tags and implement enforcement check
 
