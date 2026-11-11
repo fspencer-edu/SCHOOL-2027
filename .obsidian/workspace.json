@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9f4482b411bdaf2a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/7) Model-Dependent and On-Demand Transformations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "7) Model-Dependent and On-Demand Transformations"
-            }
-          },
-          {
             "id": "68d049dd60e6432f",
             "type": "leaf",
             "state": {
@@ -33,6 +19,20 @@
               },
               "icon": "lucide-file",
               "title": "8) Batch Feature Pipelines"
+            }
+          },
+          {
+            "id": "3134a3bd57016d98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/10) Training Pipelines.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "10) Training Pipelines"
             }
           },
           {
@@ -62,64 +62,9 @@
               "icon": "lucide-file",
               "title": "12) Agents and LLM Workflows"
             }
-          },
-          {
-            "id": "3377a1b268155173",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "13) Testing AI Systems"
-            }
-          },
-          {
-            "id": "1917ad8e4cf12c3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "14) Observability and Monitoring AI Systems"
-            }
-          },
-          {
-            "id": "aeaa1848e893a199",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "15) Personalized Recommender"
-            }
-          },
-          {
-            "id": "cd8ec76f704f80f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/Finals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Finals"
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125,
-    "collapsed": true
+    "width": 256.953125
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -296,23 +240,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "9f4482b411bdaf2a",
+  "active": "3134a3bd57016d98",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/9) Streaming and Real-Time Features.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/8) Batch Feature Pipelines.md",
+    "Pasted image 20261110185540.png",
+    "Pasted image 20261110185308.png",
+    "Pasted image 20261110184916.png",
+    "Pasted image 20261110184638.png",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/7) Model-Dependent and On-Demand Transformations.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/12) Agents and LLM Workflows.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/10) Training Pipelines.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/0) Building Machine Learning Systems with a Feature Store.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/11) Inference Pipelines.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/10) Streaming and Real-Time Features.md",
+    "OTHER TEXTBOOKS/Textbook Table.md",
+    "Fall 2026/Finals.md",
+    "Pasted image 20261110145859.png",
+    "Pasted image 20261110145054.png",
+    "Pasted image 20261110143904.png",
     "OTHER TEXTBOOKS/Data Science/Essential Math for AI/14) Artificial Intelligence, Ethics, Mathematics, Law, and Policy.md.tmp",
     "OTHER TEXTBOOKS/Computer Vision/Deep Learning for CV/3) Object Detection.md.tmp",
     "OTHER TEXTBOOKS/Platform Engineering/Terraform/1) A Brief of Overview of Terraform.md.tmp",
     "images/Pasted image 20261110134034.png",
     "images/Pasted image 20261110141124.png",
     "images/Pasted image 20261110135217.png",
-    "images/Pasted image 20261110135607.png",
-    "images/Pasted image 20261110135238.png",
-    "images/Pasted image 20261110134459.png",
-    "images/Pasted image 20261110122011.png",
-    "images/Pasted image 20261110134701.png",
-    "images/Pasted image 20261110134729.png",
-    "images/Pasted image 20261110113802.png",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/6) Model-Independent Transformations.md",
-    "Fall 2026/Finals.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 9.md",
     "Private/416 3D Printing.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/5) Hops works Feature Store.md",
@@ -322,28 +278,15 @@
     "OTHER TEXTBOOKS/Data Engineering/Apache Iceberg/1) Intro. to Apache Iceberg.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/23) The Future of ML Production Systems and Next Steps.md.tmp",
     "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/10) Neural Architecture Search.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/0) Machine Learning Production Systems.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/8) Batch Feature Pipelines.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/7) Model-Dependent and On-Demand Transformations.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/10) Streaming and Real-Time Features.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/11) Inference Pipelines.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/12) Agents and LLM Workflows.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/4) Feature Stores.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/3) Your Friendly Neighbourhood Air Quality Forecasting Service.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/2) Building ML Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/0) Building Machine Learning Systems with a Feature Store.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/1) The FTI Pipeline Architecture for ML Systems.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/10) Trends In Production ML.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/9) Model Predictions.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/8) Model Quality and Continuous Evaluation.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/7) Training Pipeline.md",
     "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/6) Preprocessing.md",
-    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/5) Creating Vision Datasets.md",
-    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/4) Object Detection and Image Segmentation.md",
-    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/3) Image Vision.md",
     "Untitled.canvas"
   ]
 }
