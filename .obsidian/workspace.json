@@ -4,178 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "5f33fb555de4864e",
+        "id": "28520aef0ad23337",
         "type": "tabs",
         "children": [
           {
-            "id": "880f05d7ae55c9a6",
+            "id": "97b8255cb4fb9027",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/ML Lifecycle/Building Training Generative AI Models/0) Building and Training Generative AI Models - A Practical Guide to Generative AI Development and Scaling.md",
+                "file": "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/0) Hands-On Entity Resolution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0) Building and Training Generative AI Models - A Practical Guide to Generative AI Development and Scaling"
+              "title": "0) Hands-On Entity Resolution"
             }
           },
           {
-            "id": "a8cb22fd80a3dc2d",
+            "id": "d37af94e0009f407",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
+                "file": "PAPERS/Efficient Estimation of Word Representations in Vector Space.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "14) Observability and Monitoring AI Systems"
-            }
-          },
-          {
-            "id": "320ce6f0766351ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "15) Personalized Recommender"
-            }
-          },
-          {
-            "id": "cfe28ae07caeaf45",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/6) Hearing, the Mechanical Senses, and the Chemical Senses.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6) Hearing, the Mechanical Senses, and the Chemical Senses"
-            }
-          },
-          {
-            "id": "5d6e6490161a8aec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/7) Movement.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "7) Movement"
-            }
-          },
-          {
-            "id": "afd7730f48d1287a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/8) Wakefulness and Sleep.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "8) Wakefulness and Sleep"
-            }
-          },
-          {
-            "id": "31f05faabf9ea699",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/9) Internal Regulation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "9) Internal Regulation"
-            }
-          },
-          {
-            "id": "f8efb1c2740892a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/10) Reproductive Behaviours.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "10) Reproductive Behaviours"
-            }
-          },
-          {
-            "id": "0900a2a2e799cd95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/11) Emotional Behaviours.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "11) Emotional Behaviours"
-            }
-          },
-          {
-            "id": "8ff46c591309240c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "12) Learning, Memory, and Intelligence"
-            }
-          },
-          {
-            "id": "e55c195b1deb4316",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/13) Cognitive Functions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "13) Cognitive Functions"
-            }
-          },
-          {
-            "id": "9a3625f2e019816e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "14) Psychopathology"
+              "title": "Efficient Estimation of Word Representations in Vector Space"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -351,54 +212,54 @@
       "bases:Create new base": false
     }
   },
-  "active": "ebf7035dc389d5f5",
+  "active": "d37af94e0009f407",
   "lastOpenFiles": [
-    "images/Pasted image 20261111123139.png",
-    "images/Pasted image 20261111132150.png",
-    "images/Pasted image 20261111124027.png",
-    "images/Pasted image 20261111125846.png",
-    "images/Pasted image 20261111133411.png",
-    "images/Pasted image 20261111132445.png",
-    "images/Pasted image 20261111130049.png",
-    "images/Pasted image 20261111133756.png",
-    "images/Pasted image 20261111133219.png",
-    "images/Pasted image 20261111134012.png",
-    "images/Pasted image 20261111132932.png",
-    "OTHER TEXTBOOKS/ML Lifecycle/Gen. AI with Transformers and Diffusion Models/0) Hands-On Generative AI with Transformers and Diffusion Models.md",
-    "OTHER TEXTBOOKS/ML Lifecycle/Building Training Generative AI Models/0) Building and Training Generative AI Models - A Practical Guide to Generative AI Development and Scaling.md",
-    "OTHER TEXTBOOKS/ML Lifecycle/Building Training Generative AI Models",
-    "OTHER TEXTBOOKS/ML Lifecycle/Python ML by Example/0) Python Machine Learning By Example - Fourth Edition.md",
-    "OTHER TEXTBOOKS/ML Lifecycle/Gen. AI with Transformers and Diffusion Models",
-    "OTHER TEXTBOOKS/Commercial ML/Designing ML Systems/0) Designing Machine Learning Systems.md",
-    "OTHER TEXTBOOKS/ML Lifecycle/Python ML by Example",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/6) Hearing, the Mechanical Senses, and the Chemical Senses.md",
-    "OTHER TEXTBOOKS/Computer Vision/Vision Language Models/0) Vision Language Models.md",
-    "OTHER TEXTBOOKS/Computer Vision/AI and ML in PyTorch/0) AI and ML for Coders in PyTorch.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/12) Agents and LLM Workflows.md",
-    "OTHER TEXTBOOKS/Data Quality/Data Contracts/4) An Intro. to Data Contracts.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/11) Inference Pipelines.md",
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kubernetes Docs/0) Kubernetes Docs.md.tmp",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/9) Network Models.md.tmp",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/10) Ocular Reflexes.md.tmp",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/0) Modern Discoveries in Neuroscience.md.tmp",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/3) the Cerebellum as a Neuronal Machine.md.tmp",
+    "OTHER TEXTBOOKS/Distributed Systems/FastAPI/18) Games.md.tmp",
+    "OTHER TEXTBOOKS/Distributed Systems/FastAPI/17) Data Discovery and Visualization.md.tmp",
+    "OTHER TEXTBOOKS/Distributed Systems/FastAPI/12) Testing.md.tmp",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/13) Model Serving Infrastructure.md.tmp",
+    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/5) Advanced Labeling, Augmentation, and Data Preprocessing.md.tmp",
+    "OTHER TEXTBOOKS/Commercial ML/ML/0) Hands-On Machine Learning.md.tmp",
+    "images/Pasted image 20261112131858.png",
+    "images/Pasted image 20261112124058.png",
+    "images/Pasted image 20261112134705.png",
+    "images/Pasted image 20261112135218.png",
+    "images/Pasted image 20261112134851.png",
+    "images/Pasted image 20261112134622.png",
+    "images/Pasted image 20261112134734.png",
+    "PAPERS/Qwen3 Technical Report.md",
+    "PAPERS/Efficient Estimation of Word Representations in Vector Space.md",
+    "PAPERS/Gemma 3 Technical Report.md",
+    "PAPERS/Retrieval-Augmented Generation forKnowledge-Intensive NLP Tasks.md",
+    "PAPERS/Learning representationsby back-propagating errors.md",
+    "PAPERS/Sentence-BERT - Sentence Embeddings using Siamese BERT-Networks.md",
+    "PAPERS/DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs viaReinforcement Learning.md",
+    "PAPERS/Understanding R1-Zero-Like Training - A Critical Perspective.md",
+    "PAPERS/SigLIP 2 - Multilingual Vision-Language Encoderswith Improved Semantic Understanding,Localization, and Dense Features.md",
+    "PAPERS/DAPO - An Open-Source LLM Reinforcement LearningSystem at Scale.md",
+    "PAPERS/Efficient and robust approximate nearestneighbor search using Hierarchical NavigableSmall World graphs.md",
+    "PAPERS/BERT - Pre-training of Deep Bidirectional Transformers forLanguage Understanding.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/0) Hands-On Entity Resolution.md",
+    "OTHER TEXTBOOKS/Commercial ML/Deep Learning with Python/0) Deep Learning with Python, Third Edition.md",
+    "OTHER TEXTBOOKS/Commercial ML/Reasoning Model/0) Build a Reasoning Model (From Scratch).md",
+    "OTHER TEXTBOOKS/Computer Vision/Deep Learning for Vision Systems/0) Deep Learning for Vision Systems.md",
+    "OTHER TEXTBOOKS/Computer Vision/Deep Learning for CV/0) Deep Learning for Computer Vision.md",
+    "OTHER TEXTBOOKS/Commercial ML/Inside Deep Learning/0) Inside Deep Learning.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain Informatics Technology/0) Brain Informatics Technology.md",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 7.md",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 6.md",
+    "Pasted image 20261112135218.png",
+    "Pasted image 20261112134851.png",
+    "Pasted image 20261112134734.png",
+    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 5.md",
     "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Mind Hacks/0) Mind Hacks.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain Computer Interface/0) Brain-Computer Interface.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Mind Hacks",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Mechatronics/0) Computational Intelligent Techniques in Mechatronics.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain Computer Interface",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain-Inspired AI/0) Brain-Inspired Artificial Intelligence and Neuromorphic Computing in Healthcare.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Mechatronics",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/1) Foundation of Analytics.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain-Inspired AI",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/0) Cognitive Science, Computational Intelligence, and Data Analytics.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/6) Data Analysis Application are Methodology.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/5) Artificial Intelligence and Machine Learning Application in Data Analysis.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/4) Multivariate Data Analytics and Cognitive Analytics.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/3) Data Theory and Taxonomy of Data.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence/2) Foundation of Cognitive Science.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Artificial Intelligence/0) Artificial Intelligence.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Computational Intelligence",
-    "OTHER TEXTBOOKS/Commercial ML/Transformers",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/13) Cognitive Functions.md",
+    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
     "Untitled.canvas"
   ]
 }

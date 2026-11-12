@@ -1,0 +1,1 @@
+https://gwern.net/doc/ai/nn/1986-rumelhart-2.pdf?utm_source=chatgpt.com
