@@ -4,39 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "28520aef0ad23337",
+        "id": "31c8f9e3419d88c1",
         "type": "tabs",
         "children": [
           {
-            "id": "97b8255cb4fb9027",
+            "id": "913a23df5a949efc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/0) Hands-On Entity Resolution.md",
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0) Hands-On Entity Resolution"
+              "title": "14) Observability and Monitoring AI Systems"
             }
           },
           {
-            "id": "d37af94e0009f407",
+            "id": "5643c27a514c36ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PAPERS/Efficient Estimation of Word Representations in Vector Space.md",
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Efficient Estimation of Word Representations in Vector Space"
+              "title": "15) Personalized Recommender"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,8 +211,39 @@
       "bases:Create new base": false
     }
   },
-  "active": "d37af94e0009f407",
+  "active": "ebf7035dc389d5f5",
   "lastOpenFiles": [
+    "images/Pasted image 20261112233412.png",
+    "images/Pasted image 20261112232921.png",
+    "Private/NAICS",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
+    "Pasted image 20261112233412.png",
+    "Pasted image 20261112232921.png",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
+    "OTHER TEXTBOOKS/Bioinformatics/Mastering Python for Bioinfo./0) Mastering Python for Bioinformatics.md",
+    "OTHER TEXTBOOKS/Bioinformatics/Mastering Python for Bioinfo.",
+    "PAPERS/Wearable Sensors forHuman Health Monitoringand Analysis.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/6) Company Matching.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/5) Record Blocking.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/4) Probabilistic Matching.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/3) Text Matching.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/2) Data Standardization.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/1) Introduction to Entity Resolution.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/11) Further Considerations.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/10) Privacy-Preserving Record Linkage.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/9) Cloud Entity Resolution Services.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/8) Scaling Up on Google Cloud.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/7) Clustering.md",
+    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/0) Hands-On Entity Resolution.md",
+    "PAPERS/TEST-TIME SCALING IN DIFFUSION LLMS VIAHIDDEN SEMI-AUTOREGRESSIVE EXPERTS.md",
+    "PAPERS/Gemini 2.5 - Pushing the Frontier withAdvanced Reasoning, Multimodality, LongContext, and Next Generation AgenticCapabilities.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Foundations of Neuronal Dynamics/0) Foundations of Neuronal Dynamics.md",
+    "OTHER TEXTBOOKS/Wearable Tech/Biomedical Electronicsand Wearable Systems.md",
+    "OTHER TEXTBOOKS/Comp. Neuroscience/Foundations of Neuronal Dynamics",
+    "PAPERS/Reinforcement Learning via Self-Distillation.md",
+    "PAPERS/Attention Is All You Need.md",
+    "PAPERS/Efficient Estimation of Word Representations in Vector Space.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kubernetes Docs/0) Kubernetes Docs.md.tmp",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/9) Network Models.md.tmp",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/10) Ocular Reflexes.md.tmp",
@@ -221,10 +251,6 @@
     "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/3) the Cerebellum as a Neuronal Machine.md.tmp",
     "OTHER TEXTBOOKS/Distributed Systems/FastAPI/18) Games.md.tmp",
     "OTHER TEXTBOOKS/Distributed Systems/FastAPI/17) Data Discovery and Visualization.md.tmp",
-    "OTHER TEXTBOOKS/Distributed Systems/FastAPI/12) Testing.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/13) Model Serving Infrastructure.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML Learning Production Systems/5) Advanced Labeling, Augmentation, and Data Preprocessing.md.tmp",
-    "OTHER TEXTBOOKS/Commercial ML/ML/0) Hands-On Machine Learning.md.tmp",
     "images/Pasted image 20261112131858.png",
     "images/Pasted image 20261112124058.png",
     "images/Pasted image 20261112134705.png",
@@ -233,33 +259,6 @@
     "images/Pasted image 20261112134622.png",
     "images/Pasted image 20261112134734.png",
     "PAPERS/Qwen3 Technical Report.md",
-    "PAPERS/Efficient Estimation of Word Representations in Vector Space.md",
-    "PAPERS/Gemma 3 Technical Report.md",
-    "PAPERS/Retrieval-Augmented Generation forKnowledge-Intensive NLP Tasks.md",
-    "PAPERS/Learning representationsby back-propagating errors.md",
-    "PAPERS/Sentence-BERT - Sentence Embeddings using Siamese BERT-Networks.md",
-    "PAPERS/DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs viaReinforcement Learning.md",
-    "PAPERS/Understanding R1-Zero-Like Training - A Critical Perspective.md",
-    "PAPERS/SigLIP 2 - Multilingual Vision-Language Encoderswith Improved Semantic Understanding,Localization, and Dense Features.md",
-    "PAPERS/DAPO - An Open-Source LLM Reinforcement LearningSystem at Scale.md",
-    "PAPERS/Efficient and robust approximate nearestneighbor search using Hierarchical NavigableSmall World graphs.md",
-    "PAPERS/BERT - Pre-training of Deep Bidirectional Transformers forLanguage Understanding.md",
-    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/0) Hands-On Entity Resolution.md",
-    "OTHER TEXTBOOKS/Commercial ML/Deep Learning with Python/0) Deep Learning with Python, Third Edition.md",
-    "OTHER TEXTBOOKS/Commercial ML/Reasoning Model/0) Build a Reasoning Model (From Scratch).md",
-    "OTHER TEXTBOOKS/Computer Vision/Deep Learning for Vision Systems/0) Deep Learning for Vision Systems.md",
-    "OTHER TEXTBOOKS/Computer Vision/Deep Learning for CV/0) Deep Learning for Computer Vision.md",
-    "OTHER TEXTBOOKS/Commercial ML/Inside Deep Learning/0) Inside Deep Learning.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Brain Informatics Technology/0) Brain Informatics Technology.md",
-    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 7.md",
-    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 6.md",
-    "Pasted image 20261112135218.png",
-    "Pasted image 20261112134851.png",
-    "Pasted image 20261112134734.png",
-    "Fall 2026/PSY324 - Biological Psy./Lecture Notes/Lec 5.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/14) Psychopathology.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/13) Cognitive Functions.md",
-    "Fall 2026/PSY324 - Biological Psy./TEXTBOOKS/Biological Psychology/12) Learning, Memory, and Intelligence.md",
     "Untitled.canvas"
   ]
 }

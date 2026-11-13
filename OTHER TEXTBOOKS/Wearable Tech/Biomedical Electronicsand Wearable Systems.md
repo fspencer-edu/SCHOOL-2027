@@ -1,0 +1,1 @@
+https://mdpi-res.com/bookfiles/book/10769/Biomedical_Electronics_and_Wearable_Systems.pdf?v=1794363310

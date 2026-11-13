@@ -366,16 +366,173 @@ OUTPUT:
 {{output}}
 ```
 
-- 
-
+- Eval tests run the feature pipeline created by the eval prompt and then provide a score for that particular eval
+- LLM to generate synthetic prompts and expected responses
 
 ### LLM-assisted synthetic eval generation
 
+- Diversity dataset
+	- Create examples that cover a wide range of features, scenarios, and personas
+- Generate user inputs, not outputs
+	- Use LLMs to generate realistic user queries or inputs
+	- Prevents synthetic data from inheriting the biases or limitations of the generating model
+- Incorporate real system constraints
+- Verify scenario coverage
+- Use a powerful LLM
+
+
 ### Historical evals require point-in-time correct RAG data
+
+- If the vector index or MCP queries data from a mutable data source, it can return a different response
+- All the data sources need to support time travel
+	- Queries need to include a timestamp to retrieve the response as of that point in time
+- Create immutable RAG data sources in development environment
+- Continually update evals dataset
+- Log each request/response with a TLL
 
 # Governance
 
+- Goverance is an oft-used, little understood term in data platforms
+	- Policies, processes, and controls that ensure that an organization is compliant ith regulations and internal policies
+- AI data governance
+	- Authority and control over management of AI datasets
+- Training datasets should be free of bias
+- Traceability for decisions made by AI systems
+- Accurate, robust, secure
+- Data quality, access control, lineage, and auditing
+
 ## Schematized Tags
+
+- Custom metadata
+	- General purpose tool to describe and discover AI assets and to define governance policies
+	- Create unlimited amount of custom metadata for AI assets
+- Tags
+	- Labels or keywords to enhance the discoverability, organization, and management of data and AI assets
+	- Keywords
+- Free-text search
+	- Partial match on a tag returns relevant results
+- Schematic tag
+	- Conforms to a predefined schema
+	- Expected fields and possible hierarchy or controlled vocabulary
+	- Standardized, consistent tagging across assets
+
+<img src="/images/Pasted image 20261112232921.png" alt="image" width="500">
+
+
+- Schematized tag
+	- Defined structure
+	- Controlled values or types
+	- Validation rules
+
+- Define a schematized tag using JSON
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "risk_level": {
+      "type": "string",
+      "enum": ["minimal", "limited", "high", "unacceptable"]
+    },
+    "conformity_passed_date": {
+      "type": "string",
+      "format": "date"
+    },
+    ...
+    "intended_use": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "risk_level",
+    ...
+  ]
+}
+
+eu_ai_act_tag = {
+  "risk_level": "high",
+  "conformity_passed_date":  "2025-03-15",
+ ...
+  "intended_use": "Credit card fraud scoring"
+}
+
+my_model.add_tag("eu_ai_act", eu_ai_act_tag)
+```
+
+
+- Entry
+	- A name
+	- A type
+	- A flag indicating whether the entry is required or optional
+	- An optional range of valid values
+
+- GDPR schema
+	- Data retention date for training data or feature data
+	- Governance tools that search for AI assets that will soon need to be deleted due to the data retention period expiring
+- Compliance schema
+	- Defines the conditions under which an ML asset can be used for a particular task
+- Checklist schema
+	- Defines tasks that must be completed before a feature group is approved for production
+
 ## Lineage
+
+- Lineage (provenance)
+	- Tracks the origin, transformations, movement, and historical connections of data and models throughout their lifecycle
+
+1. Data source
+2. Feature group
+3. Feature view
+4. Training data
+5. Model
+6. Deployment
+
 ## Versioning
+
+- Versioning of AI assets is important in governance to track the usage of AI assets over time
+
+<img src="/images/Pasted image 20261112233412.png" alt="image" width="500">
+
+- Versioning models is easier than versioning feature groups
+- Models are immutable while feature groups store mutable data
+- Schema-breaking changes
+	- Require a new version of a feature group or feature view
+	- Deleting a feature or feature type
+
+
+- Iceberg tables
+	- Create a branch of production tables to test new features or algorithms on a subset of data without interfering with the production table
+
+```python
+# Create a branch
+spark.sql(
+ "ALTER TABLE local.default.sample_table CREATE BRANCH IF NOT EXISTS dev_branch"
+)
+
+# Make changes in the dev_branch
+spark.sql("INSERT INTO local.default.sample_table.branch_dev_branch \
+           VALUES (3, 'Charlie', 35)")
+
+# Create a tag for the main branch
+spark.sql("ALTER TABLE local.default.sample_table \
+           CREATE TAG IF NOT EXISTS v1_0")
+
+# Query the original table
+spark.sql("SELECT * FROM local.default.sample_table").show()
+
+# Query the dev_branch
+spark.sql("SELECT * FROM local.default.sample_table.branch_dev_branch").show()
+
+# Query using the tag
+spark.sql("SELECT * FROM local.default.sample_table.tag_v1_0").show()
+```
+
 ## Audit Logs
+
+- Feature store events
+	- Groups are created, modified, accessed, or deleted
+- Model lifecycle events
+	- Registrations, deployments, and updates
+- Access control events
+	- Who updated an ML asset or approved a production deployment
+- Model deployment activity
+	- Who sent a given prediction request

@@ -1,0 +1,1 @@
+https://mdpi-res.com/bookfiles/book/12466/Wearable_Sensors_for_Human_Health_Monitoring_and_Analysis.pdf?v=1794363437
