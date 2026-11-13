@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "67963f8b8663a9ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "14) Observability and Monitoring AI Systems"
+            }
+          },
+          {
             "id": "5643c27a514c36ab",
             "type": "leaf",
             "state": {
@@ -48,8 +62,37 @@
               "icon": "lucide-file",
               "title": "15) Personalized Recommender"
             }
+          },
+          {
+            "id": "27bef2335accffb7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AI - Quiz 6"
+            }
+          },
+          {
+            "id": "9641e437418738fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Week 8"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -111,7 +154,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125
+    "width": 256.953125,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -225,21 +269,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "913a23df5a949efc",
+  "active": "67963f8b8663a9ae",
   "lastOpenFiles": [
-    "images/Screenshot 2026-11-13 at 10.11.19 AM.png",
+    "images/Pasted image 20261113132102.png",
+    "images/Screenshot 2026-11-13 at 1.25.54 PM.png",
+    "images/Pasted image 20261113133231.png",
+    "images/Pasted image 20261113113018.png",
+    "images/Pasted image 20261113113350.png",
+    "images/Pasted image 20261113133442.png",
+    "images/Pasted image 20261113113545.png",
+    "images/Pasted image 20261113113833.png",
+    "images/Pasted image 20261113112622.png",
+    "images/Pasted image 20261113112814.png",
+    "images/Pasted image 20261113132253.png",
+    "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 6.md",
+    "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
+    "Fall 2026/CPS721 - AI/NOTES/Week 9.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
+    "Private/NAICS/Data Profiling Report.md",
     "Private/NAICS/Performance Optimizations.md",
     "Private/NAICS/NAICS Classification Pipeline - Architecture and Implementation Plan.md",
-    "Private/NAICS/Data Profiling Report.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
-    "Screenshot 2026-11-13 at 10.11.19 AM.png",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
-    "images/Pasted image 20261112233412.png",
-    "images/Pasted image 20261112232921.png",
     "Private/NAICS",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
-    "Pasted image 20261112233412.png",
-    "Pasted image 20261112232921.png",
     "OTHER TEXTBOOKS/Bioinformatics/Mastering Python for Bioinfo./0) Mastering Python for Bioinformatics.md",
     "OTHER TEXTBOOKS/Bioinformatics/Mastering Python for Bioinfo.",
     "PAPERS/Wearable Sensors forHuman Health Monitoringand Analysis.md",
@@ -257,10 +309,7 @@
     "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/0) Hands-On Entity Resolution.md",
     "PAPERS/TEST-TIME SCALING IN DIFFUSION LLMS VIAHIDDEN SEMI-AUTOREGRESSIVE EXPERTS.md",
     "PAPERS/Gemini 2.5 - Pushing the Frontier withAdvanced Reasoning, Multimodality, LongContext, and Next Generation AgenticCapabilities.md",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Foundations of Neuronal Dynamics/0) Foundations of Neuronal Dynamics.md",
-    "OTHER TEXTBOOKS/Wearable Tech/Biomedical Electronicsand Wearable Systems.md",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Foundations of Neuronal Dynamics",
-    "PAPERS/Reinforcement Learning via Self-Distillation.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kubernetes Docs/0) Kubernetes Docs.md.tmp",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/9) Network Models.md.tmp",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/10) Ocular Reflexes.md.tmp",
@@ -268,11 +317,6 @@
     "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/3) the Cerebellum as a Neuronal Machine.md.tmp",
     "OTHER TEXTBOOKS/Distributed Systems/FastAPI/18) Games.md.tmp",
     "OTHER TEXTBOOKS/Distributed Systems/FastAPI/17) Data Discovery and Visualization.md.tmp",
-    "images/Pasted image 20261112131858.png",
-    "images/Pasted image 20261112124058.png",
-    "images/Pasted image 20261112134705.png",
-    "images/Pasted image 20261112135218.png",
-    "images/Pasted image 20261112134851.png",
     "Untitled.canvas"
   ]
 }
