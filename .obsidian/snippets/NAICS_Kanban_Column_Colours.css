@@ -1,0 +1,47 @@
+/* NAICS Development Kanban — column colours
+   For Obsidian Kanban (Markdown-backed board).
+   Install in <your vault>/.obsidian/snippets/ and enable via
+   Settings > Appearance > CSS snippets.
+
+   IMPORTANT: This version assumes five visible lanes in order:
+   Backlog, Next Up, In Progress, Testing, Done.
+   Remove the accidental empty 'kanban-plugin: board' lane first.
+*/
+
+.kanban-plugin__lane-wrapper:nth-child(1) {
+  --naics-accent: #64748b; /* Backlog - grey */
+  --naics-tint: rgba(100, 116, 139, 0.13);
+}
+.kanban-plugin__lane-wrapper:nth-child(2) {
+  --naics-accent: #3b82f6; /* Next Up - blue */
+  --naics-tint: rgba(59, 130, 246, 0.13);
+}
+.kanban-plugin__lane-wrapper:nth-child(3) {
+  --naics-accent: #8b5cf6; /* In Progress - violet */
+  --naics-tint: rgba(139, 92, 246, 0.13);
+}
+.kanban-plugin__lane-wrapper:nth-child(4) {
+  --naics-accent: #c08a2d; /* Testing - amber */
+  --naics-tint: rgba(192, 138, 45, 0.14);
+}
+.kanban-plugin__lane-wrapper:nth-child(5) {
+  --naics-accent: #22a06b; /* Done - green */
+  --naics-tint: rgba(34, 160, 107, 0.14);
+}
+
+/* Darker accent across each lane header; gentle tinted body.
+   This does not overwrite category-tag colours set by Colored Tags Wrangler. */
+.kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper {
+  background-color: var(--naics-accent) !important;
+  border-radius: 7px 7px 0 0;
+}
+.kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-title,
+.kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-title-count,
+.kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-grip,
+.kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__icon {
+  color: white !important;
+}
+.kanban-plugin__lane-wrapper .kanban-plugin__lane-items,
+.kanban-plugin__lane-wrapper .kanban-plugin__lane-items.kanban-plugin__scroll-container {
+  background-color: var(--naics-tint) !important;
+}

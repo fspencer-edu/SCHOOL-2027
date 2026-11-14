@@ -1,4 +1,8 @@
 {
   "cssTheme": "Obsidian Nord",
-  "showRibbon": true
+  "showRibbon": true,
+  "enabledCssSnippets": [
+    "NAICS_Kanban_Column_Colours",
+    "NAICS_Kanban_Card_Tints"
+  ]
 }

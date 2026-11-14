@@ -1,0 +1,57 @@
+/* NAICS Kanban: softly tinted cards, matched to their column.
+ * Companion to NAICS_Kanban_Column_Colours.css.
+ * Keep BOTH CSS snippets enabled in Obsidian.
+ *
+ * The existing column stylesheet supplies --naics-accent on each lane.
+ * These styles derive the card colour from that same accent, so a card
+ * automatically adopts the destination column's tint when you drag it.
+ * Only Kanban cards are styled; task tags and regular notes are untouched.
+ */
+
+/* Dark theme: noticeable, but still dark enough for white text. */
+.theme-dark .kanban-plugin__lane-wrapper {
+  --naics-card-bg: color-mix(
+    in srgb,
+    var(--background-secondary) 76%,
+    var(--naics-accent, #64748b) 24%
+  );
+  --naics-card-hover: color-mix(
+    in srgb,
+    var(--background-secondary) 67%,
+    var(--naics-accent, #64748b) 33%
+  );
+}
+
+/* Light theme: gentler pastel tint with dark text. */
+.theme-light .kanban-plugin__lane-wrapper {
+  --naics-card-bg: color-mix(
+    in srgb,
+    var(--background-secondary) 88%,
+    var(--naics-accent, #64748b) 12%
+  );
+  --naics-card-hover: color-mix(
+    in srgb,
+    var(--background-secondary) 81%,
+    var(--naics-accent, #64748b) 19%
+  );
+}
+
+/* Whole card, plus a thin bar to identify its status column. */
+.kanban-plugin__lane-wrapper .kanban-plugin__item {
+  background-color: var(--naics-card-bg) !important;
+  border-left: 3px solid var(--naics-accent, #64748b) !important;
+  border-radius: 7px;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+/* The plugin may paint inner card sections separately; keep them clear
+   so the outer card tint shows through while preserving tag-chip styling. */
+.kanban-plugin__lane-wrapper .kanban-plugin__item-title-wrapper,
+.kanban-plugin__lane-wrapper .kanban-plugin__item-metadata-wrapper {
+  background-color: transparent !important;
+}
+
+.kanban-plugin__lane-wrapper .kanban-plugin__item:hover,
+.kanban-plugin__lane-wrapper .kanban-plugin__item:focus-within {
+  background-color: var(--naics-card-hover) !important;
+}

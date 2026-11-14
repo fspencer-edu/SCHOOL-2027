@@ -486,19 +486,108 @@ trace.end()
 
 - Decompose errors by task
 	- Subjective tasks
+		- Instruction following errors
+		- Harmful or unsafe output error
+		- Style and communication errors
+		- Factuality errors
+		- Format errors
 	- Object tasks
-	- Instruction following errors
-	- Harmful or unsafe output error
-	- Style and communication errors
-	- Factuality errors
-	- Format errors
-	- Reasoning correctness errors
-	- Instruction following errors
-	- Context faithfulness error
-	- Factuality errors
+		- Reasoning correctness errors
+		- Instruction following errors
+		- Context faithfulness error
+		- Factuality errors
 
+- Collect traces produced by an agent on real-world requests
+
+<img src="/images/Pasted image 20261113215126.png" alt="image" width="500">
+
+- Identify problematic traces, annotate them, group together related problematic traces, and improve agent and evals
+
+- 3 step process
+	- Analyze the conversations and traces
+		- Errors as feedback/scores
+	- Categorize the annotated errors, possibly using an LLM-as-a-judge
+	- Improve agent's performance, creating metrics to measure performance
+
+- Prompt engineering
+	- Adding/removing/updating instructions and/or examples in a prompt template
+	- Retrieving different prompt examples through RAG, MCP, or function calling
+	- Changing the LLMs used by the agent
+	- Adding/removing/changing steps in the agent's logic
+
+### Log Viewer and Feedback
+
+- Feedback can be stored in the same logging feature as the logs
+
+### Curating evals
+
+- Creation of new evals that test edge cases uncovered in production
+- Algorithmic evals
+	- Require only the LLM query/response and are easily validated in a unit test
+	- Extracted content exactly matches X
+	- Response structure is JSON and matches the expected schema for this JSON object
+	- Response length is less than Y characters
+	- Code is container in backticks and parsable
+- Verifiable evals
+	- Verify the response results in the correct execution of some task on some external system or service
+	- The generated code compiles
+	- The SQL query retrieves expected results
+	- The code passes its unit tests
+- Agents that execute objective tasks using LLMs can perform many iterated queries on an LLM before returning a response
 
 ## Guardrails
+
+- LLMs can produce harmful responses
+- Guardrails
+	- Mechanisms that reduce the likelihood that LLM accepts harmful input or produces harmful responses
+
+<img src="/images/Pasted image 20261113222012.png" alt="image" width="500">
+
+```text
+- ALLOW - Input is safe and within scope of the task
+
+- BLOCK: [brief reason] - Input violates policies (unsafe, abusive, illegal)
+
+- SANITIZE: [sanitized version] - Input can be modified to be acceptable
+
+Policy Guidelines:
+
+- Reject: hate speech, self-harm content, violence, adult content, illegal requests
+
+- Confirm: input aligns with system’s intended scope
+
+- Sanitize: redact PII or rephrase ambiguous language when possible
+
+- Analyze the following user input: {user_input}
+```
+
+- Prompt template
+	- Implement role specific detection
+	- Protect the customer's brand
+	- Minimize risk
+
 ## Online A/B Testing
+
+- A/B tests for online traffic in LLM systems
+- Checked the average number of lines generated in code completions, total number of characters, and rate at which code completions were shown
+
 ## Jailbreaking and Prompt Injection
+
+- Jailbreaking
+	- Involves bypassing its safety, content, and usage restrictions
+		- Generating harmful, illegal, or offensive content
+		- Revealing proprietary information or internal prompts
+		- Given access to prohibited functionalities
+- Roleplaying
+- Prompt injection
+	- Applications built on top of agents, or the MCP tools exposed to the agent
+	- Attacks the application that uses the LLM, not the LLM itself
+	- Concatenating untrusted user input with a trusted prompt constructed by the application's developer
+
 ## LLM Metrics
+
+- Metics used to estimate load on ML models
+	- Request throughput and latency
+- Token throughput and average token latency are popular metics for autoscaling LLMs
+	- Scale-out is triggered when the measured value exceeds a certain threshold
+- Horizontally scaling out an LLM model takes significantly longer than scaling out an ML model
