@@ -208,13 +208,61 @@
 
 ### Ranking model
 
-- 
-
+- Ranker model takes as input the N candidate videos
+- Negative and positive samples
+- Normalized discounted cumulative gain (NDCG)
+	- Compares rankings to an ideal order in which all relevant items are at the top of the list
+- Mean reciprocal rank (MRR)
+- Mean average precision (MAP)
+	- Evaluate the quality of ranking in recommender systems
+	- Measure relevance of suggested items and ho good the system is at placing more relevant items at the top
 
 ## Online Inference Pipelines
 
+- Python predictor script deployed on Kserve as a FastAPI Python server
+- Accepts prediction requests and executes steps 2 to 6 before returning the rank-ordered list of recommendation videos
 
+<img src="/images/Pasted image 20261114150740.png" alt="image" width="500">
 
+- Retrieval
+	- Features are read from the feature store with the `user_id` and combined with the on-demand and passed features
+	- User features are passed to the user-embedding model that returns the user embedding, and sent to the vector index to return candidate videos
+- Filtering
+	- Filter out the candidate videos
+- Ranking
+	- Perform a model prediction on the DataFrame containing the filtered candidate video
+
+<img src="/images/Pasted image 20261114150942.png" alt="image" width="500">
+
+- Retrieving the user features and user embedding (5 ms)
+- ANN search on the vector index (10 ms)
+- Filtering out the unsuitable videos (<1 ms)
+- Batch primary key lookup for video features (23 ms)
+- Ranking score estimated by the ranking model for each candidate video (5 ms)
+- Asynchronous logging (1 ms)
 # Agent Search for Videos
+
+- Extend the system by allowing users to search for videos using free text
+- Add new feature pipelines that transcribe videos, extract frames from them, and allow users to tag describing key movements in videos
+
+<img src="/images/Screenshot 2026-11-14 at 3.12.10 PM.png" alt="image" width="500">
+
+
 # The Dirty Dozen of Fallacies of MLOps
+
+- Do it all in one monolithic ML pipeline
+- Data for AI is static
+- All data transformations for AI are created equal
+- There is no need for a feature store
+- Experiment tracking is required for MLOps
+- MLOps is just DevOps for ML
+- Versioning models is enough for safe upgrade/rollback
+- There is no need for data versioning
+- The model signature is the API for model deployments
+- Online prediction latency is the time taken for the model prediction
+- LLMOps is different from MLOps
+- You require an ML orchestrator for ML pipelines
+
 # The Ethical Responsibilities of AI Builders
+
+- 

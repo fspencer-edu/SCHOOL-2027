@@ -1,10 +1,10 @@
 {
   "sidebarConfig": {
     "enabled": true,
-    "width": 290,
-    "isCollapsed": false,
+    "width": 514,
+    "isCollapsed": true,
     "collapsedModules": {
-      "mini-month": false,
+      "mini-month": true,
       "up-next": false,
       "task-backlog": false,
       "agent": false
