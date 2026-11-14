@@ -258,20 +258,246 @@ spec:
 	- Abrupt drift (not incremental or recurring drift)
 
 - Abrupt drift
+	- A sudden change in the data distribution
 - Incremental drift
+	- Small, incremental changes that accumulate over time
 - Recurring drift
+	- Periodic patterns that appear in and disappear from detection sets
 
-
+```python
+fg_some_monitoring_reference_sliding = trans_fg.create_feature_monitoring(
+    name="fg_transactions",
+    feature_name="amount",
+    cron_expression="0 8,28,48 * ? * * *",
+    description="Daily feature monitoring"
+).with_detection_window(
+    time_offset="3h", 
+    row_percentage=0.8,
+).with_reference_window(
+    time_offset="1w1d", 
+    window_length="7d",
+    row_percentage=0.8,
+).compare_on(
+    metric="mean",
+    threshold=0.1,
+    relative=True,
+).save()
+```
 
 ## Univariate Feature Drift
+
+- Reference window is the training dataset for a model
+- Detection window is a batch of inference data, read from the log data for the model
+- Univariate feature drift
+	- Significant change in the distribution of a single variable or feature over time
+	- Kullback-Leibler divergence
+	- Wasserstein distance
+	- L-infinity
+	- Kolmogorov-Smirnov test
+	- Deviation from the mean
+- Deviation from the mean only works well if the reference distribution is roughly Gaussian
+
+```python
+model_mr.create_feature_monitoring(
+    name="fv_amount",
+    cron_expression="10 * ? * * *",
+    trigger=alert_obj,
+    feature_name="amount",
+).with_detection_window(
+    time_offset="1h", # fetch data from the last hour
+    row_percentage=0.2,
+).compare_on(
+    metric="mean",
+    threshold=0.1,
+)
+```
+
 ## Multivariate Feature Drift
+
+- Multivariate feature drift
+	- Change in the join distribution of multiple variables over time
+	- Represented by the points changing shape, orientation, or position in the multidimensional space
+- NannyML
+	- Data reconstruction using principal component analysis (PCA)
+		- Evaluates structural changes in data distribution
+	- Domain classifier
+		- Focuses on discriminative performance
+
+- PCA
+	- Finds the axes that best represent the spread of the data point in the original feature space
+	- Orthogonal to each other
+	- Capture the directions of maximum variance in the data
+	- Creates new space that retain the most significant information by projecting the data onto these axes
+	- Dimensionality reduction
+
+```python
+drdc = nml.DataReconstructionDriftCalculator(
+    column_names=[feature.name for feature in fv.features if not feature.label],
+    timestamp_column_name='event_time',
+    chunk_period='h',
+)
+features_df, _ = fv.training_data()
+drdc.fit(features_df)
+inference_df = logging_fg.filter(event_time>=1hr_ago).select(fv.features).read()
+multivariate_data_drift = drdc.calculate(inference_df)
+
+drift_df = multivariate_data_drift.data
+    
+max_drift = drift_df['reconstruction_error'].value.max()
+if max_drift > alert_threshold: # for any chunk 
+    alert(...)
+```
+
+- Domain classifier
+	- Detects multivariate feature drift by training a classier to distinguish between training data and a batch of logged inference data
+	- Sensitive to any kind of drift
+		- Non-linear
+		- Interaction-based
+		- Localized changes
+
 ## Monitoring Vector Embeddings
+
+- Drift detection is challenging for vector embeddings
+- Not easily interpretable
+- Distributional properties of embeddings can be monitored
+	- Norm distribution and centroid drift
+	- Easier to monitor for significant changes in the values of an interpretable feature
+		- `amount`
+- Embedding drift
+	- Create vector embeddings from non-stationary data
+- Recompute the embeddings on a schedule
+- Train a domain classifier model on the reference dataset to identify drift in a detection dataset
+	- ROC AUC metric
+
 ## Model Monitoring with NannyML
+
+- Model monitoring for concept drift where the outcomes are available at an acceptable delay is relatively straightforward
+- Read the predictions from the log data and the outcomes from another table
+- Monitor KPIs for the client that are correlated with the quality of predictions
+- Confidence-Based Performance Estimation (CBPE)
+	- Estimates the performance of classification models by using predicted probabilities to infer metrics
+		- Accuracy
+		- Precision
+		- Recall
+- Direct Loss Estimation (DLE)
+	- Estimates a model's performance by directly modeling the expected loss based on prediction scores
+	- Estimates the performance of regression models, loss function can be calculate for a single observation and turned into performance metrics
+- CBPE
+	- Only works for classification problems with predicted probabilities
+	- Does not requires additional model training
+	- Expects a timestamp that defines the temporal order of observations
+	- Evaluates metrics in time-based chunks
+- DLE
+	- Requires additional work of training a supervised model
+
+- Use the predicted probability of fraud
+
+
+```python
+# Training pipeline 
+import nannyml as nml
+X_train, X_test, y_train, y_test = feature_view.train_test_split(...)
+
+# Train your model
+model.fit(X_train, y_train)
+
+# Construct reference dataset and predict probabilities on test data
+reference = pd.concat([X_test, y_test], axis=1)
+
+# Generate predicted labels using a threshold (e.g., 0.5)
+reference['y_pred_proba'] = model.predict_proba(X_test)[:, 1]
+reference['y_pred'] = (reference['y_pred_proba'] > 0.5).astype(int)
+
+# NannyML expects binary ints for targets and predictions
+reference['is_fraud'] = y_test['is_fraud'].astype(int)
+
+# CBPE expects: y_pred_proba, y_pred, y_true, and timestamp column
+cbpe = nml.performance_estimation.CBPE(
+    y_pred_proba='y_pred_proba',
+    y_pred='y_pred',
+    y_true='is_fraud',
+    timestamp_column_name='event_time',
+    metrics=['roc_auc', 'f1', 'precision', 'recall'],
+    chunk_size='7d'
+)
+
+cbpe.fit(reference) # Fit statistical model on reference (labeled) data
+# Then save cbpe to Model Registry
+```
+
 ## When to Retrain or Redesign a Model
+
+- If you can acquire outcomes within an acceptable delay, monitor for concept drift by comparing predictions with outcomes
+- If you do not have outcomes, start with model-based monitoring
+- If you do not have obviously correlated features, start with multivariate feature monitoring
+- For feature monitoring, start by triggering alerts that humans inspect
+
+<img src="/images/Pasted image 20261113182325.png" alt="image" width="500">
+
 # Logging and Metrics for Agents
 
+- Logging usually happens at the agent level
+- Agents execute steps in response to the user input
+- LLMs model language and the work, which is relatively stable
+- Error analysis
+	- Helps improve agent's performance by providing insights to improve prompt templates, guardrails, RAG, tool usage, and agent workflows
+- Agent traces
+	- Capture the bigger performance picture
+
+<img src="/images/Pasted image 20261113182554.png" alt="image" width="500">
+
+- LRM and chain of thought prompting can also produce intermediate queries/responses that can also be stored
+
 ## From Logs to Traces with Agents
+
+- Traces
+	- A hierarchical structure of spans
+- Spans
+	- Contain logs, measurements, and events
+	- Steps are called spans in most observability platforms
+- Actions performed by an agent are logged as spans within a single graph run
+- Metrics are used to quickly identify spikes in error rates and agent performance via latency and to help estimate cost by measuring the number of LLM tokens generated by the agent
+
+<img src="/images/Pasted image 20261113182957.png" alt="image" width="500">
+
+```python
+from opik import Opik
+client = Opik(project_name="Opik translator")
+trace = client.trace( name="translate_trace",.. )
+trace.span( name="llm_call", type="llm",
+    input={"prompt": "Translate the following text to Swedish: Hello"},
+    output={"response": "Hej"}
+)
+client.log_traces_feedback_scores( scores=[
+    {"id": trace.id, "name": "accuracy", "value": 0.99, "reason": "Easy one."}
+  ]
+)
+trace.end()
+```
+
 ## Error Analysis
+
+- Error analysis
+	- Process of studying the types and sources of their mistakes
+- Improve
+	- Performance
+	- Reliability
+	- Interpretability
+
+- Decompose errors by task
+	- Subjective tasks
+	- Object tasks
+	- Instruction following errors
+	- Harmful or unsafe output error
+	- Style and communication errors
+	- Factuality errors
+	- Format errors
+	- Reasoning correctness errors
+	- Instruction following errors
+	- Context faithfulness error
+	- Factuality errors
+
+
 ## Guardrails
 ## Online A/B Testing
 ## Jailbreaking and Prompt Injection

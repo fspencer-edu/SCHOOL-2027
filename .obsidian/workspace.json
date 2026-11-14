@@ -90,6 +90,20 @@
               "icon": "lucide-file",
               "title": "Week 8"
             }
+          },
+          {
+            "id": "678eacee7ba6e36b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Updates.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Updates"
+            }
           }
         ],
         "currentTab": 2
@@ -271,6 +285,12 @@
   },
   "active": "67963f8b8663a9ae",
   "lastOpenFiles": [
+    "images/Pasted image 20261113182554.png",
+    "Pasted image 20261113182957.png",
+    "Pasted image 20261113182554.png",
+    "Pasted image 20261113182325.png",
+    "Updates.md",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
     "images/Pasted image 20261113132102.png",
     "images/Screenshot 2026-11-13 at 1.25.54 PM.png",
     "images/Pasted image 20261113133231.png",
@@ -278,14 +298,9 @@
     "images/Pasted image 20261113113350.png",
     "images/Pasted image 20261113133442.png",
     "images/Pasted image 20261113113545.png",
-    "images/Pasted image 20261113113833.png",
-    "images/Pasted image 20261113112622.png",
-    "images/Pasted image 20261113112814.png",
-    "images/Pasted image 20261113132253.png",
     "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 6.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 9.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
     "Private/NAICS/Data Profiling Report.md",
@@ -308,7 +323,6 @@
     "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/7) Clustering.md",
     "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/0) Hands-On Entity Resolution.md",
     "PAPERS/TEST-TIME SCALING IN DIFFUSION LLMS VIAHIDDEN SEMI-AUTOREGRESSIVE EXPERTS.md",
-    "PAPERS/Gemini 2.5 - Pushing the Frontier withAdvanced Reasoning, Multimodality, LongContext, and Next Generation AgenticCapabilities.md",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Foundations of Neuronal Dynamics",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kubernetes Docs/0) Kubernetes Docs.md.tmp",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/9) Network Models.md.tmp",
