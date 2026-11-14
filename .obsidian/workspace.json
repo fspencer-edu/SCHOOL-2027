@@ -11,16 +11,14 @@
             "id": "6c3b07e3e8611a34",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "Private/NAICS/KanBan.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": []
-                }
+                "file": "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "KanBan"
+              "icon": "lucide-file",
+              "title": "15) Personalized Recommender"
             }
           }
         ]
@@ -81,13 +79,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125,
-    "collapsed": true
+    "width": 256.953125
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -209,6 +205,9 @@
   },
   "active": "6c3b07e3e8611a34",
   "lastOpenFiles": [
+    "OTHER TEXTBOOKS/Data Modeling and Analytics/Fundamental of Data Eng./5) Data Generation in Source System.md.tmp",
+    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
+    "Private/NAICS/KanBan.md",
     "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Designing Data-Intensive Applications/12) Stream Processing.md.tmp",
     "OTHER TEXTBOOKS/Data Quality/Data Contracts/2) Data Quality Isn't About Pristine Data.md.tmp",
     "OTHER TEXTBOOKS/Modern AI and RAG/Hands-On LLMs/9) Multimodal LLMs.md.tmp",
@@ -225,14 +224,12 @@
     "images/Pasted image 20261113222012.png",
     "images/Pasted image 20261113224933.png",
     "images/Pasted image 20261113215126.png",
-    "Private/NAICS/KanBan.md",
     "Untitled.canvas",
     "OTHER TEXTBOOKS/Textbook Table.md",
     "Private/NAICS/Data Profiling Report.md",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
     "Updates.md",
     "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/14) Observability and Monitoring AI Systems.md",
     "Private/NAICS/Project Architecture.md",
     "Private/NAICS/Roadmap.md",
     "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 6.md",
@@ -254,7 +251,6 @@
     "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/10) Privacy-Preserving Record Linkage.md",
     "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/9) Cloud Entity Resolution Services.md",
     "OTHER TEXTBOOKS/Comp. Neuroscience/Foundations of Neuronal Dynamics",
-    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kubernetes Docs/0) Kubernetes Docs.md.tmp",
-    "OTHER TEXTBOOKS/Comp. Neuroscience/Modern Discoveries in Neuroscience/9) Network Models.md.tmp"
+    "Fall 2026/CPS853 - Big Data Systems/TEXTBOOKS/Kubernetes Docs/0) Kubernetes Docs.md.tmp"
   ]
 }
