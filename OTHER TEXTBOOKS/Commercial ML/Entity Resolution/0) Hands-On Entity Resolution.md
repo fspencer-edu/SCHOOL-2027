@@ -1,4 +1,4 @@
-https://learning.oreilly.com/library/view/hands-on-entity-resolution/9781098148478/?utm_source=chatgpt.com
+https://learning.oreilly.com/library/view/hands-on-entity-resolution/9781098148478/
 
 ![](https://learning.oreilly.com/covers/urn:orm:book:9781098148478/296w/?format=webp)
 
