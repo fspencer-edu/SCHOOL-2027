@@ -1,0 +1,1 @@
+https://facebookresearch.github.io/brain2qwerty/assets/brain2qwerty_v2.pdf?utm_source=chatgpt.com

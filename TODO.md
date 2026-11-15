@@ -1,3 +1,19 @@
+## Assignments
+
+- [ ] ML Assignment 4
+- [ ] AI Assignment 4
+- [x] Virus posts (2)
+- [x] Virus essay
+- [ ] Real bio psychology paper
+- [ ] Big data
+- [ ] Look at graduate school
+
+
+
+
+
+
+
 - [ ] Big data system textbooks
 	- [x] Designing data intensive application
 	- [ ] Docker docs
@@ -24,20 +40,8 @@
 - [ ] Viruses Among Us
 
 
-## Assignments
 
-- [ ] Go over AI labs and assignments
-- [ ] Go over AI midterm
 
-- [ ] Big data project
-- [ ] Virus essay
-
-- [ ] Start NAICS classification
-- [ ] Prism Insights
-	- [ ] Time Aggregation
-	- [ ] Model Queries
-	- [ ] Org Data
-	- [ ] Page Access Matrix in Client Admin
 
 
 ---

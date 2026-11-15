@@ -4,137 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "6a2bbc774b7697dd",
+        "id": "cdb94810dc14aedd",
         "type": "tabs",
         "children": [
           {
-            "id": "49b30ab4e47f4f6e",
+            "id": "ad566224a3d7ee1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private/NAICS/Data Profiling Report.md",
+                "file": "Private/Master's Application List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data Profiling Report"
-            }
-          },
-          {
-            "id": "cea8f8bf5c3c477d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/NAICS/NAICS Classification - Industry Practices, Production Workflows, and Guardrails.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NAICS Classification - Industry Practices, Production Workflows, and Guardrails"
-            }
-          },
-          {
-            "id": "df0606581f7e8aca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/NAICS/NAICS Classification - Model Methods, Similarity Measures & Evaluation Framework.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NAICS Classification - Model Methods, Similarity Measures & Evaluation Framework"
-            }
-          },
-          {
-            "id": "1bd1b1b61b8bdcf5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/NAICS/NAICS Classification — Model Methods, Similarity Measures & Evaluation Framework.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NAICS Classification — Model Methods, Similarity Measures & Evaluation Framework"
-            }
-          },
-          {
-            "id": "cf60346a02e5d7e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/NAICS/NAICS Classification Pipeline - Architecture and Implementation Plan.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NAICS Classification Pipeline - Architecture and Implementation Plan"
-            }
-          },
-          {
-            "id": "4d3eb7792b35b704",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/NAICS/NAICS Classification Pipeline - Research Papers, Textbooks & Guided Study Plan.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NAICS Classification Pipeline - Research Papers, Textbooks & Guided Study Plan"
-            }
-          },
-          {
-            "id": "d1c45e625a64f9b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/NAICS/NAICS Classification System — Development, Production, Performance & MLOps Plan.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NAICS Classification System — Development, Production, Performance & MLOps Plan"
-            }
-          },
-          {
-            "id": "7145be835d806ed8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/NAICS/NAICS Classification System — End-to-End Implementation Roadmap.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NAICS Classification System — End-to-End Implementation Roadmap"
-            }
-          },
-          {
-            "id": "04e25f77718386d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/NAICS/Performance Optimizations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Performance Optimizations"
+              "title": "Master's Application List"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.953125
+    "width": 256.953125,
+    "collapsed": true
   },
   "right": {
     "id": "1f41daa34d2f1046",
@@ -327,22 +215,34 @@
       "full-calendar-remastered:Open calendar agent": false
     }
   },
-  "active": "cea8f8bf5c3c477d",
+  "active": "ad566224a3d7ee1a",
   "lastOpenFiles": [
-    "images/Pasted image 20261114150740.png",
-    "images/Screenshot 2026-11-14 at 3.12.10 PM.png",
-    "images/Pasted image 20261114150942.png",
+    "Private/Graduate Programs.md",
+    "Private/Master's Application List.md",
+    "OTHER TEXTBOOKS/Wearable Tech/Wearable Computing/0) Wearable Computing.md",
+    "README.md",
+    "OTHER TEXTBOOKS/Wearable Tech/Wearable Computing",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/0) Practical ML for CV.md",
+    "OTHER TEXTBOOKS/Computer Vision/Practical ML for CV/1) ML for Computer Vision.md",
+    "PAPERS/Accurate Decoding of Natural Sentences fromNon-Invasive Brain Recordings.md",
+    "PAPERS/AlterEgo - A Personalized Wearable Silent Speech Interface.md",
+    "PAPERS/Noninvasive decoding of typed sentencesfrom human brain activity.md",
+    "Fall 2026/BLG655 - Viruses/Activity/Participation 9 - Clinical Trials.md",
+    "Fall 2026/BLG655 - Viruses/Activity/Participation Activity 1 - Finding Virus Outbreak.md",
+    "TODO.md",
     "Private/NAICS/Data Profiling Report.md",
-    "Private/NAICS/NAICS Classification - Model Methods, Similarity Measures & Evaluation Framework.md",
-    "Private/NAICS/NAICS Classification - Industry Practices, Production Workflows, and Guardrails.md",
     "Private/NAICS/Performance Optimizations.md",
-    "Private/NAICS/Project Architecture.md",
     "Private/NAICS/NAICS Classification System — End-to-End Implementation Roadmap.md",
     "Private/NAICS/NAICS Classification System — Development, Production, Performance & MLOps Plan.md",
     "Private/NAICS/NAICS Classification Pipeline - Research Papers, Textbooks & Guided Study Plan.md",
     "Private/NAICS/NAICS Classification Pipeline - Architecture and Implementation Plan.md",
     "Private/NAICS/NAICS Classification — Model Methods, Similarity Measures & Evaluation Framework.md",
-    "Untitled.md",
+    "Private/NAICS/NAICS Classification - Model Methods, Similarity Measures & Evaluation Framework.md",
+    "Private/NAICS/NAICS Classification - Industry Practices, Production Workflows, and Guardrails.md",
+    "images/Pasted image 20261114150740.png",
+    "images/Screenshot 2026-11-14 at 3.12.10 PM.png",
+    "images/Pasted image 20261114150942.png",
+    "Private/NAICS/Project Architecture.md",
     "Untitled.base",
     "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/15) Personalized Recommender.md",
     "Screenshot 2026-11-14 at 3.12.10 PM.png",
@@ -361,20 +261,8 @@
     "images/Pasted image 20261113230543.png",
     "images/Pasted image 20261113225248.png",
     "images/Pasted image 20261113224004.png",
-    "images/Pasted image 20261113225051.png",
     "Untitled.canvas",
     "OTHER TEXTBOOKS/Textbook Table.md",
-    "Updates.md",
-    "Fall 2026/CPS721 - AI/NOTES/Week 8.md",
-    "Fall 2026/CPS721 - AI/Quizes/AI - Quiz 6.md",
-    "Fall 2026/CPS721 - AI/NOTES/Week 9.md",
-    "OTHER TEXTBOOKS/Commercial ML/Building ML Systems with a Feature Store/13) Testing AI Systems.md",
-    "Private/NAICS",
-    "OTHER TEXTBOOKS/Bioinformatics/Mastering Python for Bioinfo./0) Mastering Python for Bioinformatics.md",
-    "OTHER TEXTBOOKS/Bioinformatics/Mastering Python for Bioinfo.",
-    "PAPERS/Wearable Sensors forHuman Health Monitoringand Analysis.md",
-    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/6) Company Matching.md",
-    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/5) Record Blocking.md",
-    "OTHER TEXTBOOKS/Commercial ML/Entity Resolution/4) Probabilistic Matching.md"
+    "Private/NAICS"
   ]
 }
