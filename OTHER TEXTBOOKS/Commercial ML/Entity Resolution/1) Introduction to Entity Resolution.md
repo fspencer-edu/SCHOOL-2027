@@ -56,17 +56,17 @@
 
 # The Entity Resolution Process
 
-- Data standardization
-- Record blocking
-- Attribute comparison
-- Match classification
+1) Data standardization
+2) Record blocking
+3) Attribute comparison
+4) Match classification
 
 - Clustering
 - Canonicalization
 
 ## Data Standardization
 
-- Ensure consistent data structures to test for equivalence between attriubtes
+- Ensure consistent data structures to test for equivalence between attributes
 - Ensure that the formatting of attributes is consistent
 - Splitting fields and removing null values and extra characters
 ## Record Blocking
@@ -116,6 +116,14 @@
 # Measuring Performance
 
 - Recall
-	- 
+	- Measures how many actual positives the model correctly identifies
+	- Ratio of true matches to the total match population
+
+$Recall = \frac{TP}{TP+FP}$
+
+
 - Precision
-	- 
+	- Measures how may predicted positives are actually correct
+	- The ratio of true matches to the total declared matches
+
+$Precision = \frac{TP}{TP+FP}$
